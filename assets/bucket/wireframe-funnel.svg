@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <style>
+      .metric-label { font-size: 10px; fill: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2563EB"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="520" rx="16" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="#1A1A1A"/>
+
+  <!-- Header -->
+  <text x="48" y="44" class="metric-label">WIREFRAME DESIGN — BUCKET.IO</text>
+  <text x="48" y="76" style="font-size: 22px; font-weight: 700; fill: #1A1A1A;">Guided Funnel Wireframes — Step-by-Step Blueprint Generation</text>
+  <text x="48" y="100" style="font-size: 14px; fill: #6B6B6B;">Four-stage flow from blueprint selection to final export</text>
+
+  <!-- Step numbers -->
+  <circle cx="168" cy="130" r="14" fill="#2563EB"/>
+  <text x="168" y="135" style="font-size: 12px; font-weight: 700; fill: white;" text-anchor="middle">1</text>
+
+  <circle cx="452" cy="130" r="14" fill="#2563EB"/>
+  <text x="452" y="135" style="font-size: 12px; font-weight: 700; fill: white;" text-anchor="middle">2</text>
+
+  <circle cx="736" cy="130" r="14" fill="#2563EB"/>
+  <text x="736" y="135" style="font-size: 12px; font-weight: 700; fill: white;" text-anchor="middle">3</text>
+
+  <circle cx="1020" cy="130" r="14" fill="#2563EB"/>
+  <text x="1020" y="135" style="font-size: 12px; font-weight: 700; fill: white;" text-anchor="middle">4</text>
+
+  <!-- ==================== PANEL 1: Select Blueprint ==================== -->
+  <rect x="48" y="156" width="260" height="310" rx="10" fill="white" stroke="#E5E5E3" stroke-width="1.5"/>
+
+  <!-- Panel 1 title bar -->
+  <rect x="48" y="156" width="260" height="32" rx="10" fill="#F2F1EF"/>
+  <rect x="48" y="178" width="260" height="10" fill="#F2F1EF"/>
+  <text x="178" y="177" style="font-size: 11px; font-weight: 700; fill: #1A1A1A;" text-anchor="middle">Select Blueprint</text>
+
+  <!-- Search bar -->
+  <rect x="64" y="200" width="228" height="22" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="76" y="209" width="60" height="4" rx="1" fill="#CBD5E1"/>
+
+  <!-- 4 card grid (2x2), one highlighted -->
+  <!-- Card 1 -->
+  <rect x="64" y="232" width="106" height="76" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="74" y="244" width="86" height="6" rx="2" fill="#E5E5E3"/>
+  <rect x="74" y="256" width="60" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="74" y="266" width="70" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="74" y="282" width="40" height="12" rx="3" fill="#F2F1EF"/>
+  <rect x="80" y="286" width="28" height="4" rx="1" fill="#CBD5E1"/>
+
+  <!-- Card 2 (HIGHLIGHTED / SELECTED) -->
+  <rect x="186" y="232" width="106" height="76" rx="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+  <rect x="196" y="244" width="86" height="6" rx="2" fill="#BFDBFE"/>
+  <rect x="196" y="256" width="60" height="4" rx="2" fill="#DBEAFE"/>
+  <rect x="196" y="266" width="70" height="4" rx="2" fill="#DBEAFE"/>
+  <rect x="196" y="282" width="40" height="12" rx="3" fill="#2563EB"/>
+  <text x="204" y="291" style="font-size: 6px; font-weight: 600; fill: white;">Select</text>
+  <!-- Checkmark indicator -->
+  <circle cx="278" cy="242" r="8" fill="#2563EB"/>
+  <polyline points="273,242 276,245 283,238" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Card 3 -->
+  <rect x="64" y="318" width="106" height="76" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="74" y="330" width="86" height="6" rx="2" fill="#E5E5E3"/>
+  <rect x="74" y="342" width="60" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="74" y="352" width="70" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="74" y="368" width="40" height="12" rx="3" fill="#F2F1EF"/>
+  <rect x="80" y="372" width="28" height="4" rx="1" fill="#CBD5E1"/>
+
+  <!-- Card 4 -->
+  <rect x="186" y="318" width="106" height="76" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="196" y="330" width="86" height="6" rx="2" fill="#E5E5E3"/>
+  <rect x="196" y="342" width="60" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="196" y="352" width="70" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="196" y="368" width="40" height="12" rx="3" fill="#F2F1EF"/>
+  <rect x="202" y="372" width="28" height="4" rx="1" fill="#CBD5E1"/>
+
+  <!-- CTA -->
+  <rect x="64" y="410" width="228" height="28" rx="6" fill="#2563EB"/>
+  <text x="178" y="428" style="font-size: 10px; font-weight: 600; fill: white;" text-anchor="middle">Continue with Selected</text>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="316" y1="310" x2="340" y2="310" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ==================== PANEL 2: Configure ==================== -->
+  <rect x="348" y="156" width="248" height="310" rx="10" fill="white" stroke="#E5E5E3" stroke-width="1.5"/>
+
+  <!-- Panel 2 title bar -->
+  <rect x="348" y="156" width="248" height="32" rx="10" fill="#F2F1EF"/>
+  <rect x="348" y="178" width="248" height="10" fill="#F2F1EF"/>
+  <text x="472" y="177" style="font-size: 11px; font-weight: 700; fill: #1A1A1A;" text-anchor="middle">Configure</text>
+
+  <!-- Progress bar -->
+  <rect x="364" y="200" width="216" height="6" rx="3" fill="#E5E5E3"/>
+  <rect x="364" y="200" width="130" height="6" rx="3" fill="#2563EB"/>
+  <text x="364" y="220" style="font-size: 9px; font-weight: 600; fill: #2563EB;">3 of 5 questions</text>
+
+  <!-- Question field 1 (completed) -->
+  <text x="364" y="244" style="font-size: 10px; font-weight: 600; fill: #1A1A1A;">Industry type</text>
+  <rect x="364" y="250" width="216" height="28" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="376" y="261" width="100" height="5" rx="2" fill="#1A1A1A"/>
+  <!-- Checkmark -->
+  <circle cx="566" cy="264" r="6" fill="#16A34A"/>
+  <polyline points="562,264 565,267 570,261" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Question field 2 (completed) -->
+  <text x="364" y="298" style="font-size: 10px; font-weight: 600; fill: #1A1A1A;">Target audience</text>
+  <rect x="364" y="304" width="216" height="28" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="376" y="315" width="80" height="5" rx="2" fill="#1A1A1A"/>
+  <circle cx="566" cy="318" r="6" fill="#16A34A"/>
+  <polyline points="562,318 565,321 570,315" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Question field 3 (active, in progress) -->
+  <text x="364" y="352" style="font-size: 10px; font-weight: 600; fill: #2563EB;">Document purpose</text>
+  <rect x="364" y="358" width="216" height="28" rx="6" fill="white" stroke="#2563EB" stroke-width="1.5"/>
+  <rect x="376" y="369" width="60" height="5" rx="2" fill="#BFDBFE"/>
+  <!-- Cursor blink -->
+  <rect x="440" y="365" width="1.5" height="14" fill="#2563EB"/>
+
+  <!-- Helper text -->
+  <text x="364" y="402" style="font-size: 9px; fill: #6B6B6B;">What is the main goal of this blueprint?</text>
+
+  <!-- Navigation buttons -->
+  <rect x="364" y="420" width="100" height="26" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="392" y="437" style="font-size: 9px; font-weight: 500; fill: #6B6B6B;">Back</text>
+  <rect x="480" y="420" width="100" height="26" rx="6" fill="#E5E5E3"/>
+  <text x="510" y="437" style="font-size: 9px; font-weight: 500; fill: #999;">Next</text>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="604" y1="310" x2="628" y2="310" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ==================== PANEL 3: Generate ==================== -->
+  <rect x="636" y="156" width="248" height="310" rx="10" fill="white" stroke="#E5E5E3" stroke-width="1.5"/>
+
+  <!-- Panel 3 title bar -->
+  <rect x="636" y="156" width="248" height="32" rx="10" fill="#F2F1EF"/>
+  <rect x="636" y="178" width="248" height="10" fill="#F2F1EF"/>
+  <text x="760" y="177" style="font-size: 11px; font-weight: 700; fill: #1A1A1A;" text-anchor="middle">Generate</text>
+
+  <!-- AI Processing indicator -->
+  <rect x="652" y="200" width="216" height="48" rx="8" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <!-- Animated dots placeholder -->
+  <circle cx="730" cy="218" r="4" fill="#2563EB" opacity="0.4"/>
+  <circle cx="746" cy="218" r="4" fill="#2563EB" opacity="0.7"/>
+  <circle cx="762" cy="218" r="4" fill="#2563EB" opacity="1"/>
+  <text x="780" y="222" style="font-size: 9px; font-weight: 600; fill: #2563EB;">Generating...</text>
+  <text x="660" y="238" style="font-size: 8px; fill: #6B6B6B;">AI is building your blueprint based on your inputs</text>
+
+  <!-- Document preview (partially loaded) -->
+  <rect x="652" y="260" width="216" height="168" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <!-- Document content lines (fading to suggest loading) -->
+  <rect x="664" y="274" width="140" height="6" rx="2" fill="#1A1A1A"/>
+  <rect x="664" y="288" width="192" height="4" rx="2" fill="#E5E5E3"/>
+  <rect x="664" y="298" width="180" height="4" rx="2" fill="#E5E5E3"/>
+  <rect x="664" y="308" width="160" height="4" rx="2" fill="#E5E5E3"/>
+  <rect x="664" y="322" width="120" height="5" rx="2" fill="#CBD5E1"/>
+  <rect x="664" y="334" width="192" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="664" y="344" width="180" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="664" y="354" width="140" height="4" rx="2" fill="#F2F1EF"/>
+  <!-- Fade-out gradient overlay (simulated with opacity rects) -->
+  <rect x="652" y="370" width="216" height="20" rx="0" fill="#FAFAF8" opacity="0.3"/>
+  <rect x="652" y="380" width="216" height="20" rx="0" fill="#FAFAF8" opacity="0.5"/>
+  <rect x="652" y="395" width="216" height="20" rx="0" fill="#FAFAF8" opacity="0.8"/>
+  <rect x="652" y="410" width="216" height="18" rx="6" fill="#FAFAF8"/>
+
+  <!-- Progress percentage -->
+  <rect x="652" y="438" width="216" height="6" rx="3" fill="#E5E5E3"/>
+  <rect x="652" y="438" width="150" height="6" rx="3" fill="#2563EB"/>
+  <text x="760" y="456" style="font-size: 9px; font-weight: 600; fill: #2563EB;" text-anchor="middle">68% complete</text>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="892" y1="310" x2="916" y2="310" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ==================== PANEL 4: Refine ==================== -->
+  <rect x="924" y="156" width="248" height="310" rx="10" fill="white" stroke="#E5E5E3" stroke-width="1.5"/>
+
+  <!-- Panel 4 title bar -->
+  <rect x="924" y="156" width="248" height="32" rx="10" fill="#F2F1EF"/>
+  <rect x="924" y="178" width="248" height="10" fill="#F2F1EF"/>
+  <text x="1048" y="177" style="font-size: 11px; font-weight: 700; fill: #1A1A1A;" text-anchor="middle">Refine</text>
+
+  <!-- Edit toolbar -->
+  <rect x="940" y="198" width="216" height="26" rx="6" fill="#F2F1EF" stroke="#E5E5E3" stroke-width="0.5"/>
+  <!-- Toolbar icons (simplified) -->
+  <rect x="952" y="206" width="14" height="10" rx="2" fill="#CBD5E1"/>
+  <rect x="972" y="206" width="14" height="10" rx="2" fill="#CBD5E1"/>
+  <rect x="992" y="206" width="14" height="10" rx="2" fill="#CBD5E1"/>
+  <rect x="1012" y="206" width="1" height="10" fill="#E5E5E3"/>
+  <rect x="1020" y="206" width="14" height="10" rx="2" fill="#CBD5E1"/>
+  <rect x="1040" y="206" width="14" height="10" rx="2" fill="#CBD5E1"/>
+  <!-- AI regenerate button -->
+  <rect x="1100" y="204" width="48" height="14" rx="4" fill="#EFF6FF" stroke="#2563EB" stroke-width="0.5"/>
+  <text x="1110" y="214" style="font-size: 6px; font-weight: 600; fill: #2563EB;">AI Refine</text>
+
+  <!-- Document preview (full, editable) -->
+  <rect x="940" y="234" width="216" height="180" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <!-- Title -->
+  <rect x="952" y="248" width="140" height="7" rx="2" fill="#1A1A1A"/>
+  <!-- Section -->
+  <rect x="952" y="264" width="100" height="5" rx="2" fill="#6B6B6B"/>
+  <rect x="952" y="276" width="192" height="4" rx="2" fill="#E5E5E3"/>
+  <rect x="952" y="286" width="180" height="4" rx="2" fill="#E5E5E3"/>
+  <rect x="952" y="296" width="170" height="4" rx="2" fill="#E5E5E3"/>
+  <!-- Highlighted/edited section -->
+  <rect x="948" y="310" width="200" height="24" rx="4" fill="#EFF6FF"/>
+  <rect x="952" y="316" width="192" height="4" rx="2" fill="#BFDBFE"/>
+  <rect x="952" y="326" width="160" height="4" rx="2" fill="#BFDBFE"/>
+  <!-- More content -->
+  <rect x="952" y="344" width="80" height="5" rx="2" fill="#6B6B6B"/>
+  <rect x="952" y="356" width="192" height="4" rx="2" fill="#E5E5E3"/>
+  <rect x="952" y="366" width="180" height="4" rx="2" fill="#E5E5E3"/>
+  <rect x="952" y="376" width="140" height="4" rx="2" fill="#E5E5E3"/>
+  <rect x="952" y="390" width="190" height="4" rx="2" fill="#E5E5E3"/>
+  <rect x="952" y="400" width="150" height="4" rx="2" fill="#E5E5E3"/>
+
+  <!-- Export button -->
+  <rect x="940" y="426" width="216" height="30" rx="6" fill="#1A1A1A"/>
+  <text x="1048" y="445" style="font-size: 11px; font-weight: 600; fill: white;" text-anchor="middle">Export PDF</text>
+
+  <!-- Bottom annotation bar -->
+  <rect x="48" y="480" width="1104" height="28" rx="8" fill="#F2F1EF"/>
+  <text x="600" y="499" style="font-size: 11px; font-weight: 500; fill: #6B6B6B;" text-anchor="middle">Select  &rarr;  Configure  &rarr;  Generate  &rarr;  Refine &amp; Export — guided flow reduces drop-off by 40%</text>
+</svg>
