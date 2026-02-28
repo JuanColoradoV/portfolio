@@ -1,9 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
   <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
-      text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
-    </style>
     <!-- Glow filter for center hub -->
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
