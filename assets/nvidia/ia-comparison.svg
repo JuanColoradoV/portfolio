@@ -1,114 +1,129 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
-  <defs>
-    <style>
-      .metric-label { font-size: 10px; fill: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
-    </style>
-  </defs>
-
-  <rect width="1200" height="520" rx="16" fill="#FAFAF8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+  <rect width="1200" height="540" rx="16" fill="#FAFAF8"/>
   <rect x="0" y="0" width="1200" height="4" rx="2" fill="#1A1A1A"/>
 
-  <text x="48" y="44" class="metric-label">INFORMATION ARCHITECTURE RESTRUCTURE</text>
-  <text x="48" y="76" style="font-size: 22px; font-weight: 700; fill: #1A1A1A;">From Flat Navigation to Task-Oriented Hierarchy</text>
+  <!-- Header -->
+  <text x="48" y="40" style="font-size: 10px; fill: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">INFORMATION ARCHITECTURE RESTRUCTURE</text>
+  <text x="48" y="72" style="font-size: 22px; font-weight: 700; fill: #1A1A1A;">From Flat Navigation to Task-Oriented Hierarchy</text>
 
-  <!-- BEFORE: Flat -->
-  <text x="48" y="126" style="font-size: 14px; font-weight: 700; fill: #DC2626;">Before — Flat feature-based navigation</text>
-  <text x="48" y="146" style="font-size: 12px; fill: #6B6B6B;">Users navigated by feature name — required mental model of entire system</text>
+  <!-- ============ BEFORE SIDE ============ -->
+  <text x="48" y="112" style="font-size: 13px; font-weight: 700; fill: #DC2626;">Before</text>
+  <text x="100" y="112" style="font-size: 13px; font-weight: 500; fill: #6B6B6B;">Flat feature-based navigation</text>
 
-  <rect x="48" y="160" width="540" height="320" rx="12" fill="white" stroke="#FECACA" stroke-width="1"/>
+  <rect x="48" y="128" width="510" height="340" rx="12" fill="white" stroke="#FECACA" stroke-width="1.5"/>
 
-  <!-- Flat nav items -->
-  <rect x="72" y="184" width="140" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="88" y="208" style="font-size: 11px; font-weight: 500; fill: #1A1A1A;">Feature A</text>
+  <!-- Subtitle inside panel -->
+  <text x="72" y="156" style="font-size: 11px; fill: #999;">All features at same level &#x2014; no grouping or priority</text>
 
-  <rect x="228" y="184" width="140" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="244" y="208" style="font-size: 11px; font-weight: 500; fill: #1A1A1A;">Feature B</text>
+  <!-- 3x3 grid of feature boxes, centered text -->
+  <!-- Row 1 -->
+  <rect x="72" y="172" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="146" y="199" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature A</text>
 
-  <rect x="384" y="184" width="140" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="400" y="208" style="font-size: 11px; font-weight: 500; fill: #1A1A1A;">Feature C</text>
+  <rect x="232" y="172" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="306" y="199" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature B</text>
 
-  <rect x="72" y="240" width="140" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="88" y="264" style="font-size: 11px; font-weight: 500; fill: #1A1A1A;">Feature D</text>
+  <rect x="392" y="172" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="466" y="199" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature C</text>
 
-  <rect x="228" y="240" width="140" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="244" y="264" style="font-size: 11px; font-weight: 500; fill: #1A1A1A;">Feature E</text>
+  <!-- Row 2 -->
+  <rect x="72" y="228" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="146" y="255" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature D</text>
 
-  <rect x="384" y="240" width="140" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="400" y="264" style="font-size: 11px; font-weight: 500; fill: #1A1A1A;">Feature F</text>
+  <rect x="232" y="228" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="306" y="255" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature E</text>
 
-  <rect x="72" y="296" width="140" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="88" y="320" style="font-size: 11px; font-weight: 500; fill: #1A1A1A;">AI Module 1</text>
+  <rect x="392" y="228" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="466" y="255" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature F</text>
 
-  <rect x="228" y="296" width="140" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="244" y="320" style="font-size: 11px; font-weight: 500; fill: #1A1A1A;">AI Module 2</text>
+  <!-- Row 3 -->
+  <rect x="72" y="284" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="146" y="311" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">AI Module 1</text>
 
-  <rect x="384" y="296" width="140" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="400" y="320" style="font-size: 11px; font-weight: 500; fill: #1A1A1A;">Reports</text>
+  <rect x="232" y="284" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="306" y="311" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">AI Module 2</text>
+
+  <rect x="392" y="284" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="466" y="311" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Reports</text>
 
   <!-- Problem callout -->
-  <rect x="72" y="360" width="480" height="48" rx="8" fill="#FEF2F2"/>
-  <text x="92" y="380" style="font-size: 12px; font-weight: 600; fill: #DC2626;">Problem:</text>
-  <text x="92" y="398" style="font-size: 11px; fill: #991B1B;">No hierarchy. All features at same level. Users must know exactly what they need before navigating.</text>
+  <rect x="72" y="348" width="468" height="52" rx="8" fill="#FEF2F2"/>
+  <text x="88" y="370" style="font-size: 11px; font-weight: 700; fill: #DC2626;">Problem</text>
+  <text x="88" y="388" style="font-size: 11px; fill: #991B1B;">No hierarchy. Users must know exactly what they need before navigating.</text>
 
-  <!-- Arrow -->
-  <text x="598" y="310" style="font-size: 36px; font-weight: 700; fill: #CBD5E1;">&#x2192;</text>
+  <!-- ============ ARROW ============ -->
+  <rect x="574" y="270" width="52" height="32" rx="16" fill="#1A1A1A"/>
+  <text x="600" y="291" text-anchor="middle" style="font-size: 16px; font-weight: 700; fill: white;">&#x2192;</text>
 
-  <!-- AFTER: Task-oriented -->
-  <text x="640" y="126" style="font-size: 14px; font-weight: 700; fill: #16A34A;">After — Task-oriented decision hierarchy</text>
-  <text x="640" y="146" style="font-size: 12px; fill: #6B6B6B;">Users navigate by decision type — matches mental model</text>
+  <!-- ============ AFTER SIDE ============ -->
+  <text x="642" y="112" style="font-size: 13px; font-weight: 700; fill: #16A34A;">After</text>
+  <text x="686" y="112" style="font-size: 13px; font-weight: 500; fill: #6B6B6B;">Task-oriented decision hierarchy</text>
 
-  <rect x="640" y="160" width="520" height="320" rx="12" fill="white" stroke="#DCFCE7" stroke-width="1"/>
+  <rect x="642" y="128" width="510" height="340" rx="12" fill="white" stroke="#DCFCE7" stroke-width="1.5"/>
 
-  <!-- Level 1: Decision types -->
-  <rect x="780" y="180" width="220" height="36" rx="8" fill="#1A1A1A"/>
-  <text x="830" y="204" style="font-size: 12px; font-weight: 600; fill: white;">Supply Chain Hub</text>
+  <!-- Subtitle inside panel -->
+  <text x="666" y="156" style="font-size: 11px; fill: #999;">Users navigate by decision type &#x2014; matches mental model</text>
 
-  <!-- Lines from hub -->
-  <line x1="830" y1="216" x2="720" y2="248" stroke="#16A34A" stroke-width="1.5"/>
-  <line x1="890" y1="216" x2="890" y2="248" stroke="#16A34A" stroke-width="1.5"/>
-  <line x1="950" y1="216" x2="1060" y2="248" stroke="#16A34A" stroke-width="1.5"/>
+  <!-- Level 0: Hub -->
+  <rect x="822" y="172" width="200" height="44" rx="10" fill="#1A1A1A"/>
+  <text x="922" y="199" text-anchor="middle" style="font-size: 13px; font-weight: 600; fill: white;">Supply Chain Hub</text>
 
-  <!-- Branch 1: Attention -->
-  <rect x="660" y="248" width="140" height="36" rx="6" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="670" y="271" style="font-size: 11px; font-weight: 600; fill: #166534;">Needs Attention</text>
+  <!-- Connector lines from hub to 3 branches -->
+  <line x1="872" y1="216" x2="746" y2="248" stroke="#16A34A" stroke-width="2"/>
+  <line x1="922" y1="216" x2="922" y2="248" stroke="#16A34A" stroke-width="2"/>
+  <line x1="972" y1="216" x2="1098" y2="248" stroke="#16A34A" stroke-width="2"/>
 
-  <line x1="700" y1="284" x2="680" y2="308" stroke="#CBD5E1" stroke-width="1"/>
-  <line x1="750" y1="284" x2="770" y2="308" stroke="#CBD5E1" stroke-width="1"/>
+  <!-- Level 1: Three decision branches -->
+  <!-- Branch 1: Needs Attention -->
+  <rect x="676" y="248" width="140" height="40" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="746" y="273" text-anchor="middle" style="font-size: 12px; font-weight: 600; fill: #166534;">Needs Attention</text>
 
-  <rect x="660" y="308" width="60" height="28" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
-  <text x="668" y="326" style="font-size: 9px; fill: #1E40AF;">Alerts</text>
-  <rect x="730" y="308" width="70" height="28" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
-  <text x="738" y="326" style="font-size: 9px; fill: #1E40AF;">AI Flags</text>
+  <!-- Branch 2: Current Status -->
+  <rect x="852" y="248" width="140" height="40" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="922" y="273" text-anchor="middle" style="font-size: 12px; font-weight: 600; fill: #166534;">Current Status</text>
 
-  <!-- Branch 2: Status -->
-  <rect x="820" y="248" width="140" height="36" rx="6" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="838" y="271" style="font-size: 11px; font-weight: 600; fill: #166534;">Current Status</text>
+  <!-- Branch 3: Take Action -->
+  <rect x="1028" y="248" width="140" height="40" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="1098" y="273" text-anchor="middle" style="font-size: 12px; font-weight: 600; fill: #166534;">Take Action</text>
 
-  <line x1="860" y1="284" x2="840" y2="308" stroke="#CBD5E1" stroke-width="1"/>
-  <line x1="920" y1="284" x2="940" y2="308" stroke="#CBD5E1" stroke-width="1"/>
+  <!-- Level 2 connectors -->
+  <!-- Branch 1 children -->
+  <line x1="722" y1="288" x2="706" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="770" y1="288" x2="786" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- Branch 2 children -->
+  <line x1="898" y1="288" x2="882" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="946" y1="288" x2="962" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- Branch 3 children -->
+  <line x1="1074" y1="288" x2="1058" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="1122" y1="288" x2="1138" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
 
-  <rect x="820" y="308" width="60" height="28" rx="4" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="828" y="326" style="font-size: 9px; fill: #6B6B6B;">KPIs</text>
-  <rect x="890" y="308" width="70" height="28" rx="4" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="898" y="326" style="font-size: 9px; fill: #6B6B6B;">Trends</text>
+  <!-- Level 2 leaf nodes -->
+  <!-- Branch 1 leaves -->
+  <rect x="670" y="316" width="72" height="32" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="706" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #1E40AF;">Alerts</text>
+  <rect x="750" y="316" width="72" height="32" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="786" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #1E40AF;">AI Flags</text>
 
-  <!-- Branch 3: Action -->
-  <rect x="990" y="248" width="140" height="36" rx="6" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="1010" y="271" style="font-size: 11px; font-weight: 600; fill: #166534;">Take Action</text>
+  <!-- Branch 2 leaves -->
+  <rect x="846" y="316" width="72" height="32" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="882" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #6B6B6B;">KPIs</text>
+  <rect x="926" y="316" width="72" height="32" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="962" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #6B6B6B;">Trends</text>
 
-  <line x1="1030" y1="284" x2="1010" y2="308" stroke="#CBD5E1" stroke-width="1"/>
-  <line x1="1090" y1="284" x2="1110" y2="308" stroke="#CBD5E1" stroke-width="1"/>
+  <!-- Branch 3 leaves -->
+  <rect x="1022" y="316" width="72" height="32" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="1058" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #6B6B6B;">Orders</text>
+  <rect x="1102" y="316" width="72" height="32" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="1138" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #6B6B6B;">Reports</text>
 
-  <rect x="990" y="308" width="60" height="28" rx="4" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="998" y="326" style="font-size: 9px; fill: #6B6B6B;">Orders</text>
-  <rect x="1060" y="308" width="70" height="28" rx="4" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="1068" y="326" style="font-size: 9px; fill: #6B6B6B;">Reports</text>
+  <!-- SAP Fiori callout -->
+  <rect x="666" y="368" width="468" height="52" rx="8" fill="#F0FDF4"/>
+  <text x="682" y="390" style="font-size: 11px; font-weight: 700; fill: #166534;">SAP Fiori patterns applied</text>
+  <text x="682" y="408" style="font-size: 11px; fill: #166534;">Overview Page &#x2192; Object Page &#x2192; List Report</text>
 
-  <!-- SAP Fiori patterns note -->
-  <rect x="660" y="360" width="480" height="48" rx="8" fill="#F0FDF4"/>
-  <text x="680" y="380" style="font-size: 12px; font-weight: 600; fill: #166534;">SAP Fiori patterns applied:</text>
-  <text x="680" y="398" style="font-size: 11px; fill: #166534;">Overview Page &#x2192; Object Page &#x2192; List Report (matching supply chain decision workflows)</text>
-
-  <!-- Bottom summary -->
-  <rect x="48" y="494" width="1104" height="0" rx="0" fill="none"/>
+  <!-- Bottom summary bar -->
+  <rect x="48" y="488" width="1104" height="36" rx="8" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="48" y="488" width="4" height="36" rx="2" fill="#1A1A1A"/>
+  <text x="72" y="511" style="font-size: 11px; font-weight: 600; fill: #1A1A1A;">Result:</text>
+  <text x="124" y="511" style="font-size: 11px; fill: #6B6B6B;">Users navigate by decision type instead of feature name &#x2014; reducing cognitive load and improving task completion by ~90%</text>
 </svg>
