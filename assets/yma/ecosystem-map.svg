@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <style>
+      .metric-label { font-size: 10px; fill: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="520" rx="16" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="#1A1A1A"/>
+
+  <text x="48" y="44" class="metric-label">PRODUCT ECOSYSTEM</text>
+  <text x="48" y="76" style="font-size: 22px; font-weight: 700; fill: #1A1A1A;">YMA / Smartel — AI Ecosystem Architecture</text>
+  <text x="48" y="100" style="font-size: 14px; fill: #6B6B6B;">Foundational design patterns established across the full product suite</text>
+
+  <!-- Central hub -->
+  <circle cx="600" cy="280" r="70" fill="#1A1A1A"/>
+  <text x="560" y="274" style="font-size: 16px; font-weight: 700; fill: white;">Smartel</text>
+  <text x="560" y="296" style="font-size: 12px; fill: #999;">AI Core</text>
+
+  <!-- Computer Vision node -->
+  <line x1="540" y1="240" x2="370" y2="170" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="320" cy="150" r="52" fill="white" stroke="#2563EB" stroke-width="2"/>
+  <text x="285" y="144" style="font-size: 11px; font-weight: 600; fill: #1A1A1A;">Computer</text>
+  <text x="295" y="162" style="font-size: 11px; font-weight: 600; fill: #1A1A1A;">Vision</text>
+  <rect x="280" y="172" width="80" height="16" rx="4" fill="#EFF6FF"/>
+  <text x="290" y="184" style="font-size: 8px; font-weight: 600; fill: #2563EB;">Real-time data</text>
+
+  <!-- Mobile App node -->
+  <line x1="540" y1="300" x2="370" y2="340" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="320" cy="360" r="52" fill="white" stroke="#2563EB" stroke-width="2"/>
+  <text x="292" y="354" style="font-size: 11px; font-weight: 600; fill: #1A1A1A;">Mobile</text>
+  <text x="302" y="372" style="font-size: 11px; font-weight: 600; fill: #1A1A1A;">App</text>
+  <rect x="280" y="382" width="80" height="16" rx="4" fill="#EFF6FF"/>
+  <text x="290" y="394" style="font-size: 8px; font-weight: 600; fill: #2563EB;">Mobile-first</text>
+
+  <!-- Dashboard node -->
+  <line x1="660" y1="240" x2="830" y2="170" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="880" cy="150" r="52" fill="white" stroke="#2563EB" stroke-width="2"/>
+  <text x="848" y="144" style="font-size: 11px; font-weight: 600; fill: #1A1A1A;">Analytics</text>
+  <text x="844" y="162" style="font-size: 11px; font-weight: 600; fill: #1A1A1A;">Dashboard</text>
+  <rect x="840" y="172" width="80" height="16" rx="4" fill="#EFF6FF"/>
+  <text x="850" y="184" style="font-size: 8px; font-weight: 600; fill: #2563EB;">Desktop UI</text>
+
+  <!-- Feedback Loop node -->
+  <line x1="660" y1="300" x2="830" y2="340" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="880" cy="360" r="52" fill="white" stroke="#2563EB" stroke-width="2"/>
+  <text x="847" y="354" style="font-size: 11px; font-weight: 600; fill: #1A1A1A;">Feedback</text>
+  <text x="855" y="372" style="font-size: 11px; font-weight: 600; fill: #1A1A1A;">Loops</text>
+  <rect x="840" y="382" width="80" height="16" rx="4" fill="#EFF6FF"/>
+  <text x="850" y="394" style="font-size: 8px; font-weight: 600; fill: #2563EB;">CV Metrics</text>
+
+  <!-- Design System annotation -->
+  <rect x="48" y="440" width="1104" height="60" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="48" y="440" width="4" height="60" rx="2" fill="#2563EB"/>
+
+  <text x="72" y="464" style="font-size: 12px; font-weight: 600; fill: #1A1A1A;">Unified Design System</text>
+  <text x="72" y="484" style="font-size: 11px; fill: #6B6B6B;">One component library scaling across all product surfaces — mobile, tablet, desktop. Maintained by 1 senior designer, extended by 2 junior designers.</text>
+
+  <!-- Confidence states legend -->
+  <rect x="430" y="130" width="340" height="36" rx="8" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="446" y="148" style="font-size: 10px; font-weight: 600; fill: #6B6B6B;">CV Confidence States:</text>
+  <circle cx="560" cy="148" r="6" fill="#F59E0B"/>
+  <text x="572" y="152" style="font-size: 10px; fill: #6B6B6B;">Processing</text>
+  <circle cx="640" cy="148" r="6" fill="#EAB308"/>
+  <text x="652" y="152" style="font-size: 10px; fill: #6B6B6B;">Low</text>
+  <circle cx="696" cy="148" r="6" fill="#16A34A"/>
+  <text x="708" y="152" style="font-size: 10px; fill: #6B6B6B;">Confirmed</text>
+</svg>
