@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <style>
+      .metric-label { font-size: 10px; fill: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="560" rx="16" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="#2563EB"/>
+
+  <!-- Header -->
+  <text x="48" y="44" class="metric-label">DESIGN SYSTEM — RESPONSIVE COMPONENTS</text>
+  <text x="48" y="76" style="font-size: 22px; font-weight: 700; fill: #1A1A1A;">Responsive Component System</text>
+  <text x="48" y="100" style="font-size: 14px; fill: #6B6B6B;">One component library adapting across three breakpoints — mobile, tablet, and desktop</text>
+
+  <!-- Column headers with breakpoint labels -->
+  <!-- Mobile -->
+  <rect x="48" y="124" width="340" height="28" rx="6" fill="#1A1A1A"/>
+  <text x="68" y="143" style="font-size: 11px; font-weight: 600; fill: white;">MOBILE — 320px</text>
+  <text x="330" y="143" style="font-size: 10px; fill: #999;" text-anchor="end">Stacked</text>
+
+  <!-- Tablet -->
+  <rect x="404" y="124" width="370" height="28" rx="6" fill="#1A1A1A"/>
+  <text x="424" y="143" style="font-size: 11px; font-weight: 600; fill: white;">TABLET — 768px</text>
+  <text x="718" y="143" style="font-size: 10px; fill: #999;" text-anchor="end">Sidebar + Content</text>
+
+  <!-- Desktop -->
+  <rect x="790" y="124" width="362" height="28" rx="6" fill="#1A1A1A"/>
+  <text x="810" y="143" style="font-size: 11px; font-weight: 600; fill: white;">DESKTOP — 1440px</text>
+  <text x="1096" y="143" style="font-size: 10px; fill: #999;" text-anchor="end">Full Layout</text>
+
+  <!-- ==================== MOBILE COLUMN ==================== -->
+  <rect x="48" y="164" width="340" height="320" rx="10" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+
+  <!-- Mobile: Navigation bar (hamburger) -->
+  <rect x="64" y="180" width="308" height="36" rx="6" fill="#F2F1EF"/>
+  <!-- Hamburger icon -->
+  <rect x="76" y="191" width="16" height="2" rx="1" fill="#1A1A1A"/>
+  <rect x="76" y="196" width="16" height="2" rx="1" fill="#1A1A1A"/>
+  <rect x="76" y="201" width="16" height="2" rx="1" fill="#1A1A1A"/>
+  <text x="100" y="202" style="font-size: 11px; font-weight: 700; fill: #1A1A1A;">Smartel</text>
+  <!-- Notification dot -->
+  <circle cx="356" cy="198" r="4" fill="#2563EB"/>
+
+  <!-- Mobile: Card component (full-width stacked) -->
+  <rect x="64" y="228" width="308" height="80" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="76" y="240" width="284" height="8" rx="2" fill="#E5E5E3"/>
+  <rect x="76" y="256" width="220" height="6" rx="2" fill="#F2F1EF"/>
+  <rect x="76" y="268" width="180" height="6" rx="2" fill="#F2F1EF"/>
+  <rect x="76" y="286" width="60" height="16" rx="4" fill="#2563EB"/>
+  <text x="88" y="298" style="font-size: 8px; font-weight: 600; fill: white;">View</text>
+
+  <!-- Mobile: Second card stacked -->
+  <rect x="64" y="318" width="308" height="56" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="76" y="330" width="284" height="8" rx="2" fill="#E5E5E3"/>
+  <rect x="76" y="346" width="200" height="6" rx="2" fill="#F2F1EF"/>
+  <rect x="76" y="358" width="60" height="10" rx="3" fill="#EFF6FF" stroke="#2563EB" stroke-width="0.5"/>
+
+  <!-- Mobile: Button row (stacked full-width) -->
+  <rect x="64" y="386" width="308" height="32" rx="6" fill="#2563EB"/>
+  <text x="178" y="406" style="font-size: 10px; font-weight: 600; fill: white;" text-anchor="middle">Primary Action</text>
+  <rect x="64" y="424" width="308" height="32" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="178" y="444" style="font-size: 10px; font-weight: 500; fill: #1A1A1A;" text-anchor="middle">Secondary</text>
+
+  <!-- Mobile: Data list items -->
+  <rect x="64" y="466" width="308" height="6" rx="2" fill="#F2F1EF"/>
+
+  <!-- Mobile label -->
+  <text x="218" y="486" style="font-size: 9px; fill: #999;" text-anchor="middle">Touch targets: 44px min</text>
+
+  <!-- ==================== TABLET COLUMN ==================== -->
+  <rect x="404" y="164" width="370" height="320" rx="10" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+
+  <!-- Tablet: Top navigation bar -->
+  <rect x="420" y="180" width="338" height="32" rx="6" fill="#F2F1EF"/>
+  <text x="432" y="200" style="font-size: 11px; font-weight: 700; fill: #1A1A1A;">Smartel</text>
+  <rect x="510" y="192" width="36" height="6" rx="2" fill="#CBD5E1"/>
+  <rect x="556" y="192" width="36" height="6" rx="2" fill="#CBD5E1"/>
+  <rect x="602" y="192" width="36" height="6" rx="2" fill="#2563EB"/>
+  <circle cx="742" cy="196" r="4" fill="#2563EB"/>
+
+  <!-- Tablet: Sidebar + Content layout -->
+  <!-- Sidebar -->
+  <rect x="420" y="224" width="80" height="232" rx="6" fill="#F2F1EF"/>
+  <rect x="430" y="238" width="60" height="6" rx="2" fill="#CBD5E1"/>
+  <rect x="430" y="254" width="60" height="6" rx="2" fill="#2563EB"/>
+  <rect x="430" y="270" width="60" height="6" rx="2" fill="#CBD5E1"/>
+  <rect x="430" y="286" width="60" height="6" rx="2" fill="#CBD5E1"/>
+  <rect x="430" y="310" width="50" height="6" rx="2" fill="#E5E5E3"/>
+  <rect x="430" y="326" width="50" height="6" rx="2" fill="#E5E5E3"/>
+
+  <!-- Tablet: Content area with medium cards -->
+  <!-- Card 1 -->
+  <rect x="512" y="224" width="118" height="108" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="522" y="236" width="98" height="6" rx="2" fill="#E5E5E3"/>
+  <rect x="522" y="250" width="80" height="5" rx="2" fill="#F2F1EF"/>
+  <rect x="522" y="262" width="60" height="5" rx="2" fill="#F2F1EF"/>
+  <rect x="522" y="284" width="44" height="14" rx="4" fill="#2563EB"/>
+  <text x="530" y="295" style="font-size: 7px; font-weight: 600; fill: white;">View</text>
+  <rect x="572" y="284" width="44" height="14" rx="4" fill="white" stroke="#E5E5E3" stroke-width="0.5"/>
+  <text x="580" y="295" style="font-size: 7px; font-weight: 500; fill: #6B6B6B;">Edit</text>
+
+  <!-- Card 2 -->
+  <rect x="640" y="224" width="118" height="108" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="650" y="236" width="98" height="6" rx="2" fill="#E5E5E3"/>
+  <rect x="650" y="250" width="80" height="5" rx="2" fill="#F2F1EF"/>
+  <rect x="650" y="262" width="60" height="5" rx="2" fill="#F2F1EF"/>
+  <rect x="650" y="284" width="44" height="14" rx="4" fill="#2563EB"/>
+  <text x="658" y="295" style="font-size: 7px; font-weight: 600; fill: white;">View</text>
+  <rect x="700" y="284" width="44" height="14" rx="4" fill="white" stroke="#E5E5E3" stroke-width="0.5"/>
+  <text x="708" y="295" style="font-size: 7px; font-weight: 500; fill: #6B6B6B;">Edit</text>
+
+  <!-- Tablet: Button row (inline) -->
+  <rect x="512" y="344" width="118" height="26" rx="6" fill="#2563EB"/>
+  <text x="543" y="361" style="font-size: 9px; font-weight: 600; fill: white;">Primary</text>
+  <rect x="640" y="344" width="118" height="26" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="672" y="361" style="font-size: 9px; font-weight: 500; fill: #1A1A1A;">Secondary</text>
+
+  <!-- Tablet: Data list -->
+  <rect x="512" y="382" width="246" height="20" rx="4" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="0.5"/>
+  <rect x="520" y="389" width="100" height="5" rx="2" fill="#E5E5E3"/>
+  <rect x="700" y="389" width="40" height="5" rx="2" fill="#CBD5E1"/>
+
+  <rect x="512" y="406" width="246" height="20" rx="4" fill="white" stroke="#E5E5E3" stroke-width="0.5"/>
+  <rect x="520" y="413" width="80" height="5" rx="2" fill="#E5E5E3"/>
+  <rect x="700" y="413" width="40" height="5" rx="2" fill="#CBD5E1"/>
+
+  <rect x="512" y="430" width="246" height="20" rx="4" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="0.5"/>
+  <rect x="520" y="437" width="110" height="5" rx="2" fill="#E5E5E3"/>
+  <rect x="700" y="437" width="40" height="5" rx="2" fill="#CBD5E1"/>
+
+  <!-- Tablet label -->
+  <text x="589" y="474" style="font-size: 9px; fill: #999;" text-anchor="middle">Sidebar nav, medium density</text>
+
+  <!-- ==================== DESKTOP COLUMN ==================== -->
+  <rect x="790" y="164" width="362" height="320" rx="10" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+
+  <!-- Desktop: Full navigation bar -->
+  <rect x="806" y="180" width="330" height="28" rx="6" fill="#F2F1EF"/>
+  <text x="818" y="198" style="font-size: 10px; font-weight: 700; fill: #1A1A1A;">Smartel</text>
+  <rect x="880" y="192" width="32" height="5" rx="2" fill="#CBD5E1"/>
+  <rect x="920" y="192" width="32" height="5" rx="2" fill="#CBD5E1"/>
+  <rect x="960" y="192" width="32" height="5" rx="2" fill="#2563EB"/>
+  <rect x="1000" y="192" width="32" height="5" rx="2" fill="#CBD5E1"/>
+  <!-- Search bar -->
+  <rect x="1050" y="187" width="70" height="16" rx="4" fill="white" stroke="#E5E5E3" stroke-width="0.5"/>
+  <rect x="1058" y="193" width="30" height="4" rx="1" fill="#E5E5E3"/>
+
+  <!-- Desktop: Card grid (3 cards) -->
+  <rect x="806" y="220" width="100" height="90" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="814" y="230" width="84" height="5" rx="2" fill="#E5E5E3"/>
+  <rect x="814" y="242" width="70" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="814" y="252" width="50" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="814" y="268" width="36" height="12" rx="3" fill="#2563EB"/>
+  <text x="820" y="278" style="font-size: 6px; font-weight: 600; fill: white;">View</text>
+  <rect x="856" y="268" width="36" height="12" rx="3" fill="white" stroke="#E5E5E3" stroke-width="0.5"/>
+  <text x="862" y="278" style="font-size: 6px; font-weight: 500; fill: #6B6B6B;">Edit</text>
+  <!-- Spacious padding indicator -->
+  <rect x="814" y="288" width="84" height="14" rx="3" fill="#EFF6FF"/>
+  <rect x="822" y="294" width="40" height="4" rx="1" fill="#BFDBFE"/>
+
+  <rect x="916" y="220" width="100" height="90" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="924" y="230" width="84" height="5" rx="2" fill="#E5E5E3"/>
+  <rect x="924" y="242" width="70" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="924" y="252" width="50" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="924" y="268" width="36" height="12" rx="3" fill="#2563EB"/>
+  <text x="930" y="278" style="font-size: 6px; font-weight: 600; fill: white;">View</text>
+  <rect x="966" y="268" width="36" height="12" rx="3" fill="white" stroke="#E5E5E3" stroke-width="0.5"/>
+  <text x="972" y="278" style="font-size: 6px; font-weight: 500; fill: #6B6B6B;">Edit</text>
+  <rect x="924" y="288" width="84" height="14" rx="3" fill="#EFF6FF"/>
+  <rect x="932" y="294" width="40" height="4" rx="1" fill="#BFDBFE"/>
+
+  <rect x="1026" y="220" width="100" height="90" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="1034" y="230" width="84" height="5" rx="2" fill="#E5E5E3"/>
+  <rect x="1034" y="242" width="70" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="1034" y="252" width="50" height="4" rx="2" fill="#F2F1EF"/>
+  <rect x="1034" y="268" width="36" height="12" rx="3" fill="#2563EB"/>
+  <text x="1040" y="278" style="font-size: 6px; font-weight: 600; fill: white;">View</text>
+  <rect x="1076" y="268" width="36" height="12" rx="3" fill="white" stroke="#E5E5E3" stroke-width="0.5"/>
+  <text x="1082" y="278" style="font-size: 6px; font-weight: 500; fill: #6B6B6B;">Edit</text>
+  <rect x="1034" y="288" width="84" height="14" rx="3" fill="#EFF6FF"/>
+  <rect x="1042" y="294" width="40" height="4" rx="1" fill="#BFDBFE"/>
+
+  <!-- Desktop: Inline button row (spacious) -->
+  <rect x="806" y="322" width="100" height="22" rx="6" fill="#2563EB"/>
+  <text x="832" y="337" style="font-size: 8px; font-weight: 600; fill: white;">Primary</text>
+  <rect x="916" y="322" width="100" height="22" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="940" y="337" style="font-size: 8px; font-weight: 500; fill: #1A1A1A;">Secondary</text>
+  <rect x="1026" y="322" width="100" height="22" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="1053" y="337" style="font-size: 8px; font-weight: 500; fill: #1A1A1A;">Tertiary</text>
+
+  <!-- Desktop: Data list (spacious table-like) -->
+  <rect x="806" y="356" width="320" height="20" rx="4" fill="#F2F1EF"/>
+  <rect x="814" y="360" width="60" height="4" rx="1" fill="#6B6B6B"/>
+  <rect x="930" y="360" width="40" height="4" rx="1" fill="#6B6B6B"/>
+  <rect x="1040" y="360" width="50" height="4" rx="1" fill="#6B6B6B"/>
+  <text x="816" y="367" style="font-size: 5px; font-weight: 600; fill: #6B6B6B;"></text>
+
+  <rect x="806" y="380" width="320" height="18" rx="4" fill="white" stroke="#E5E5E3" stroke-width="0.5"/>
+  <rect x="814" y="387" width="90" height="4" rx="1" fill="#E5E5E3"/>
+  <rect x="930" y="387" width="30" height="4" rx="1" fill="#CBD5E1"/>
+  <rect x="1040" y="387" width="50" height="4" rx="1" fill="#CBD5E1"/>
+
+  <rect x="806" y="402" width="320" height="18" rx="4" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="0.5"/>
+  <rect x="814" y="409" width="80" height="4" rx="1" fill="#E5E5E3"/>
+  <rect x="930" y="409" width="30" height="4" rx="1" fill="#CBD5E1"/>
+  <rect x="1040" y="409" width="50" height="4" rx="1" fill="#CBD5E1"/>
+
+  <rect x="806" y="424" width="320" height="18" rx="4" fill="white" stroke="#E5E5E3" stroke-width="0.5"/>
+  <rect x="814" y="431" width="100" height="4" rx="1" fill="#E5E5E3"/>
+  <rect x="930" y="431" width="30" height="4" rx="1" fill="#CBD5E1"/>
+  <rect x="1040" y="431" width="50" height="4" rx="1" fill="#CBD5E1"/>
+
+  <rect x="806" y="446" width="320" height="18" rx="4" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="0.5"/>
+  <rect x="814" y="453" width="70" height="4" rx="1" fill="#E5E5E3"/>
+  <rect x="930" y="453" width="30" height="4" rx="1" fill="#CBD5E1"/>
+  <rect x="1040" y="453" width="50" height="4" rx="1" fill="#CBD5E1"/>
+
+  <!-- Desktop label -->
+  <text x="971" y="482" style="font-size: 9px; fill: #999;" text-anchor="middle">Full nav, card grid, data table</text>
+
+  <!-- Bottom annotation bar -->
+  <rect x="48" y="498" width="1104" height="48" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="48" y="498" width="4" height="48" rx="2" fill="#2563EB"/>
+
+  <text x="72" y="518" style="font-size: 12px; font-weight: 600; fill: #1A1A1A;">Mobile-first scaling</text>
+  <text x="72" y="536" style="font-size: 11px; fill: #6B6B6B;">Touch targets, density, and navigation optimized per viewport — one source of truth across all breakpoints</text>
+</svg>
