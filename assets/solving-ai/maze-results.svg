@@ -1,119 +1,153 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
   <defs>
-    <style>
-      .title { font-size: 24px; font-weight: 700; fill: #1A1A1A; }
-      .subtitle { font-size: 14px; fill: #6B6B6B; }
-      .label { font-size: 13px; fill: #6B6B6B; font-weight: 500; }
-      .value { font-size: 36px; font-weight: 700; fill: #1A1A1A; }
-      .value-accent { font-size: 36px; font-weight: 700; fill: #2563EB; }
-      .bar-label { font-size: 12px; fill: #6B6B6B; }
-      .metric-label { font-size: 11px; fill: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
-      .cohort-label { font-size: 12px; fill: #1A1A1A; font-weight: 600; }
-      .small { font-size: 11px; fill: #999; }
-    </style>
+    <filter id="cardShadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.05"/>
+    </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="680" rx="16" fill="#FAFAF8"/>
-  <rect x="0" y="0" width="1200" height="4" rx="2" fill="#2563EB"/>
+  <rect width="1200" height="600" fill="#FAFAF8" rx="8"/>
 
-  <!-- Header -->
-  <text x="48" y="52" class="metric-label">MAZE A/B TEST RESULTS</text>
-  <text x="48" y="84" class="title">Task Comprehension Improvement</text>
-  <text x="48" y="108" class="subtitle">A/B test comparing original vs. redesigned AI interaction flows across user cohorts</text>
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="#2563EB"/>
 
-  <!-- Left: Before/After Comparison -->
-  <rect x="48" y="140" width="520" height="280" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <!-- ==================== HEADER ==================== -->
+  <text x="48" y="48" font-size="10" font-weight="600" fill="#2563EB" letter-spacing="1.5">MAZE A/B TEST RESULTS</text>
+  <text x="48" y="76" font-size="22" font-weight="700" fill="#1A1A1A">Task Comprehension Improvement</text>
+  <line x1="48" y1="92" x2="1152" y2="92" stroke="#E5E5E3" stroke-width="1"/>
 
-  <!-- Before -->
-  <text x="72" y="172" class="cohort-label">Before Redesign</text>
-  <text x="72" y="190" class="small">Original multi-step AI flow</text>
+  <!-- ==================== LEFT PANEL: Bar Chart ==================== -->
 
-  <!-- Before bar - Technical users -->
-  <text x="72" y="222" class="bar-label">Technical Users</text>
-  <rect x="220" y="208" width="320" height="20" rx="4" fill="#F2F1EF"/>
-  <rect x="220" y="208" width="140" height="20" rx="4" fill="#CBD5E1"/>
-  <text x="370" y="223" class="bar-label" fill="#64748B">44%</text>
+  <!-- Section label -->
+  <text x="48" y="124" font-size="10" font-weight="600" fill="#6B6B6B" letter-spacing="1">BEFORE vs AFTER REDESIGN</text>
 
-  <!-- Before bar - Non-technical -->
-  <text x="72" y="258" class="bar-label">Non-Technical Users</text>
-  <rect x="220" y="244" width="320" height="20" rx="4" fill="#F2F1EF"/>
-  <rect x="220" y="244" width="70" height="20" rx="4" fill="#CBD5E1"/>
-  <text x="300" y="259" class="bar-label" fill="#64748B">22%</text>
+  <!-- === Row 1: Technical Users === -->
+  <text x="48" y="160" font-size="13" font-weight="600" fill="#1A1A1A">Technical Users</text>
 
-  <!-- Before bar - All users -->
-  <text x="72" y="294" class="bar-label">All Cohorts (avg)</text>
-  <rect x="220" y="280" width="320" height="20" rx="4" fill="#F2F1EF"/>
-  <rect x="220" y="280" width="105" height="20" rx="4" fill="#94A3B8"/>
-  <text x="335" y="295" class="bar-label" fill="#64748B">33%</text>
+  <!-- Before bar -->
+  <text x="48" y="184" font-size="10" fill="#6B6B6B" font-weight="500">Before</text>
+  <rect x="108" y="173" width="440" height="16" fill="#F0F0EE" rx="8"/>
+  <rect x="108" y="173" width="194" height="16" fill="#B8B8B6" rx="8"/>
+  <text x="310" y="185" font-size="10" font-weight="700" fill="#6B6B6B">44%</text>
 
-  <!-- Divider -->
-  <line x1="72" y1="316" x2="544" y2="316" stroke="#E5E5E3" stroke-width="1"/>
+  <!-- After bar -->
+  <text x="48" y="208" font-size="10" fill="#6B6B6B" font-weight="500">After</text>
+  <rect x="108" y="197" width="440" height="16" fill="#EFF6FF" rx="8"/>
+  <rect x="108" y="197" width="414" height="16" fill="#2563EB" rx="8"/>
+  <text x="530" y="209" font-size="10" font-weight="700" fill="#2563EB">94%</text>
 
-  <!-- After -->
-  <text x="72" y="344" class="cohort-label" fill="#2563EB">After Redesign</text>
-  <text x="72" y="362" class="small">Progressive disclosure + transparent AI feedback</text>
+  <!-- Change badge -->
+  <rect x="568" y="186" width="48" height="20" rx="10" fill="#F0FDF4"/>
+  <text x="592" y="200" font-size="9" font-weight="700" fill="#16A34A" text-anchor="middle">+50pt</text>
 
-  <!-- After bar - Technical users -->
-  <text x="72" y="394" class="bar-label">Technical Users</text>
-  <rect x="220" y="380" width="320" height="20" rx="4" fill="#EFF6FF"/>
-  <rect x="220" y="380" width="300" height="20" rx="4" fill="#2563EB"/>
-  <text x="530" y="395" class="bar-label" fill="#1D4ED8">94%</text>
+  <!-- === Row 2: Non-Technical Users === -->
+  <text x="48" y="250" font-size="13" font-weight="600" fill="#1A1A1A">Non-Technical Users</text>
 
-  <!-- After bar - Non-technical -->
-  <text x="72" y="430" class="bar-label">Non-Technical Users</text>
-  <rect x="220" y="416" width="320" height="20" rx="4" fill="#EFF6FF"/>
-  <rect x="220" y="416" width="248" height="20" rx="4" fill="#3B82F6"/>
-  <text x="478" y="431" class="bar-label" fill="#1D4ED8">78%</text>
+  <!-- Before bar -->
+  <text x="48" y="274" font-size="10" fill="#6B6B6B" font-weight="500">Before</text>
+  <rect x="108" y="263" width="440" height="16" fill="#F0F0EE" rx="8"/>
+  <rect x="108" y="263" width="97" height="16" fill="#B8B8B6" rx="8"/>
+  <text x="213" y="275" font-size="10" font-weight="700" fill="#6B6B6B">22%</text>
 
-  <!-- Right: Key Metrics -->
-  <rect x="600" y="140" width="260" height="130" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="624" y="172" class="metric-label">TASK COMPREHENSION</text>
-  <text x="624" y="218" class="value-accent">~80%</text>
-  <text x="624" y="240" class="label">improvement across all cohorts</text>
+  <!-- After bar -->
+  <text x="48" y="298" font-size="10" fill="#6B6B6B" font-weight="500">After</text>
+  <rect x="108" y="287" width="440" height="16" fill="#EFF6FF" rx="8"/>
+  <rect x="108" y="287" width="343" height="16" fill="#2563EB" rx="8"/>
+  <text x="459" y="299" font-size="10" font-weight="700" fill="#2563EB">78%</text>
 
-  <rect x="600" y="290" width="260" height="130" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="624" y="322" class="metric-label">HANDOFF TIME</text>
-  <text x="624" y="368" class="value-accent">~30%</text>
-  <text x="624" y="390" class="label">reduction in design-to-dev</text>
+  <!-- Change badge -->
+  <rect x="568" y="276" width="48" height="20" rx="10" fill="#F0FDF4"/>
+  <text x="592" y="290" font-size="9" font-weight="700" fill="#16A34A" text-anchor="middle">+56pt</text>
 
-  <rect x="880" y="140" width="272" height="130" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="904" y="172" class="metric-label">ACCESSIBILITY</text>
-  <text x="904" y="218" class="value-accent">AA</text>
-  <text x="904" y="240" class="label">WCAG compliance achieved</text>
+  <!-- === Row 3: All Cohorts Average === -->
+  <text x="48" y="340" font-size="13" font-weight="600" fill="#1A1A1A">All Cohorts Average</text>
 
-  <rect x="880" y="290" width="272" height="130" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="904" y="322" class="metric-label">CHURN</text>
-  <text x="904" y="368" style="font-size: 36px; font-weight: 700; fill: #16A34A;">Reduced</text>
-  <text x="904" y="390" class="label">workflow abandonment rate</text>
+  <!-- Before bar -->
+  <text x="48" y="364" font-size="10" fill="#6B6B6B" font-weight="500">Before</text>
+  <rect x="108" y="353" width="440" height="16" fill="#F0F0EE" rx="8"/>
+  <rect x="108" y="353" width="145" height="16" fill="#B8B8B6" rx="8"/>
+  <text x="261" y="365" font-size="10" font-weight="700" fill="#6B6B6B">33%</text>
 
-  <!-- Bottom: Test Parameters -->
-  <rect x="48" y="450" width="1104" height="200" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="72" y="482" class="cohort-label">Test Configuration</text>
+  <!-- After bar -->
+  <text x="48" y="388" font-size="10" fill="#6B6B6B" font-weight="500">After</text>
+  <rect x="108" y="377" width="440" height="16" fill="#EFF6FF" rx="8"/>
+  <rect x="108" y="377" width="378" height="16" fill="#2563EB" rx="8"/>
+  <text x="494" y="389" font-size="10" font-weight="700" fill="#2563EB">~86%</text>
 
-  <!-- Test params grid -->
-  <text x="72" y="516" class="metric-label">PLATFORM</text>
-  <text x="72" y="536" class="label" fill="#1A1A1A">Maze</text>
+  <!-- Change badge -->
+  <rect x="568" y="366" width="48" height="20" rx="10" fill="#F0FDF4"/>
+  <text x="592" y="380" font-size="9" font-weight="700" fill="#16A34A" text-anchor="middle">+53pt</text>
 
-  <text x="240" y="516" class="metric-label">TEST TYPE</text>
-  <text x="240" y="536" class="label" fill="#1A1A1A">A/B Test (Split)</text>
+  <!-- Legend -->
+  <rect x="48" y="416" width="10" height="10" fill="#B8B8B6" rx="3"/>
+  <text x="64" y="425" font-size="10" fill="#6B6B6B">Original Flow</text>
+  <rect x="158" y="416" width="10" height="10" fill="#2563EB" rx="3"/>
+  <text x="174" y="425" font-size="10" fill="#6B6B6B">Redesigned Flow</text>
 
-  <text x="440" y="516" class="metric-label">COHORT A</text>
-  <text x="440" y="536" class="label" fill="#1A1A1A">Technical users (developers, data analysts)</text>
+  <!-- ==================== VERTICAL DIVIDER ==================== -->
+  <line x1="648" y1="106" x2="648" y2="448" stroke="#E5E5E3" stroke-width="1"/>
 
-  <text x="760" y="516" class="metric-label">COHORT B</text>
-  <text x="760" y="536" class="label" fill="#1A1A1A">Non-technical users (managers, operators)</text>
+  <!-- ==================== RIGHT PANEL: Metric Cards ==================== -->
 
-  <text x="72" y="576" class="metric-label">VARIANT A (CONTROL)</text>
-  <text x="72" y="596" class="label" fill="#1A1A1A">Original multi-step AI configuration flow</text>
+  <!-- Section label -->
+  <text x="680" y="124" font-size="10" font-weight="600" fill="#6B6B6B" letter-spacing="1">KEY OUTCOMES</text>
 
-  <text x="440" y="576" class="metric-label">VARIANT B (TEST)</text>
-  <text x="440" y="596" class="label" fill="#1A1A1A">Redesigned flow with progressive disclosure + transparent AI feedback</text>
+  <!-- Card 1: Task Comprehension -->
+  <rect x="680" y="142" width="232" height="118" fill="#FFFFFF" rx="8" stroke="#E5E5E3" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="700" y="168" font-size="9" font-weight="600" fill="#6B6B6B" letter-spacing="0.8">TASK COMPREHENSION</text>
+  <text x="700" y="210" font-size="34" font-weight="800" fill="#2563EB">~80%</text>
+  <text x="700" y="230" font-size="11" fill="#6B6B6B">improvement across</text>
+  <text x="700" y="246" font-size="11" fill="#6B6B6B">all user cohorts</text>
 
-  <text x="72" y="636" class="metric-label">TASKS MEASURED</text>
-  <text x="72" y="656" class="label" fill="#1A1A1A">AI configuration completion, results interpretation accuracy, workflow completion rate, time-on-task</text>
+  <!-- Card 2: Handoff Time -->
+  <rect x="932" y="142" width="232" height="118" fill="#FFFFFF" rx="8" stroke="#E5E5E3" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="952" y="168" font-size="9" font-weight="600" fill="#6B6B6B" letter-spacing="0.8">HANDOFF TIME</text>
+  <text x="952" y="210" font-size="34" font-weight="800" fill="#2563EB">~30%</text>
+  <text x="952" y="230" font-size="11" fill="#6B6B6B">reduction in design-to-dev</text>
+  <text x="952" y="246" font-size="11" fill="#6B6B6B">handoff duration</text>
 
-  <!-- Maze logo placeholder -->
-  <rect x="1060" y="460" width="72" height="28" rx="6" fill="#F2F1EF"/>
-  <text x="1076" y="480" style="font-size: 12px; font-weight: 700; fill: #6B6B6B;">MAZE</text>
+  <!-- Card 3: WCAG Compliance -->
+  <rect x="680" y="276" width="232" height="118" fill="#FFFFFF" rx="8" stroke="#E5E5E3" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="700" y="302" font-size="9" font-weight="600" fill="#6B6B6B" letter-spacing="0.8">WCAG COMPLIANCE</text>
+  <text x="700" y="344" font-size="34" font-weight="800" fill="#2563EB">AA</text>
+  <text x="700" y="364" font-size="11" fill="#6B6B6B">accessibility standard</text>
+  <text x="700" y="380" font-size="11" fill="#6B6B6B">achieved post-redesign</text>
+
+  <!-- Card 4: Workflow Abandonment -->
+  <rect x="932" y="276" width="232" height="118" fill="#FFFFFF" rx="8" stroke="#E5E5E3" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="952" y="302" font-size="9" font-weight="600" fill="#6B6B6B" letter-spacing="0.8">WORKFLOW ABANDONMENT</text>
+  <text x="952" y="344" font-size="34" font-weight="800" fill="#16A34A">Reduced</text>
+  <text x="952" y="364" font-size="11" fill="#6B6B6B">drop-off rates in key</text>
+  <text x="952" y="380" font-size="11" fill="#6B6B6B">interaction flows</text>
+
+  <!-- ==================== BOTTOM: Test Configuration ==================== -->
+
+  <line x1="48" y1="460" x2="1152" y2="460" stroke="#E5E5E3" stroke-width="1"/>
+
+  <text x="48" y="490" font-size="9" font-weight="600" fill="#6B6B6B" letter-spacing="1">TEST CONFIGURATION</text>
+
+  <!-- Config items horizontal layout -->
+  <text x="48" y="516" font-size="10" fill="#6B6B6B">Platform</text>
+  <text x="48" y="534" font-size="12" font-weight="600" fill="#1A1A1A">Maze</text>
+
+  <line x1="140" y1="506" x2="140" y2="540" stroke="#E5E5E3" stroke-width="1"/>
+
+  <text x="168" y="516" font-size="10" fill="#6B6B6B">Test Type</text>
+  <text x="168" y="534" font-size="12" font-weight="600" fill="#1A1A1A">A/B Split</text>
+
+  <line x1="296" y1="506" x2="296" y2="540" stroke="#E5E5E3" stroke-width="1"/>
+
+  <text x="324" y="516" font-size="10" fill="#6B6B6B">Cohort A</text>
+  <text x="324" y="534" font-size="12" font-weight="600" fill="#1A1A1A">Technical Users</text>
+
+  <line x1="494" y1="506" x2="494" y2="540" stroke="#E5E5E3" stroke-width="1"/>
+
+  <text x="522" y="516" font-size="10" fill="#6B6B6B">Cohort B</text>
+  <text x="522" y="534" font-size="12" font-weight="600" fill="#1A1A1A">Non-Technical Users</text>
+
+  <line x1="720" y1="506" x2="720" y2="540" stroke="#E5E5E3" stroke-width="1"/>
+
+  <text x="748" y="516" font-size="10" fill="#6B6B6B">Primary Metric</text>
+  <text x="748" y="534" font-size="12" font-weight="600" fill="#1A1A1A">Task Comprehension Rate</text>
+
 </svg>
