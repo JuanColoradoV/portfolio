@@ -1120,3 +1120,30 @@ a:focus-visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Hero entrance animation */
+.hero__label,
+.hero__title,
+.hero__subtitle,
+.hero__meta,
+.hero__cta {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hero--loaded .hero__label {
+  opacity: 1; transform: translateY(0); transition-delay: 0.1s;
+}
+.hero--loaded .hero__title {
+  opacity: 1; transform: translateY(0); transition-delay: 0.25s;
+}
+.hero--loaded .hero__subtitle {
+  opacity: 1; transform: translateY(0); transition-delay: 0.4s;
+}
+.hero--loaded .hero__meta {
+  opacity: 1; transform: translateY(0); transition-delay: 0.55s;
+}
+.hero--loaded .hero__cta {
+  opacity: 1; transform: translateY(0); transition-delay: 0.7s;
+}

@@ -51,7 +51,7 @@
   <text x="92" y="398" style="font-size: 11px; fill: #991B1B;">No hierarchy. All features at same level. Users must know exactly what they need before navigating.</text>
 
   <!-- Arrow -->
-  <text x="598" y="310" style="font-size: 36px; font-weight: 700; fill: #CBD5E1;">&rarr;</text>
+  <text x="598" y="310" style="font-size: 36px; font-weight: 700; fill: #CBD5E1;">&#x2192;</text>
 
   <!-- AFTER: Task-oriented -->
   <text x="640" y="126" style="font-size: 14px; font-weight: 700; fill: #16A34A;">After — Task-oriented decision hierarchy</text>
@@ -107,7 +107,7 @@
   <!-- SAP Fiori patterns note -->
   <rect x="660" y="360" width="480" height="48" rx="8" fill="#F0FDF4"/>
   <text x="680" y="380" style="font-size: 12px; font-weight: 600; fill: #166534;">SAP Fiori patterns applied:</text>
-  <text x="680" y="398" style="font-size: 11px; fill: #166534;">Overview Page &rarr; Object Page &rarr; List Report (matching supply chain decision workflows)</text>
+  <text x="680" y="398" style="font-size: 11px; fill: #166534;">Overview Page &#x2192; Object Page &#x2192; List Report (matching supply chain decision workflows)</text>
 
   <!-- Bottom summary -->
   <rect x="48" y="494" width="1104" height="0" rx="0" fill="none"/>
