@@ -221,5 +221,5 @@
 
   <!-- Bottom annotation bar -->
   <rect x="48" y="480" width="1104" height="28" rx="8" fill="#F2F1EF"/>
-  <text x="600" y="499" style="font-size: 11px; font-weight: 500; fill: #6B6B6B;" text-anchor="middle">Select  &rarr;  Configure  &rarr;  Generate  &rarr;  Refine &amp; Export — guided flow reduces drop-off by 40%</text>
+  <text x="600" y="499" style="font-size: 11px; font-weight: 500; fill: #6B6B6B;" text-anchor="middle">Select  &#x2192;  Configure  &#x2192;  Generate  &#x2192;  Refine &amp; Export — guided flow reduces drop-off by 40%</text>
 </svg>
