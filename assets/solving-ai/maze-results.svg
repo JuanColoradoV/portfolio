@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 24px; font-weight: 700; fill: #1A1A1A; }
+      .subtitle { font-size: 14px; fill: #6B6B6B; }
+      .label { font-size: 13px; fill: #6B6B6B; font-weight: 500; }
+      .value { font-size: 36px; font-weight: 700; fill: #1A1A1A; }
+      .value-accent { font-size: 36px; font-weight: 700; fill: #2563EB; }
+      .bar-label { font-size: 12px; fill: #6B6B6B; }
+      .metric-label { font-size: 11px; fill: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+      .cohort-label { font-size: 12px; fill: #1A1A1A; font-weight: 600; }
+      .small { font-size: 11px; fill: #999; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" rx="16" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="#2563EB"/>
+
+  <!-- Header -->
+  <text x="48" y="52" class="metric-label">MAZE A/B TEST RESULTS</text>
+  <text x="48" y="84" class="title">Task Comprehension Improvement</text>
+  <text x="48" y="108" class="subtitle">A/B test comparing original vs. redesigned AI interaction flows across user cohorts</text>
+
+  <!-- Left: Before/After Comparison -->
+  <rect x="48" y="140" width="520" height="280" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+
+  <!-- Before -->
+  <text x="72" y="172" class="cohort-label">Before Redesign</text>
+  <text x="72" y="190" class="small">Original multi-step AI flow</text>
+
+  <!-- Before bar - Technical users -->
+  <text x="72" y="222" class="bar-label">Technical Users</text>
+  <rect x="220" y="208" width="320" height="20" rx="4" fill="#F2F1EF"/>
+  <rect x="220" y="208" width="140" height="20" rx="4" fill="#CBD5E1"/>
+  <text x="370" y="223" class="bar-label" fill="#64748B">44%</text>
+
+  <!-- Before bar - Non-technical -->
+  <text x="72" y="258" class="bar-label">Non-Technical Users</text>
+  <rect x="220" y="244" width="320" height="20" rx="4" fill="#F2F1EF"/>
+  <rect x="220" y="244" width="70" height="20" rx="4" fill="#CBD5E1"/>
+  <text x="300" y="259" class="bar-label" fill="#64748B">22%</text>
+
+  <!-- Before bar - All users -->
+  <text x="72" y="294" class="bar-label">All Cohorts (avg)</text>
+  <rect x="220" y="280" width="320" height="20" rx="4" fill="#F2F1EF"/>
+  <rect x="220" y="280" width="105" height="20" rx="4" fill="#94A3B8"/>
+  <text x="335" y="295" class="bar-label" fill="#64748B">33%</text>
+
+  <!-- Divider -->
+  <line x1="72" y1="316" x2="544" y2="316" stroke="#E5E5E3" stroke-width="1"/>
+
+  <!-- After -->
+  <text x="72" y="344" class="cohort-label" fill="#2563EB">After Redesign</text>
+  <text x="72" y="362" class="small">Progressive disclosure + transparent AI feedback</text>
+
+  <!-- After bar - Technical users -->
+  <text x="72" y="394" class="bar-label">Technical Users</text>
+  <rect x="220" y="380" width="320" height="20" rx="4" fill="#EFF6FF"/>
+  <rect x="220" y="380" width="300" height="20" rx="4" fill="#2563EB"/>
+  <text x="530" y="395" class="bar-label" fill="#1D4ED8">94%</text>
+
+  <!-- After bar - Non-technical -->
+  <text x="72" y="430" class="bar-label">Non-Technical Users</text>
+  <rect x="220" y="416" width="320" height="20" rx="4" fill="#EFF6FF"/>
+  <rect x="220" y="416" width="248" height="20" rx="4" fill="#3B82F6"/>
+  <text x="478" y="431" class="bar-label" fill="#1D4ED8">78%</text>
+
+  <!-- Right: Key Metrics -->
+  <rect x="600" y="140" width="260" height="130" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="624" y="172" class="metric-label">TASK COMPREHENSION</text>
+  <text x="624" y="218" class="value-accent">~80%</text>
+  <text x="624" y="240" class="label">improvement across all cohorts</text>
+
+  <rect x="600" y="290" width="260" height="130" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="624" y="322" class="metric-label">HANDOFF TIME</text>
+  <text x="624" y="368" class="value-accent">~30%</text>
+  <text x="624" y="390" class="label">reduction in design-to-dev</text>
+
+  <rect x="880" y="140" width="272" height="130" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="904" y="172" class="metric-label">ACCESSIBILITY</text>
+  <text x="904" y="218" class="value-accent">AA</text>
+  <text x="904" y="240" class="label">WCAG compliance achieved</text>
+
+  <rect x="880" y="290" width="272" height="130" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="904" y="322" class="metric-label">CHURN</text>
+  <text x="904" y="368" style="font-size: 36px; font-weight: 700; fill: #16A34A;">Reduced</text>
+  <text x="904" y="390" class="label">workflow abandonment rate</text>
+
+  <!-- Bottom: Test Parameters -->
+  <rect x="48" y="450" width="1104" height="200" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="72" y="482" class="cohort-label">Test Configuration</text>
+
+  <!-- Test params grid -->
+  <text x="72" y="516" class="metric-label">PLATFORM</text>
+  <text x="72" y="536" class="label" fill="#1A1A1A">Maze</text>
+
+  <text x="240" y="516" class="metric-label">TEST TYPE</text>
+  <text x="240" y="536" class="label" fill="#1A1A1A">A/B Test (Split)</text>
+
+  <text x="440" y="516" class="metric-label">COHORT A</text>
+  <text x="440" y="536" class="label" fill="#1A1A1A">Technical users (developers, data analysts)</text>
+
+  <text x="760" y="516" class="metric-label">COHORT B</text>
+  <text x="760" y="536" class="label" fill="#1A1A1A">Non-technical users (managers, operators)</text>
+
+  <text x="72" y="576" class="metric-label">VARIANT A (CONTROL)</text>
+  <text x="72" y="596" class="label" fill="#1A1A1A">Original multi-step AI configuration flow</text>
+
+  <text x="440" y="576" class="metric-label">VARIANT B (TEST)</text>
+  <text x="440" y="596" class="label" fill="#1A1A1A">Redesigned flow with progressive disclosure + transparent AI feedback</text>
+
+  <text x="72" y="636" class="metric-label">TASKS MEASURED</text>
+  <text x="72" y="656" class="label" fill="#1A1A1A">AI configuration completion, results interpretation accuracy, workflow completion rate, time-on-task</text>
+
+  <!-- Maze logo placeholder -->
+  <rect x="1060" y="460" width="72" height="28" rx="6" fill="#F2F1EF"/>
+  <text x="1076" y="480" style="font-size: 12px; font-weight: 700; fill: #6B6B6B;">MAZE</text>
+</svg>

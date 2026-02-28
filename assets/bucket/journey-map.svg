@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <style>
+      .metric-label { font-size: 10px; fill: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+    </style>
+    <marker id="ar" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#CBD5E1"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="480" rx="16" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="#1A1A1A"/>
+
+  <text x="48" y="44" class="metric-label">USER JOURNEY MAP — BUCKET.IO</text>
+  <text x="48" y="76" style="font-size: 22px; font-weight: 700; fill: #1A1A1A;">Blueprint Generation — User Journey &amp; Friction Analysis</text>
+
+  <!-- Phase headers -->
+  <rect x="48" y="104" width="220" height="28" rx="6" fill="#1A1A1A"/>
+  <text x="68" y="124" style="font-size: 11px; font-weight: 600; fill: white;">1. DISCOVER</text>
+
+  <rect x="284" y="104" width="220" height="28" rx="6" fill="#1A1A1A"/>
+  <text x="304" y="124" style="font-size: 11px; font-weight: 600; fill: white;">2. SELECT</text>
+
+  <rect x="520" y="104" width="220" height="28" rx="6" fill="#1A1A1A"/>
+  <text x="540" y="124" style="font-size: 11px; font-weight: 600; fill: white;">3. CONFIGURE</text>
+
+  <rect x="756" y="104" width="220" height="28" rx="6" fill="#1A1A1A"/>
+  <text x="776" y="124" style="font-size: 11px; font-weight: 600; fill: white;">4. GENERATE</text>
+
+  <rect x="992" y="104" width="160" height="28" rx="6" fill="#1A1A1A"/>
+  <text x="1012" y="124" style="font-size: 11px; font-weight: 600; fill: white;">5. REFINE</text>
+
+  <!-- User actions row -->
+  <text x="48" y="162" style="font-size: 10px; font-weight: 600; fill: #6B6B6B;">USER ACTIONS</text>
+
+  <rect x="48" y="172" width="220" height="50" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="64" y="192" style="font-size: 11px; fill: #1A1A1A;">Lands on blueprint</text>
+  <text x="64" y="208" style="font-size: 11px; fill: #1A1A1A;">selection page</text>
+
+  <rect x="284" y="172" width="220" height="50" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="300" y="192" style="font-size: 11px; fill: #1A1A1A;">Browses blueprint types</text>
+  <text x="300" y="208" style="font-size: 11px; fill: #1A1A1A;">Selects one to configure</text>
+
+  <rect x="520" y="172" width="220" height="50" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="536" y="192" style="font-size: 11px; fill: #1A1A1A;">Answers 5 guided</text>
+  <text x="536" y="208" style="font-size: 11px; fill: #1A1A1A;">configuration questions</text>
+
+  <rect x="756" y="172" width="220" height="50" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="772" y="192" style="font-size: 11px; fill: #1A1A1A;">Waits for AI to generate</text>
+  <text x="772" y="208" style="font-size: 11px; fill: #1A1A1A;">Reviews output</text>
+
+  <rect x="992" y="172" width="160" height="50" rx="6" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="1008" y="192" style="font-size: 11px; fill: #1A1A1A;">Edits, regenerates</text>
+  <text x="1008" y="208" style="font-size: 11px; fill: #1A1A1A;">Exports PDF</text>
+
+  <!-- Emotion curve -->
+  <text x="48" y="254" style="font-size: 10px; font-weight: 600; fill: #6B6B6B;">USER SENTIMENT</text>
+
+  <rect x="48" y="264" width="1104" height="80" rx="8" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <!-- Sentiment line -->
+  <text x="60" y="282" style="font-size: 9px; fill: #16A34A;">Positive</text>
+  <text x="60" y="330" style="font-size: 9px; fill: #DC2626;">Negative</text>
+  <line x1="110" y1="306" x2="1130" y2="306" stroke="#F2F1EF" stroke-width="1"/>
+  <!-- Emotion curve path -->
+  <polyline points="130,290 230,286 350,310 490,326 640,322 770,300 870,310 970,294 1080,286" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Emotion dots -->
+  <circle cx="350" cy="310" r="5" fill="#F59E0B"/>
+  <circle cx="490" cy="326" r="5" fill="#DC2626"/>
+  <circle cx="640" cy="322" r="5" fill="#DC2626"/>
+  <circle cx="1080" cy="286" r="5" fill="#16A34A"/>
+
+  <!-- Pain points row -->
+  <text x="48" y="374" style="font-size: 10px; font-weight: 600; fill: #DC2626;">FRICTION POINTS IDENTIFIED</text>
+
+  <rect x="284" y="384" width="220" height="72" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="300" y="404" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FRICTION #1</text>
+  <text x="300" y="420" style="font-size: 11px; fill: #991B1B;">Too many blueprint options</text>
+  <text x="300" y="436" style="font-size: 11px; fill: #991B1B;">No guidance on which to pick</text>
+  <text x="300" y="452" style="font-size: 10px; fill: #DC2626; font-weight: 600;">~25% abandon here</text>
+
+  <rect x="520" y="384" width="220" height="72" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="536" y="404" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FRICTION #2 (worst)</text>
+  <text x="536" y="420" style="font-size: 11px; fill: #991B1B;">Unclear what parameters do</text>
+  <text x="536" y="436" style="font-size: 11px; fill: #991B1B;">Misconfiguration = bad output</text>
+  <text x="536" y="452" style="font-size: 10px; fill: #DC2626; font-weight: 600;">~35% abandon here</text>
+
+  <rect x="756" y="384" width="220" height="72" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="772" y="404" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FRICTION #3</text>
+  <text x="772" y="420" style="font-size: 11px; fill: #991B1B;">No way to refine output</text>
+  <text x="772" y="436" style="font-size: 11px; fill: #991B1B;">Must restart from scratch</text>
+  <text x="772" y="452" style="font-size: 10px; fill: #DC2626; font-weight: 600;">~20% abandon here</text>
+</svg>

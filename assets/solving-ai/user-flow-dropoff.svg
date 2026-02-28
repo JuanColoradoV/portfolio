@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <style>
+      .step-box { fill: white; stroke: #E5E5E3; stroke-width: 1; }
+      .step-box-problem { fill: #FEF2F2; stroke: #FECACA; stroke-width: 1.5; }
+      .step-title { font-size: 13px; font-weight: 600; fill: #1A1A1A; }
+      .step-desc { font-size: 11px; fill: #6B6B6B; }
+      .dropoff { font-size: 12px; font-weight: 700; fill: #DC2626; }
+      .dropoff-ok { font-size: 12px; font-weight: 600; fill: #16A34A; }
+      .arrow { fill: none; stroke: #CBD5E1; stroke-width: 2; }
+      .header { font-size: 24px; font-weight: 700; fill: #1A1A1A; }
+      .subheader { font-size: 14px; fill: #6B6B6B; }
+      .tag { font-size: 10px; font-weight: 600; fill: white; }
+      .metric-label { font-size: 10px; fill: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#CBD5E1"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#DC2626"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" rx="16" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="#2563EB"/>
+
+  <!-- Header -->
+  <text x="48" y="44" class="metric-label">USER FLOW ANALYSIS</text>
+  <text x="48" y="76" class="header">AI Workflow — Drop-off Points Identified</text>
+  <text x="48" y="100" class="subheader">Multi-step AI interaction flow with friction points mapped through session analysis and task data</text>
+
+  <!-- Funnel visualization (users remaining) -->
+  <rect x="48" y="124" width="1104" height="32" rx="6" fill="#EFF6FF"/>
+  <rect x="48" y="124" width="1104" height="32" rx="6" fill="#DBEAFE"/>
+  <rect x="48" y="124" width="884" height="32" rx="6" fill="#BFDBFE"/>
+  <rect x="48" y="124" width="552" height="32" rx="6" fill="#93C5FD"/>
+  <rect x="48" y="124" width="332" height="32" rx="6" fill="#60A5FA"/>
+  <rect x="48" y="124" width="221" height="32" rx="6" fill="#3B82F6"/>
+  <text x="60" y="146" style="font-size: 12px; font-weight: 600; fill: white;">100% users enter</text>
+  <text x="240" y="146" style="font-size: 12px; font-weight: 600; fill: white;">80%</text>
+  <text x="400" y="146" style="font-size: 11px; font-weight: 600; fill: #1E40AF;">50%</text>
+  <text x="700" y="146" style="font-size: 11px; font-weight: 600; fill: #1E3A8A;">30%</text>
+  <text x="1000" y="146" style="font-size: 11px; font-weight: 500; fill: #1E3A8A;">20% complete</text>
+
+  <!-- Step 1: Entry -->
+  <rect x="48" y="190" width="170" height="100" rx="10" class="step-box"/>
+  <text x="68" y="216" class="step-title">1. Entry Point</text>
+  <text x="68" y="234" class="step-desc">User opens AI</text>
+  <text x="68" y="250" class="step-desc">workflow module</text>
+  <text x="68" y="276" class="dropoff-ok">100% reach</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="218" y1="240" x2="252" y2="240" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2: Selection — minor friction -->
+  <rect x="256" y="190" width="170" height="100" rx="10" class="step-box"/>
+  <text x="276" y="216" class="step-title">2. AI Type Selection</text>
+  <text x="276" y="234" class="step-desc">Choose automation</text>
+  <text x="276" y="250" class="step-desc">type and scope</text>
+  <rect x="276" y="264" width="60" height="18" rx="4" fill="#FEF3C7"/>
+  <text x="286" y="277" style="font-size: 10px; font-weight: 600; fill: #92400E;">-20%</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="426" y1="240" x2="460" y2="240" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3: Configuration — HIGH FRICTION -->
+  <rect x="464" y="180" width="186" height="120" rx="10" class="step-box-problem"/>
+  <rect x="464" y="180" width="186" height="26" rx="10" fill="#DC2626"/>
+  <rect x="464" y="196" width="186" height="10" fill="#DC2626"/>
+  <text x="484" y="198" class="tag">HIGHEST DROP-OFF</text>
+  <text x="484" y="230" class="step-title">3. Configuration</text>
+  <text x="484" y="248" class="step-desc">Set parameters,</text>
+  <text x="484" y="264" class="step-desc">thresholds, inputs</text>
+  <text x="484" y="288" class="dropoff">-30% drop-off</text>
+
+  <!-- Drop-off annotation arrow -->
+  <line x1="557" y1="300" x2="557" y2="340" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="476" y="340" width="162" height="56" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="490" y="358" style="font-size: 11px; font-weight: 600; fill: #DC2626;">Root cause:</text>
+  <text x="490" y="374" style="font-size: 10px; fill: #991B1B;">Too many parameters visible.</text>
+  <text x="490" y="388" style="font-size: 10px; fill: #991B1B;">Users don't know what affects what.</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="650" y1="240" x2="684" y2="240" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 4: Processing -->
+  <rect x="688" y="190" width="170" height="100" rx="10" class="step-box"/>
+  <text x="708" y="216" class="step-title">4. AI Processing</text>
+  <text x="708" y="234" class="step-desc">Wait for AI to</text>
+  <text x="708" y="250" class="step-desc">generate results</text>
+  <rect x="708" y="264" width="60" height="18" rx="4" fill="#FEF3C7"/>
+  <text x="718" y="277" style="font-size: 10px; font-weight: 600; fill: #92400E;">-10%</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="858" y1="240" x2="892" y2="240" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 5: Results — HIGH FRICTION -->
+  <rect x="896" y="180" width="170" height="120" rx="10" class="step-box-problem"/>
+  <rect x="896" y="180" width="170" height="26" rx="10" fill="#DC2626"/>
+  <rect x="896" y="196" width="170" height="10" fill="#DC2626"/>
+  <text x="916" y="198" class="tag">CRITICAL FRICTION</text>
+  <text x="916" y="230" class="step-title">5. Interpret Results</text>
+  <text x="916" y="248" class="step-desc">Understand AI output</text>
+  <text x="916" y="264" class="step-desc">and take action</text>
+  <text x="916" y="288" class="dropoff">-20% drop-off</text>
+
+  <!-- Drop-off annotation arrow -->
+  <line x1="981" y1="300" x2="981" y2="340" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="893" y="340" width="170" height="56" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="907" y="358" style="font-size: 11px; font-weight: 600; fill: #DC2626;">Root cause:</text>
+  <text x="907" y="374" style="font-size: 10px; fill: #991B1B;">AI output feels like a black box.</text>
+  <text x="907" y="388" style="font-size: 10px; fill: #991B1B;">No confidence indicators or rationale.</text>
+
+  <!-- Legend -->
+  <rect x="48" y="430" width="1104" height="50" rx="8" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <circle cx="76" cy="455" r="6" fill="#DC2626"/>
+  <text x="90" y="459" style="font-size: 11px; fill: #6B6B6B;">High friction (>20% drop-off)</text>
+  <circle cx="280" cy="455" r="6" fill="#F59E0B"/>
+  <text x="294" y="459" style="font-size: 11px; fill: #6B6B6B;">Moderate friction (10-20%)</text>
+  <circle cx="490" cy="455" r="6" fill="#16A34A"/>
+  <text x="504" y="459" style="font-size: 11px; fill: #6B6B6B;">Low friction (&lt;10%)</text>
+  <text x="860" y="459" style="font-size: 11px; fill: #999;">Data source: Session recordings, Maze task analysis, analytics</text>
+</svg>

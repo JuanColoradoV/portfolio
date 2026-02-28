@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 24px; font-weight: 700; fill: #1A1A1A; }
+      .metric-label { font-size: 10px; fill: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+      .step { font-size: 12px; font-weight: 500; fill: #1A1A1A; }
+      .time { font-size: 11px; font-weight: 600; }
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#CBD5E1"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="460" rx="16" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="#1A1A1A"/>
+
+  <text x="48" y="44" class="metric-label">DESIGN-TO-DEV HANDOFF</text>
+  <text x="48" y="76" class="title">Handoff Workflow — Before &amp; After</text>
+  <text x="48" y="100" style="font-size: 14px; fill: #6B6B6B;">Design system standardization reduced handoff time by ~30%</text>
+
+  <!-- BEFORE -->
+  <text x="48" y="146" style="font-size: 14px; font-weight: 700; fill: #DC2626;">BEFORE — Ad-hoc handoff process</text>
+  <rect x="48" y="160" width="1104" height="110" rx="12" fill="white" stroke="#FECACA" stroke-width="1"/>
+
+  <!-- Before steps -->
+  <rect x="72" y="180" width="140" height="60" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="82" y="204" class="step">Design in Figma</text>
+  <text x="82" y="222" class="time" fill="#6B6B6B">~2 days</text>
+
+  <line x1="212" y1="210" x2="240" y2="210" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="244" y="180" width="140" height="60" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="254" y="204" class="step">Export specs</text>
+  <text x="254" y="222" class="time" fill="#DC2626">~1 day (manual)</text>
+
+  <line x1="384" y1="210" x2="412" y2="210" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="416" y="180" width="140" height="60" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="426" y="204" class="step">Slack clarifications</text>
+  <text x="426" y="222" class="time" fill="#DC2626">~2 days (back &amp; forth)</text>
+
+  <line x1="556" y1="210" x2="584" y2="210" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="588" y="180" width="140" height="60" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="598" y="204" class="step">Dev implements</text>
+  <text x="598" y="222" class="time" fill="#6B6B6B">~3 days</text>
+
+  <line x1="728" y1="210" x2="756" y2="210" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="760" y="180" width="140" height="60" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="770" y="204" class="step">Design QA review</text>
+  <text x="770" y="222" class="time" fill="#DC2626">~1 day (fix requests)</text>
+
+  <line x1="900" y1="210" x2="928" y2="210" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="932" y="180" width="100" height="60" rx="8" fill="#F2F1EF" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="942" y="204" style="font-size: 12px; font-weight: 700; fill: #6B6B6B;">Total:</text>
+  <text x="942" y="224" style="font-size: 16px; font-weight: 700; fill: #DC2626;">~9 days</text>
+
+  <!-- AFTER -->
+  <text x="48" y="306" style="font-size: 14px; font-weight: 700; fill: #16A34A;">AFTER — Design system-driven handoff</text>
+  <rect x="48" y="320" width="1104" height="110" rx="12" fill="white" stroke="#DCFCE7" stroke-width="1"/>
+
+  <!-- After steps -->
+  <rect x="72" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1"/>
+  <text x="82" y="364" class="step">Design with system</text>
+  <text x="82" y="382" class="time" fill="#16A34A">~1.5 days (reusable)</text>
+
+  <line x1="232" y1="370" x2="260" y2="370" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="264" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1"/>
+  <text x="274" y="364" class="step">Auto specs (Variables)</text>
+  <text x="274" y="382" class="time" fill="#16A34A">~0 days (automated)</text>
+
+  <line x1="424" y1="370" x2="452" y2="370" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="456" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1"/>
+  <text x="466" y="364" class="step">Dev inspects tokens</text>
+  <text x="466" y="382" class="time" fill="#16A34A">~2 days (self-serve)</text>
+
+  <line x1="616" y1="370" x2="644" y2="370" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="648" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1"/>
+  <text x="658" y="364" class="step">Minimal QA (system)</text>
+  <text x="658" y="382" class="time" fill="#16A34A">~0.5 days</text>
+
+  <line x1="808" y1="370" x2="840" y2="370" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="844" y="340" width="120" height="60" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="2"/>
+  <text x="854" y="364" style="font-size: 12px; font-weight: 700; fill: #166534;">Total:</text>
+  <text x="854" y="384" style="font-size: 16px; font-weight: 700; fill: #16A34A;">~6 days</text>
+
+  <!-- Savings callout -->
+  <rect x="1000" y="340" width="130" height="60" rx="12" fill="#1A1A1A"/>
+  <text x="1020" y="366" style="font-size: 20px; font-weight: 700; fill: white;">~30%</text>
+  <text x="1020" y="386" style="font-size: 11px; fill: #999;">time saved</text>
+</svg>
