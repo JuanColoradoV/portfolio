@@ -12,6 +12,37 @@
   <meta property="og:description" content="Senior Product Designer with 10+ years designing AI products, B2B platforms, and enterprise dashboards.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
+  <meta name="theme-color" content="#FAFAF8">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juan David Colorado Vargas",
+    "jobTitle": "Senior Product Designer",
+    "description": "Senior Product Designer with 10+ years designing B2B platforms, AI products, and enterprise dashboards.",
+    "knowsAbout": ["Product Design", "UX Strategy", "Design Systems", "AI/ML Product Design", "SAP Fiori", "Accessibility"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Fundacion Universitaria Bellas Artes"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "CodeBranch"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/juan-david-colorado-vargas-470b20122",
+      "https://behance.net/juancolorado"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Medellin",
+      "addressCountry": "CO"
+    }
+  }
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,8 +61,8 @@
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="#" class="nav__name" aria-label="Juan David Colorado - Home">JDC</a>
-      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'); document.querySelector('.nav__links').classList.toggle('nav__links--open');">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
       <ul class="nav__links">
         <li><a href="#work" class="nav__link nav__link--active">Work</a></li>
@@ -111,7 +142,7 @@
           <!-- Case Study 1: Solving AI -->
           <a href="#case-solving-ai" class="case-card fade-in">
             <div class="case-card__image">
-              <img src="assets/solving-ai/card-cover.svg" alt="A/B test comparison showing validation results for Solving AI design system" style="width:100%;height:100%;object-fit:cover;">
+              <img src="assets/solving-ai/card-cover.svg" alt="A/B test comparison showing validation results for Solving AI design system">
             </div>
             <div class="case-card__content">
               <span class="case-card__company">Solving AI</span>
@@ -140,7 +171,7 @@
           <!-- Case Study 2: Nvidia -->
           <a href="#case-nvidia" class="case-card fade-in">
             <div class="case-card__image">
-              <img src="assets/nvidia/card-cover.svg" alt="Redacted enterprise dashboard wireframe — Nvidia supply chain platform under NDA" style="width:100%;height:100%;object-fit:cover;">
+              <img src="assets/nvidia/card-cover.svg" alt="Redacted enterprise dashboard wireframe — Nvidia supply chain platform under NDA">
             </div>
             <div class="case-card__content">
               <span class="case-card__company">CodeBranch &mdash; Client: Nvidia</span>
@@ -168,7 +199,7 @@
           <!-- Case Study 3: YMA / Smartel -->
           <a href="#case-yma" class="case-card fade-in">
             <div class="case-card__image">
-              <img src="assets/yma/card-cover.svg" alt="AI ecosystem hub-and-spoke architecture for YMA Smartel computer vision platform" style="width:100%;height:100%;object-fit:cover;">
+              <img src="assets/yma/card-cover.svg" alt="AI ecosystem hub-and-spoke architecture for YMA Smartel computer vision platform">
             </div>
             <div class="case-card__content">
               <span class="case-card__company">CodeBranch &mdash; Product: YMA / Smartel</span>
@@ -196,7 +227,7 @@
           <!-- Case Study 4: Bucket.io -->
           <a href="#case-bucket" class="case-card fade-in">
             <div class="case-card__image">
-              <img src="assets/bucket/card-cover.svg" alt="5-step guided funnel for AI-powered blueprint generation at Bucket.io" style="width:100%;height:100%;object-fit:cover;">
+              <img src="assets/bucket/card-cover.svg" alt="5-step guided funnel for AI-powered blueprint generation at Bucket.io">
             </div>
             <div class="case-card__content">
               <span class="case-card__company">Ideaware &mdash; Client: Bucket.io</span>
@@ -226,10 +257,11 @@
     </section>
 
     <!-- ==================== CASE STUDY: SOLVING AI ==================== -->
+    <article>
     <section id="case-solving-ai" class="case-hero">
       <div class="case-hero__inner">
         <a href="#work" class="case-hero__back">&larr; Back to all work</a>
-        <img src="assets/solving-ai/Logo.svg" alt="Solving AI" style="height: 32px; margin-bottom: 8px;">
+        <img src="assets/solving-ai/Logo.svg" alt="Solving AI" class="case-hero__logo" loading="lazy" decoding="async">
         <p class="case-hero__company">Solving AI &mdash; Jun 2024 &ndash; Jun 2025</p>
         <h2 class="case-hero__title">Building a Validation Culture for AI Products</h2>
         <p class="case-hero__subtitle">How I established evidence-based design practices, architected a scalable design system, and improved task comprehension by ~80% through systematic A/B testing.</p>
@@ -257,16 +289,22 @@
 
     <!-- Product Interface: Autopilot Dashboard -->
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: #F2F1EF; border-radius: 12px; overflow: hidden;">
-        <img src="assets/solving-ai/Desktop.jpg" alt="Solving AI Autopilot interface — the product dashboard designed and shipped" style="width: 100%; height: auto; display: block;">
+      <div class="case-image__container case-image__container--contained">
+        <picture>
+          <source srcset="assets/solving-ai/Desktop.webp" type="image/webp">
+          <img src="assets/solving-ai/Desktop.jpg" alt="Solving AI Autopilot interface — the product dashboard designed and shipped" class="case-image__screenshot" loading="lazy" decoding="async">
+        </picture>
       </div>
       <p class="case-image__caption">Solving AI Autopilot dashboard — the production interface I designed for AI-driven task automation</p>
     </div>
 
     <!-- Product Interface: Workflow Builder -->
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: #F2F1EF; border-radius: 12px; overflow: hidden;">
-        <img src="assets/solving-ai/workflow-builder.png" alt="Solving AI node-based workflow builder with code execution, language models, and automation tools" style="width: 100%; height: auto; display: block;">
+      <div class="case-image__container case-image__container--contained">
+        <picture>
+          <source srcset="assets/solving-ai/workflow-builder.webp" type="image/webp">
+          <img src="assets/solving-ai/workflow-builder.png" alt="Solving AI node-based workflow builder with code execution, language models, and automation tools" class="case-image__screenshot" loading="lazy" decoding="async">
+        </picture>
       </div>
       <p class="case-image__caption">Node-based workflow builder — visual programming interface for configuring AI automation pipelines</p>
     </div>
@@ -284,8 +322,8 @@
 
     <!-- User flow drop-off analysis -->
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: transparent;">
-        <img src="assets/solving-ai/user-flow-dropoff.svg" alt="User flow analysis showing drop-off points in the original AI workflow — highest friction at configuration (30%) and results interpretation (20%)" style="width: 100%; height: auto;">
+      <div class="case-image__container case-image__container--transparent">
+        <img src="assets/solving-ai/user-flow-dropoff.svg" alt="User flow analysis showing drop-off points in the original AI workflow — highest friction at configuration (30%) and results interpretation (20%)" class="case-image__diagram" loading="lazy" decoding="async">
       </div>
       <p class="case-image__caption">User flow analysis: drop-off points identified through session recordings and Maze task data</p>
     </div>
@@ -303,8 +341,8 @@
 
     <!-- Maze A/B test results -->
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: transparent;">
-        <img src="assets/solving-ai/maze-results.svg" alt="Maze A/B test results showing ~80% improvement in task comprehension across technical and non-technical user cohorts" style="width: 100%; height: auto;">
+      <div class="case-image__container case-image__container--transparent">
+        <img src="assets/solving-ai/maze-results.svg" alt="Maze A/B test results showing ~80% improvement in task comprehension across technical and non-technical user cohorts" class="case-image__diagram" loading="lazy" decoding="async">
       </div>
       <p class="case-image__caption">Maze A/B test results: ~80% task comprehension improvement validated across user cohorts</p>
     </div>
@@ -322,8 +360,8 @@
 
     <!-- WCAG Audit Results -->
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: transparent;">
-        <img src="assets/solving-ai/wcag-audit.svg" alt="WCAG AA accessibility audit results showing 12 violations resolved across 7 success criteria" style="width: 100%; height: auto;">
+      <div class="case-image__container case-image__container--transparent">
+        <img src="assets/solving-ai/wcag-audit.svg" alt="WCAG AA accessibility audit results showing 12 violations resolved across 7 success criteria" class="case-image__diagram" loading="lazy" decoding="async">
       </div>
       <p class="case-image__caption">WCAG AA compliance achieved: 12 accessibility violations resolved across all critical AI interaction flows</p>
     </div>
@@ -343,8 +381,8 @@
 
     <!-- Handoff comparison -->
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: transparent;">
-        <img src="assets/solving-ai/handoff-comparison.svg" alt="Design-to-dev handoff workflow comparison: before (9 days, manual) vs after (6 days, design system-driven) — 30% time reduction" style="width: 100%; height: auto;">
+      <div class="case-image__container case-image__container--transparent">
+        <img src="assets/solving-ai/handoff-comparison.svg" alt="Design-to-dev handoff workflow comparison: before (9 days, manual) vs after (6 days, design system-driven) — 30% time reduction" class="case-image__diagram" loading="lazy" decoding="async">
       </div>
       <p class="case-image__caption">Handoff workflow transformation: from ad-hoc process (~9 days) to design system-driven (~6 days) — ~30% faster</p>
     </div>
@@ -384,14 +422,16 @@
         <p class="next-project__title">Nvidia Supply Chain Intelligence &rarr;</p>
       </div>
     </a>
+    </article>
 
     <!-- ==================== CASE STUDY: NVIDIA ==================== -->
+    <article>
     <section id="case-nvidia" class="case-hero">
       <div class="case-hero__inner">
         <a href="#work" class="case-hero__back">&larr; Back to all work</a>
 
         <div class="nda-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           Under NDA &mdash; Visuals are anonymized and redacted
         </div>
 
@@ -431,15 +471,18 @@
 
     <!-- Product screenshot: AI welcome + onboarding -->
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: #F2F1EF; border-radius: 12px; overflow: hidden;">
-        <img src="assets/nvidia/ai-welcome-screen.png" alt="AI-powered supply chain analysis tool — welcome screen with guided onboarding and pre-built analysis prompts" style="width: 100%; height: auto; display: block;">
+      <div class="case-image__container case-image__container--contained">
+        <picture>
+          <source srcset="assets/nvidia/ai-welcome-screen.webp" type="image/webp">
+          <img src="assets/nvidia/ai-welcome-screen.png" alt="AI-powered supply chain analysis tool — welcome screen with guided onboarding and pre-built analysis prompts" class="case-image__screenshot" loading="lazy" decoding="async">
+        </picture>
       </div>
       <p class="case-image__caption">AI-powered analysis tool I designed — guided onboarding with pre-built prompts and configurable reasoning levels</p>
     </div>
 
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: transparent;">
-        <img src="assets/nvidia/ia-comparison.svg" alt="Information architecture comparison: flat feature-based navigation restructured into task-oriented decision hierarchy using SAP Fiori patterns" style="width: 100%; height: auto;">
+      <div class="case-image__container case-image__container--transparent">
+        <img src="assets/nvidia/ia-comparison.svg" alt="Information architecture comparison: flat feature-based navigation restructured into task-oriented decision hierarchy using SAP Fiori patterns" class="case-image__diagram" loading="lazy" decoding="async">
       </div>
       <p class="case-image__caption">Information architecture: from flat feature list to task-oriented hierarchy</p>
     </div>
@@ -455,16 +498,19 @@
     </div>
 
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: transparent;">
-        <img src="assets/nvidia/redacted-dashboard.svg" alt="Redacted SAP Fiori dashboard showing KPI cards, trend analysis, and AI recommendation panel — content anonymized under NDA" style="width: 100%; height: auto;">
+      <div class="case-image__container case-image__container--transparent">
+        <img src="assets/nvidia/redacted-dashboard.svg" alt="Redacted SAP Fiori dashboard showing KPI cards, trend analysis, and AI recommendation panel — content anonymized under NDA" class="case-image__diagram" loading="lazy" decoding="async">
       </div>
       <p class="case-image__caption">Restructured dashboard with AI recommendation panel (content redacted under NDA)</p>
     </div>
 
     <!-- Product screenshot: AI response with data table -->
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: #F2F1EF; border-radius: 12px; overflow: hidden;">
-        <img src="assets/nvidia/ai-response-table.png" alt="AI agent response with structured data table, reasoning transparency, and suggested follow-up actions" style="width: 100%; height: auto; display: block;">
+      <div class="case-image__container case-image__container--contained">
+        <picture>
+          <source srcset="assets/nvidia/ai-response-table.webp" type="image/webp">
+          <img src="assets/nvidia/ai-response-table.png" alt="AI agent response with structured data table, reasoning transparency, and suggested follow-up actions" class="case-image__screenshot" loading="lazy" decoding="async">
+        </picture>
       </div>
       <p class="case-image__caption">AI agent response pattern — structured data output with reasoning transparency and contextual follow-up suggestions</p>
     </div>
@@ -502,8 +548,10 @@
         <p class="next-project__title">YMA / Smartel AI Ecosystem &rarr;</p>
       </div>
     </a>
+    </article>
 
     <!-- ==================== CASE STUDY: YMA / SMARTEL ==================== -->
+    <article>
     <section id="case-yma" class="case-hero">
       <div class="case-hero__inner">
         <a href="#work" class="case-hero__back">&larr; Back to all work</a>
@@ -543,8 +591,8 @@
     </div>
 
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: transparent;">
-        <img src="assets/yma/ecosystem-map.svg" alt="YMA Smartel AI ecosystem architecture showing computer vision, mobile app, analytics dashboard, and feedback loops connected through a unified design system" style="width: 100%; height: auto;">
+      <div class="case-image__container case-image__container--transparent">
+        <img src="assets/yma/ecosystem-map.svg" alt="YMA Smartel AI ecosystem architecture showing computer vision, mobile app, analytics dashboard, and feedback loops connected through a unified design system" class="case-image__diagram" loading="lazy" decoding="async">
       </div>
       <p class="case-image__caption">Smartel AI ecosystem: unified design system scaling across all product surfaces</p>
     </div>
@@ -559,8 +607,8 @@
     </div>
 
     <div class="case-image fade-in">
-      <div class="case-image__container">
-        <img src="assets/yma/component-library.svg" alt="Responsive component system showing mobile, tablet, and desktop breakpoint adaptations" style="width:100%;height:auto;">
+      <div class="case-image__container case-image__container--transparent">
+        <img src="assets/yma/component-library.svg" alt="Responsive component system showing mobile, tablet, and desktop breakpoint adaptations" class="case-image__diagram" loading="lazy" decoding="async">
       </div>
       <p class="case-image__caption">Scalable component library with documented responsive behavior, enabling autonomous team contribution</p>
     </div>
@@ -571,12 +619,14 @@
         <p class="next-project__title">Bucket.io &mdash; AI Blueprint Generation &rarr;</p>
       </div>
     </a>
+    </article>
 
     <!-- ==================== CASE STUDY: BUCKET.IO ==================== -->
+    <article>
     <section id="case-bucket" class="case-hero">
       <div class="case-hero__inner">
         <a href="#work" class="case-hero__back">&larr; Back to all work</a>
-        <img src="assets/bucket/Brand.png" alt="Bucket.io" style="height: 36px; margin-bottom: 8px;">
+        <img src="assets/bucket/Brand.png" alt="Bucket.io" class="case-hero__logo case-hero__logo--lg" loading="lazy" decoding="async">
         <p class="case-hero__company">Ideaware &mdash; Client: Bucket.io &mdash; Sep 2023 &ndash; May 2024</p>
         <h2 class="case-hero__title">AI-Powered Blueprint Generation</h2>
         <p class="case-hero__subtitle">Redesigning a complex AI configuration process into an accessible guided funnel &mdash; validated through interactive prototyping before engineering investment.</p>
@@ -604,8 +654,11 @@
 
     <!-- Product Interface: Blueprint Dashboard -->
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: #F2F1EF; border-radius: 12px; overflow: hidden;">
-        <img src="assets/bucket/product-dashboard.png" alt="Bucket.io blueprint dashboard — AI-powered content generation platform with featured templates and blueprint management" style="width: 100%; height: auto; display: block;">
+      <div class="case-image__container case-image__container--contained">
+        <picture>
+          <source srcset="assets/bucket/product-dashboard.webp" type="image/webp">
+          <img src="assets/bucket/product-dashboard.png" alt="Bucket.io blueprint dashboard — AI-powered content generation platform with featured templates and blueprint management" class="case-image__screenshot" loading="lazy" decoding="async">
+        </picture>
       </div>
       <p class="case-image__caption">Bucket.io blueprint dashboard — the AI-powered content generation platform I redesigned</p>
     </div>
@@ -620,8 +673,8 @@
     </div>
 
     <div class="case-image fade-in">
-      <div class="case-image__container" style="aspect-ratio: auto; background: transparent;">
-        <img src="assets/bucket/journey-map.svg" alt="User journey map showing 5 phases with sentiment curve and 3 friction points — 25% abandon at selection, 35% at configuration, 20% at generation" style="width: 100%; height: auto;">
+      <div class="case-image__container case-image__container--transparent">
+        <img src="assets/bucket/journey-map.svg" alt="User journey map showing 5 phases with sentiment curve and 3 friction points — 25% abandon at selection, 35% at configuration, 20% at generation" class="case-image__diagram" loading="lazy" decoding="async">
       </div>
       <p class="case-image__caption">User journey mapping identified three critical friction points driving 80% of total drop-off</p>
     </div>
@@ -637,31 +690,37 @@
     </div>
 
     <div class="case-image fade-in">
-      <div class="case-image__container">
-        <img src="assets/bucket/wireframe-funnel.svg" alt="Guided funnel wireframes — 4-step flow from blueprint selection through configuration, AI generation, and refinement" style="width:100%;height:auto;">
+      <div class="case-image__container case-image__container--transparent">
+        <img src="assets/bucket/wireframe-funnel.svg" alt="Guided funnel wireframes — 4-step flow from blueprint selection through configuration, AI generation, and refinement" class="case-image__diagram" loading="lazy" decoding="async">
       </div>
       <p class="case-image__caption">Wireframes showing the restructured guided funnel: select, configure, generate, refine</p>
     </div>
 
     <!-- Product Interface: Redesigned Templates Grid -->
-    <div class="case-image fade-in" style="margin-top: var(--space-xl);">
-      <div class="case-image__container" style="aspect-ratio: auto; background: #F2F1EF; border-radius: 12px; overflow: hidden;">
-        <img src="assets/bucket/blueprints-grid.png" alt="Redesigned blueprint templates page with category sidebar, search, and organized card grid for quick blueprint selection" style="width: 100%; height: auto; display: block;">
+    <div class="case-image fade-in mt-xl">
+      <div class="case-image__container case-image__container--contained">
+        <picture>
+          <source srcset="assets/bucket/blueprints-grid.webp" type="image/webp">
+          <img src="assets/bucket/blueprints-grid.png" alt="Redesigned blueprint templates page with category sidebar, search, and organized card grid for quick blueprint selection" class="case-image__screenshot" loading="lazy" decoding="async">
+        </picture>
       </div>
       <p class="case-image__caption">Redesigned templates view — category-based navigation with organized blueprint grid for faster selection</p>
     </div>
 
     <!-- Product Interface: Help Guide -->
-    <div class="case-image fade-in" style="margin-top: var(--space-xl);">
-      <div class="case-image__container" style="aspect-ratio: auto; background: #F2F1EF; border-radius: 12px; overflow: hidden;">
-        <img src="assets/bucket/help-guide.png" alt="Integrated help guide with contextual documentation for blueprint creation workflow" style="width: 100%; height: auto; display: block;">
+    <div class="case-image fade-in mt-xl">
+      <div class="case-image__container case-image__container--contained">
+        <picture>
+          <source srcset="assets/bucket/help-guide.webp" type="image/webp">
+          <img src="assets/bucket/help-guide.png" alt="Integrated help guide with contextual documentation for blueprint creation workflow" class="case-image__screenshot" loading="lazy" decoding="async">
+        </picture>
       </div>
       <p class="case-image__caption">Integrated help guide — contextual documentation reducing support requests during blueprint creation</p>
     </div>
 
-    <div class="case-image fade-in" style="margin-top: var(--space-xl);">
-      <div class="case-image__container">
-        <img src="assets/bucket/final-ui-options.svg" alt="Two design options compared — Option A: Guided Simplicity vs Option B: Power Dashboard — for stakeholder evaluation" style="width:100%;height:auto;">
+    <div class="case-image fade-in mt-xl">
+      <div class="case-image__container case-image__container--transparent">
+        <img src="assets/bucket/final-ui-options.svg" alt="Two design options compared — Option A: Guided Simplicity vs Option B: Power Dashboard — for stakeholder evaluation" class="case-image__diagram" loading="lazy" decoding="async">
       </div>
       <p class="case-image__caption">Two design options delivered for stakeholder evaluation, validated through interactive prototyping</p>
     </div>
@@ -672,6 +731,7 @@
         <p class="next-project__title">About me &rarr;</p>
       </div>
     </a>
+    </article>
 
     <!-- ==================== CLIENT LOGOS ==================== -->
     <div class="clients">
@@ -700,7 +760,7 @@
 
         <div class="about-grid">
           <div class="about__image">
-            <span class="about__image-placeholder" style="display: flex; align-items: center; justify-content: center; font-size: 64px; font-weight: 700; color: var(--color-accent); background: var(--color-bg-alt); border-radius: 12px; aspect-ratio: 1; letter-spacing: -2px;">JDC</span>
+            <span class="about__photo-placeholder">JDC</span>
           </div>
 
           <div class="about__content">
@@ -763,7 +823,7 @@
             </div>
 
             <!-- Career Timeline -->
-            <h3 style="margin-top: var(--space-2xl);">Career Timeline</h3>
+            <h3 class="mt-2xl">Career Timeline</h3>
             <div class="timeline">
               <div class="timeline__item timeline__item--current">
                 <span class="timeline__date">Jun 2025 &ndash; Present</span>
@@ -793,7 +853,7 @@
             </div>
 
             <!-- Education -->
-            <h3 style="margin-top: var(--space-2xl);">Education</h3>
+            <h3 class="mt-2xl">Education</h3>
             <div class="timeline">
               <div class="timeline__item">
                 <span class="timeline__date">2007 &ndash; 2011</span>
@@ -809,21 +869,21 @@
     <!-- ==================== CONTACT ==================== -->
     <section id="contact" class="section section--dark">
       <div class="section__inner contact">
-        <p class="section__label" style="color: var(--color-text-light);">Get in Touch</p>
-        <h2 class="contact__title" style="color: var(--color-text-inverse);">Let's work together.</h2>
-        <p class="contact__subtitle" style="color: var(--color-text-light);">Available for Senior/Lead Product Design roles and select freelance engagements.</p>
+        <p class="section__label">Get in Touch</p>
+        <h2 class="contact__title">Let's work together.</h2>
+        <p class="contact__subtitle">Available for Senior/Lead Product Design roles and select freelance engagements.</p>
 
         <div class="contact__links">
-          <a href="mailto:juancolorado87@gmail.com" class="contact__link" style="color: var(--color-text-inverse); border-color: rgba(255,255,255,0.2);">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:juancolorado87@gmail.com" class="contact__link contact__link--dark">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             juancolorado87@gmail.com
           </a>
-          <a href="https://linkedin.com/in/juan-david-colorado-vargas-470b20122" target="_blank" rel="noopener" class="contact__link" style="color: var(--color-text-inverse); border-color: rgba(255,255,255,0.2);">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <a href="https://linkedin.com/in/juan-david-colorado-vargas-470b20122" target="_blank" rel="noopener" class="contact__link contact__link--dark">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             LinkedIn
           </a>
-          <a href="https://behance.net/juancolorado" target="_blank" rel="noopener" class="contact__link" style="color: var(--color-text-inverse); border-color: rgba(255,255,255,0.2);">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
+          <a href="https://behance.net/juancolorado" target="_blank" rel="noopener" class="contact__link contact__link--dark">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
             Behance
           </a>
         </div>
