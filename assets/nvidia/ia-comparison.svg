@@ -1,129 +1,133 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
-  <rect width="1200" height="540" rx="16" fill="#FAFAF8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif">
+  <rect width="1200" height="560" rx="16" fill="#FAFAF8"/>
   <rect x="0" y="0" width="1200" height="4" rx="2" fill="#1A1A1A"/>
 
   <!-- Header -->
-  <text x="48" y="40" style="font-size: 10px; fill: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">INFORMATION ARCHITECTURE RESTRUCTURE</text>
-  <text x="48" y="72" style="font-size: 22px; font-weight: 700; fill: #1A1A1A;">From Flat Navigation to Task-Oriented Hierarchy</text>
+  <text x="48" y="40" font-size="10" font-weight="600" fill="#999" letter-spacing="1">INFORMATION ARCHITECTURE RESTRUCTURE</text>
+  <text x="48" y="74" font-size="22" font-weight="700" fill="#1A1A1A">From Flat Navigation to Task-Oriented Hierarchy</text>
 
-  <!-- ============ BEFORE SIDE ============ -->
-  <text x="48" y="112" style="font-size: 13px; font-weight: 700; fill: #DC2626;">Before</text>
-  <text x="100" y="112" style="font-size: 13px; font-weight: 500; fill: #6B6B6B;">Flat feature-based navigation</text>
+  <!-- ===== BEFORE PANEL ===== -->
+  <text x="48" y="112" font-size="13" font-weight="700" fill="#DC2626">Before</text>
+  <text x="102" y="112" font-size="13" font-weight="500" fill="#6B6B6B">Flat feature-based navigation</text>
 
   <rect x="48" y="128" width="510" height="340" rx="12" fill="white" stroke="#FECACA" stroke-width="1.5"/>
+  <text x="78" y="158" font-size="11" fill="#999">All features at same level &#x2014; no grouping or priority</text>
 
-  <!-- Subtitle inside panel -->
-  <text x="72" y="156" style="font-size: 11px; fill: #999;">All features at same level &#x2014; no grouping or priority</text>
+  <!-- Grid Row 1 -->
+  <rect x="78" y="176" width="140" height="42" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="148" y="202" text-anchor="middle" font-size="12" font-weight="500" fill="#1A1A1A">Feature A</text>
 
-  <!-- 3x3 grid of feature boxes, centered text -->
-  <!-- Row 1 -->
-  <rect x="72" y="172" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="146" y="199" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature A</text>
+  <rect x="233" y="176" width="140" height="42" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="303" y="202" text-anchor="middle" font-size="12" font-weight="500" fill="#1A1A1A">Feature B</text>
 
-  <rect x="232" y="172" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="306" y="199" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature B</text>
+  <rect x="388" y="176" width="140" height="42" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="458" y="202" text-anchor="middle" font-size="12" font-weight="500" fill="#1A1A1A">Feature C</text>
 
-  <rect x="392" y="172" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="466" y="199" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature C</text>
+  <!-- Grid Row 2 -->
+  <rect x="78" y="230" width="140" height="42" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="148" y="256" text-anchor="middle" font-size="12" font-weight="500" fill="#1A1A1A">Feature D</text>
 
-  <!-- Row 2 -->
-  <rect x="72" y="228" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="146" y="255" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature D</text>
+  <rect x="233" y="230" width="140" height="42" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="303" y="256" text-anchor="middle" font-size="12" font-weight="500" fill="#1A1A1A">Feature E</text>
 
-  <rect x="232" y="228" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="306" y="255" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature E</text>
+  <rect x="388" y="230" width="140" height="42" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="458" y="256" text-anchor="middle" font-size="12" font-weight="500" fill="#1A1A1A">Feature F</text>
 
-  <rect x="392" y="228" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="466" y="255" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Feature F</text>
+  <!-- Grid Row 3 -->
+  <rect x="78" y="284" width="140" height="42" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="148" y="310" text-anchor="middle" font-size="12" font-weight="500" fill="#1A1A1A">AI Module 1</text>
 
-  <!-- Row 3 -->
-  <rect x="72" y="284" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="146" y="311" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">AI Module 1</text>
+  <rect x="233" y="284" width="140" height="42" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="303" y="310" text-anchor="middle" font-size="12" font-weight="500" fill="#1A1A1A">AI Module 2</text>
 
-  <rect x="232" y="284" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="306" y="311" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">AI Module 2</text>
-
-  <rect x="392" y="284" width="148" height="44" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
-  <text x="466" y="311" text-anchor="middle" style="font-size: 12px; font-weight: 500; fill: #1A1A1A;">Reports</text>
+  <rect x="388" y="284" width="140" height="42" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="458" y="310" text-anchor="middle" font-size="12" font-weight="500" fill="#1A1A1A">Reports</text>
 
   <!-- Problem callout -->
-  <rect x="72" y="348" width="468" height="52" rx="8" fill="#FEF2F2"/>
-  <text x="88" y="370" style="font-size: 11px; font-weight: 700; fill: #DC2626;">Problem</text>
-  <text x="88" y="388" style="font-size: 11px; fill: #991B1B;">No hierarchy. Users must know exactly what they need before navigating.</text>
+  <rect x="78" y="350" width="450" height="52" rx="8" fill="#FEF2F2"/>
+  <text x="96" y="372" font-size="11" font-weight="700" fill="#DC2626">Problem</text>
+  <text x="96" y="390" font-size="11" fill="#991B1B">No hierarchy. Users must know exactly what they need before navigating.</text>
 
-  <!-- ============ ARROW ============ -->
-  <rect x="574" y="270" width="52" height="32" rx="16" fill="#1A1A1A"/>
-  <text x="600" y="291" text-anchor="middle" style="font-size: 16px; font-weight: 700; fill: white;">&#x2192;</text>
+  <!-- ===== ARROW ===== -->
+  <rect x="572" y="278" width="56" height="36" rx="18" fill="#1A1A1A"/>
+  <text x="600" y="302" text-anchor="middle" font-size="18" font-weight="700" fill="white">&#x2192;</text>
 
-  <!-- ============ AFTER SIDE ============ -->
-  <text x="642" y="112" style="font-size: 13px; font-weight: 700; fill: #16A34A;">After</text>
-  <text x="686" y="112" style="font-size: 13px; font-weight: 500; fill: #6B6B6B;">Task-oriented decision hierarchy</text>
+  <!-- ===== AFTER PANEL ===== -->
+  <text x="642" y="112" font-size="13" font-weight="700" fill="#16A34A">After</text>
+  <text x="688" y="112" font-size="13" font-weight="500" fill="#6B6B6B">Task-oriented decision hierarchy</text>
 
   <rect x="642" y="128" width="510" height="340" rx="12" fill="white" stroke="#DCFCE7" stroke-width="1.5"/>
+  <text x="672" y="158" font-size="11" fill="#999">Users navigate by decision type &#x2014; matches mental model</text>
 
-  <!-- Subtitle inside panel -->
-  <text x="666" y="156" style="font-size: 11px; fill: #999;">Users navigate by decision type &#x2014; matches mental model</text>
+  <!-- Hub -->
+  <rect x="797" y="174" width="200" height="44" rx="10" fill="#1A1A1A"/>
+  <text x="897" y="201" text-anchor="middle" font-size="13" font-weight="600" fill="white">Supply Chain Hub</text>
 
-  <!-- Level 0: Hub -->
-  <rect x="822" y="172" width="200" height="44" rx="10" fill="#1A1A1A"/>
-  <text x="922" y="199" text-anchor="middle" style="font-size: 13px; font-weight: 600; fill: white;">Supply Chain Hub</text>
+  <!-- Hub to Branches: org-chart connectors -->
+  <line x1="897" y1="218" x2="897" y2="236" stroke="#16A34A" stroke-width="2"/>
+  <line x1="730" y1="236" x2="1064" y2="236" stroke="#16A34A" stroke-width="2"/>
+  <line x1="730" y1="236" x2="730" y2="256" stroke="#16A34A" stroke-width="2"/>
+  <line x1="897" y1="236" x2="897" y2="256" stroke="#16A34A" stroke-width="2"/>
+  <line x1="1064" y1="236" x2="1064" y2="256" stroke="#16A34A" stroke-width="2"/>
 
-  <!-- Connector lines from hub to 3 branches -->
-  <line x1="872" y1="216" x2="746" y2="248" stroke="#16A34A" stroke-width="2"/>
-  <line x1="922" y1="216" x2="922" y2="248" stroke="#16A34A" stroke-width="2"/>
-  <line x1="972" y1="216" x2="1098" y2="248" stroke="#16A34A" stroke-width="2"/>
+  <!-- Branches -->
+  <rect x="660" y="256" width="140" height="38" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="730" y="280" text-anchor="middle" font-size="12" font-weight="600" fill="#166534">Needs Attention</text>
 
-  <!-- Level 1: Three decision branches -->
-  <!-- Branch 1: Needs Attention -->
-  <rect x="676" y="248" width="140" height="40" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="746" y="273" text-anchor="middle" style="font-size: 12px; font-weight: 600; fill: #166534;">Needs Attention</text>
+  <rect x="827" y="256" width="140" height="38" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="897" y="280" text-anchor="middle" font-size="12" font-weight="600" fill="#166534">Current Status</text>
 
-  <!-- Branch 2: Current Status -->
-  <rect x="852" y="248" width="140" height="40" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="922" y="273" text-anchor="middle" style="font-size: 12px; font-weight: 600; fill: #166534;">Current Status</text>
+  <rect x="994" y="256" width="140" height="38" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="1064" y="280" text-anchor="middle" font-size="12" font-weight="600" fill="#166534">Take Action</text>
 
-  <!-- Branch 3: Take Action -->
-  <rect x="1028" y="248" width="140" height="40" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
-  <text x="1098" y="273" text-anchor="middle" style="font-size: 12px; font-weight: 600; fill: #166534;">Take Action</text>
+  <!-- Branch 1 to Leaves connectors (center=730) -->
+  <line x1="730" y1="294" x2="730" y2="312" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="692" y1="312" x2="768" y2="312" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="692" y1="312" x2="692" y2="330" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="768" y1="312" x2="768" y2="330" stroke="#CBD5E1" stroke-width="1.5"/>
 
-  <!-- Level 2 connectors -->
-  <!-- Branch 1 children -->
-  <line x1="722" y1="288" x2="706" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
-  <line x1="770" y1="288" x2="786" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
-  <!-- Branch 2 children -->
-  <line x1="898" y1="288" x2="882" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
-  <line x1="946" y1="288" x2="962" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
-  <!-- Branch 3 children -->
-  <line x1="1074" y1="288" x2="1058" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
-  <line x1="1122" y1="288" x2="1138" y2="316" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- Branch 2 to Leaves connectors (center=897) -->
+  <line x1="897" y1="294" x2="897" y2="312" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="859" y1="312" x2="935" y2="312" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="859" y1="312" x2="859" y2="330" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="935" y1="312" x2="935" y2="330" stroke="#CBD5E1" stroke-width="1.5"/>
 
-  <!-- Level 2 leaf nodes -->
+  <!-- Branch 3 to Leaves connectors (center=1064) -->
+  <line x1="1064" y1="294" x2="1064" y2="312" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="1026" y1="312" x2="1102" y2="312" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="1026" y1="312" x2="1026" y2="330" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="1102" y1="312" x2="1102" y2="330" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Leaf nodes -->
   <!-- Branch 1 leaves -->
-  <rect x="670" y="316" width="72" height="32" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
-  <text x="706" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #1E40AF;">Alerts</text>
-  <rect x="750" y="316" width="72" height="32" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
-  <text x="786" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #1E40AF;">AI Flags</text>
+  <rect x="656" y="330" width="72" height="30" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="692" y="350" text-anchor="middle" font-size="10" font-weight="500" fill="#1E40AF">Alerts</text>
+
+  <rect x="732" y="330" width="72" height="30" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="768" y="350" text-anchor="middle" font-size="10" font-weight="500" fill="#1E40AF">AI Flags</text>
 
   <!-- Branch 2 leaves -->
-  <rect x="846" y="316" width="72" height="32" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="882" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #6B6B6B;">KPIs</text>
-  <rect x="926" y="316" width="72" height="32" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="962" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #6B6B6B;">Trends</text>
+  <rect x="823" y="330" width="72" height="30" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="859" y="350" text-anchor="middle" font-size="10" font-weight="500" fill="#6B6B6B">KPIs</text>
+
+  <rect x="899" y="330" width="72" height="30" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="935" y="350" text-anchor="middle" font-size="10" font-weight="500" fill="#6B6B6B">Trends</text>
 
   <!-- Branch 3 leaves -->
-  <rect x="1022" y="316" width="72" height="32" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="1058" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #6B6B6B;">Orders</text>
-  <rect x="1102" y="316" width="72" height="32" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="1138" y="337" text-anchor="middle" style="font-size: 10px; font-weight: 500; fill: #6B6B6B;">Reports</text>
+  <rect x="990" y="330" width="72" height="30" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="1026" y="350" text-anchor="middle" font-size="10" font-weight="500" fill="#6B6B6B">Orders</text>
+
+  <rect x="1066" y="330" width="72" height="30" rx="6" fill="#FAFAF8" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="1102" y="350" text-anchor="middle" font-size="10" font-weight="500" fill="#6B6B6B">Reports</text>
 
   <!-- SAP Fiori callout -->
-  <rect x="666" y="368" width="468" height="52" rx="8" fill="#F0FDF4"/>
-  <text x="682" y="390" style="font-size: 11px; font-weight: 700; fill: #166534;">SAP Fiori patterns applied</text>
-  <text x="682" y="408" style="font-size: 11px; fill: #166534;">Overview Page &#x2192; Object Page &#x2192; List Report</text>
+  <rect x="672" y="386" width="450" height="52" rx="8" fill="#F0FDF4"/>
+  <text x="690" y="408" font-size="11" font-weight="700" fill="#166534">SAP Fiori patterns applied</text>
+  <text x="690" y="426" font-size="11" fill="#166534">Overview Page &#x2192; Object Page &#x2192; List Report</text>
 
   <!-- Bottom summary bar -->
-  <rect x="48" y="488" width="1104" height="36" rx="8" fill="white" stroke="#E5E5E3" stroke-width="1"/>
-  <rect x="48" y="488" width="4" height="36" rx="2" fill="#1A1A1A"/>
-  <text x="72" y="511" style="font-size: 11px; font-weight: 600; fill: #1A1A1A;">Result:</text>
-  <text x="124" y="511" style="font-size: 11px; fill: #6B6B6B;">Users navigate by decision type instead of feature name &#x2014; reducing cognitive load and improving task completion by ~90%</text>
+  <rect x="48" y="490" width="1104" height="40" rx="8" fill="white" stroke="#E5E5E3" stroke-width="1"/>
+  <rect x="48" y="490" width="4" height="40" rx="2" fill="#1A1A1A"/>
+  <text x="72" y="515" font-size="11" font-weight="600" fill="#1A1A1A">Result:</text>
+  <text x="124" y="515" font-size="11" fill="#6B6B6B">Users navigate by decision type instead of feature name &#x2014; reducing cognitive load and improving task completion by ~90%</text>
 </svg>
