@@ -859,40 +859,8 @@ a:focus-visible {
 }
 
 /* --- ABOUT --- */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: var(--space-2xl);
-  align-items: start;
-}
-
-.about__image {
-  aspect-ratio: 1;
-  background: var(--color-bg-alt);
-  border-radius: 12px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about__image-placeholder {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--color-text-light);
-}
-
-.about__photo-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 64px;
-  font-weight: 700;
-  color: var(--color-accent);
-  background: var(--color-bg-alt);
-  border-radius: 12px;
-  aspect-ratio: 1;
-  letter-spacing: -2px;
+.about__content {
+  max-width: 800px;
 }
 
 .about__content h3 {
@@ -1016,6 +984,74 @@ a:focus-visible {
 .timeline__company {
   font-size: 0.875rem;
   color: var(--color-text-secondary);
+}
+
+/* Certifications grid */
+.certs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-bg-dark);
+  border-radius: 8px;
+  transition: background var(--transition-fast);
+}
+
+.cert-item:hover {
+  background: var(--color-bg-dark-hover);
+}
+
+.cert-item__icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.cert-item__icon--platzi {
+  background: #98CA3F;
+  color: #1A1A1A;
+}
+
+.cert-item__icon--nvidia {
+  background: #76B900;
+  color: #1A1A1A;
+}
+
+.cert-item__icon--ef {
+  background: #0052CC;
+}
+
+.cert-item__info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.cert-item__name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-inverse);
+  line-height: 1.3;
+}
+
+.cert-item__source {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  margin-top: 2px;
 }
 
 /* --- CONTACT --- */
@@ -1208,13 +1244,8 @@ a:focus-visible {
     min-width: 140px;
   }
 
-  .about-grid {
+  .certs-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-xl);
-  }
-
-  .about__image {
-    max-width: 240px;
   }
 
   .metrics-row {
