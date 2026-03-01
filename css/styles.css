@@ -191,6 +191,14 @@ a:focus-visible {
   max-width: var(--max-width);
   margin: 0 auto;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.hero__content {
+  min-width: 0;
 }
 
 .hero__label {
@@ -203,20 +211,19 @@ a:focus-visible {
 }
 
 .hero__title {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.5rem, 5.5vw, 4rem);
   font-weight: 700;
-  line-height: 1.08;
+  line-height: 1.05;
   letter-spacing: -0.03em;
   color: var(--color-text);
   margin-bottom: var(--space-xl);
-  max-width: 900px;
 }
 
 .hero__subtitle {
   font-size: clamp(1.125rem, 2vw, 1.375rem);
   line-height: 1.6;
   color: var(--color-text-secondary);
-  max-width: 640px;
+  max-width: 600px;
   margin-bottom: var(--space-2xl);
 }
 
@@ -258,6 +265,77 @@ a:focus-visible {
   background: var(--color-bg-dark-hover);
   color: var(--color-text-inverse);
   transform: translateY(-1px);
+}
+
+/* Hero — right column stats */
+.hero__visual {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.hero__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.hero__stat {
+  padding: var(--space-lg) 0;
+}
+
+.hero__stat:first-child {
+  padding-top: 0;
+}
+
+.hero__stat:last-child {
+  padding-bottom: 0;
+}
+
+.hero__stat-number {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  line-height: 1;
+  margin-bottom: var(--space-xs);
+}
+
+.hero__stat-label {
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+  line-height: 1.4;
+}
+
+.hero__stat-divider {
+  height: 1px;
+  background: var(--color-border);
+}
+
+.hero__clients {
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.hero__clients-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-text-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+
+.hero__clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-lg);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
 }
 
 .hero__scroll {
@@ -1087,6 +1165,49 @@ a:focus-visible {
     direction: ltr;
   }
 
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .hero__visual {
+    flex-direction: row;
+    gap: var(--space-xl);
+  }
+
+  .hero__stats {
+    flex-direction: row;
+    flex: 1;
+    gap: 0;
+  }
+
+  .hero__stat {
+    flex: 1;
+    padding: 0 var(--space-lg);
+  }
+
+  .hero__stat:first-child {
+    padding-left: 0;
+  }
+
+  .hero__stat:last-child {
+    padding-right: 0;
+  }
+
+  .hero__stat-divider {
+    width: 1px;
+    height: auto;
+    align-self: stretch;
+  }
+
+  .hero__clients {
+    border-top: none;
+    border-left: 1px solid var(--color-border);
+    padding-top: 0;
+    padding-left: var(--space-xl);
+    min-width: 140px;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
@@ -1130,6 +1251,31 @@ a:focus-visible {
 
   .hero__title {
     font-size: 2.25rem;
+  }
+
+  .hero__visual {
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+
+  .hero__stats {
+    flex-direction: column;
+  }
+
+  .hero__stat {
+    padding: var(--space-md) 0;
+  }
+
+  .hero__stat-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .hero__clients {
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+    padding-left: 0;
+    padding-top: var(--space-lg);
   }
 
   .case-card {
@@ -1202,7 +1348,8 @@ a:focus-visible {
 .hero__title,
 .hero__subtitle,
 .hero__meta,
-.hero__cta {
+.hero__cta,
+.hero__visual {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -1222,4 +1369,7 @@ a:focus-visible {
 }
 .hero--loaded .hero__cta {
   opacity: 1; transform: translateY(0); transition-delay: 0.7s;
+}
+.hero--loaded .hero__visual {
+  opacity: 1; transform: translateY(0); transition-delay: 0.5s;
 }
