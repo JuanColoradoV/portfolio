@@ -48,27 +48,55 @@
     <!-- ==================== HERO ==================== -->
     <section class="hero">
       <div class="hero__inner">
-        <p class="hero__label">Senior Product Designer & Design Lead</p>
-        <h1 class="hero__title">Designing clarity<br>for complex systems.</h1>
-        <p class="hero__subtitle">I architect B2B platforms, AI products, and enterprise dashboards that transform dense workflows into clear, data-validated interfaces. 10+ years bridging design and engineering.</p>
-        <div class="hero__meta">
-          <span class="hero__meta-item">
-            <svg class="hero__meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Medell&iacute;n, Colombia
-          </span>
-          <span class="hero__meta-item">
-            <svg class="hero__meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-            Currently at CodeBranch
-          </span>
-          <span class="hero__meta-item">
-            <svg class="hero__meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Available for opportunities
-          </span>
+        <div class="hero__content">
+          <p class="hero__label">Senior Product Designer & Design Lead</p>
+          <h1 class="hero__title">Designing clarity<br>for complex systems.</h1>
+          <p class="hero__subtitle">I architect B2B platforms, AI products, and enterprise dashboards that transform dense workflows into clear, data-validated interfaces. 10+ years bridging design and engineering.</p>
+          <div class="hero__meta">
+            <span class="hero__meta-item">
+              <svg class="hero__meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Medell&iacute;n, Colombia
+            </span>
+            <span class="hero__meta-item">
+              <svg class="hero__meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              Currently at CodeBranch
+            </span>
+            <span class="hero__meta-item">
+              <svg class="hero__meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Available for opportunities
+            </span>
+          </div>
+          <a href="#work" class="hero__cta">
+            View selected work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
         </div>
-        <a href="#work" class="hero__cta">
-          View selected work
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
+        <div class="hero__visual">
+          <div class="hero__grid">
+            <div class="hero__card hero__card--dark">
+              <span class="hero__card-number">10+</span>
+              <div class="hero__card-divider"></div>
+              <span class="hero__card-text">Years bridging design &amp; engineering</span>
+            </div>
+            <div class="hero__card">
+              <span class="hero__card-value">~80%</span>
+              <span class="hero__card-desc">Task comprehension improvement</span>
+            </div>
+            <div class="hero__card">
+              <span class="hero__card-value">~90%</span>
+              <span class="hero__card-desc">Usability improvement</span>
+            </div>
+            <div class="hero__card hero__card--wide">
+              <span class="hero__card-caption">Notable clients</span>
+              <div class="hero__card-clients">
+                <span>Nvidia</span>
+                <span>DISH</span>
+                <span>Milwaukee Tool</span>
+                <span>Bucket.io</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -910,9 +938,33 @@
         });
       });
 
-      // --- Hero entrance animation ---
+      // --- Hero entrance animation + counter ---
       window.addEventListener('load', () => {
-        document.querySelector('.hero')?.classList.add('hero--loaded');
+        const hero = document.querySelector('.hero');
+        if (!hero) return;
+        hero.classList.add('hero--loaded');
+
+        // Animate stat counters after cards become visible
+        setTimeout(() => {
+          document.querySelectorAll('.hero__card-number, .hero__card-value').forEach(el => {
+            const text = el.textContent.trim();
+            const match = text.match(/^([~]?)(\d+)([+%]?)$/);
+            if (!match) return;
+            const prefix = match[1];
+            const target = parseInt(match[2], 10);
+            const suffix = match[3];
+            const duration = 1200;
+            const start = performance.now();
+            el.textContent = prefix + '0' + suffix;
+            function tick(now) {
+              const p = Math.min((now - start) / duration, 1);
+              const eased = 1 - Math.pow(1 - p, 3);
+              el.textContent = prefix + Math.round(eased * target) + suffix;
+              if (p < 1) requestAnimationFrame(tick);
+            }
+            requestAnimationFrame(tick);
+          });
+        }, 600);
       });
     })();
   </script>
