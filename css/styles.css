@@ -413,6 +413,51 @@ a:focus-visible {
   gap: var(--space-xl);
 }
 
+/* Behance CTA in work section */
+.work-cta {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-lg);
+  border: 1px dashed var(--color-border);
+  border-radius: 12px;
+  background: transparent;
+}
+
+.work-cta__text {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-text-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+
+.work-cta__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 12px 24px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.work-cta__link:hover {
+  border-color: var(--color-text);
+  color: var(--color-text);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.work-cta__link svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
 .case-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -901,6 +946,103 @@ a:focus-visible {
   margin-bottom: 0;
 }
 
+/* Testimonials */
+.testimonials__heading {
+  font-size: 0.6875rem;
+  font-family: var(--font-mono);
+  color: var(--color-text-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-lg);
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.testimonial-card {
+  padding: var(--space-xl);
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  border-left: 3px solid var(--color-accent);
+}
+
+.testimonial-card__quote {
+  font-size: 0.9375rem;
+  font-style: italic;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+.testimonial-card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testimonial-card__name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.testimonial-card__role {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+/* Leadership callouts (case studies) */
+.leadership-callout {
+  padding: var(--space-xl);
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  border-left: 3px solid var(--color-accent);
+}
+
+.leadership-callout__title {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-lg);
+}
+
+.leadership-callout__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.leadership-callout__list li {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  padding-left: var(--space-lg);
+  position: relative;
+}
+
+.leadership-callout__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.leadership-callout__list li strong {
+  color: var(--color-text);
+}
+
 /* Skills grid */
 .skills-grid {
   display: grid;
@@ -990,7 +1132,7 @@ a:focus-visible {
 /* Languages grid */
 .languages-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-sm);
   margin-top: var(--space-lg);
 }
@@ -1274,10 +1416,6 @@ a:focus-visible {
     min-width: 140px;
   }
 
-  .languages-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .certs-grid {
     grid-template-columns: 1fr;
   }
@@ -1377,6 +1515,10 @@ a:focus-visible {
 
   .clients__grid {
     gap: var(--space-lg) var(--space-xl);
+  }
+
+  .languages-grid {
+    grid-template-columns: 1fr;
   }
 }
 
