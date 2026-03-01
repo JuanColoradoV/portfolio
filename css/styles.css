@@ -1091,6 +1091,35 @@ a:focus-visible {
   color: var(--color-text-secondary);
 }
 
+/* Languages grid */
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.language-item {
+  text-align: center;
+  padding: var(--space-lg) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.language-item__name {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.language-item__level {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
 /* Certifications grid */
 .certs-grid {
   display: grid;
@@ -1352,6 +1381,10 @@ a:focus-visible {
     padding-top: 0;
     padding-left: var(--space-xl);
     min-width: 140px;
+  }
+
+  .languages-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .certs-grid {
