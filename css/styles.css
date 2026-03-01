@@ -26,6 +26,11 @@
   --color-metric: #0F172A;
   --color-metric-bar: #2563EB;
   --color-nda: #F59E0B;
+  --color-nda-bg: #FEF3C7;
+  --color-nda-text: #92400E;
+  --color-nda-border: #FDE68A;
+  --color-nav-bg: rgba(250, 250, 248, 0.92);
+  --color-bg-dark-hover: #333333;
 
   /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -113,7 +118,7 @@ a:focus-visible {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(250, 250, 248, 0.92);
+  background: var(--color-nav-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border-light);
@@ -250,7 +255,7 @@ a:focus-visible {
 }
 
 .hero__cta:hover {
-  background: #333;
+  background: var(--color-bg-dark-hover);
   color: var(--color-text-inverse);
   transform: translateY(-1px);
 }
@@ -458,8 +463,8 @@ a:focus-visible {
 }
 
 .tag--nda {
-  background: #FEF3C7;
-  color: #92400E;
+  background: var(--color-nda-bg);
+  color: var(--color-nda-text);
 }
 
 .case-card__arrow {
@@ -627,6 +632,42 @@ a:focus-visible {
   font-style: italic;
 }
 
+/* Case image container variants */
+.case-image__container--contained {
+  aspect-ratio: auto;
+  background: var(--color-bg-alt);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.case-image__container--transparent {
+  aspect-ratio: auto;
+  background: transparent;
+}
+
+/* Screenshot images inside containers */
+.case-image__screenshot {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* SVG diagram images inside containers */
+.case-image__diagram {
+  width: 100%;
+  height: auto;
+}
+
+/* Logo images in case study heroes */
+.case-hero__logo {
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.case-hero__logo--lg {
+  height: 36px;
+}
+
 /* --- METRICS ROW --- */
 .metrics-row {
   display: grid;
@@ -683,12 +724,12 @@ a:focus-visible {
   align-items: center;
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-md);
-  background: #FEF3C7;
-  border: 1px solid #FDE68A;
+  background: var(--color-nda-bg);
+  border: 1px solid var(--color-nda-border);
   border-radius: 6px;
   font-size: 0.75rem;
   font-weight: 600;
-  color: #92400E;
+  color: var(--color-nda-text);
   margin-bottom: var(--space-lg);
 }
 
@@ -761,6 +802,19 @@ a:focus-visible {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--color-text-light);
+}
+
+.about__photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--color-accent);
+  background: var(--color-bg-alt);
+  border-radius: 12px;
+  aspect-ratio: 1;
+  letter-spacing: -2px;
 }
 
 .about__content h3 {
@@ -937,6 +991,24 @@ a:focus-visible {
 .contact__link svg {
   width: 18px;
   height: 18px;
+}
+
+.section--dark .contact__title {
+  color: var(--color-text-inverse);
+}
+
+.section--dark .contact__subtitle {
+  color: var(--color-text-light);
+}
+
+.contact__link--dark {
+  color: var(--color-text-inverse);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact__link--dark:hover {
+  color: var(--color-text-inverse);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 /* --- FOOTER --- */
@@ -1120,6 +1192,10 @@ a:focus-visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Spacing utilities */
+.mt-xl { margin-top: var(--space-xl); }
+.mt-2xl { margin-top: var(--space-2xl); }
 
 /* Hero entrance animation */
 .hero__label,
