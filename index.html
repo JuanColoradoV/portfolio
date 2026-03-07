@@ -54,6 +54,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="loading">
+  <noscript><style>body.loading{opacity:1!important}</style></noscript>
 
   <!-- Skip Link -->
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -61,7 +62,7 @@
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="#" class="nav__name" aria-label="Juan David Colorado - Home">JDC</a>
+      <a href="#main" class="nav__name" aria-label="Juan David Colorado - Home">JDC</a>
       <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -69,7 +70,7 @@
         <li><a href="#work" class="nav__link nav__link--active">Work</a></li>
         <li><a href="#about" class="nav__link">About</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
-        <li><a href="assets/Juan_David_Colorado_CV.pdf" class="nav__link" target="_blank" rel="noopener">Resume</a></li>
+        <li><a href="assets/Juan_David_Colorado_CV.pdf" class="nav__link" target="_blank" rel="noopener noreferrer">Resume</a></li>
       </ul>
     </div>
   </nav>
@@ -145,7 +146,7 @@
           <!-- Case Study 1: Solving AI -->
           <a href="#case-solving-ai" class="case-card fade-in">
             <div class="case-card__image">
-              <img src="assets/solving-ai/card-cover.svg" alt="A/B test comparison showing validation results for Solving AI design system">
+              <img src="assets/solving-ai/card-cover.svg" alt="A/B test comparison showing validation results for Solving AI design system" width="800" height="500">
             </div>
             <div class="case-card__content">
               <span class="case-card__company">Solving AI</span>
@@ -174,7 +175,7 @@
           <!-- Case Study 2: Nvidia -->
           <a href="#case-nvidia" class="case-card fade-in">
             <div class="case-card__image">
-              <img src="assets/nvidia/card-cover.svg" alt="Redacted enterprise dashboard wireframe — Nvidia supply chain platform under NDA">
+              <img src="assets/nvidia/card-cover.svg" alt="Redacted enterprise dashboard wireframe — Nvidia supply chain platform under NDA" width="800" height="500">
             </div>
             <div class="case-card__content">
               <span class="case-card__company">CodeBranch &mdash; Client: Nvidia</span>
@@ -202,7 +203,7 @@
           <!-- Case Study 3: YMA / Smartel -->
           <a href="#case-yma" class="case-card fade-in">
             <div class="case-card__image">
-              <img src="assets/yma/card-cover.svg" alt="AI ecosystem hub-and-spoke architecture for YMA Smartel computer vision platform">
+              <img src="assets/yma/card-cover.svg" alt="AI ecosystem hub-and-spoke architecture for YMA Smartel computer vision platform" width="800" height="500">
             </div>
             <div class="case-card__content">
               <span class="case-card__company">CodeBranch &mdash; Product: YMA / Smartel</span>
@@ -230,7 +231,7 @@
           <!-- Case Study 4: Bucket.io -->
           <a href="#case-bucket" class="case-card fade-in">
             <div class="case-card__image">
-              <img src="assets/bucket/card-cover.svg" alt="5-step guided funnel for AI-powered blueprint generation at Bucket.io">
+              <img src="assets/bucket/card-cover.svg" alt="5-step guided funnel for AI-powered blueprint generation at Bucket.io" width="800" height="500">
             </div>
             <div class="case-card__content">
               <span class="case-card__company">Ideaware &mdash; Client: Bucket.io</span>
@@ -258,7 +259,7 @@
           <!-- Behance CTA -->
           <div class="work-cta fade-in">
             <p class="work-cta__text">Additional projects available</p>
-            <a href="https://behance.net/juancolorado" target="_blank" rel="noopener" class="work-cta__link">
+            <a href="https://behance.net/juancolorado" target="_blank" rel="noopener noreferrer" class="work-cta__link">
               <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
               View more work on Behance
               <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
@@ -274,7 +275,7 @@
     <section id="case-solving-ai" class="case-hero">
       <div class="case-hero__inner">
         <a href="#work" class="case-hero__back">&larr; Back to all work</a>
-        <img src="assets/solving-ai/Logo.svg" alt="Solving AI" class="case-hero__logo" loading="lazy" decoding="async">
+        <img src="assets/solving-ai/Logo.svg" alt="Solving AI" class="case-hero__logo" width="147" height="38" loading="lazy" decoding="async">
         <p class="case-hero__company">Solving AI &mdash; Jun 2024 &ndash; Jun 2025</p>
         <h2 class="case-hero__title">Building a Validation Culture for AI Products</h2>
         <p class="case-hero__subtitle">How I established evidence-based design practices, architected a scalable design system, and improved task comprehension by 80% through systematic Maze A/B testing.</p>
@@ -306,7 +307,7 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/solving-ai/Desktop.webp" type="image/webp">
-            <img src="assets/solving-ai/Desktop.jpg" alt="Solving AI Autopilot interface — the product dashboard designed and shipped" class="case-image__screenshot" loading="lazy" decoding="async">
+            <img src="assets/solving-ai/Desktop.jpg" alt="Solving AI Autopilot interface — the product dashboard designed and shipped" class="case-image__screenshot" width="2880" height="1920" loading="lazy" decoding="async">
           </picture>
         </div>
         <p class="case-image__caption">Solving AI Autopilot dashboard — the production interface I designed for AI-driven task automation</p>
@@ -315,7 +316,7 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/solving-ai/workflow-builder.webp" type="image/webp">
-            <img src="assets/solving-ai/workflow-builder.png" alt="Solving AI node-based workflow builder with code execution, language models, and automation tools" class="case-image__screenshot" loading="lazy" decoding="async">
+            <img src="assets/solving-ai/workflow-builder.png" alt="Solving AI node-based workflow builder with code execution, language models, and automation tools" class="case-image__screenshot" width="1440" height="960" loading="lazy" decoding="async">
           </picture>
         </div>
         <p class="case-image__caption">Node-based workflow builder — visual programming interface for configuring AI automation pipelines</p>
@@ -324,7 +325,7 @@
 
     <!-- Solving AI: Hero animation demo -->
     <div class="case-image-grid fade-in-stagger">
-      <div class="case-image">
+      <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--contained">
           <video autoplay loop muted playsinline class="case-image__screenshot" loading="lazy" width="960" height="1025" poster="assets/solving-ai/Desktop.jpg">
             <source src="assets/solving-ai/hero-demo.mp4" type="video/mp4">
@@ -349,7 +350,7 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/solving-ai/user-flow-dropoff.svg" alt="User flow analysis showing drop-off points in the original AI workflow — highest friction at configuration (30%) and results interpretation (20%)" class="case-image__diagram" loading="lazy" decoding="async">
+          <img src="assets/solving-ai/user-flow-dropoff.svg" alt="User flow analysis showing drop-off points in the original AI workflow — highest friction at configuration (30%) and results interpretation (20%)" class="case-image__diagram" width="1200" height="530" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">User flow analysis: drop-off points identified through session recordings and Maze task data</p>
       </div>
@@ -370,7 +371,7 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/solving-ai/maze-results.svg" alt="Maze A/B test results showing 80% improvement in task comprehension across technical and non-technical user cohorts" class="case-image__diagram" loading="lazy" decoding="async">
+          <img src="assets/solving-ai/maze-results.svg" alt="Maze A/B test results showing 80% improvement in task comprehension across technical and non-technical user cohorts" class="case-image__diagram" width="1200" height="600" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">Maze A/B test results: 80% task comprehension improvement validated across user cohorts</p>
       </div>
@@ -391,7 +392,7 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/solving-ai/wcag-audit.svg" alt="WCAG AA accessibility audit results showing 12 violations resolved across 7 success criteria" class="case-image__diagram" loading="lazy" decoding="async">
+          <img src="assets/solving-ai/wcag-audit.svg" alt="WCAG AA accessibility audit results showing 12 violations resolved across 7 success criteria" class="case-image__diagram" width="1200" height="520" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">WCAG AA compliance achieved: 12 accessibility violations resolved across all critical AI interaction flows</p>
       </div>
@@ -414,7 +415,7 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/solving-ai/handoff-comparison.svg" alt="Design-to-dev handoff workflow comparison: before (9 days, manual) vs after (6 days, design system-driven) — 30% time reduction" class="case-image__diagram" loading="lazy" decoding="async">
+          <img src="assets/solving-ai/handoff-comparison.svg" alt="Design-to-dev handoff workflow comparison: before (9 days, manual) vs after (6 days, design system-driven) — 30% time reduction" class="case-image__diagram" width="1200" height="460" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">Handoff workflow transformation: from ad-hoc process (9 days) to design system-driven (6 days) &mdash; 30% faster</p>
       </div>
@@ -488,7 +489,7 @@
     <section id="case-nvidia" class="case-hero">
       <div class="case-hero__inner">
         <a href="#work" class="case-hero__back">&larr; Back to all work</a>
-        <img src="assets/nvidia/Logo.png" alt="Nvidia" class="case-hero__logo" loading="lazy" decoding="async">
+        <img src="assets/nvidia/Logo.png" alt="Nvidia" class="case-hero__logo" width="143" height="81" loading="lazy" decoding="async">
 
         <div class="nda-badge">
           <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
@@ -535,14 +536,14 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/nvidia/ai-welcome-screen.webp" type="image/webp">
-            <img src="assets/nvidia/ai-welcome-screen.png" alt="AI-powered supply chain analysis tool — welcome screen with guided onboarding and pre-built analysis prompts" class="case-image__screenshot" loading="lazy" decoding="async">
+            <img src="assets/nvidia/ai-welcome-screen.png" alt="AI-powered supply chain analysis tool — welcome screen with guided onboarding and pre-built analysis prompts" class="case-image__screenshot" width="1444" height="1032" loading="lazy" decoding="async">
           </picture>
         </div>
         <p class="case-image__caption">AI-powered analysis tool I designed — guided onboarding with pre-built prompts and configurable reasoning levels</p>
       </div>
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/nvidia/ia-comparison.svg" alt="Information architecture comparison: flat feature-based navigation restructured into task-oriented decision hierarchy using SAP Fiori patterns" class="case-image__diagram" loading="lazy" decoding="async">
+          <img src="assets/nvidia/ia-comparison.svg" alt="Information architecture comparison: flat feature-based navigation restructured into task-oriented decision hierarchy using SAP Fiori patterns" class="case-image__diagram" width="1200" height="560" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">Information architecture: from flat feature list to task-oriented hierarchy</p>
       </div>
@@ -562,7 +563,7 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/nvidia/redacted-dashboard.svg" alt="Redacted SAP Fiori dashboard showing KPI cards, trend analysis, and AI recommendation panel — content anonymized under NDA" class="case-image__diagram" loading="lazy" decoding="async">
+          <img src="assets/nvidia/redacted-dashboard.svg" alt="Redacted SAP Fiori dashboard showing KPI cards, trend analysis, and AI recommendation panel — content anonymized under NDA" class="case-image__diagram" width="1200" height="720" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">Restructured dashboard with AI recommendation panel (content redacted under NDA)</p>
       </div>
@@ -570,7 +571,7 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/nvidia/ai-response-table.webp" type="image/webp">
-            <img src="assets/nvidia/ai-response-table.png" alt="AI agent response with structured data table, reasoning transparency, and suggested follow-up actions" class="case-image__screenshot" loading="lazy" decoding="async">
+            <img src="assets/nvidia/ai-response-table.png" alt="AI agent response with structured data table, reasoning transparency, and suggested follow-up actions" class="case-image__screenshot" width="1444" height="1032" loading="lazy" decoding="async">
           </picture>
         </div>
         <p class="case-image__caption">AI agent response pattern — structured data output with reasoning transparency and contextual follow-up suggestions</p>
@@ -688,7 +689,7 @@
     <section id="case-yma" class="case-hero">
       <div class="case-hero__inner">
         <a href="#work" class="case-hero__back">&larr; Back to all work</a>
-        <img src="assets/yma/Logomark.png" alt="YMA" class="case-hero__logo" loading="lazy" decoding="async">
+        <img src="assets/yma/Logomark.png" alt="YMA" class="case-hero__logo" width="96" height="46" loading="lazy" decoding="async">
         <p class="case-hero__company">CodeBranch &mdash; Product: YMA / Smartel &mdash; Jun 2025 &ndash; Present</p>
         <h2 class="case-hero__title">Designing an AI Ecosystem from Zero to One</h2>
         <p class="case-hero__subtitle">Establishing the foundational product experience for a computer vision AI platform &mdash; mobile-first design, real-time feedback patterns, and a design system scaled by a growing team.</p>
@@ -728,7 +729,7 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/yma/ecosystem-map.svg" alt="YMA Smartel AI ecosystem architecture showing computer vision, mobile app, analytics dashboard, and feedback loops connected through a unified design system" class="case-image__diagram" loading="lazy" decoding="async">
+          <img src="assets/yma/ecosystem-map.svg" alt="YMA Smartel AI ecosystem architecture showing computer vision, mobile app, analytics dashboard, and feedback loops connected through a unified design system" class="case-image__diagram" width="1200" height="560" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">Smartel AI ecosystem: unified design system scaling across all product surfaces</p>
       </div>
@@ -736,26 +737,26 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/yma/analysis-dashboard.webp" type="image/webp">
-            <img src="assets/yma/analysis-dashboard.png" alt="YMA Contestant Review interface on iPad showing real-time AI scoring for technique, posture, stride, and overall metrics with front and side view video analysis panels" class="case-image__screenshot" loading="lazy" decoding="async">
+            <img src="assets/yma/analysis-dashboard.png" alt="YMA Contestant Review interface on iPad showing real-time AI scoring for technique, posture, stride, and overall metrics with front and side view video analysis panels" class="case-image__screenshot" width="1133" height="744" loading="lazy" decoding="async">
           </picture>
         </div>
         <p class="case-image__caption">Contestant Review &mdash; real-time AI scoring with dual-view video analysis on tablet</p>
       </div>
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--contained">
-          <img src="assets/yma/contestant-review-live.png" alt="YMA Contestant Review showing live AI analysis with technique (20%), posture (60%), and stride (50%) metrics alongside dual front and side camera views" class="case-image__screenshot" loading="lazy" decoding="async">
+          <img src="assets/yma/contestant-review-live.png" alt="YMA Contestant Review showing live AI analysis with technique (20%), posture (60%), and stride (50%) metrics alongside dual front and side camera views" class="case-image__screenshot" width="1133" height="744" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">Live AI analysis &mdash; real-time scoring metrics with dual camera views during contestant review</p>
       </div>
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--contained">
-          <img src="assets/yma/settings-contestants-tablet.png" alt="YMA Setting Contestants data table on iPad with search, add contestant button, and email columns for contestant management" class="case-image__screenshot" loading="lazy" decoding="async">
+          <img src="assets/yma/settings-contestants-tablet.png" alt="YMA Setting Contestants data table on iPad with search, add contestant button, and email columns for contestant management" class="case-image__screenshot" width="1133" height="744" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">Contestant settings &mdash; admin data table with search and bulk management on tablet</p>
       </div>
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--contained">
-          <img src="assets/yma/settings-contestants-mobile.png" alt="YMA Setting Contestants mobile list with contestant avatars, names, and ages in a compact touch-friendly layout" class="case-image__screenshot" loading="lazy" decoding="async">
+          <img src="assets/yma/settings-contestants-mobile.png" alt="YMA Setting Contestants mobile list with contestant avatars, names, and ages in a compact touch-friendly layout" class="case-image__screenshot" width="440" height="1410" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">Contestant list &mdash; mobile-first responsive design with avatar cards</p>
       </div>
@@ -788,7 +789,7 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/yma/component-library.svg" alt="Responsive component system showing mobile, tablet, and desktop breakpoint adaptations" class="case-image__diagram" loading="lazy" decoding="async">
+          <img src="assets/yma/component-library.svg" alt="Responsive component system showing mobile, tablet, and desktop breakpoint adaptations" class="case-image__diagram" width="1200" height="560" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">Scalable component library with documented responsive behavior, enabling autonomous team contribution</p>
       </div>
@@ -808,7 +809,7 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/yma/landing-desktop.webp" type="image/webp">
-            <img src="assets/yma/landing-desktop.png" alt="YMA landing page on desktop showing the enrollment hero with sign-in button, model photography, and Fashion Elegance Confidence tagline" class="case-image__screenshot" loading="lazy" decoding="async">
+            <img src="assets/yma/landing-desktop.png" alt="YMA landing page on desktop showing the enrollment hero with sign-in button, model photography, and Fashion Elegance Confidence tagline" class="case-image__screenshot" width="1440" height="1024" loading="lazy" decoding="async">
           </picture>
         </div>
         <p class="case-image__caption">Landing &amp; enrollment flow &mdash; desktop</p>
@@ -817,7 +818,7 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/yma/landing-mobile.webp" type="image/webp">
-            <img src="assets/yma/landing-mobile.png" alt="YMA landing page on iPhone showing the same enrollment flow adapted for mobile with touch-optimized layout" class="case-image__screenshot" loading="lazy" decoding="async">
+            <img src="assets/yma/landing-mobile.png" alt="YMA landing page on iPhone showing the same enrollment flow adapted for mobile with touch-optimized layout" class="case-image__screenshot" width="440" height="956" loading="lazy" decoding="async">
           </picture>
         </div>
         <p class="case-image__caption">Landing &amp; enrollment flow &mdash; mobile</p>
@@ -826,7 +827,7 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/yma/contestants-tablet.webp" type="image/webp">
-            <img src="assets/yma/contestants-tablet.png" alt="YMA Setting Contestants screen on iPad with navigation tabs, banner image, search, and a data table listing contestant names, ages, and email addresses" class="case-image__screenshot" loading="lazy" decoding="async">
+            <img src="assets/yma/contestants-tablet.png" alt="YMA Setting Contestants screen on iPad with navigation tabs, banner image, search, and a data table listing contestant names, ages, and email addresses" class="case-image__screenshot" width="1133" height="744" loading="lazy" decoding="async">
           </picture>
         </div>
         <p class="case-image__caption">Contestant management &mdash; tablet data table with full navigation</p>
@@ -835,7 +836,7 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/yma/contestants-mobile.webp" type="image/webp">
-            <img src="assets/yma/contestants-mobile.png" alt="YMA Setting Contestants screen on iPhone showing a compact mobile list with contestant names, ages, and action buttons" class="case-image__screenshot" loading="lazy" decoding="async">
+            <img src="assets/yma/contestants-mobile.png" alt="YMA Setting Contestants screen on iPhone showing a compact mobile list with contestant names, ages, and action buttons" class="case-image__screenshot" width="440" height="1410" loading="lazy" decoding="async">
           </picture>
         </div>
         <p class="case-image__caption">Contestant management &mdash; mobile list optimized for one-handed use</p>
@@ -874,7 +875,7 @@
     <section id="case-bucket" class="case-hero">
       <div class="case-hero__inner">
         <a href="#work" class="case-hero__back">&larr; Back to all work</a>
-        <img src="assets/bucket/Brand.png" alt="Bucket.io" class="case-hero__logo case-hero__logo--lg" loading="lazy" decoding="async">
+        <img src="assets/bucket/Brand.png" alt="Bucket.io" class="case-hero__logo case-hero__logo--lg" width="780" height="206" loading="lazy" decoding="async">
         <p class="case-hero__company">Ideaware &mdash; Client: Bucket.io &mdash; Sep 2023 &ndash; May 2024</p>
         <h2 class="case-hero__title">AI-Powered Blueprint Generation</h2>
         <p class="case-hero__subtitle">Redesigning a complex AI configuration process into an accessible guided funnel &mdash; validated through interactive prototyping before engineering investment.</p>
@@ -906,7 +907,10 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/bucket/product-dashboard.webp" type="image/webp">
-            <img src="assets/bucket/product-dashboard.png" alt="Bucket.io blueprint dashboard — AI-powered content generation platform with featured templates and blueprint management" class="case-image__screenshot" loading="lazy" decoding="async">
+            <picture>
+              <source srcset="assets/bucket/product-dashboard.webp" type="image/webp">
+              <img src="assets/bucket/product-dashboard.png" alt="Bucket.io blueprint dashboard — AI-powered content generation platform with featured templates and blueprint management" class="case-image__screenshot" width="1280" height="2100" loading="lazy" decoding="async">
+            </picture>
           </picture>
         </div>
         <p class="case-image__caption">Bucket.io blueprint dashboard — the AI-powered content generation platform I redesigned</p>
@@ -926,7 +930,7 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/bucket/journey-map.svg" alt="User journey map showing 5 phases with sentiment curve and 3 friction points — 25% abandon at selection, 35% at configuration, 20% at generation" class="case-image__diagram" loading="lazy" decoding="async">
+          <img src="assets/bucket/journey-map.svg" alt="User journey map showing 5 phases with sentiment curve and 3 friction points — 25% abandon at selection, 35% at configuration, 20% at generation" class="case-image__diagram" width="1200" height="480" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">User journey mapping identified three critical friction points driving 80% of total drop-off</p>
       </div>
@@ -946,7 +950,7 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/bucket/wireframe-funnel.svg" alt="Guided funnel wireframes — 4-step flow from blueprint selection through configuration, AI generation, and refinement" class="case-image__diagram" loading="lazy" decoding="async">
+          <img src="assets/bucket/wireframe-funnel.svg" alt="Guided funnel wireframes — 4-step flow from blueprint selection through configuration, AI generation, and refinement" class="case-image__diagram" width="1200" height="520" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">Wireframes showing the restructured guided funnel: select, configure, generate, refine</p>
       </div>
@@ -989,7 +993,10 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/bucket/blueprints-grid.webp" type="image/webp">
-            <img src="assets/bucket/blueprints-grid.png" alt="Redesigned blueprint templates page with category sidebar, search, and organized card grid for quick blueprint selection" class="case-image__screenshot" loading="lazy" decoding="async">
+            <picture>
+              <source srcset="assets/bucket/blueprints-grid.webp" type="image/webp">
+              <img src="assets/bucket/blueprints-grid.png" alt="Redesigned blueprint templates page with category sidebar, search, and organized card grid for quick blueprint selection" class="case-image__screenshot" width="1440" height="2300" loading="lazy" decoding="async">
+            </picture>
           </picture>
         </div>
         <p class="case-image__caption">Redesigned templates view — category-based navigation with organized blueprint grid for faster selection</p>
@@ -998,7 +1005,10 @@
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/bucket/help-guide.webp" type="image/webp">
-            <img src="assets/bucket/help-guide.png" alt="Integrated help guide with contextual documentation for blueprint creation workflow" class="case-image__screenshot" loading="lazy" decoding="async">
+            <picture>
+              <source srcset="assets/bucket/help-guide.webp" type="image/webp">
+              <img src="assets/bucket/help-guide.png" alt="Integrated help guide with contextual documentation for blueprint creation workflow" class="case-image__screenshot" width="1440" height="2000" loading="lazy" decoding="async">
+            </picture>
           </picture>
         </div>
         <p class="case-image__caption">Integrated help guide — contextual documentation reducing support requests during blueprint creation</p>
@@ -1009,7 +1019,7 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/bucket/final-ui-options.svg" alt="Two design options compared — Option A: Guided Simplicity vs Option B: Power Dashboard — for stakeholder evaluation" class="case-image__diagram" loading="lazy" decoding="async">
+          <img src="assets/bucket/final-ui-options.svg" alt="Two design options compared — Option A: Guided Simplicity vs Option B: Power Dashboard — for stakeholder evaluation" class="case-image__diagram" width="1200" height="520" loading="lazy" decoding="async">
         </div>
         <p class="case-image__caption">Two design options delivered for stakeholder evaluation, validated through interactive prototyping</p>
       </div>
@@ -1084,12 +1094,12 @@
         <div class="clients__track">
           <span class="clients__logo">Nvidia</span>
           <span class="clients__logo">DISH</span>
-          <span class="clients__logo">Milwaukee Tools</span>
+          <span class="clients__logo">Milwaukee Tool</span>
           <span class="clients__logo">Andersen Windows</span>
           <span class="clients__logo">ToughBuilt</span>
           <span class="clients__logo">Benjamin Moore</span>
           <span class="clients__logo">IMUSA</span>
-          <span class="clients__logo">Levis</span>
+          <span class="clients__logo">Levi's</span>
           <span class="clients__logo">Corbeta</span>
           <span class="clients__logo">Cryogas</span>
           <span class="clients__logo">New Holland</span>
@@ -1099,12 +1109,12 @@
         <div class="clients__track" aria-hidden="true">
           <span class="clients__logo">Nvidia</span>
           <span class="clients__logo">DISH</span>
-          <span class="clients__logo">Milwaukee Tools</span>
+          <span class="clients__logo">Milwaukee Tool</span>
           <span class="clients__logo">Andersen Windows</span>
           <span class="clients__logo">ToughBuilt</span>
           <span class="clients__logo">Benjamin Moore</span>
           <span class="clients__logo">IMUSA</span>
-          <span class="clients__logo">Levis</span>
+          <span class="clients__logo">Levi's</span>
           <span class="clients__logo">Corbeta</span>
           <span class="clients__logo">Cryogas</span>
           <span class="clients__logo">New Holland</span>
@@ -1123,7 +1133,7 @@
         </div>
         <div class="templates-showcase__grid">
 
-          <a href="https://www.behance.net/gallery/176627277/Generac-Landing-Pages-Redesign" target="_blank" rel="noopener" class="template-card fade-in" aria-label="Generac Landing Page Redesign on Behance">
+          <a href="https://www.behance.net/gallery/176627277/Generac-Landing-Pages-Redesign" target="_blank" rel="noopener noreferrer" class="template-card fade-in" aria-label="Generac Landing Page Redesign on Behance">
             <div class="template-card__image">
               <img src="assets/behance/generac-hero.jpg" alt="Generac landing page redesign showing dark and light responsive variants with product card grids" loading="lazy" width="1920" height="1200">
             </div>
@@ -1133,7 +1143,7 @@
             </div>
           </a>
 
-          <a href="https://www.behance.net/gallery/176616831/Benjamin-Moore-Landing-Pages" target="_blank" rel="noopener" class="template-card fade-in" aria-label="Benjamin Moore Landing Pages on Behance">
+          <a href="https://www.behance.net/gallery/176616831/Benjamin-Moore-Landing-Pages" target="_blank" rel="noopener noreferrer" class="template-card fade-in" aria-label="Benjamin Moore Landing Pages on Behance">
             <div class="template-card__image">
               <img src="assets/behance/bm-hero.jpg" alt="Benjamin Moore landing page with coupon form, hero imagery, and store locator" loading="lazy" width="1366" height="700">
             </div>
@@ -1143,7 +1153,7 @@
             </div>
           </a>
 
-          <a href="https://www.behance.net/gallery/176622659/UIUX-USCellullar-Landing-Page" target="_blank" rel="noopener" class="template-card fade-in" aria-label="USCellular Landing Page on Behance">
+          <a href="https://www.behance.net/gallery/176622659/UIUX-USCellullar-Landing-Page" target="_blank" rel="noopener noreferrer" class="template-card fade-in" aria-label="USCellular Landing Page on Behance">
             <div class="template-card__image">
               <img src="assets/behance/uscellular-hero.jpg" alt="USCellular landing page with 5G branding, location finder, and appointment scheduling" loading="lazy" width="1400" height="700">
             </div>
@@ -1153,7 +1163,7 @@
             </div>
           </a>
 
-          <a href="https://www.behance.net/gallery/176624773/Mohawk-Landing-Pages" target="_blank" rel="noopener" class="template-card fade-in" aria-label="Mohawk Landing Pages on Behance">
+          <a href="https://www.behance.net/gallery/176624773/Mohawk-Landing-Pages" target="_blank" rel="noopener noreferrer" class="template-card fade-in" aria-label="Mohawk Landing Pages on Behance">
             <div class="template-card__image">
               <img src="assets/behance/mohawk-hero.jpg" alt="Mohawk flooring landing page with coupon hero, product grid, and store contact" loading="lazy" width="1440" height="700">
             </div>
@@ -1297,7 +1307,7 @@
                   <div class="timeline__sub-role">
                     <span class="timeline__sub-date">Dec 2019 &ndash; Nov 2022 &middot; 3 years</span>
                     <span class="timeline__sub-title">Web Developer</span>
-                    <p class="timeline__desc">Produced 20+ customizable web templates for the US market (DISH, Nvidia, Milwaukee Tools, Andersen Windows). Full lifecycle from UI design to HTML/CSS/JS.</p>
+                    <p class="timeline__desc">Produced 20+ customizable web templates for the US market (DISH, Nvidia, Milwaukee Tool, Andersen Windows). Full lifecycle from UI design to HTML/CSS/JS.</p>
                   </div>
                   <div class="timeline__sub-role">
                     <span class="timeline__sub-date">Jul 2017 &ndash; Dec 2019 &middot; 2.5 years</span>
@@ -1315,7 +1325,7 @@
                 <span class="timeline__date">Aug 2014 &ndash; Dec 2015</span>
                 <span class="timeline__role">Graphic Designer</span>
                 <span class="timeline__company">Creactiva &middot; Medell&iacute;n</span>
-                <p class="timeline__desc">Visual advertising campaigns for IMUSA, Corbeta, Levis, and Cryogas across print and digital.</p>
+                <p class="timeline__desc">Visual advertising campaigns for IMUSA, Corbeta, Levi's, and Cryogas across print and digital.</p>
               </div>
             </div>
 
@@ -1458,11 +1468,11 @@
             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             +57 310 843 0417
           </a>
-          <a href="https://linkedin.com/in/juan-david-colorado-vargas-470b20122" target="_blank" rel="noopener" class="contact__link contact__link--dark">
+          <a href="https://linkedin.com/in/juan-david-colorado-vargas-470b20122" target="_blank" rel="noopener noreferrer" class="contact__link contact__link--dark">
             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             LinkedIn
           </a>
-          <a href="https://behance.net/juancolorado" target="_blank" rel="noopener" class="contact__link contact__link--dark">
+          <a href="https://behance.net/juancolorado" target="_blank" rel="noopener noreferrer" class="contact__link contact__link--dark">
             <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
             Behance
           </a>
@@ -1475,7 +1485,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener" class="footer__link">view source</a>.</p>
+      <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener noreferrer" class="footer__link">view source</a>.</p>
       <ul class="footer__links">
         <li><a href="#work" class="footer__link">Work</a></li>
         <li><a href="#about" class="footer__link">About</a></li>
@@ -1485,11 +1495,11 @@
   </footer>
 
   <!-- Lightbox modal -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" hidden>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" hidden>
     <div class="lightbox__overlay"></div>
     <div class="lightbox__content">
       <div class="lightbox__image-wrapper"></div>
-      <p class="lightbox__caption"></p>
+      <p class="lightbox__caption" id="lightbox-caption"></p>
     </div>
     <button class="lightbox__close" aria-label="Close">&times;</button>
   </div>
@@ -1497,6 +1507,20 @@
   <!-- Scroll animation & interactions -->
   <script>
     (function() {
+      // --- Unhide page immediately so any later error won't leave it blank ---
+      document.body.classList.remove('loading');
+      document.body.classList.add('loaded');
+
+      // --- Reduced motion: pause autoplay videos ---
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      function handleReducedMotion() {
+        document.querySelectorAll('video[autoplay]').forEach(v => {
+          if (prefersReducedMotion.matches) { v.pause(); } else { v.play(); }
+        });
+      }
+      handleReducedMotion();
+      prefersReducedMotion.addEventListener('change', handleReducedMotion);
+
       // --- Fade-in on scroll ---
       const fadeObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -1611,7 +1635,9 @@
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
           e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
+          const href = this.getAttribute('href');
+          if (href === '#') { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+          const target = document.querySelector(href);
           if (target) {
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
@@ -1644,10 +1670,18 @@
       function openLightbox(el) {
         lastFocusedElement = document.activeElement;
         const img = el.querySelector('picture') || el.querySelector('img');
+        const video = el.querySelector('video');
         const caption = el.querySelector('.case-image__caption');
 
         lightboxWrapper.innerHTML = '';
-        if (img.tagName === 'PICTURE') {
+        if (video) {
+          const clone = video.cloneNode(true);
+          clone.className = '';
+          clone.controls = true;
+          lightboxWrapper.appendChild(clone);
+        } else if (!img) {
+          return;
+        } else if (img.tagName === 'PICTURE') {
           const clone = img.cloneNode(true);
           const cloneImg = clone.querySelector('img');
           if (cloneImg) {
@@ -1665,6 +1699,9 @@
         lightboxCaption.textContent = caption ? caption.textContent : '';
         lightbox.hidden = false;
         document.body.classList.add('lightbox-open');
+        document.getElementById('main').inert = true;
+        document.querySelector('.nav').inert = true;
+        document.querySelector('.footer').inert = true;
 
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
@@ -1680,6 +1717,9 @@
         const onEnd = () => {
           lightbox.hidden = true;
           document.body.classList.remove('lightbox-open');
+          document.getElementById('main').inert = false;
+          document.querySelector('.nav').inert = false;
+          document.querySelector('.footer').inert = false;
           lightboxWrapper.innerHTML = '';
           if (lastFocusedElement) lastFocusedElement.focus();
           lightbox.removeEventListener('transitionend', onEnd);
@@ -1702,12 +1742,18 @@
       lightboxClose.addEventListener('click', closeLightbox);
       lightboxOverlay.addEventListener('click', closeLightbox);
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+        if (lightbox.hidden) return;
+        if (e.key === 'Escape') { closeLightbox(); return; }
+        // Focus trap: keep Tab within the lightbox
+        if (e.key === 'Tab') {
+          const focusable = lightbox.querySelectorAll('button, [href], video[controls], [tabindex]:not([tabindex="-1"])');
+          if (focusable.length === 0) return;
+          const first = focusable[0];
+          const last = focusable[focusable.length - 1];
+          if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+          else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
       });
-
-      // --- Page load transition ---
-      document.body.classList.remove('loading');
-      document.body.classList.add('loaded');
 
       // --- Hero entrance animation with counter ---
       window.addEventListener('load', () => {
