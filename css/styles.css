@@ -1064,7 +1064,7 @@ a:focus-visible {
 
 /* Nvidia: nudge a little larger than the rest */
 .case-hero__logo--nvidia {
-  max-height: 58px;
+  max-height: 64px;
 }
 
 /* --- METRICS ROW --- */
