@@ -18,38 +18,38 @@
   <!-- Feedback Loops (bottom-right): node center ~940, 390 -->
 
   <!-- Line: Hub to Computer Vision -->
-  <line x1="520" y1="260" x2="340" y2="220" stroke="#2563EB" stroke-width="2" opacity="0.3"/>
+  <line x1="520" y1="260" x2="340" y2="220" stroke="#0F766E" stroke-width="2" opacity="0.3"/>
   <!-- Line: Hub to Analytics Dashboard -->
-  <line x1="680" y1="260" x2="860" y2="220" stroke="#2563EB" stroke-width="2" opacity="0.3"/>
+  <line x1="680" y1="260" x2="860" y2="220" stroke="#0F766E" stroke-width="2" opacity="0.3"/>
   <!-- Line: Hub to Mobile App -->
-  <line x1="520" y1="320" x2="340" y2="390" stroke="#2563EB" stroke-width="2" opacity="0.3"/>
+  <line x1="520" y1="320" x2="340" y2="390" stroke="#0F766E" stroke-width="2" opacity="0.3"/>
   <!-- Line: Hub to Feedback Loops -->
-  <line x1="680" y1="320" x2="860" y2="390" stroke="#2563EB" stroke-width="2" opacity="0.3"/>
+  <line x1="680" y1="320" x2="860" y2="390" stroke="#0F766E" stroke-width="2" opacity="0.3"/>
 
   <!-- ==================== Data Flow Dots ==================== -->
   <!-- Dots on line to Computer Vision (flowing outward from hub) -->
-  <circle cx="460" cy="247" r="3" fill="#2563EB" opacity="0.5"/>
-  <circle cx="410" cy="236" r="2.5" fill="#2563EB" opacity="0.35"/>
-  <circle cx="370" cy="227" r="2" fill="#2563EB" opacity="0.2"/>
+  <circle cx="460" cy="247" r="3" fill="#0F766E" opacity="0.5"/>
+  <circle cx="410" cy="236" r="2.5" fill="#0F766E" opacity="0.35"/>
+  <circle cx="370" cy="227" r="2" fill="#0F766E" opacity="0.2"/>
 
   <!-- Dots on line to Analytics Dashboard -->
-  <circle cx="740" cy="247" r="3" fill="#2563EB" opacity="0.5"/>
-  <circle cx="790" cy="236" r="2.5" fill="#2563EB" opacity="0.35"/>
-  <circle cx="830" cy="227" r="2" fill="#2563EB" opacity="0.2"/>
+  <circle cx="740" cy="247" r="3" fill="#0F766E" opacity="0.5"/>
+  <circle cx="790" cy="236" r="2.5" fill="#0F766E" opacity="0.35"/>
+  <circle cx="830" cy="227" r="2" fill="#0F766E" opacity="0.2"/>
 
   <!-- Dots on line to Mobile App -->
-  <circle cx="460" cy="343" r="3" fill="#2563EB" opacity="0.5"/>
-  <circle cx="410" cy="360" r="2.5" fill="#2563EB" opacity="0.35"/>
-  <circle cx="370" cy="374" r="2" fill="#2563EB" opacity="0.2"/>
+  <circle cx="460" cy="343" r="3" fill="#0F766E" opacity="0.5"/>
+  <circle cx="410" cy="360" r="2.5" fill="#0F766E" opacity="0.35"/>
+  <circle cx="370" cy="374" r="2" fill="#0F766E" opacity="0.2"/>
 
   <!-- Dots on line to Feedback Loops -->
-  <circle cx="740" cy="343" r="3" fill="#2563EB" opacity="0.5"/>
-  <circle cx="790" cy="360" r="2.5" fill="#2563EB" opacity="0.35"/>
-  <circle cx="830" cy="374" r="2" fill="#2563EB" opacity="0.2"/>
+  <circle cx="740" cy="343" r="3" fill="#0F766E" opacity="0.5"/>
+  <circle cx="790" cy="360" r="2.5" fill="#0F766E" opacity="0.35"/>
+  <circle cx="830" cy="374" r="2" fill="#0F766E" opacity="0.2"/>
 
   <!-- ==================== Central Hub ==================== -->
   <!-- Outer blue ring (subtle) -->
-  <circle cx="600" cy="290" r="88" fill="none" stroke="#2563EB" stroke-width="1.5" opacity="0.2"/>
+  <circle cx="600" cy="290" r="88" fill="none" stroke="#0F766E" stroke-width="1.5" opacity="0.2"/>
   <!-- Main dark circle -->
   <circle cx="600" cy="290" r="82" fill="#1A1A1A"/>
   <!-- Inner subtle ring -->
@@ -63,13 +63,13 @@
     <!-- Card -->
     <rect x="180" y="170" width="160" height="100" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
     <!-- Icon: eye/lens shape -->
-    <ellipse cx="210" cy="198" rx="12" ry="8" fill="none" stroke="#2563EB" stroke-width="1.5" opacity="0.5"/>
-    <circle cx="210" cy="198" r="4" fill="#2563EB" opacity="0.4"/>
+    <ellipse cx="210" cy="198" rx="12" ry="8" fill="none" stroke="#0F766E" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="210" cy="198" r="4" fill="#0F766E" opacity="0.4"/>
     <!-- Text -->
     <text x="200" y="230" font-size="13" font-weight="600" fill="#1A1A1A">Computer Vision</text>
     <!-- Pill -->
     <rect x="200" y="242" width="90" height="20" rx="10" fill="#EFF6FF"/>
-    <text x="245" y="256" text-anchor="middle" font-size="10" font-weight="600" fill="#2563EB">Real-time data</text>
+    <text x="245" y="256" text-anchor="middle" font-size="10" font-weight="600" fill="#0F766E">Real-time data</text>
   </g>
 
   <!-- ==================== Analytics Dashboard Node (top-right) ==================== -->
@@ -77,14 +77,14 @@
     <!-- Card -->
     <rect x="860" y="170" width="160" height="100" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
     <!-- Icon: bar chart -->
-    <rect x="882" y="196" width="6" height="14" rx="1" fill="#2563EB" opacity="0.35"/>
-    <rect x="891" y="190" width="6" height="20" rx="1" fill="#2563EB" opacity="0.5"/>
-    <rect x="900" y="194" width="6" height="16" rx="1" fill="#2563EB" opacity="0.35"/>
+    <rect x="882" y="196" width="6" height="14" rx="1" fill="#0F766E" opacity="0.35"/>
+    <rect x="891" y="190" width="6" height="20" rx="1" fill="#0F766E" opacity="0.5"/>
+    <rect x="900" y="194" width="6" height="16" rx="1" fill="#0F766E" opacity="0.35"/>
     <!-- Text -->
     <text x="880" y="230" font-size="13" font-weight="600" fill="#1A1A1A">Analytics Dashboard</text>
     <!-- Pill -->
     <rect x="880" y="242" width="76" height="20" rx="10" fill="#EFF6FF"/>
-    <text x="918" y="256" text-anchor="middle" font-size="10" font-weight="600" fill="#2563EB">Desktop UI</text>
+    <text x="918" y="256" text-anchor="middle" font-size="10" font-weight="600" fill="#0F766E">Desktop UI</text>
   </g>
 
   <!-- ==================== Mobile App Node (bottom-left) ==================== -->
@@ -92,13 +92,13 @@
     <!-- Card -->
     <rect x="180" y="340" width="160" height="100" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
     <!-- Icon: phone outline -->
-    <rect x="204" y="360" width="14" height="22" rx="3" fill="none" stroke="#2563EB" stroke-width="1.5" opacity="0.5"/>
-    <line x1="207" y1="378" x2="214" y2="378" stroke="#2563EB" stroke-width="1" opacity="0.4"/>
+    <rect x="204" y="360" width="14" height="22" rx="3" fill="none" stroke="#0F766E" stroke-width="1.5" opacity="0.5"/>
+    <line x1="207" y1="378" x2="214" y2="378" stroke="#0F766E" stroke-width="1" opacity="0.4"/>
     <!-- Text -->
     <text x="200" y="400" font-size="13" font-weight="600" fill="#1A1A1A">Mobile App</text>
     <!-- Pill -->
     <rect x="200" y="412" width="82" height="20" rx="10" fill="#EFF6FF"/>
-    <text x="241" y="426" text-anchor="middle" font-size="10" font-weight="600" fill="#2563EB">Mobile-first</text>
+    <text x="241" y="426" text-anchor="middle" font-size="10" font-weight="600" fill="#0F766E">Mobile-first</text>
   </g>
 
   <!-- ==================== Feedback Loops Node (bottom-right) ==================== -->
@@ -106,19 +106,19 @@
     <!-- Card -->
     <rect x="860" y="340" width="160" height="100" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
     <!-- Icon: circular arrow/loop -->
-    <path d="M890,370 A8,8 0 1,1 890,380" fill="none" stroke="#2563EB" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
-    <polygon points="888,380 892,384 894,378" fill="#2563EB" opacity="0.5"/>
+    <path d="M890,370 A8,8 0 1,1 890,380" fill="none" stroke="#0F766E" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+    <polygon points="888,380 892,384 894,378" fill="#0F766E" opacity="0.5"/>
     <!-- Text -->
     <text x="880" y="400" font-size="13" font-weight="600" fill="#1A1A1A">Feedback Loops</text>
     <!-- Pill -->
     <rect x="880" y="412" width="76" height="20" rx="10" fill="#EFF6FF"/>
-    <text x="918" y="426" text-anchor="middle" font-size="10" font-weight="600" fill="#2563EB">CV Metrics</text>
+    <text x="918" y="426" text-anchor="middle" font-size="10" font-weight="600" fill="#0F766E">CV Metrics</text>
   </g>
 
   <!-- ==================== Bottom Annotation Bar ==================== -->
   <rect x="48" y="476" width="1104" height="56" rx="12" fill="white" stroke="#E5E5E3" stroke-width="1"/>
   <!-- Left accent stripe -->
-  <rect x="48" y="476" width="4" height="56" rx="2" fill="#2563EB"/>
+  <rect x="48" y="476" width="4" height="56" rx="2" fill="#0F766E"/>
   <!-- Annotation text -->
   <text x="72" y="500" font-size="13" font-weight="600" fill="#1A1A1A">Unified Design System</text>
   <text x="72" y="518" font-size="11" fill="#6B6B6B">One component library scaling across all product surfaces &#x2014; mobile, tablet, desktop. Maintained by 1 senior designer, extended by 2 junior designers.</text>

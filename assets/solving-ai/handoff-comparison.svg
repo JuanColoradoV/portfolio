@@ -58,37 +58,37 @@
   <text x="942" y="224" style="font-size: 16px; font-weight: 700; fill: #DC2626;">~9 days</text>
 
   <!-- AFTER -->
-  <text x="48" y="306" style="font-size: 14px; font-weight: 700; fill: #16A34A;">AFTER — Design system-driven handoff</text>
-  <rect x="48" y="320" width="1104" height="110" rx="12" fill="white" stroke="#DCFCE7" stroke-width="1"/>
+  <text x="48" y="306" style="font-size: 14px; font-weight: 700; fill: #0F766E;">AFTER — Design system-driven handoff</text>
+  <rect x="48" y="320" width="1104" height="110" rx="12" fill="white" stroke="#CCFBF1" stroke-width="1"/>
 
   <!-- After steps -->
-  <rect x="72" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1"/>
+  <rect x="72" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#CCFBF1" stroke-width="1"/>
   <text x="82" y="364" class="step">Design with system</text>
-  <text x="82" y="382" class="time" fill="#16A34A">~1.5 days (reusable)</text>
+  <text x="82" y="382" class="time" fill="#0F766E">~1.5 days (reusable)</text>
 
   <line x1="232" y1="370" x2="260" y2="370" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="264" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1"/>
+  <rect x="264" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#CCFBF1" stroke-width="1"/>
   <text x="274" y="364" class="step">Auto specs (Variables)</text>
-  <text x="274" y="382" class="time" fill="#16A34A">~0 days (automated)</text>
+  <text x="274" y="382" class="time" fill="#0F766E">~0 days (automated)</text>
 
   <line x1="424" y1="370" x2="452" y2="370" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="456" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1"/>
+  <rect x="456" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#CCFBF1" stroke-width="1"/>
   <text x="466" y="364" class="step">Dev inspects tokens</text>
-  <text x="466" y="382" class="time" fill="#16A34A">~2 days (self-serve)</text>
+  <text x="466" y="382" class="time" fill="#0F766E">~2 days (self-serve)</text>
 
   <line x1="616" y1="370" x2="644" y2="370" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="648" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1"/>
+  <rect x="648" y="340" width="160" height="60" rx="8" fill="#F0FDF4" stroke="#CCFBF1" stroke-width="1"/>
   <text x="658" y="364" class="step">Minimal QA (system)</text>
-  <text x="658" y="382" class="time" fill="#16A34A">~0.5 days</text>
+  <text x="658" y="382" class="time" fill="#0F766E">~0.5 days</text>
 
   <line x1="808" y1="370" x2="840" y2="370" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="844" y="340" width="120" height="60" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="2"/>
+  <rect x="844" y="340" width="120" height="60" rx="8" fill="#F0FDF4" stroke="#0F766E" stroke-width="2"/>
   <text x="854" y="364" style="font-size: 12px; font-weight: 700; fill: #166534;">Total:</text>
-  <text x="854" y="384" style="font-size: 16px; font-weight: 700; fill: #16A34A;">~6 days</text>
+  <text x="854" y="384" style="font-size: 16px; font-weight: 700; fill: #0F766E;">~6 days</text>
 
   <!-- Savings callout -->
   <rect x="1000" y="340" width="130" height="60" rx="12" fill="#1A1A1A"/>

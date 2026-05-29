@@ -10,7 +10,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Juan David Colorado — Senior Product Designer & Lead">
-  <meta property="og:description" content="Leading UX for Nvidia's supply-chain AI platform. 10+ years designing AI products, enterprise dashboards, and design systems — validated with research, shipped with code.">
+  <meta property="og:description" content="Now leading design at Symplast — a HIPAA-compliant EHR for 3,500+ aesthetic practices; previously UX lead for Nvidia's $2B+ supply-chain AI platform. 10+ years in AI & enterprise UX — validated with research, shipped with code.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Juan David Colorado">
@@ -23,7 +23,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Juan David Colorado — Senior Product Designer & Lead">
-  <meta name="twitter:description" content="Leading UX for Nvidia's supply-chain AI platform. 10+ years designing AI products, enterprise dashboards, and design systems.">
+  <meta name="twitter:description" content="Now leading design at Symplast (HIPAA EHR, 3,500+ practices); previously UX lead for Nvidia's $2B+ supply-chain AI platform. 10+ years, AI & enterprise UX.">
   <meta name="twitter:image" content="https://juancoloradov.github.io/portfolio/assets/og-image.png">
 
   <meta name="theme-color" content="#FAFAF8">
@@ -71,7 +71,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260529j">
+  <link rel="stylesheet" href="css/styles.css?v=20260529k">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -227,7 +227,7 @@
           <!-- Case Study 2: Nvidia -->
           <a href="#case-nvidia" class="case-card fade-in">
             <div class="case-card__image">
-              <img src="assets/nvidia/card-cover.svg" alt="Redacted enterprise dashboard wireframe — Nvidia supply chain platform under NDA" width="800" height="500">
+              <img src="assets/nvidia/card-cover.svg" alt="Redacted enterprise dashboard wireframe — Nvidia supply chain platform under NDA" width="800" height="500" loading="lazy" decoding="async">
             </div>
             <div class="case-card__content">
               <span class="case-card__company">CodeBranch &mdash; Client: Nvidia</span>
@@ -1212,7 +1212,7 @@
 
             <!-- Core Expertise -->
             <div class="core-skills mt-2xl fade-in">
-              <h4 class="core-skills__label">Core</h4>
+              <h3 class="core-skills__label">Core</h3>
               <div class="core-skills__tags">
                 <span class="core-tag">Product Design</span>
                 <span class="core-tag">UX Strategy</span>
@@ -1236,7 +1236,7 @@
             <!-- Skills -->
             <div class="skills-grid fade-in-stagger">
               <div class="skill-category">
-                <h4 class="skill-category__title">Design & Prototyping</h4>
+                <h3 class="skill-category__title">Design & Prototyping</h3>
                 <ul class="skill-category__list">
                   <li class="skill-category__item">Figma (Variables, Auto Layout)</li>
                   <li class="skill-category__item">Design Systems</li>
@@ -1246,7 +1246,7 @@
                 </ul>
               </div>
               <div class="skill-category">
-                <h4 class="skill-category__title">Technical & AI Stack</h4>
+                <h3 class="skill-category__title">Technical & AI Stack</h3>
                 <ul class="skill-category__list">
                   <li class="skill-category__item">HTML5 / CSS3 / JS</li>
                   <li class="skill-category__item">Flexbox / Grid / Bootstrap</li>
@@ -1258,7 +1258,7 @@
                 </ul>
               </div>
               <div class="skill-category">
-                <h4 class="skill-category__title">Methodologies</h4>
+                <h3 class="skill-category__title">Methodologies</h3>
                 <ul class="skill-category__list">
                   <li class="skill-category__item">Atomic Design</li>
                   <li class="skill-category__item">Design Thinking</li>
@@ -1271,7 +1271,7 @@
                 </ul>
               </div>
               <div class="skill-category">
-                <h4 class="skill-category__title">Leadership</h4>
+                <h3 class="skill-category__title">Leadership</h3>
                 <ul class="skill-category__list">
                   <li class="skill-category__item">Design Ops</li>
                   <li class="skill-category__item">Team Mentoring</li>
@@ -1531,25 +1531,6 @@
         }
         requestAnimationFrame(update);
       }
-
-      // --- Metric bar animation on scroll ---
-      const barObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const fill = entry.target.querySelector('.metric-card__bar-fill');
-            if (fill) {
-              const width = fill.style.width;
-              fill.style.width = '0%';
-              requestAnimationFrame(() => {
-                requestAnimationFrame(() => { fill.style.width = width; });
-              });
-            }
-            barObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.3 });
-
-      document.querySelectorAll('.metric-card').forEach(el => barObserver.observe(el));
 
       // --- Nav hide/show on scroll direction ---
       const nav = document.querySelector('.nav');

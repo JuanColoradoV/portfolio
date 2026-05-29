@@ -6,7 +6,7 @@
   </defs>
 
   <rect width="1200" height="520" rx="16" fill="#FAFAF8"/>
-  <rect x="0" y="0" width="1200" height="4" rx="2" fill="#16A34A"/>
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="#0F766E"/>
 
   <!-- Header -->
   <text x="48" y="44" class="metric-label">ACCESSIBILITY COMPLIANCE</text>
@@ -19,10 +19,10 @@
   <text x="950" y="82" text-anchor="middle" style="font-size: 28px; font-weight: 700; fill: #DC2626;">12 Fails</text>
   <text x="950" y="102" text-anchor="middle" style="font-size: 10px; fill: #DC2626;">Non-compliant</text>
 
-  <rect x="1040" y="28" width="112" height="84" rx="12" fill="#F0FDF4" stroke="#16A34A" stroke-width="2"/>
-  <text x="1096" y="52" text-anchor="middle" class="metric-label" style="fill: #16A34A;">AFTER</text>
-  <text x="1096" y="84" text-anchor="middle" style="font-size: 28px; font-weight: 700; fill: #16A34A;">AA</text>
-  <text x="1096" y="102" text-anchor="middle" style="font-size: 10px; font-weight: 600; fill: #16A34A;">Compliant</text>
+  <rect x="1040" y="28" width="112" height="84" rx="12" fill="#F0FDF4" stroke="#0F766E" stroke-width="2"/>
+  <text x="1096" y="52" text-anchor="middle" class="metric-label" style="fill: #0F766E;">AFTER</text>
+  <text x="1096" y="84" text-anchor="middle" style="font-size: 28px; font-weight: 700; fill: #0F766E;">AA</text>
+  <text x="1096" y="102" text-anchor="middle" style="font-size: 10px; font-weight: 600; fill: #0F766E;">Compliant</text>
 
   <!-- Column Headers -->
   <rect x="48" y="128" width="1104" height="36" rx="6" fill="#F2F1EF"/>
@@ -38,8 +38,8 @@
   <text x="420" y="193" style="font-size: 11px; fill: #6B6B6B;">Alt text for AI-generated charts and data visualizations</text>
   <rect x="864" y="179" width="64" height="22" rx="4" fill="#FEF2F2"/>
   <text x="896" y="194" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FAIL</text>
-  <rect x="1024" y="179" width="64" height="22" rx="4" fill="#DCFCE7"/>
-  <text x="1056" y="194" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #16A34A;">PASS</text>
+  <rect x="1024" y="179" width="64" height="22" rx="4" fill="#CCFBF1"/>
+  <text x="1056" y="194" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #0F766E;">PASS</text>
 
   <!-- Row 2 -->
   <rect x="48" y="208" width="1104" height="40" fill="#FAFAF8"/>
@@ -48,8 +48,8 @@
   <text x="420" y="233" style="font-size: 11px; fill: #6B6B6B;">Semantic structure for AI configuration forms and outputs</text>
   <rect x="864" y="219" width="64" height="22" rx="4" fill="#FEF2F2"/>
   <text x="896" y="234" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FAIL</text>
-  <rect x="1024" y="219" width="64" height="22" rx="4" fill="#DCFCE7"/>
-  <text x="1056" y="234" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #16A34A;">PASS</text>
+  <rect x="1024" y="219" width="64" height="22" rx="4" fill="#CCFBF1"/>
+  <text x="1056" y="234" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #0F766E;">PASS</text>
 
   <!-- Row 3 -->
   <rect x="48" y="248" width="1104" height="40" fill="white"/>
@@ -58,8 +58,8 @@
   <text x="420" y="273" style="font-size: 11px; fill: #6B6B6B;">4.5:1 contrast ratio for all text including data labels</text>
   <rect x="864" y="259" width="64" height="22" rx="4" fill="#FEF2F2"/>
   <text x="896" y="274" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FAIL</text>
-  <rect x="1024" y="259" width="64" height="22" rx="4" fill="#DCFCE7"/>
-  <text x="1056" y="274" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #16A34A;">PASS</text>
+  <rect x="1024" y="259" width="64" height="22" rx="4" fill="#CCFBF1"/>
+  <text x="1056" y="274" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #0F766E;">PASS</text>
 
   <!-- Row 4 -->
   <rect x="48" y="288" width="1104" height="40" fill="#FAFAF8"/>
@@ -68,8 +68,8 @@
   <text x="420" y="313" style="font-size: 11px; fill: #6B6B6B;">Full keyboard navigation for interactive data charts and AI controls</text>
   <rect x="864" y="299" width="64" height="22" rx="4" fill="#FEF2F2"/>
   <text x="896" y="314" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FAIL</text>
-  <rect x="1024" y="299" width="64" height="22" rx="4" fill="#DCFCE7"/>
-  <text x="1056" y="314" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #16A34A;">PASS</text>
+  <rect x="1024" y="299" width="64" height="22" rx="4" fill="#CCFBF1"/>
+  <text x="1056" y="314" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #0F766E;">PASS</text>
 
   <!-- Row 5 -->
   <rect x="48" y="328" width="1104" height="40" fill="white"/>
@@ -78,8 +78,8 @@
   <text x="420" y="353" style="font-size: 11px; fill: #6B6B6B;">Descriptive headings for each AI workflow step</text>
   <rect x="856" y="339" width="80" height="22" rx="4" fill="#FEF3C7"/>
   <text x="896" y="354" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #92400E;">PARTIAL</text>
-  <rect x="1024" y="339" width="64" height="22" rx="4" fill="#DCFCE7"/>
-  <text x="1056" y="354" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #16A34A;">PASS</text>
+  <rect x="1024" y="339" width="64" height="22" rx="4" fill="#CCFBF1"/>
+  <text x="1056" y="354" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #0F766E;">PASS</text>
 
   <!-- Row 6 -->
   <rect x="48" y="368" width="1104" height="40" fill="#FAFAF8"/>
@@ -88,8 +88,8 @@
   <text x="420" y="393" style="font-size: 11px; fill: #6B6B6B;">Clear error messages for invalid AI configuration parameters</text>
   <rect x="864" y="379" width="64" height="22" rx="4" fill="#FEF2F2"/>
   <text x="896" y="394" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FAIL</text>
-  <rect x="1024" y="379" width="64" height="22" rx="4" fill="#DCFCE7"/>
-  <text x="1056" y="394" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #16A34A;">PASS</text>
+  <rect x="1024" y="379" width="64" height="22" rx="4" fill="#CCFBF1"/>
+  <text x="1056" y="394" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #0F766E;">PASS</text>
 
   <!-- Row 7 -->
   <rect x="48" y="408" width="1104" height="40" fill="white"/>
@@ -98,12 +98,12 @@
   <text x="420" y="433" style="font-size: 11px; fill: #6B6B6B;">ARIA labels for custom AI interaction components</text>
   <rect x="864" y="419" width="64" height="22" rx="4" fill="#FEF2F2"/>
   <text x="896" y="434" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FAIL</text>
-  <rect x="1024" y="419" width="64" height="22" rx="4" fill="#DCFCE7"/>
-  <text x="1056" y="434" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #16A34A;">PASS</text>
+  <rect x="1024" y="419" width="64" height="22" rx="4" fill="#CCFBF1"/>
+  <text x="1056" y="434" text-anchor="middle" style="font-size: 10px; font-weight: 700; fill: #0F766E;">PASS</text>
 
   <!-- Footer -->
-  <rect x="48" y="464" width="1104" height="40" rx="10" fill="white" stroke="#DCFCE7" stroke-width="1.5"/>
-  <rect x="48" y="464" width="4" height="40" rx="2" fill="#16A34A"/>
+  <rect x="48" y="464" width="1104" height="40" rx="10" fill="white" stroke="#CCFBF1" stroke-width="1.5"/>
+  <rect x="48" y="464" width="4" height="40" rx="2" fill="#0F766E"/>
   <text x="72" y="489" style="font-size: 12px; font-weight: 600; fill: #166534;">Result: All critical AI interaction flows now meet WCAG 2.1 Level AA compliance</text>
   <text x="1148" y="489" text-anchor="end" style="font-size: 11px; fill: #166534;">12 violations resolved across 7 success criteria</text>
 </svg>

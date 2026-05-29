@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 530" font-family="Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif">
   <defs>
     <linearGradient id="funnel-grad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#2563EB"/>
-      <stop offset="25%" stop-color="#3B82F6"/>
-      <stop offset="50%" stop-color="#60A5FA"/>
-      <stop offset="75%" stop-color="#93C5FD"/>
-      <stop offset="100%" stop-color="#BFDBFE"/>
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="25%" stop-color="#14857A"/>
+      <stop offset="50%" stop-color="#2DD4BF"/>
+      <stop offset="75%" stop-color="#7DE3D6"/>
+      <stop offset="100%" stop-color="#CFF3EE"/>
     </linearGradient>
     <marker id="arrow" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
       <polygon points="0 0, 7 2.5, 0 5" fill="#CBD5E1"/>
@@ -19,10 +19,10 @@
   <rect width="1200" height="530" fill="#FAFAF8"/>
 
   <!-- Top accent bar -->
-  <rect x="0" y="0" width="1200" height="4" fill="#2563EB"/>
+  <rect x="0" y="0" width="1200" height="4" fill="#0F766E"/>
 
   <!-- ===================== HEADER SECTION ===================== -->
-  <text x="52" y="42" font-size="11" font-weight="600" fill="#2563EB" letter-spacing="1.5">USER FLOW ANALYSIS</text>
+  <text x="52" y="42" font-size="11" font-weight="600" fill="#0F766E" letter-spacing="1.5">USER FLOW ANALYSIS</text>
   <text x="52" y="72" font-size="22" font-weight="700" fill="#1A1A1A">AI Workflow &#x2014; Drop-off Points Identified</text>
   <text x="52" y="94" font-size="13" fill="#6B6B6B">Multi-step AI interaction flow with friction points mapped through session analysis and task completion data</text>
 
@@ -38,9 +38,9 @@
   <!-- Retention percentage labels on the bar -->
   <text x="68" y="134" font-size="12" font-weight="700" fill="white">100%</text>
   <text x="290" y="134" font-size="12" font-weight="700" fill="white">80%</text>
-  <text x="510" y="134" font-size="12" font-weight="600" fill="#1E3A8A">50%</text>
-  <text x="730" y="134" font-size="12" font-weight="600" fill="#1E3A8A">30%</text>
-  <text x="950" y="134" font-size="12" font-weight="600" fill="#1E40AF">20%</text>
+  <text x="510" y="134" font-size="12" font-weight="600" fill="#0B5A54">50%</text>
+  <text x="730" y="134" font-size="12" font-weight="600" fill="#0B5A54">30%</text>
+  <text x="950" y="134" font-size="12" font-weight="600" fill="#0B5A54">20%</text>
 
   <!-- Retention context labels -->
   <text x="68" y="160" font-size="10" fill="#6B6B6B">All users enter</text>
@@ -56,8 +56,8 @@
   <text x="70" y="222" font-size="15" font-weight="600" fill="#1A1A1A">Entry Point</text>
   <text x="70" y="240" font-size="11" fill="#6B6B6B">User opens AI workflow</text>
   <text x="70" y="254" font-size="11" fill="#6B6B6B">module to begin task</text>
-  <rect x="70" y="262" width="78" height="20" rx="10" fill="#DCFCE7"/>
-  <text x="84" y="276" font-size="11" font-weight="600" fill="#16A34A">100% reach</text>
+  <rect x="70" y="262" width="78" height="20" rx="10" fill="#CCFBF1"/>
+  <text x="84" y="276" font-size="11" font-weight="600" fill="#0F766E">100% reach</text>
 
   <!-- Arrow 1 to 2 -->
   <line x1="242" y1="234" x2="268" y2="234" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arrow)"/>
@@ -150,7 +150,7 @@
   <rect x="290" y="431" width="10" height="10" rx="5" fill="#F59E0B"/>
   <text x="308" y="441" font-size="12" fill="#6B6B6B">Moderate friction (10&#x2013;20%)</text>
 
-  <rect x="510" y="431" width="10" height="10" rx="5" fill="#16A34A"/>
+  <rect x="510" y="431" width="10" height="10" rx="5" fill="#0F766E"/>
   <text x="528" y="441" font-size="12" fill="#6B6B6B">Low / no friction (&lt;10%)</text>
 
   <text x="1136" y="441" font-size="11" fill="#999999" text-anchor="end">Source: Session recordings, Maze analytics, task completion data</text>
@@ -169,6 +169,6 @@
   <text x="660" y="502" font-size="12" fill="#1A1A1A"><tspan font-weight="700" fill="#1A1A1A">Step 3</tspan> = highest single drop-off (30%)</text>
 
   <line x1="920" y1="484" x2="920" y2="510" stroke="#E5E5E3" stroke-width="1"/>
-  <text x="940" y="502" font-size="12" fill="#1A1A1A">Only <tspan font-weight="700" fill="#2563EB">1 in 5</tspan> users complete the flow</text>
+  <text x="940" y="502" font-size="12" fill="#1A1A1A">Only <tspan font-weight="700" fill="#0F766E">1 in 5</tspan> users complete the flow</text>
 
 </svg>

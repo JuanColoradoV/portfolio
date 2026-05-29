@@ -9,10 +9,10 @@
   <rect width="1200" height="600" fill="#FAFAF8" rx="8"/>
 
   <!-- Top accent bar -->
-  <rect width="1200" height="4" fill="#2563EB"/>
+  <rect width="1200" height="4" fill="#0F766E"/>
 
   <!-- ==================== HEADER ==================== -->
-  <text x="48" y="48" font-size="10" font-weight="600" fill="#2563EB" letter-spacing="1.5">MAZE A/B TEST RESULTS</text>
+  <text x="48" y="48" font-size="10" font-weight="600" fill="#0F766E" letter-spacing="1.5">MAZE A/B TEST RESULTS</text>
   <text x="48" y="76" font-size="22" font-weight="700" fill="#1A1A1A">Task Comprehension Improvement</text>
   <line x1="48" y1="92" x2="1152" y2="92" stroke="#E5E5E3" stroke-width="1"/>
 
@@ -33,12 +33,12 @@
   <!-- After bar -->
   <text x="48" y="208" font-size="10" fill="#6B6B6B" font-weight="500">After</text>
   <rect x="108" y="197" width="440" height="16" fill="#EFF6FF" rx="8"/>
-  <rect x="108" y="197" width="414" height="16" fill="#2563EB" rx="8"/>
-  <text x="530" y="209" font-size="10" font-weight="700" fill="#2563EB">94%</text>
+  <rect x="108" y="197" width="414" height="16" fill="#0F766E" rx="8"/>
+  <text x="530" y="209" font-size="10" font-weight="700" fill="#0F766E">94%</text>
 
   <!-- Change badge -->
   <rect x="568" y="186" width="48" height="20" rx="10" fill="#F0FDF4"/>
-  <text x="592" y="200" font-size="9" font-weight="700" fill="#16A34A" text-anchor="middle">+50pt</text>
+  <text x="592" y="200" font-size="9" font-weight="700" fill="#0F766E" text-anchor="middle">+50pt</text>
 
   <!-- === Row 2: Non-Technical Users === -->
   <text x="48" y="250" font-size="13" font-weight="600" fill="#1A1A1A">Non-Technical Users</text>
@@ -52,12 +52,12 @@
   <!-- After bar -->
   <text x="48" y="298" font-size="10" fill="#6B6B6B" font-weight="500">After</text>
   <rect x="108" y="287" width="440" height="16" fill="#EFF6FF" rx="8"/>
-  <rect x="108" y="287" width="343" height="16" fill="#2563EB" rx="8"/>
-  <text x="459" y="299" font-size="10" font-weight="700" fill="#2563EB">78%</text>
+  <rect x="108" y="287" width="343" height="16" fill="#0F766E" rx="8"/>
+  <text x="459" y="299" font-size="10" font-weight="700" fill="#0F766E">78%</text>
 
   <!-- Change badge -->
   <rect x="568" y="276" width="48" height="20" rx="10" fill="#F0FDF4"/>
-  <text x="592" y="290" font-size="9" font-weight="700" fill="#16A34A" text-anchor="middle">+56pt</text>
+  <text x="592" y="290" font-size="9" font-weight="700" fill="#0F766E" text-anchor="middle">+56pt</text>
 
   <!-- === Row 3: All Cohorts Average === -->
   <text x="48" y="340" font-size="13" font-weight="600" fill="#1A1A1A">All Cohorts Average</text>
@@ -71,17 +71,17 @@
   <!-- After bar -->
   <text x="48" y="388" font-size="10" fill="#6B6B6B" font-weight="500">After</text>
   <rect x="108" y="377" width="440" height="16" fill="#EFF6FF" rx="8"/>
-  <rect x="108" y="377" width="378" height="16" fill="#2563EB" rx="8"/>
-  <text x="494" y="389" font-size="10" font-weight="700" fill="#2563EB">~86%</text>
+  <rect x="108" y="377" width="378" height="16" fill="#0F766E" rx="8"/>
+  <text x="494" y="389" font-size="10" font-weight="700" fill="#0F766E">~86%</text>
 
   <!-- Change badge -->
   <rect x="568" y="366" width="48" height="20" rx="10" fill="#F0FDF4"/>
-  <text x="592" y="380" font-size="9" font-weight="700" fill="#16A34A" text-anchor="middle">+53pt</text>
+  <text x="592" y="380" font-size="9" font-weight="700" fill="#0F766E" text-anchor="middle">+53pt</text>
 
   <!-- Legend -->
   <rect x="48" y="416" width="10" height="10" fill="#B8B8B6" rx="3"/>
   <text x="64" y="425" font-size="10" fill="#6B6B6B">Original Flow</text>
-  <rect x="158" y="416" width="10" height="10" fill="#2563EB" rx="3"/>
+  <rect x="158" y="416" width="10" height="10" fill="#0F766E" rx="3"/>
   <text x="174" y="425" font-size="10" fill="#6B6B6B">Redesigned Flow</text>
 
   <!-- ==================== VERTICAL DIVIDER ==================== -->
@@ -95,28 +95,28 @@
   <!-- Card 1: Task Comprehension -->
   <rect x="680" y="142" width="232" height="118" fill="#FFFFFF" rx="8" stroke="#E5E5E3" stroke-width="1" filter="url(#cardShadow)"/>
   <text x="700" y="168" font-size="9" font-weight="600" fill="#6B6B6B" letter-spacing="0.8">TASK COMPREHENSION</text>
-  <text x="700" y="210" font-size="34" font-weight="800" fill="#2563EB">~80%</text>
+  <text x="700" y="210" font-size="34" font-weight="800" fill="#0F766E">~80%</text>
   <text x="700" y="230" font-size="11" fill="#6B6B6B">improvement across</text>
   <text x="700" y="246" font-size="11" fill="#6B6B6B">all user cohorts</text>
 
   <!-- Card 2: Handoff Time -->
   <rect x="932" y="142" width="232" height="118" fill="#FFFFFF" rx="8" stroke="#E5E5E3" stroke-width="1" filter="url(#cardShadow)"/>
   <text x="952" y="168" font-size="9" font-weight="600" fill="#6B6B6B" letter-spacing="0.8">HANDOFF TIME</text>
-  <text x="952" y="210" font-size="34" font-weight="800" fill="#2563EB">~30%</text>
+  <text x="952" y="210" font-size="34" font-weight="800" fill="#0F766E">~30%</text>
   <text x="952" y="230" font-size="11" fill="#6B6B6B">reduction in design-to-dev</text>
   <text x="952" y="246" font-size="11" fill="#6B6B6B">handoff duration</text>
 
   <!-- Card 3: WCAG Compliance -->
   <rect x="680" y="276" width="232" height="118" fill="#FFFFFF" rx="8" stroke="#E5E5E3" stroke-width="1" filter="url(#cardShadow)"/>
   <text x="700" y="302" font-size="9" font-weight="600" fill="#6B6B6B" letter-spacing="0.8">WCAG COMPLIANCE</text>
-  <text x="700" y="344" font-size="34" font-weight="800" fill="#2563EB">AA</text>
+  <text x="700" y="344" font-size="34" font-weight="800" fill="#0F766E">AA</text>
   <text x="700" y="364" font-size="11" fill="#6B6B6B">accessibility standard</text>
   <text x="700" y="380" font-size="11" fill="#6B6B6B">achieved post-redesign</text>
 
   <!-- Card 4: Workflow Abandonment -->
   <rect x="932" y="276" width="232" height="118" fill="#FFFFFF" rx="8" stroke="#E5E5E3" stroke-width="1" filter="url(#cardShadow)"/>
   <text x="952" y="302" font-size="9" font-weight="600" fill="#6B6B6B" letter-spacing="0.8">WORKFLOW ABANDONMENT</text>
-  <text x="952" y="344" font-size="34" font-weight="800" fill="#16A34A">Reduced</text>
+  <text x="952" y="344" font-size="34" font-weight="800" fill="#0F766E">Reduced</text>
   <text x="952" y="364" font-size="11" fill="#6B6B6B">drop-off rates in key</text>
   <text x="952" y="380" font-size="11" fill="#6B6B6B">interaction flows</text>
 
