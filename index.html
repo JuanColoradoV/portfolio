@@ -71,7 +71,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260529b">
+  <link rel="stylesheet" href="css/styles.css?v=20260529c">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -120,10 +120,16 @@
               Available for opportunities
             </span>
           </div>
-          <a href="#work" class="hero__cta">
-            View selected work
-            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
+          <div class="hero__ctas">
+            <a href="#work" class="hero__cta">
+              View selected work
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="assets/Juan_David_Colorado_CV.pdf" target="_blank" rel="noopener noreferrer" class="hero__cta hero__cta--secondary">
+              Download CV
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+          </div>
         </div>
         <div class="hero__visual">
           <figure class="hero__product">
@@ -477,17 +483,14 @@
       <div class="metric-card">
         <div class="metric-card__value">~80%</div>
         <div class="metric-card__label">Task comprehension improvement across both user cohorts (Maze A/B test)</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 80%"></div></div>
       </div>
       <div class="metric-card">
         <div class="metric-card__value">30%</div>
         <div class="metric-card__label">Faster design-to-dev handoff: 9-day cycle reduced to 6 days</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 60%"></div></div>
       </div>
       <div class="metric-card">
         <div class="metric-card__value">AA</div>
         <div class="metric-card__label">WCAG compliance achieved across all critical user flows</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 100%"></div></div>
       </div>
     </div>
 
@@ -616,9 +619,11 @@
       <div class="case-section__inner">
         <p class="case-section__number">03</p>
         <h3 class="case-section__heading">Designing trust into every AI interaction.</h3>
-        <p class="case-section__text"><strong>Deep Reasoning UI.</strong> I designed the conversational AI experience end-to-end &mdash; from onboarding with pre-built analysis prompts to deep reasoning mode, where the AI agent explains its logic step-by-step before presenting structured data tables and suggested follow-up queries. Each response includes transparent reasoning, confidence indicators, and contextual actions users can take next.</p>
-        <p class="case-section__text"><strong>Guardrails &amp; safety patterns.</strong> I designed a guardrails system that handles off-topic queries and restricted data access gracefully. When a question falls outside supply chain scope, the AI explains <em>why</em> it was blocked and suggests how to rephrase. For sensitive data, it provides clear policy explanations and offers alternative queries that stay within access boundaries.</p>
-        <p class="case-section__text"><strong>Conversation history &amp; data persistence.</strong> I designed how conversations carry context forward &mdash; retrieved data from databases surfaces as searchable, sortable tables with export actions, and past analysis sessions can be resumed with full context.</p>
+        <ul class="case-bullets">
+          <li><strong>Deep Reasoning UI:</strong> the conversational AI end-to-end &mdash; onboarding prompts, step-by-step reasoning, structured data tables, and suggested follow-ups, each with transparent reasoning and confidence indicators.</li>
+          <li><strong>Guardrails &amp; safety:</strong> off-topic and restricted-data queries handled gracefully &mdash; the AI explains <em>why</em> and offers in-scope alternatives instead of failing silently.</li>
+          <li><strong>Conversation history:</strong> context carries forward; retrieved data surfaces as searchable, sortable, exportable tables, and past sessions resume with full context.</li>
+        </ul>
       </div>
     </div>
 
@@ -657,17 +662,14 @@
       <div class="metric-card">
         <div class="metric-card__value">~90%</div>
         <div class="metric-card__label">Task-completion gain across key decision workflows (internal usability testing)</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 90%"></div></div>
       </div>
       <div class="metric-card">
         <div class="metric-card__value">5+</div>
         <div class="metric-card__label">Engineers aligned through structured user stories and QA</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 70%"></div></div>
       </div>
       <div class="metric-card">
         <div class="metric-card__value">2</div>
         <div class="metric-card__label">Junior designers mentored and enabled to contribute independently</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 50%"></div></div>
       </div>
     </div>
 
@@ -852,17 +854,14 @@
       <div class="metric-card">
         <div class="metric-card__value">0 &rarr; 1</div>
         <div class="metric-card__label">Product experience built from scratch across mobile, tablet, and desktop</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 100%"></div></div>
       </div>
       <div class="metric-card">
         <div class="metric-card__value">3</div>
         <div class="metric-card__label">Product surfaces shipped with a unified design system (mobile app, tablet dashboard, desktop)</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 75%"></div></div>
       </div>
       <div class="metric-card">
         <div class="metric-card__value">2</div>
         <div class="metric-card__label">Junior designers enabled to contribute independently through documented component library</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 50%"></div></div>
       </div>
     </div>
 
@@ -1044,17 +1043,14 @@
       <div class="metric-card">
         <div class="metric-card__value">80%</div>
         <div class="metric-card__label">Of total drop-off concentrated at 3 friction points identified through journey mapping</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 80%"></div></div>
       </div>
       <div class="metric-card">
         <div class="metric-card__value">4-step</div>
         <div class="metric-card__label">Guided funnel replacing complex multi-step configuration process</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 70%"></div></div>
       </div>
       <div class="metric-card">
         <div class="metric-card__value">0</div>
         <div class="metric-card__label">Engineering rework &mdash; prototypes validated before development began</div>
-        <div class="metric-card__bar"><div class="metric-card__bar-fill" style="width: 100%"></div></div>
       </div>
     </div>
 

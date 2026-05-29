@@ -2570,3 +2570,50 @@ button:focus-visible,
 @media (max-width: 640px) {
   .current-role { padding: var(--space-2xl) var(--space-md); }
 }
+
+/* --- HERO CTAs (primary + Download CV) --- */
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+.hero__ctas .hero__cta { margin-top: 0; }
+.hero__cta--secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+.hero__cta--secondary:hover {
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  border-color: var(--color-text-light);
+  box-shadow: none;
+}
+
+/* --- Case bullet list (scannable prose) --- */
+.case-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-sm);
+}
+.case-bullets li {
+  position: relative;
+  padding-left: 26px;
+  color: var(--color-text-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+.case-bullets li strong { color: var(--color-text); }
+.case-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
