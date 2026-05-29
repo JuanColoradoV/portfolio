@@ -2062,6 +2062,11 @@ body.lightbox-open {
     gap: var(--space-xl);
   }
 
+  /* Text-first hero on narrow/stacked layouts — the product shot stays on desktop only */
+  .hero__product {
+    display: none;
+  }
+
   .hero__stats {
     flex-direction: row;
     flex: 1;
