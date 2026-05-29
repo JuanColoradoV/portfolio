@@ -1,0 +1,14 @@
+{
+  "name": "Juan David Colorado — Senior Product Designer & Lead",
+  "short_name": "JDC",
+  "description": "Senior Product Designer & Lead — AI & Enterprise UX.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FAFAF8",
+  "theme_color": "#FAFAF8",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
