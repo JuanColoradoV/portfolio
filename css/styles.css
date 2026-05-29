@@ -2635,3 +2635,65 @@ button:focus-visible,
   border-radius: 50%;
   background: var(--color-accent);
 }
+
+/* ============================================
+   BENTO — featured lead case (asymmetric work grid)
+   ============================================ */
+.case-card--feature {
+  grid-column: 1 / -1;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  gap: var(--space-2xl);
+  padding: var(--space-xl);
+}
+.case-card--feature .case-card__image {
+  flex: 1.2;
+  aspect-ratio: auto;
+  min-height: 340px;
+  margin-bottom: 0;
+}
+.case-card--feature .case-card__content {
+  flex: 1;
+  justify-content: center;
+}
+.case-card--feature .case-card__title {
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+}
+.case-card--feature .case-card__description {
+  font-size: 1.0625rem;
+}
+
+/* "Featured case" pill — solid (no glassmorphism), on-brand teal */
+.case-card__featured {
+  position: absolute;
+  top: var(--space-lg);
+  left: var(--space-lg);
+  z-index: 3;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  background: var(--color-bg);
+  border: 1px solid rgba(15, 118, 110, 0.32);
+  padding: 5px 11px;
+  border-radius: 999px;
+}
+
+@media (max-width: 760px) {
+  .case-card--feature {
+    flex-direction: column;
+    gap: 0;
+    padding: var(--space-lg);
+  }
+  .case-card--feature .case-card__image {
+    aspect-ratio: 16/10;
+    min-height: 0;
+    margin-bottom: var(--space-md);
+  }
+  .case-card__featured {
+    top: calc(var(--space-lg) + var(--space-xs));
+    left: calc(var(--space-lg) + var(--space-xs));
+  }
+}
