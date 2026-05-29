@@ -1046,16 +1046,20 @@ a:focus-visible {
 
 /* Logo images in case study heroes */
 .case-hero__logo {
-  height: 30px;
+  height: auto;
   width: auto;
+  max-height: 48px;        /* tall cap — gives squarish logos (Nvidia, YMA) real presence */
+  max-width: 175px;        /* width cap — stops wide logos from dominating */
   object-fit: contain;
   object-position: left center;
   margin-bottom: 16px;
   image-rendering: -webkit-optimize-contrast;
 }
 
+/* Bucket full wordmark (icon + bucket.io + tagline): wider allowance so it reads */
 .case-hero__logo--lg {
-  height: 30px;
+  max-height: 48px;
+  max-width: 210px;
 }
 
 /* --- METRICS ROW --- */
