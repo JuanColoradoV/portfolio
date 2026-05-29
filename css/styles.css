@@ -1062,6 +1062,11 @@ a:focus-visible {
   max-width: 210px;
 }
 
+/* Nvidia: nudge a little larger than the rest */
+.case-hero__logo--nvidia {
+  max-height: 58px;
+}
+
 /* --- METRICS ROW --- */
 .metrics-row {
   display: grid;
