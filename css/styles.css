@@ -2492,3 +2492,81 @@ button:focus-visible,
 @media (prefers-reduced-motion: reduce) {
   .case-card__image::after { display: none; }
 }
+
+/* --- CURRENT ROLE BAND (Symplast) --- */
+.current-role {
+  padding: var(--space-2xl) var(--space-lg);
+  background: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+.current-role__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.current-role__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  background: rgba(15, 118, 110, 0.10);
+  border: 1px solid rgba(15, 118, 110, 0.28);
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: var(--space-lg);
+}
+.current-role__badge::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+.current-role__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+.current-role__title span {
+  color: var(--color-accent);
+}
+.current-role__desc {
+  max-width: 68ch;
+  color: var(--color-text-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-xl);
+}
+.current-role__points {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md) var(--space-xl);
+}
+.current-role__points li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--color-text);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.current-role__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+@media (max-width: 640px) {
+  .current-role { padding: var(--space-2xl) var(--space-md); }
+}
