@@ -1046,12 +1046,16 @@ a:focus-visible {
 
 /* Logo images in case study heroes */
 .case-hero__logo {
-  height: 32px;
-  margin-bottom: 8px;
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+  object-position: left center;
+  margin-bottom: 16px;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .case-hero__logo--lg {
-  height: 36px;
+  height: 30px;
 }
 
 /* --- METRICS ROW --- */

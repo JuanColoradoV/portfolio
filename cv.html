@@ -18,7 +18,15 @@
     *{box-sizing:border-box;margin:0;padding:0;}
     html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
     body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.45;font-size:10.2pt;}
-    .page{max-width:8.5in;margin:0 auto;padding:0.5in 0.6in;}
+    body::before{content:'';display:block;height:6px;background:var(--accent);}
+    .page{max-width:8.5in;margin:0 auto;padding:0.42in 0.6in 0.5in;}
+
+    /* Metrics strip */
+    .metrics{display:grid;grid-template-columns:repeat(3,1fr);margin:0 0 16px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff;}
+    .metric{padding:11px 16px;border-right:1px solid var(--line);}
+    .metric:last-child{border-right:none;}
+    .metric__num{display:block;font-family:var(--display);font-size:21pt;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.02em;}
+    .metric__lbl{display:block;font-size:7.8pt;color:var(--muted);line-height:1.35;margin-top:5px;}
 
     /* Header */
     .head{border-bottom:2px solid var(--text);padding-bottom:14px;margin-bottom:14px;}
@@ -86,9 +94,14 @@
       Senior Product Designer &amp; Lead with <strong>10+ years</strong> turning dense B2B, AI, and enterprise workflows into clear,
       validated interfaces &mdash; and shipping the front-end code too. Now <strong>leading design at Symplast</strong>, a mobile-first,
       <strong>HIPAA-compliant EHR for 3,500+ aesthetic practices</strong>; previously UX lead for <strong>Nvidia&rsquo;s $2B+ supply-chain AI platform</strong>.
-      Evidence-driven results: <span class="hl">~90%</span> task-completion gain (usability testing),
-      <span class="hl">~80%</span> task-comprehension gain (Maze A/B), and <span class="hl">~30%</span> faster design-to-dev handoff.
+      I validate decisions with user research and A/B testing &mdash; and ship the front-end code myself.
     </p>
+
+    <div class="metrics">
+      <div class="metric"><span class="metric__num">~90%</span><span class="metric__lbl">Task-completion gain<br>Nvidia usability testing</span></div>
+      <div class="metric"><span class="metric__num">~80%</span><span class="metric__lbl">Task-comprehension gain<br>Maze A/B testing</span></div>
+      <div class="metric"><span class="metric__num">~30%</span><span class="metric__lbl">Faster design-to-dev<br>handoff (9&rarr;6 days)</span></div>
+    </div>
 
     <h2>Core</h2>
     <div class="core">
