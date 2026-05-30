@@ -14,6 +14,7 @@
   /* Colors — CV-aligned neutral palette */
   --color-bg: #FAFAF8;
   --color-bg-alt: #F2F1EF;
+  --color-surface: #FFFFFF;
   --color-bg-dark: #111111;
   --color-text: #1A1A1A;
   --color-text-secondary: #6B6B6B;
@@ -576,7 +577,7 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   padding: var(--space-lg);
-  background: white;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 12px;
   transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
@@ -1076,7 +1077,7 @@ a:focus-visible {
 }
 
 .metric-card {
-  background: white;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: var(--space-xl);
@@ -1242,7 +1243,7 @@ a:focus-visible {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  background: white;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s ease;
   text-decoration: none;
@@ -2710,3 +2711,60 @@ button:focus-visible,
 @media (max-width: 700px) {
   .case-tldr__inner { grid-template-columns: 1fr; gap: var(--space-md); padding-bottom: var(--space-xl); }
 }
+
+/* ============================================
+   DARK MODE — system preference + manual toggle (data-theme on <html>)
+   ============================================ */
+[data-theme="dark"] {
+  --color-bg: #0E1413;
+  --color-bg-alt: #161E1C;
+  --color-surface: #141B1A;
+  --color-bg-dark: #1A2422;
+  --color-bg-dark-hover: #243230;
+  --color-text: #ECEFEE;
+  --color-text-secondary: #9FAAA8;
+  --color-text-light: #889390;
+  --color-text-on-dark: #B8C2C0;
+  --color-text-inverse: #ECEFEE;
+  --color-accent: #2DD4BF;
+  --color-accent-hover: #5EEAD4;
+  --color-border: #2A3432;
+  --color-border-light: #202927;
+  --color-metric: #ECEFEE;
+  --color-nda-bg: rgba(245, 158, 11, 0.12);
+  --color-nda-text: #FCD34D;
+  --color-nda-border: rgba(245, 158, 11, 0.35);
+  --color-nav-bg: rgba(14, 20, 19, 0.82);
+}
+
+/* Primary CTA stays a clear light button on dark */
+[data-theme="dark"] .hero__cta { background: var(--color-text); color: #0E1413; }
+[data-theme="dark"] .hero__cta:hover { background: #ffffff; color: #0E1413; }
+/* Contact section: subtle elevated dark instead of the light-mode gradient */
+[data-theme="dark"] .section--dark.section--contact {
+  background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+}
+/* Light screenshots/diagrams: dark frame + slightly tame the glare */
+[data-theme="dark"] .case-image__container,
+[data-theme="dark"] .case-card__image,
+[data-theme="dark"] .hero__product { background: #0A0F0E; }
+[data-theme="dark"] .case-image__screenshot,
+[data-theme="dark"] .case-card__image img,
+[data-theme="dark"] .hero__product img { filter: brightness(0.94); }
+[data-theme="dark"] ::selection { color: #0E1413; }
+
+/* --- Theme toggle button --- */
+.nav__name { margin-right: auto; }
+.theme-toggle {
+  background: none; border: none; cursor: pointer;
+  padding: 8px; margin-right: var(--space-sm);
+  color: var(--color-text-secondary);
+  display: inline-flex; align-items: center;
+  border-radius: 6px; transition: color var(--transition-fast), background var(--transition-fast);
+}
+.theme-toggle:hover { color: var(--color-text); background: var(--color-bg-alt); }
+.theme-toggle:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+.theme-toggle svg { width: 18px; height: 18px; display: block; }
+.theme-toggle__sun { display: none; }
+[data-theme="dark"] .theme-toggle__moon { display: none; }
+[data-theme="dark"] .theme-toggle__sun { display: block; }

@@ -70,8 +70,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Theme: set data-theme before CSS to avoid a flash -->
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260529l">
+  <link rel="stylesheet" href="css/styles.css?v=20260529m">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -83,6 +86,10 @@
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="#main" class="nav__name" aria-label="Juan David Colorado - Home">JDC</a>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme">
+        <svg class="theme-toggle__moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="theme-toggle__sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
       <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -1641,6 +1648,22 @@
         this.setAttribute('aria-expanded', expanded ? 'false' : 'true');
         navLinksEl.classList.toggle('nav__links--open');
       });
+
+      // --- Theme toggle (light/dark, persisted) ---
+      const themeToggle = document.querySelector('.theme-toggle');
+      if (themeToggle) {
+        const syncThemeLabel = () => {
+          const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+          themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+        };
+        syncThemeLabel();
+        themeToggle.addEventListener('click', () => {
+          const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+          syncThemeLabel();
+        });
+      }
 
       // --- Lightbox ---
       const lightbox = document.getElementById('lightbox');
