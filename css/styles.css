@@ -2926,6 +2926,17 @@ button:focus-visible,
 [data-theme="dark"] .hero__product img { filter: brightness(0.94); }
 [data-theme="dark"] ::selection { color: #0E1413; }
 
+/* Client logos in dark mode: keep EXACT brand colors (Nvidia green, Bucket orange,
+   Solving's palette) on a subtle light "brand plate". An invert/hue-rotate filter
+   would distort all three — only a pure-black logo survives it, and only YMA is pure black. */
+[data-theme="dark"] .case-hero__logo {
+  box-sizing: content-box;
+  background: #FAFAF8;
+  padding: 11px 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
 /* --- Theme toggle button --- */
 .nav__name { margin-right: auto; }
 .theme-toggle {
