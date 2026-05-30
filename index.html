@@ -74,7 +74,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260530d">
+  <link rel="stylesheet" href="css/styles.css?v=20260530e">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -1244,17 +1244,38 @@
         <h2 class="section__title">Juan David Colorado Vargas</h2>
 
         <div class="about__content">
-            <p>I specialize in making complex systems usable. Over the past decade, I have led design for enterprise platforms built on SAP Fiori, AI-powered products processing real-time computer vision data, and marketing technology systems serving Fortune 500 brands.</p>
+            <p class="about__lead">I specialize in making complex systems usable. Over the past decade, I have led design for enterprise platforms built on SAP Fiori, AI products processing real-time computer vision data, and marketing technology serving Fortune 500 brands.</p>
 
-            <p>My work is defined by three principles: <strong>validate early</strong>, <strong>systematize everything</strong>, and <strong>ship with intent</strong>.</p>
+            <div class="about__principles fade-in">
+              <div class="principle-card">
+                <span class="principle-card__number">01</span>
+                <h3 class="principle-card__title">Validate early</h3>
+                <p class="principle-card__text">I built an evidence-based design culture at Solving AI, using Maze A/B testing to lift task comprehension by 80% and steer roadmap decisions with data, not taste.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-card__number">02</span>
+                <h3 class="principle-card__title">Systematize everything</h3>
+                <p class="principle-card__text">At CodeBranch I redesigned Nvidia's supply-chain platform, turning a flat, unstructured interface into a structured SAP Fiori dashboard for a 90% task-completion gain.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-card__number">03</span>
+                <h3 class="principle-card__title">Ship with intent</h3>
+                <p class="principle-card__text">I work as a Product Owner alongside design: writing user stories, overseeing QA, and making sure design intent survives engineering implementation.</p>
+              </div>
+            </div>
 
-            <p>At Solving AI, I established an evidence-based design culture &mdash; implementing Maze A/B testing workflows that improved task comprehension by 80% (measured across success rate, misclick rate, and time-on-task) and directly influenced product roadmap decisions. At CodeBranch, I redesigned Nvidia's supply chain intelligence platform from a flat, unstructured interface into a structured SAP Fiori dashboard, resulting in a 90% task completion improvement across global teams.</p>
+            <div class="about__highlight fade-in">
+              <div class="about__highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div class="about__highlight-text">
+                <h3>The differentiator: I code.</h3>
+                <p>I have shipped 20+ production web templates in HTML, CSS &amp; JS for brands including DISH, Nvidia, Milwaukee Tool, and Andersen Windows. My designs are engineerable from day one because I think in components. <em>This very portfolio is hand-coded vanilla HTML, CSS, and JS. No templates, no page builders.</em></p>
+              </div>
+            </div>
 
-            <p>What differentiates me: <strong>I code.</strong> I have shipped 20+ production web templates in HTML/CSS/JS for brands including DISH, Nvidia, Milwaukee Tool, and Andersen Windows. I think in components. My designs are engineerable from day one &mdash; and I currently function as a Product Owner alongside my design role, writing user stories, overseeing QA, and ensuring design intent survives implementation. <em>This portfolio is hand-coded HTML, CSS &amp; JavaScript &mdash; no templates, no page builders.</em></p>
-
-            <div class="about__philosophy">
+            <div class="about__philosophy fade-in">
               <blockquote>"I'd rather ship a smaller design I can defend with a Maze result than a bigger one I can only defend with taste."</blockquote>
-              <p>The best design decisions are the ones you can defend with data. I use A/B testing, user research, and analytics to drive product direction &mdash; not personal taste.</p>
             </div>
 
             <!-- Core Expertise -->

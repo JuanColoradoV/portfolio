@@ -1514,6 +1514,129 @@ a:focus-visible {
   margin-bottom: 0;
 }
 
+/* --- ABOUT: scannable principles + "I code" highlight --- */
+.about__content .about__lead {
+  font-size: 1.1875rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  max-width: 680px;
+  margin: 0 auto var(--space-2xl);
+  text-align: center;
+}
+
+.about__principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.principle-card {
+  position: relative;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: var(--space-lg);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.3s ease;
+}
+
+@media (hover: hover) {
+  .principle-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-text-light);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+  }
+  [data-theme="dark"] .principle-card:hover {
+    border-color: var(--color-border);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.principle-card__number {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
+}
+
+.about__principles .principle-card__title {
+  font-family: var(--font-display);
+  font-size: 1.1875rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.about__principles .principle-card__text {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 0;
+}
+
+.about__highlight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  background: var(--color-bg-dark);
+  color: var(--color-text-inverse);
+  padding: var(--space-xl) var(--space-2xl);
+  border-radius: 14px;
+  margin-bottom: var(--space-xl);
+}
+
+[data-theme="dark"] .about__highlight {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.about__highlight-icon {
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.about__highlight-icon svg {
+  width: 44px;
+  height: 44px;
+  color: var(--color-accent);
+}
+
+.about__highlight .about__highlight-text h3 {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-inverse);
+}
+
+.about__highlight .about__highlight-text p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-on-dark);
+  margin-bottom: 0;
+}
+
+.about__highlight em {
+  color: var(--color-accent);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about__highlight {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
+    padding: var(--space-xl);
+  }
+}
+
 /* Testimonials */
 .testimonials__heading {
   font-size: 0.6875rem;
