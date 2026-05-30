@@ -74,7 +74,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260530h">
+  <link rel="stylesheet" href="css/styles.css?v=20260530i">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -99,6 +99,7 @@
         <li><a href="#about" class="nav__link">About</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
         <li><a href="assets/Juan_David_Colorado_CV.pdf?v=4" class="nav__link" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li class="nav__indicator" aria-hidden="true"></li>
       </ul>
     </div>
   </nav>
@@ -1682,6 +1683,22 @@
       const navLinks = document.querySelectorAll('.nav__link');
       const stepItems = document.querySelectorAll('.section-nav__item');
 
+      // Travelling underline indicator — additive over the scroll-spy below
+      const navIndicator = document.querySelector('.nav__indicator');
+      const navLinksUl = document.querySelector('.nav__links');
+      if (navLinksUl) navLinksUl.classList.add('nav__links--js');
+      const moveIndicator = () => {
+        if (!navIndicator || !navLinksUl) return;
+        const active = navLinksUl.querySelector('.nav__link--active');
+        if (!active || window.matchMedia('(max-width: 768px)').matches) {
+          navIndicator.style.opacity = '0';
+          return;
+        }
+        navIndicator.style.left = active.offsetLeft + 'px';
+        navIndicator.style.width = active.offsetWidth + 'px';
+        navIndicator.style.opacity = '1';
+      };
+
       const matchesSection = (href, id) =>
         href === '#' + id || (id && id.startsWith('case-') && href === '#work');
 
@@ -1701,11 +1718,19 @@
               if (match) item.setAttribute('aria-current', 'true');
               else item.removeAttribute('aria-current');
             });
+            moveIndicator();
           }
         });
       }, { threshold: 0.1, rootMargin: '-20% 0px -60% 0px' });
 
       sections.forEach(section => sectionObserver.observe(section));
+
+      // Keep the travelling indicator correct on load, after fonts settle, and on resize
+      window.addEventListener('load', moveIndicator);
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(moveIndicator);
+      let navResizeT;
+      window.addEventListener('resize', () => { clearTimeout(navResizeT); navResizeT = setTimeout(moveIndicator, 120); }, { passive: true });
+      moveIndicator();
 
       // --- Smooth scroll for anchor links ---
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
