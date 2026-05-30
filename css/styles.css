@@ -1466,6 +1466,53 @@ a:focus-visible {
   letter-spacing: 0.05em;
 }
 
+/* Live-site cards: "Live" badge + accent label to signal these are clickable, running builds */
+.template-card__image {
+  position: relative;
+}
+
+.template-card__live {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: rgba(10, 15, 14, 0.78);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.template-card__live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2DD4BF;
+  box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.55);
+  animation: livedotPulse 2.2s ease-out infinite;
+}
+
+@keyframes livedotPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.55); }
+  70%  { box-shadow: 0 0 0 7px rgba(45, 212, 191, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0); }
+}
+
+.template-card--live .template-card__type {
+  color: var(--color-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .template-card__live-dot { animation: none; }
+}
+
 /* --- ABOUT --- */
 #about .section__label,
 #about .section__title {
