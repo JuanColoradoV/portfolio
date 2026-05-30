@@ -258,21 +258,48 @@ a:focus-visible {
   padding: var(--space-4xl) var(--space-lg) var(--space-3xl);
   position: relative;
   overflow: hidden;
+  background-color: var(--color-bg);
 }
 
+/* Living aura: two slow-drifting teal radials. Brand-tied, works in both themes,
+   sits behind everything (z 0). This is the "alive" feel without a rainbow-mesh cliché. */
 .hero::before {
   content: '';
   position: absolute;
-  top: -200px;
-  right: -200px;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(15, 118, 110, 0.04) 0%, transparent 70%);
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  z-index: 0;
   pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(45, 212, 191, 0.07) 0%, transparent 58%),
+    radial-gradient(circle at 82% 18%, rgba(15, 118, 110, 0.05) 0%, transparent 50%);
+  animation: heroAuraDrift 22s ease-in-out infinite alternate;
+}
+
+@keyframes heroAuraDrift {
+  0%   { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.06) translate(-1.8%, 1.8%); }
+}
+
+/* Whisper-fine film grain. Low opacity + sits beneath the content layer (z 1 < inner z 2),
+   so the headline stays razor-crisp; it only textures the empty background. */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.1;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 170px 170px;
 }
 
 .hero__inner {
+  position: relative;
+  z-index: 2;
   max-width: var(--max-width);
   margin: 0 auto;
   width: 100%;
@@ -363,8 +390,31 @@ a:focus-visible {
 .hero__cta:hover {
   background: var(--color-bg-dark-hover);
   color: var(--color-text-inverse);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Premium tactile CTA: a single shine-sweep on hover + a lift with a soft teal glow.
+   overflow:hidden clips the sweep; position:relative anchors it. */
+.hero__cta {
+  position: relative;
+  overflow: hidden;
+}
+.hero__cta::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -120%;
+  width: 60%;
+  pointer-events: none;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+  transition: left 0.6s var(--ease-out-quint, cubic-bezier(0.22, 1, 0.36, 1));
+}
+.hero__cta:hover::after { left: 130%; }
+
+/* Scoped under .hero--loaded so it beats the entrance rule's transform: translateY(0). */
+.hero--loaded .hero__cta:hover { transform: translateY(-3px); }
+.hero--loaded .hero__cta:not(.hero__cta--secondary):hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(15, 118, 110, 0.22);
 }
 
 .hero__cta svg {
@@ -580,17 +630,43 @@ a:focus-visible {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 12px;
-  transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.3s ease;
   text-decoration: none;
   color: inherit;
 }
 
+/* Higher specificity than .fade-in so the spatial shadow + border transition smoothly
+   on hover, while the scroll-reveal (opacity/transform) is preserved. */
+.work-grid .case-card {
+  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1),
+              transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.3s ease;
+}
+
 @media (hover: hover) {
+  /* Spatial depth: stacked shadows mimic real distance from the surface,
+     so the card reads as physically lifting rather than just gaining a drop shadow. */
   .case-card:hover {
     border-color: var(--color-text-light);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+    box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.02),
+      0 10px 15px rgba(0, 0, 0, 0.04),
+      0 20px 30px rgba(0, 0, 0, 0.06),
+      0 40px 60px rgba(0, 0, 0, 0.08);
     color: inherit;
+  }
+  /* Dark mode: shadow alone is invisible on near-black, so add a hairline inner
+     highlight ring — the card reads as elevated by catching light on its top edge. */
+  [data-theme="dark"] .case-card:hover {
+    border-color: var(--color-border);
+    box-shadow:
+      0 10px 15px rgba(0, 0, 0, 0.30),
+      0 20px 40px rgba(0, 0, 0, 0.45),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.05);
   }
 }
 
@@ -2492,6 +2568,8 @@ button:focus-visible,
 
 @media (prefers-reduced-motion: reduce) {
   .case-card__image::after { display: none; }
+  .hero::before { animation: none; }
+  .hero__cta::after { display: none; }
 }
 
 /* --- CURRENT ROLE BAND (Symplast) --- */
