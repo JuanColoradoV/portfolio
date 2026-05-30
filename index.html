@@ -74,7 +74,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260530b">
+  <link rel="stylesheet" href="css/styles.css?v=20260530c">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -138,32 +138,23 @@
             </a>
           </div>
         </div>
-        <div class="hero__visual">
-          <figure class="hero__product">
-            <picture>
-              <source srcset="assets/solving-ai/hero-builder.webp" type="image/webp">
-              <img src="assets/solving-ai/hero-builder.jpg" alt="Solving AI node-based workflow builder — a production AI tool I designed, with code-execution and language-model nodes" width="763" height="557" fetchpriority="high" decoding="async">
-            </picture>
-            <figcaption class="hero__product-caption">Solving AI workflow builder &mdash; shipped product</figcaption>
-          </figure>
-          <div class="hero__stats">
-            <div class="hero__stat">
-              <span class="hero__stat-number">~80%</span>
-              <span class="hero__stat-label">Task comprehension, Solving AI (Maze A/B)</span>
-            </div>
-            <div class="hero__stat-divider"></div>
+        <div class="hero__metrics-bar fade-in">
+          <div class="hero__stats-row">
             <div class="hero__stat">
               <span class="hero__stat-number">~90%</span>
-              <span class="hero__stat-label">Task-completion gain, Nvidia usability testing</span>
+              <span class="hero__stat-label">Task-completion gain (Nvidia)</span>
             </div>
-            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">~80%</span>
+              <span class="hero__stat-label">Task comprehension (Solving AI)</span>
+            </div>
             <div class="hero__stat">
               <span class="hero__stat-number">30%</span>
-              <span class="hero__stat-label">Faster handoff (9 &rarr; 6 days), Solving AI</span>
+              <span class="hero__stat-label">Faster design handoff</span>
             </div>
           </div>
-          <div class="hero__clients">
-            <span class="hero__clients-label">Notable Clients</span>
+          <div class="hero__clients-row">
+            <span class="hero__clients-label">Trusted by</span>
             <div class="hero__clients-list">
               <span>Nvidia</span>
               <span>DISH</span>
@@ -171,6 +162,19 @@
               <span>Bucket.io</span>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SOCIAL PROOF ==================== -->
+    <section class="social-proof fade-in" aria-label="Recommendation">
+      <div class="social-proof__inner">
+        <span class="social-proof__mark" aria-hidden="true">&ldquo;</span>
+        <blockquote class="social-proof__quote">
+          Juan took full ownership of the design architecture. He wasn&rsquo;t just sending over designs &mdash; he was actively involved in shaping the product. If you&rsquo;re looking for a UI/UX designer who can think strategically, design beautifully, and work seamlessly with developers, Juan&rsquo;s your guy.
+        </blockquote>
+        <div class="social-proof__author">
+          <strong>Francisco Pautt Guzm&aacute;n</strong> &mdash; Software Engineer (React/TypeScript)
         </div>
       </div>
     </section>
