@@ -3122,3 +3122,100 @@ button:focus-visible,
 .theme-toggle__sun { display: none; }
 [data-theme="dark"] .theme-toggle__moon { display: none; }
 [data-theme="dark"] .theme-toggle__sun { display: block; }
+
+/* --- Section stepper: compact "where am I" rail (desktop only) --- */
+.section-nav {
+  position: fixed;
+  top: 50%;
+  right: 26px;
+  transform: translateY(-50%);
+  z-index: 55;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.section-nav:hover { opacity: 1; }
+
+.section-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.section-nav__item {
+  position: relative;
+  display: block;
+  padding: 6px 0;
+  line-height: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section-nav__dot {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-text-light);
+  background: transparent;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+/* labels are absolutely positioned, so the idle rail is just dots and never
+   reserves gutter space; they slide out on hover/focus */
+.section-nav__label {
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-text-light);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease, color 0.2s ease;
+}
+
+.section-nav:hover .section-nav__label,
+.section-nav__item:focus-visible .section-nav__label {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.section-nav__item:hover .section-nav__dot { border-color: var(--color-accent); }
+.section-nav__item:hover .section-nav__label { color: var(--color-text); }
+
+/* active step: filled teal dot, scaled up */
+.section-nav__item--active .section-nav__dot {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: scale(1.3);
+}
+.section-nav__item--active .section-nav__label {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.section-nav__item:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+/* only render where there's gutter beside the 1200px content column */
+@media (max-width: 1279px) {
+  .section-nav { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-nav__label,
+  .section-nav:hover .section-nav__label,
+  .section-nav__item:focus-visible .section-nav__label { transform: translateY(-50%); }
+  .section-nav__item--active .section-nav__dot { transform: none; }
+}
