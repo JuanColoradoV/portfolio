@@ -337,6 +337,36 @@
             </div>
           </a>
 
+          <a href="#case-epm" class="case-card fade-in">
+            <div class="case-card__image">
+              <picture>
+                <source srcset="assets/epm/map.webp" type="image/webp">
+                <img src="assets/epm/map.jpg" alt="EPM Carga Verde, the EV charger availability app I designed and built, showing a live station map of Medellin" width="1600" height="1000" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="case-card__content">
+              <span class="case-card__company">Self-initiated &middot; Personal Product</span>
+              <h3 class="case-card__title">An EV Charger Finder I Built to Solve My Own Problem</h3>
+              <p class="case-card__description">As an EV owner in Medell&iacute;n, I kept reaching EPM chargers that were busy or broken with no way to check first &mdash; so I designed and shipped a cross-platform app for real-time availability, and pitched it to EPM.</p>
+              <div class="case-card__metrics">
+                <div class="case-card__metric">
+                  <span class="case-card__metric-value">0&rarr;1</span>
+                  <span class="case-card__metric-label">Solo: designed, built &amp; pitched</span>
+                </div>
+                <div class="case-card__metric">
+                  <span class="case-card__metric-value">2</span>
+                  <span class="case-card__metric-label">Platforms, one codebase (web + native)</span>
+                </div>
+              </div>
+              <div class="case-card__tags">
+                <span class="tag">Product Design</span>
+                <span class="tag">Front-end Dev</span>
+                <span class="tag">0&rarr;1</span>
+              </div>
+              <span class="case-card__arrow">Read case study &rarr;</span>
+            </div>
+          </a>
+
           <!-- Behance CTA -->
           <div class="work-cta fade-in">
             <p class="work-cta__text">Additional projects available</p>
@@ -1134,6 +1164,123 @@
         <p class="case-section__number">04</p>
         <h3 class="case-section__heading">Reflection.</h3>
         <p class="case-section__text">This project reinforced that the highest-leverage design work often happens before any screen is designed. The journey mapping phase took two weeks, but it saved months of engineering time by ensuring we solved the right problems. If I did this project again, I would have pushed to run a live A/B test between the two design options with real users rather than relying solely on stakeholder evaluation &mdash; the data would have made the final decision more defensible.</p>
+      </div>
+    </div>
+
+    <a href="#case-epm" class="next-project">
+      <div>
+        <p class="next-project__label">Continue to</p>
+        <p class="next-project__title">EPM Carga Verde &rarr;</p>
+      </div>
+    </a>
+
+    <!-- ==================== CASE: EPM CARGA VERDE ==================== -->
+    <section id="case-epm" class="case-hero">
+      <div class="case-hero__inner">
+        <a href="#work" class="case-hero__back">&larr; Back to all work</a>
+        <p class="case-hero__company">Self-initiated concept &middot; 2025</p>
+        <h2 class="case-hero__title">Real-Time EV Charging for Medell&iacute;n</h2>
+        <p class="case-hero__subtitle">A cross-platform app I designed and built to solve a problem I hit every week as an EV owner &mdash; then pitched to the utility that runs the chargers.</p>
+
+        <div class="case-meta">
+          <div class="case-meta__item"><span class="case-meta__label">Role</span><span class="case-meta__value">Product Designer &amp; Developer (solo)</span></div>
+          <div class="case-meta__item"><span class="case-meta__label">Type</span><span class="case-meta__value">Self-initiated &middot; 2025</span></div>
+          <div class="case-meta__item"><span class="case-meta__label">Scope</span><span class="case-meta__value">Design + front-end, end to end</span></div>
+          <div class="case-meta__item"><span class="case-meta__label">Stack</span><span class="case-meta__value">Next.js, React Native, Turborepo, TypeScript, Leaflet</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TL;DR -->
+    <div class="case-tldr fade-in">
+      <div class="case-tldr__inner">
+        <div class="case-tldr__col"><span class="case-tldr__label">Problem</span><p>As an EV owner in Medell&iacute;n, I'd reach EPM chargers only to find them busy or out of service, with no way to check first. Their own app barely shows status.</p></div>
+        <div class="case-tldr__col"><span class="case-tldr__label">What I did</span><p>Designed and built a cross-platform app (web + native) with availability per connector, type and power filters, a status map, and a damage-report flow.</p></div>
+        <div class="case-tldr__col case-tldr__col--out"><span class="case-tldr__label">Outcome</span><p>Pitched it to EPM for free. They loved the design but couldn't adopt external code, so it lives as a working concept, built end to end, solo.</p></div>
+      </div>
+    </div>
+
+    <!-- EPM: core availability view -->
+    <div class="case-image-grid fade-in-stagger">
+      <div class="case-image" role="button" tabindex="0">
+        <div class="case-image__container case-image__container--contained">
+          <picture>
+            <source srcset="assets/epm/map.webp" type="image/webp">
+            <img src="assets/epm/map.jpg" alt="EPM Carga Verde map view: a sidebar list of charging stations with live availability and an interactive status map of the Medellin metro area" class="case-image__screenshot" width="1600" height="1000" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <p class="case-image__caption">Availability first: every station shows how many connectors are free, their type and power, and a live, color-coded status map.</p>
+      </div>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section__inner">
+        <p class="case-section__number">01</p>
+        <h3 class="case-section__heading">The chargers exist. Knowing if they work is the hard part.</h3>
+        <p class="case-section__text">EPM runs the public EV charging network across the Medell&iacute;n metro area. As a driver, the recurring problem was never finding a charger on a map &mdash; it was arriving to find it occupied, in maintenance, or simply broken, with no way to know in advance.</p>
+        <p class="case-section__text">Their existing app lists stations, but not the thing that actually decides your trip: <strong>is a connector free right now, what type and power is it, and is it even working?</strong> So I designed the tool I wanted to use.</p>
+      </div>
+    </div>
+
+    <!-- EPM: damage-report flow -->
+    <div class="case-image-grid fade-in-stagger">
+      <div class="case-image" role="button" tabindex="0">
+        <div class="case-image__container case-image__container--contained">
+          <picture>
+            <source srcset="assets/epm/report.webp" type="image/webp">
+            <img src="assets/epm/report.jpg" alt="EPM Carga Verde damage-report flow: a guided form with station selector, seven damage-type categories, a description field with photo upload, and contact details" class="case-image__screenshot" width="1500" height="1146" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <p class="case-image__caption">A guided damage-report flow, the feedback loop EPM's app is missing, so the network's status stays honest.</p>
+      </div>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section__inner">
+        <p class="case-section__number">02</p>
+        <h3 class="case-section__heading">Designed around the decision, not the database.</h3>
+        <p class="case-section__text"><strong>Availability-first.</strong> Each station leads with how many connectors are free (3/4), the connector type and power (Type 2, 22&nbsp;kW), and a live status &mdash; available, in use with an ETA, in maintenance, or out of service &mdash; mirrored on a color-coded map.</p>
+        <p class="case-section__text"><strong>Filters that match intent.</strong> Filter by city, by charge speed (r&aacute;pida or normal), and "only available," so the list answers the real question: where can I actually charge right now?</p>
+        <p class="case-section__text"><strong>Closing the loop.</strong> A structured, seven-category damage-report flow lets drivers flag broken connectors, screens, or payment issues &mdash; the missing mechanism that keeps a status map trustworthy.</p>
+      </div>
+    </div>
+
+    <!-- EPM: mobile-first -->
+    <div class="case-image-grid fade-in-stagger">
+      <div class="case-image" role="button" tabindex="0">
+        <div class="case-image__container case-image__container--contained" style="max-width: 360px; margin-left: auto; margin-right: auto;">
+          <picture>
+            <source srcset="assets/epm/mobile-map.webp" type="image/webp">
+            <img src="assets/epm/mobile-map.jpg" alt="EPM Carga Verde mobile view: a full-screen status map of charging stations, built mobile-first for drivers on the go" class="case-image__screenshot" width="620" height="1342" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <p class="case-image__caption">Mobile-first, because you check this from the driver's seat. Same product as a native app and responsive web, from one Turborepo.</p>
+      </div>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section__inner">
+        <p class="case-section__number">03</p>
+        <h3 class="case-section__heading">Designed it, built it, pitched it.</h3>
+        <p class="case-section__text">I built the whole thing end to end: a <strong>Turborepo monorepo</strong> sharing logic between a <strong>Next.js</strong> web app and a <strong>React Native</strong> mobile app, in TypeScript, with the map on Leaflet.</p>
+        <p class="case-section__text">Then I took it to EPM and proposed it for free. The design landed &mdash; the brand fit, the handling, the features their app lacked &mdash; but as a matter of policy they couldn't adopt code from an external developer, so they didn't open their data or infrastructure to take it further.</p>
+        <p class="case-section__text"><em>Note: EPM doesn't expose a public availability feed, so the live status in the demo is simulated. The product, the UX, and the cross-platform build are real.</em></p>
+      </div>
+    </div>
+
+    <!-- Metrics -->
+    <div class="metrics-row fade-in">
+      <div class="metric-card">
+        <div class="metric-card__value">2</div>
+        <div class="metric-card__label">Platforms from one codebase &mdash; native app + responsive web (Turborepo)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card__value">7</div>
+        <div class="metric-card__label">Damage-report categories, with photo upload and guided steps</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-card__value">0&rarr;1</div>
+        <div class="metric-card__label">Designed, built, and pitched to the utility &mdash; solo</div>
       </div>
     </div>
 
