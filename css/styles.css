@@ -25,10 +25,10 @@
   --color-accent-hover: #0B5A54;
   --color-border: #E5E5E3;
   --color-border-light: #F0F0EE;
-  --color-nda: #F59E0B;
-  --color-nda-bg: #FEF3C7;
-  --color-nda-text: #92400E;
-  --color-nda-border: #FDE68A;
+  --color-nda: #57534E;
+  --color-nda-bg: #F5F4F1;
+  --color-nda-text: #57534E;
+  --color-nda-border: #E2DFD9;
   --color-nav-bg: rgba(250, 250, 248, 0.92);
   --color-bg-dark-hover: #333333;
 
@@ -1326,6 +1326,12 @@ a:focus-visible {
   font-weight: 600;
   color: var(--color-nda-text);
   margin-bottom: var(--space-lg);
+}
+.nda-badge svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: var(--color-accent);
 }
 
 .nda-badge svg {
@@ -3115,9 +3121,9 @@ button:focus-visible,
   --color-border: #2A3432;
   --color-border-light: #202927;
   --color-metric: #ECEFEE;
-  --color-nda-bg: rgba(245, 158, 11, 0.12);
-  --color-nda-text: #FCD34D;
-  --color-nda-border: rgba(245, 158, 11, 0.35);
+  --color-nda-bg: rgba(255, 255, 255, 0.06);
+  --color-nda-text: #A8A29E;
+  --color-nda-border: rgba(255, 255, 255, 0.13);
   --color-nav-bg: rgba(14, 20, 19, 0.82);
 }
 
