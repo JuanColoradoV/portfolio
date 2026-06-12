@@ -74,7 +74,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260530j">
+  <link rel="stylesheet" href="css/styles.css?v=20260611a">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -124,7 +124,7 @@
           <p class="hero__label">Senior Product Designer & Lead</p>
           <h1 class="hero__title">Juan David<br>Colorado Vargas</h1>
           <p class="hero__hook">I design AI-powered enterprise products that ship. Now leading design at Symplast; previously UX lead for Nvidia&rsquo;s $2B+ supply-chain AI platform.</p>
-          <p class="hero__subtitle">I turn complex B2B and AI workflows into clear, validated interfaces &mdash; and I ship the front-end code too. 10+ years bridging design and engineering.</p>
+          <p class="hero__subtitle">I turn complex B2B and AI workflows into clear, validated interfaces, and I ship the front-end code too. 10+ years bridging design and engineering.</p>
           <div class="hero__meta">
             <span class="hero__meta-item">
               <svg class="hero__meta-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -145,28 +145,14 @@
               <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
             <a href="assets/Juan_David_Colorado_CV.pdf?v=4" target="_blank" rel="noopener noreferrer" class="hero__cta hero__cta--secondary">
-              Download CV
+              Download resume
               <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             </a>
           </div>
         </div>
         <div class="hero__metrics-bar fade-in">
-          <div class="hero__stats-row">
-            <div class="hero__stat">
-              <span class="hero__stat-number">~90%</span>
-              <span class="hero__stat-label">Task-completion gain (Nvidia)</span>
-            </div>
-            <div class="hero__stat">
-              <span class="hero__stat-number">~80%</span>
-              <span class="hero__stat-label">Task comprehension (Solving AI)</span>
-            </div>
-            <div class="hero__stat">
-              <span class="hero__stat-number">30%</span>
-              <span class="hero__stat-label">Faster design handoff</span>
-            </div>
-          </div>
           <div class="hero__clients-row">
-            <span class="hero__clients-label">Trusted by</span>
+            <span class="hero__clients-label">Trusted by teams at</span>
             <div class="hero__clients-list">
               <span>Nvidia</span>
               <span>DISH</span>
@@ -186,7 +172,7 @@
           Juan took full ownership of the design architecture. He wasn&rsquo;t just sending over designs &mdash; he was actively involved in shaping the product. If you&rsquo;re looking for a UI/UX designer who can think strategically, design beautifully, and work seamlessly with developers, Juan&rsquo;s your guy.
         </blockquote>
         <div class="social-proof__author">
-          <strong>Francisco Pautt Guzm&aacute;n</strong> &mdash; Software Engineer (React/TypeScript)
+          <strong>Francisco Pautt Guzm&aacute;n</strong> &middot; Software Engineer (React/TypeScript)
         </div>
       </div>
     </section>
@@ -196,7 +182,7 @@
       <div class="current-role__inner">
         <span class="current-role__badge">Current role</span>
         <h2 class="current-role__title">Now leading design at <span>Symplast</span></h2>
-        <p class="current-role__desc">Senior Lead UX/UI Designer on a mobile-first, HIPAA-compliant EHR and practice-management platform serving <strong>3,500+ aesthetic practices and medical spas</strong> &mdash; designing AI-native workflows and a unified design system, with research tied directly to business KPIs.</p>
+        <p class="current-role__desc">Senior Lead UX/UI Designer on a mobile-first, HIPAA-compliant EHR and practice-management platform serving <strong>3,500+ aesthetic practices and medical spas</strong>: designing AI-native workflows and a unified design system, with research tied directly to business KPIs.</p>
         <ul class="current-role__points">
           <li>Mobile-first EHR for on-the-go practitioners</li>
           <li>AI-native workflows for complex clinical processes</li>
@@ -214,9 +200,68 @@
 
         <div class="work-grid">
 
-          <!-- Case Study 1: Solving AI -->
-          <a href="#case-solving-ai" class="case-card case-card--feature fade-in">
+          <!-- Case Study 1: EPM Carga Verde (featured) -->
+          <a href="case-epm.html" class="case-card case-card--feature fade-in">
             <span class="case-card__featured">Featured case</span>
+            <div class="case-card__image">
+              <picture>
+                <source srcset="assets/epm/map.webp" type="image/webp">
+                <img src="assets/epm/map.jpg" alt="EPM Carga Verde, the EV charger availability app I designed and built, showing a live station map of Medellin" width="1600" height="1000" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="case-card__content">
+              <span class="case-card__company">Self-initiated &middot; Personal Product</span>
+              <h3 class="case-card__title">An EV Charger Finder I Built to Solve My Own Problem</h3>
+              <p class="case-card__description">As an EV owner in Medell&iacute;n, I kept reaching EPM chargers that were busy or broken with no way to check first. So I designed and shipped a cross-platform app for real-time availability, and pitched it to EPM.</p>
+              <div class="case-card__metrics">
+                <div class="case-card__metric">
+                  <span class="case-card__metric-value">0&rarr;1</span>
+                  <span class="case-card__metric-label">Solo: designed, built &amp; pitched</span>
+                </div>
+                <div class="case-card__metric">
+                  <span class="case-card__metric-value">2</span>
+                  <span class="case-card__metric-label">Platforms, one codebase (web + native)</span>
+                </div>
+              </div>
+              <div class="case-card__tags">
+                <span class="tag">Product Design</span>
+                <span class="tag">Front-end Dev</span>
+                <span class="tag">0&rarr;1</span>
+              </div>
+              <span class="case-card__arrow">Read case study &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Case Study 2: Nvidia -->
+          <a href="case-nvidia.html" class="case-card fade-in">
+            <div class="case-card__image">
+              <img src="assets/nvidia/card-cover.svg" alt="Redacted enterprise dashboard wireframe — Nvidia supply chain platform under NDA" width="800" height="500" loading="lazy" decoding="async">
+            </div>
+            <div class="case-card__content">
+              <span class="case-card__company">CodeBranch &middot; Client: Nvidia</span>
+              <h3 class="case-card__title">Redesigning Decision-Making for a Global Supply Chain</h3>
+              <p class="case-card__description">Led the UX transformation of an enterprise supply chain intelligence platform, restructuring a flat interface into a task-oriented SAP Fiori dashboard for AI-powered decision-making.</p>
+              <div class="case-card__metrics">
+                <div class="case-card__metric">
+                  <span class="case-card__metric-value">~90%</span>
+                  <span class="case-card__metric-label">Task completion improvement</span>
+                </div>
+                <div class="case-card__metric">
+                  <span class="case-card__metric-value">5+</span>
+                  <span class="case-card__metric-label">Cross-functional engineers</span>
+                </div>
+              </div>
+              <div class="case-card__tags">
+                <span class="tag tag--nda">NDA &middot; Redacted visuals</span>
+                <span class="tag">SAP Fiori</span>
+                <span class="tag">Atomic Design</span>
+              </div>
+              <span class="case-card__arrow">Read case study &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Case Study 3: Solving AI -->
+          <a href="case-solving-ai.html" class="case-card fade-in">
             <div class="case-card__image">
               <picture>
                 <source srcset="assets/solving-ai/card-cover-real.webp?v=2" type="image/webp">
@@ -247,36 +292,8 @@
             </div>
           </a>
 
-          <!-- Case Study 2: Nvidia -->
-          <a href="#case-nvidia" class="case-card fade-in">
-            <div class="case-card__image">
-              <img src="assets/nvidia/card-cover.svg" alt="Redacted enterprise dashboard wireframe — Nvidia supply chain platform under NDA" width="800" height="500" loading="lazy" decoding="async">
-            </div>
-            <div class="case-card__content">
-              <span class="case-card__company">CodeBranch &mdash; Client: Nvidia</span>
-              <h3 class="case-card__title">Redesigning Decision-Making for a Global Supply Chain</h3>
-              <p class="case-card__description">Led the UX transformation of an enterprise supply chain intelligence platform, restructuring a flat interface into a task-oriented SAP Fiori dashboard for AI-powered decision-making.</p>
-              <div class="case-card__metrics">
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">~90%</span>
-                  <span class="case-card__metric-label">Task completion improvement</span>
-                </div>
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">5+</span>
-                  <span class="case-card__metric-label">Cross-functional engineers</span>
-                </div>
-              </div>
-              <div class="case-card__tags">
-                <span class="tag tag--nda">NDA &mdash; Redacted visuals</span>
-                <span class="tag">SAP Fiori</span>
-                <span class="tag">Atomic Design</span>
-              </div>
-              <span class="case-card__arrow">Read case study &rarr;</span>
-            </div>
-          </a>
-
-          <!-- Case Study 3: YMA / Smartel -->
-          <a href="#case-yma" class="case-card fade-in">
+          <!-- Case Study 4: YMA / Smartel -->
+          <a href="case-yma.html" class="case-card fade-in">
             <div class="case-card__image">
               <picture>
                 <source srcset="assets/yma/card-cover-real.webp?v=2" type="image/webp">
@@ -284,7 +301,7 @@
               </picture>
             </div>
             <div class="case-card__content">
-              <span class="case-card__company">CodeBranch &mdash; Product: YMA / Smartel</span>
+              <span class="case-card__company">CodeBranch &middot; Product: YMA / Smartel</span>
               <h3 class="case-card__title">Designing an AI Ecosystem from Zero to One</h3>
               <p class="case-card__description">Established the foundational product experience for a computer vision AI ecosystem, creating mobile-first design patterns and a component library extended by 2 junior designers across the full product suite.</p>
               <div class="case-card__metrics">
@@ -306,8 +323,8 @@
             </div>
           </a>
 
-          <!-- Case Study 4: Bucket.io -->
-          <a href="#case-bucket" class="case-card fade-in">
+          <!-- Case Study 5: Bucket.io -->
+          <a href="case-bucket.html" class="case-card fade-in">
             <div class="case-card__image">
               <picture>
                 <source srcset="assets/bucket/card-cover-real.webp?v=2" type="image/webp">
@@ -315,7 +332,7 @@
               </picture>
             </div>
             <div class="case-card__content">
-              <span class="case-card__company">Ideaware &mdash; Client: Bucket.io</span>
+              <span class="case-card__company">Ideaware &middot; Client: Bucket.io</span>
               <h3 class="case-card__title">AI-Powered Blueprint Generation</h3>
               <p class="case-card__description">Redesigned the end-to-end blueprint generation flow, transforming a complex AI configuration process into an accessible guided funnel validated through interactive prototyping before engineering investment.</p>
               <div class="case-card__metrics">
@@ -337,36 +354,6 @@
             </div>
           </a>
 
-          <a href="#case-epm" class="case-card fade-in">
-            <div class="case-card__image">
-              <picture>
-                <source srcset="assets/epm/map.webp" type="image/webp">
-                <img src="assets/epm/map.jpg" alt="EPM Carga Verde, the EV charger availability app I designed and built, showing a live station map of Medellin" width="1600" height="1000" loading="lazy" decoding="async">
-              </picture>
-            </div>
-            <div class="case-card__content">
-              <span class="case-card__company">Self-initiated &middot; Personal Product</span>
-              <h3 class="case-card__title">An EV Charger Finder I Built to Solve My Own Problem</h3>
-              <p class="case-card__description">As an EV owner in Medell&iacute;n, I kept reaching EPM chargers that were busy or broken with no way to check first &mdash; so I designed and shipped a cross-platform app for real-time availability, and pitched it to EPM.</p>
-              <div class="case-card__metrics">
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">0&rarr;1</span>
-                  <span class="case-card__metric-label">Solo: designed, built &amp; pitched</span>
-                </div>
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">2</span>
-                  <span class="case-card__metric-label">Platforms, one codebase (web + native)</span>
-                </div>
-              </div>
-              <div class="case-card__tags">
-                <span class="tag">Product Design</span>
-                <span class="tag">Front-end Dev</span>
-                <span class="tag">0&rarr;1</span>
-              </div>
-              <span class="case-card__arrow">Read case study &rarr;</span>
-            </div>
-          </a>
-
           <!-- Behance CTA -->
           <div class="work-cta fade-in">
             <p class="work-cta__text">Additional projects available</p>
@@ -380,920 +367,6 @@
         </div><!-- /work-grid -->
       </div>
     </section>
-
-    <!-- ==================== CASE STUDY: SOLVING AI ==================== -->
-    <article>
-    <section id="case-solving-ai" class="case-hero">
-      <div class="case-hero__inner">
-        <a href="#work" class="case-hero__back">&larr; Back to all work</a>
-        <img src="assets/solving-ai/Logo.svg" alt="Solving AI" class="case-hero__logo" width="147" height="38" loading="lazy" decoding="async">
-        <p class="case-hero__company">Solving AI &mdash; Jun 2024 &ndash; Jun 2025</p>
-        <h2 class="case-hero__title">Building a Validation Culture for AI Products</h2>
-        <p class="case-hero__subtitle">How I established evidence-based design practices, built a scalable design system, and improved task comprehension by ~80% through systematic Maze A/B testing.</p>
-
-        <div class="case-meta">
-          <div class="case-meta__item">
-            <span class="case-meta__label">Role</span>
-            <span class="case-meta__value">Senior Product Designer &amp; Lead</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Duration</span>
-            <span class="case-meta__value">1 year</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Team</span>
-            <span class="case-meta__value">Product & Engineering</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Tools</span>
-            <span class="case-meta__value">Figma, Maze, Axe DevTools</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TL;DR -->
-    <div class="case-tldr fade-in">
-      <div class="case-tldr__inner">
-        <div class="case-tldr__col"><span class="case-tldr__label">Problem</span><p>Users abandoned multi-step AI workflows, and design decisions were driven by opinion, not data.</p></div>
-        <div class="case-tldr__col"><span class="case-tldr__label">What I did</span><p>Built a Maze A/B validation culture, then redesigned with progressive disclosure and a scalable Figma design system.</p></div>
-        <div class="case-tldr__col case-tldr__col--out"><span class="case-tldr__label">Outcome</span><p>~80% task-comprehension gain (Maze A/B), 30% faster handoff (9 &rarr; 6 days), and WCAG AA compliance.</p></div>
-      </div>
-    </div>
-
-    <!-- Product Interface: Autopilot Dashboard + Workflow Builder -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/solving-ai/Desktop.webp" type="image/webp">
-            <img src="assets/solving-ai/Desktop.jpg" alt="Solving AI Autopilot interface — the product dashboard designed and shipped" class="case-image__screenshot" width="2880" height="1920" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Solving AI Autopilot dashboard — the production interface I designed for AI-driven task automation</p>
-      </div>
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/solving-ai/workflow-builder.webp" type="image/webp">
-            <img src="assets/solving-ai/workflow-builder.png" alt="Solving AI node-based workflow builder with code execution, language models, and automation tools" class="case-image__screenshot" width="1440" height="960" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Node-based workflow builder — visual programming interface for configuring AI automation pipelines</p>
-      </div>
-    </div>
-
-    <!-- Solving AI: Hero animation demo -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <video autoplay loop muted playsinline preload="none" aria-label="Looping demo of the Solving AI onboarding and hero animation" class="case-image__screenshot" width="960" height="1025" poster="assets/solving-ai/Desktop.jpg">
-            <source src="assets/solving-ai/hero-demo.mp4" type="video/mp4">
-          </video>
-        </div>
-        <p class="case-image__caption">Product demo — hero animation and onboarding flow in action</p>
-      </div>
-    </div>
-
-    <!-- Challenge -->
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">01</p>
-        <h3 class="case-section__heading">AI products fail when users cannot understand them.</h3>
-        <p class="case-section__text">Solving AI was building intelligent automation tools for both technical and non-technical users. The product featured multi-step AI interactions &mdash; complex workflows where users configured, triggered, and interpreted AI-generated outputs.</p>
-        <p class="case-section__text">The problem was twofold. <strong>First, comprehension failure:</strong> users struggled to understand what the AI was doing, what inputs it needed, and how to interpret results. Task comprehension was low, and users abandoned workflows mid-process. <strong>Second, decision-making without evidence:</strong> design decisions were driven by internal opinions rather than user behavior data. There was no systematic way to validate whether a design change actually improved the experience.</p>
-        <p class="case-section__text">I was brought in to solve both: make the AI interactions understandable, and build the infrastructure to prove it.</p>
-      </div>
-    </div>
-
-    <!-- User flow drop-off analysis -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
-          <img src="assets/solving-ai/user-flow-dropoff.svg?v=2" alt="User flow analysis showing drop-off points in the original AI workflow — highest friction at configuration (30%) and results interpretation (20%)" class="case-image__diagram" width="1200" height="530" loading="lazy" decoding="async">
-        </div>
-        <p class="case-image__caption">User flow analysis: drop-off points identified through session recordings and Maze task data</p>
-      </div>
-    </div>
-
-    <!-- Discovery -->
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">02</p>
-        <h3 class="case-section__heading">Before redesigning anything, I built the system to measure it.</h3>
-        <p class="case-section__text"><strong>Establishing A/B testing workflows.</strong> My first initiative was not a redesign &mdash; it was a research infrastructure. I implemented Maze-based A/B testing with defined user cohorts. Each cohort represented a distinct user segment (technical vs. non-technical, new vs. returning), giving us statistically meaningful data on how different user types experienced the same flows.</p>
-        <p class="case-section__text"><strong>Mapping the failure points.</strong> Through task analysis and session data, I identified the specific steps in the AI workflow where users dropped off, hesitated, or made errors. The highest friction was in the "configuration" and "results interpretation" phases.</p>
-        <p class="case-section__text"><strong>Accessibility audit.</strong> I conducted a WCAG compliance assessment across the product. AI products disproportionately exclude users with disabilities &mdash; especially in data visualization and error communication. I mapped every violation and prioritized fixes by user impact.</p>
-      </div>
-    </div>
-
-    <!-- Maze A/B test results -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
-          <img src="assets/solving-ai/maze-results.svg" alt="Maze A/B test results showing 80% improvement in task comprehension across technical and non-technical user cohorts" class="case-image__diagram" width="1200" height="600" loading="lazy" decoding="async">
-        </div>
-        <p class="case-image__caption">Maze A/B test results: 80% task comprehension improvement validated across user cohorts</p>
-      </div>
-    </div>
-
-    <!-- Design Decisions -->
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">03</p>
-        <h3 class="case-section__heading">Simplifying AI without dumbing it down.</h3>
-        <p class="case-section__text"><strong>Progressive disclosure for AI configuration.</strong> I restructured the configuration flow so that basic settings were front and center, while advanced parameters were accessible but not overwhelming. This reduced cognitive load for new users while preserving flexibility for power users.</p>
-        <p class="case-section__text"><strong>Transparent AI feedback.</strong> Instead of treating AI processing as a black box, I designed inline progress indicators, confidence scores, and natural-language explanations of what the AI was doing at each step. Users could see <em>why</em> the AI made a recommendation, not just <em>what</em> it recommended.</p>
-        <p class="case-section__text"><strong>Accessible data visualization.</strong> I redesigned charts and outputs to meet WCAG AA standards &mdash; adding text alternatives, keyboard navigation for interactive elements, sufficient color contrast, and screen-reader-compatible data tables alongside visual representations.</p>
-      </div>
-    </div>
-
-    <!-- WCAG Audit Results -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
-          <img src="assets/solving-ai/wcag-audit.svg" alt="WCAG AA accessibility audit results showing 12 violations resolved across 7 success criteria" class="case-image__diagram" width="1200" height="520" loading="lazy" decoding="async">
-        </div>
-        <p class="case-image__caption">WCAG AA compliance achieved: 12 accessibility violations resolved across all critical AI interaction flows</p>
-      </div>
-    </div>
-
-    <!-- Design System -->
-    <div class="case-section section--alt">
-      <div class="case-section__inner">
-        <p class="case-section__number">04</p>
-        <h3 class="case-section__heading">A system designed to scale &mdash; not just to look consistent.</h3>
-        <p class="case-section__text">I architected a scalable Figma design system built on three pillars:</p>
-        <p class="case-section__text"><strong>Figma Variables</strong> &mdash; design tokens for color, spacing, typography, and elevation, enabling theme switching and systematic updates across the entire product.</p>
-        <p class="case-section__text"><strong>Auto Layout architecture</strong> &mdash; every component built with responsive Auto Layout, ensuring consistent behavior across breakpoints without manual adjustment.</p>
-        <p class="case-section__text"><strong>Atomic Design methodology</strong> &mdash; atoms, molecules, organisms, templates, and pages &mdash; each level documented with usage guidelines, interaction states, and engineering specifications.</p>
-        <p class="case-section__text">The result: design-to-dev handoff time decreased by 30% (from 9 days to 6 days per cycle). Engineers could inspect components and extract specifications without requiring designer clarification on every screen.</p>
-      </div>
-    </div>
-
-    <!-- Handoff comparison -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
-          <img src="assets/solving-ai/handoff-comparison.svg" alt="Design-to-dev handoff workflow comparison: before (9 days, manual) vs after (6 days, design system-driven) — 30% time reduction" class="case-image__diagram" width="1200" height="460" loading="lazy" decoding="async">
-        </div>
-        <p class="case-image__caption">Handoff workflow transformation: from ad-hoc process (9 days) to design system-driven (6 days) &mdash; 30% faster</p>
-      </div>
-    </div>
-
-    <!-- Metrics -->
-    <div class="metrics-row fade-in">
-      <div class="metric-card">
-        <div class="metric-card__value">~80%</div>
-        <div class="metric-card__label">Task comprehension improvement across both user cohorts (Maze A/B test)</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-card__value">30%</div>
-        <div class="metric-card__label">Faster design-to-dev handoff: 9-day cycle reduced to 6 days</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-card__value">AA</div>
-        <div class="metric-card__label">WCAG compliance achieved across all critical user flows</div>
-      </div>
-    </div>
-
-    <!-- Team Recommendations -->
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">05</p>
-        <h3 class="case-section__heading">What the team says.</h3>
-        <div class="case-recommendations">
-          <div class="case-recommendation">
-            <blockquote class="case-recommendation__quote">&ldquo;Juan took full ownership of the design architecture, from wireframes to final UI, and always approached problems with a user-first mindset that really elevated our products. He wasn't just sending over designs &mdash; he was actively involved in shaping the product, open to feedback, and always ready to iterate. If you're looking for a UI/UX designer who can think strategically, design beautifully, and work seamlessly with developers, Juan's your guy.&rdquo;</blockquote>
-            <div class="case-recommendation__author">
-              <span class="case-recommendation__name">Francisco Pautt Guzm&aacute;n</span>
-              <span class="case-recommendation__role">Software Developer &bull; React.js, React Native, TypeScript</span>
-              <span class="case-recommendation__source">LinkedIn &mdash; Worked together at Solving AI</span>
-            </div>
-          </div>
-          <div class="case-recommendation">
-            <blockquote class="case-recommendation__quote" lang="es">&ldquo;Juan David destaca por su capacidad para transformar ideas complejas en interfaces intuitivas y funcionales. Su enfoque centrado en el usuario, su dominio de herramientas como Figma y su sensibilidad por la est&eacute;tica hacen que cada proyecto gane solidez y coherencia visual. No solo aporta soluciones de dise&ntilde;o de alto nivel, sino tambi&eacute;n pensamiento cr&iacute;tico, proactividad y pasi&oacute;n por crear experiencias digitales que realmente marcan la diferencia.&rdquo;</blockquote>
-            <p class="case-recommendation__translation"><span>Translated from Spanish:</span> &ldquo;Juan David stands out for his ability to transform complex ideas into intuitive, functional interfaces. His user-centered approach, his command of tools like Figma, and his eye for aesthetics give every project solidity and visual coherence. He brings not only high-level design solutions but also critical thinking, initiative, and a passion for creating digital experiences that truly make a difference.&rdquo;</p>
-            <div class="case-recommendation__author">
-              <span class="case-recommendation__name">Ana Mar&iacute;a Guzm&aacute;n Hoyos</span>
-              <span class="case-recommendation__role">Full-Stack Engineer &bull; ReactJS, NextJS, TypeScript</span>
-              <span class="case-recommendation__source">LinkedIn &mdash; Worked together at Solving AI</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Reflection -->
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">06</p>
-        <h3 class="case-section__heading">Reflection.</h3>
-        <p class="case-section__text">If I could do this project again, I would push for quantitative baseline metrics <em>before</em> starting the redesign. We measured improvement, but our "before" data was partially reconstructed from session recordings rather than controlled baseline tests. Starting every project with a measurable benchmark is now a non-negotiable in my process.</p>
-        <p class="case-section__text">This project fundamentally shaped how I approach design: not as an aesthetic exercise, but as a hypothesis to be validated.</p>
-      </div>
-    </div>
-
-    <a href="#case-nvidia" class="next-project">
-      <div>
-        <p class="next-project__label">Next project</p>
-        <p class="next-project__title">Nvidia Supply Chain Intelligence &rarr;</p>
-      </div>
-    </a>
-    </article>
-
-    <!-- ==================== CASE STUDY: NVIDIA ==================== -->
-    <article>
-    <section id="case-nvidia" class="case-hero">
-      <div class="case-hero__inner">
-        <a href="#work" class="case-hero__back">&larr; Back to all work</a>
-        <img src="assets/nvidia/Logo@2x.png" alt="Nvidia" class="case-hero__logo case-hero__logo--nvidia" width="143" height="81" loading="lazy" decoding="async">
-
-        <div class="nda-badge">
-          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Under NDA &middot; proprietary screens withheld, redacted process work shown
-        </div>
-
-        <p class="case-hero__company">CodeBranch &mdash; Client: Nvidia &mdash; Jun 2025 &ndash; Apr 2026 (contract)</p>
-        <h2 class="case-hero__title">Redesigning Decision-Making for a Global Supply Chain</h2>
-        <p class="case-hero__subtitle">Leading the UX transformation of an enterprise supply chain intelligence platform &mdash; from a flat interface to a structured SAP Fiori dashboard, with a ~90% task-completion gain measured in internal usability testing.</p>
-
-        <div class="case-meta">
-          <div class="case-meta__item">
-            <span class="case-meta__label">Role</span>
-            <span class="case-meta__value">Senior Product Designer &amp; Lead</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Duration</span>
-            <span class="case-meta__value">10 months</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Team</span>
-            <span class="case-meta__value">5 engineers (incl. AI/ML) + 2 designers I mentor</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Tools</span>
-            <span class="case-meta__value">Figma, SAP Fiori, Atomic Design</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TL;DR -->
-    <div class="case-tldr fade-in">
-      <div class="case-tldr__inner">
-        <div class="case-tldr__col"><span class="case-tldr__label">Problem</span><p>A flat, unstructured supply-chain platform slowed high-stakes decisions for global teams.</p></div>
-        <div class="case-tldr__col"><span class="case-tldr__label">What I did</span><p>Restructured it into a task-oriented SAP Fiori dashboard with AI recommendation and guardrail patterns &mdash; as design lead and Product Owner.</p></div>
-        <div class="case-tldr__col case-tldr__col--out"><span class="case-tldr__label">Outcome</span><p>~90% task-completion gain (internal usability testing) on a platform managing $2B+ in annual transactions.</p></div>
-      </div>
-    </div>
-
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">01</p>
-        <h3 class="case-section__heading">A global supply chain team needed faster, more confident decisions.</h3>
-        <p class="case-section__text">I led design and product strategy for Nvidia's supply-chain intelligence platform &mdash; an enterprise AI analytics tool managing <strong>$2B+ in annual transactions</strong>. It served global teams making high-stakes operational decisions on AI-generated insights and real-time data.</p>
-        <p class="case-section__text">The existing interface was flat and unstructured &mdash; information was presented without hierarchy, forcing users to mentally organize data before they could act on it. This slowed decision-making and increased error rates, particularly for cross-functional teams who needed different views of the same data.</p>
-      </div>
-    </div>
-
-    <!-- Nvidia: IA comparison (NDA-safe process diagram) -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
-          <img src="assets/nvidia/ia-comparison.svg" alt="Information architecture comparison: flat feature-based navigation restructured into task-oriented decision hierarchy using SAP Fiori patterns" class="case-image__diagram" width="1200" height="560" loading="lazy" decoding="async">
-        </div>
-        <p class="case-image__caption">Information architecture: from a flat feature list to a task-oriented decision hierarchy</p>
-      </div>
-    </div>
-
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">02</p>
-        <h3 class="case-section__heading">Enterprise structure meets AI-powered intelligence.</h3>
-        <p class="case-section__text"><strong>SAP Fiori as the structural foundation.</strong> I selected SAP Fiori as the design framework for two reasons: it is the enterprise standard that supply chain teams already understand, and its structured dashboard patterns (Overview Pages, Object Pages, List Reports) map directly to supply chain decision-making workflows.</p>
-        <p class="case-section__text"><strong>Information architecture overhaul.</strong> I restructured the platform's IA from a flat list of features into a task-oriented hierarchy. Users no longer navigated by feature name &mdash; they navigated by decision type: "What needs my attention?", "What is the current status?", "What action should I take?"</p>
-        <p class="case-section__text"><strong>AI integration patterns.</strong> I designed interaction patterns for AI-generated recommendations that maintained user agency. The AI surfaced insights, but humans made the final decisions &mdash; with clear confidence indicators and the ability to drill into the underlying data.</p>
-      </div>
-    </div>
-
-    <!-- Nvidia: Redacted dashboard (NDA-safe) -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
-          <img src="assets/nvidia/redacted-dashboard.svg?v=2" alt="Redacted SAP Fiori dashboard showing KPI cards, trend analysis, and AI recommendation panel, content anonymized under NDA" class="case-image__diagram" width="1200" height="720" loading="lazy" decoding="async">
-        </div>
-        <p class="case-image__caption">Restructured SAP Fiori dashboard with AI recommendation panel (proprietary content redacted under NDA)</p>
-      </div>
-    </div>
-
-    <div class="case-section section--alt">
-      <div class="case-section__inner">
-        <p class="case-section__number">03</p>
-        <h3 class="case-section__heading">Designing trust into every AI interaction.</h3>
-        <ul class="case-bullets">
-          <li><strong>Deep Reasoning UI:</strong> the conversational AI end-to-end &mdash; onboarding prompts, step-by-step reasoning, structured data tables, and suggested follow-ups, each with transparent reasoning and confidence indicators.</li>
-          <li><strong>Guardrails &amp; safety:</strong> off-topic and restricted-data queries handled gracefully &mdash; the AI explains <em>why</em> and offers in-scope alternatives instead of failing silently.</li>
-          <li><strong>Conversation history:</strong> context carries forward; retrieved data surfaces as searchable, sortable, exportable tables, and past sessions resume with full context.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Nvidia: production screens withheld under NDA -->
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-nda-note">The deep-reasoning, guardrails, conversation-history, and data-flywheel screens that bring these patterns to life are withheld under NDA. The interaction design is described above; the full work is available to walk through on request under a mutual NDA.</p>
-      </div>
-    </div>
-
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">04</p>
-        <h3 class="case-section__heading">Beyond design: functional product ownership.</h3>
-        <p class="case-section__text">On this project, I operate beyond the traditional designer's scope. Acting as Product Owner on the design side, I write user stories with acceptance criteria so engineering teams understand the <em>intent</em> behind each design decision. I run design QA on the build, facilitate weekly syncs with 5+ engineers including AI/ML specialists, and govern the design system to ensure Atomic Design compliance across the product.</p>
-        <p class="case-section__text">I also mentor 2 junior designers who contribute to the component library and product screens, enabling them to work autonomously within the design system I established.</p>
-      </div>
-    </div>
-
-    <!-- Leadership callout -->
-    <div class="case-section">
-      <div class="case-section__inner">
-        <div class="leadership-callout fade-in">
-          <h4 class="leadership-callout__title">Leadership & Collaboration</h4>
-          <ul class="leadership-callout__list">
-            <li><strong>Cross-functional engineering:</strong> I work directly alongside the full-stack engineering team at CodeBranch &mdash; translating design decisions into structured acceptance criteria, reviewing PRs for UI fidelity, and pairing on complex interaction implementations.</li>
-            <li><strong>Weekly syncs with 5+ engineers:</strong> Including AI/ML specialists on the Nvidia side &mdash; bridging the gap between design intent and technical feasibility for LLM-powered features like deep reasoning and guardrails.</li>
-            <li><strong>Mentoring:</strong> Scaled 2 junior designers across the full product suite by establishing a governed Atomic Design system with clear contribution guidelines and component documentation.</li>
-            <li><strong>Stakeholder management:</strong> Presented design rationale to Nvidia stakeholders through SAP Fiori pattern justifications &mdash; choosing Fiori over custom patterns to reduce onboarding friction for supply chain teams already familiar with SAP.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="metrics-row fade-in">
-      <div class="metric-card">
-        <div class="metric-card__value">~90%</div>
-        <div class="metric-card__label">Task-completion gain across key decision workflows (internal usability testing)</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-card__value">5+</div>
-        <div class="metric-card__label">Engineers aligned through structured user stories and QA</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-card__value">2</div>
-        <div class="metric-card__label">Junior designers mentored and enabled to contribute independently</div>
-      </div>
-    </div>
-
-    <a href="#case-yma" class="next-project">
-      <div>
-        <p class="next-project__label">Next project</p>
-        <p class="next-project__title">YMA / Smartel AI Ecosystem &rarr;</p>
-      </div>
-    </a>
-    </article>
-
-    <!-- ==================== CASE STUDY: YMA / SMARTEL ==================== -->
-    <article>
-    <section id="case-yma" class="case-hero">
-      <div class="case-hero__inner">
-        <a href="#work" class="case-hero__back">&larr; Back to all work</a>
-        <img src="assets/yma/Logomark@2x.png" alt="YMA" class="case-hero__logo" width="96" height="46" loading="lazy" decoding="async">
-        <p class="case-hero__company">CodeBranch &mdash; Product: YMA / Smartel &mdash; Jun 2025 &ndash; Apr 2026 (contract)</p>
-        <h2 class="case-hero__title">Designing an AI Ecosystem from Zero to One</h2>
-        <p class="case-hero__subtitle">Establishing the foundational product experience for a computer vision AI platform &mdash; mobile-first design, real-time feedback patterns, and a design system scaled by a growing team.</p>
-
-        <div class="case-meta">
-          <div class="case-meta__item">
-            <span class="case-meta__label">Role</span>
-            <span class="case-meta__value">Senior Product Designer &amp; Lead</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Duration</span>
-            <span class="case-meta__value">10 months</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Team</span>
-            <span class="case-meta__value">Mobile, web &amp; AI/ML engineers + shared design team</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Tools</span>
-            <span class="case-meta__value">Figma, Mobile-First Patterns</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TL;DR -->
-    <div class="case-tldr fade-in">
-      <div class="case-tldr__inner">
-        <div class="case-tldr__col"><span class="case-tldr__label">Problem</span><p>A 0&rarr;1 computer-vision product with no design patterns, component library, or interaction conventions.</p></div>
-        <div class="case-tldr__col"><span class="case-tldr__label">What I did</span><p>Established mobile-first, real-time-AI feedback patterns and a documented design system scaled by 2 designers.</p></div>
-        <div class="case-tldr__col case-tldr__col--out"><span class="case-tldr__label">Outcome</span><p>A full product experience shipped across mobile, tablet, and desktop from a single design system.</p></div>
-      </div>
-    </div>
-
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">01</p>
-        <h3 class="case-section__heading">No existing patterns. Multiple product surfaces. Real-time AI data.</h3>
-        <p class="case-section__text">YMA is part of the Smartel AI ecosystem &mdash; a product suite powered by computer vision and real-time data processing. When I joined, there was no established product experience: no design patterns, no component library, no interaction conventions.</p>
-        <p class="case-section__text"><strong>Designing for real-time AI data.</strong> Computer vision generates continuous, high-frequency output &mdash; confidence scores, object detection results, threshold alerts. The interface needed to communicate this data clearly without overwhelming users or introducing latency-induced confusion.</p>
-        <p class="case-section__text"><strong>Mobile-first for field use.</strong> The primary users interact with the system on mobile devices in real-world environments. Every interaction pattern had to work reliably on small screens, in variable lighting, with one-handed operation.</p>
-      </div>
-    </div>
-
-    <!-- YMA: Ecosystem + Analysis + product screens -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
-          <img src="assets/yma/ecosystem-map.svg" alt="YMA Smartel AI ecosystem architecture showing computer vision, mobile app, analytics dashboard, and feedback loops connected through a unified design system" class="case-image__diagram" width="1200" height="560" loading="lazy" decoding="async">
-        </div>
-        <p class="case-image__caption">Smartel AI ecosystem: unified design system scaling across all product surfaces</p>
-      </div>
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/yma/contestant-review-live.webp" type="image/webp">
-            <img src="assets/yma/contestant-review-live.png" alt="YMA Contestant Review showing live AI analysis with technique (20%), posture (60%), and stride (50%) metrics alongside dual front and side camera views" class="case-image__screenshot" width="1133" height="744" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Contestant Review &mdash; live AI scoring (technique, posture, stride) over dual-view video</p>
-      </div>
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/yma/analysis-dashboard.webp" type="image/webp">
-            <img src="assets/yma/analysis-dashboard.png" alt="YMA Contestant Review pre-analysis state — the scoring panel and dual video views before playback begins" class="case-image__screenshot" width="1133" height="744" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">The considered empty state &mdash; clear affordances and layout before scoring begins</p>
-      </div>
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/yma/settings-contestants-tablet.webp" type="image/webp">
-            <img src="assets/yma/settings-contestants-tablet.png" alt="YMA Setting Contestants data table on iPad with search, add contestant button, and email columns for contestant management" class="case-image__screenshot" width="1133" height="744" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Contestant settings &mdash; admin data table with search and bulk management on tablet</p>
-      </div>
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/yma/settings-contestants-mobile.webp" type="image/webp">
-            <img src="assets/yma/settings-contestants-mobile.png" alt="YMA Setting Contestants mobile list with contestant avatars, names, and ages in a compact touch-friendly layout" class="case-image__screenshot" width="440" height="1410" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Contestant list &mdash; mobile-first responsive design with avatar cards</p>
-      </div>
-    </div>
-
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">02</p>
-        <h3 class="case-section__heading">Built to scale through other designers.</h3>
-        <p class="case-section__text">I created a component library with comprehensive documentation: usage guidelines, interaction states, responsive behavior, and engineering annotations. This enabled 2 junior designers to work autonomously across the product suite while maintaining design consistency.</p>
-        <p class="case-section__text">Every component was designed mobile-first and scaled up to tablet and desktop &mdash; not the other way around. Touch targets, information density, and navigation patterns were all optimized for one-handed mobile use before being adapted for larger viewports.</p>
-      </div>
-    </div>
-
-    <!-- Leadership callout -->
-    <div class="case-section">
-      <div class="case-section__inner">
-        <div class="leadership-callout fade-in">
-          <h4 class="leadership-callout__title">Leadership & Collaboration</h4>
-          <ul class="leadership-callout__list">
-            <li><strong>Team enablement:</strong> Built comprehensive component documentation &mdash; usage guidelines, interaction states, responsive behavior, and engineering annotations &mdash; so 2 junior designers could contribute autonomously across the product suite.</li>
-            <li><strong>Decision rationale:</strong> Chose mobile-first over responsive-desktop-down because field users (the primary audience) need one-handed operation in variable conditions. Desktop was the adaptation, not the source.</li>
-            <li><strong>Cross-functional coordination:</strong> Aligned with 5+ engineers across mobile, web, and AI/ML teams to ship a unified design language across the entire Smartel product ecosystem.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- YMA: Component library -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
-          <img src="assets/yma/component-library.svg" alt="Responsive component system showing mobile, tablet, and desktop breakpoint adaptations" class="case-image__diagram" width="1200" height="560" loading="lazy" decoding="async">
-        </div>
-        <p class="case-image__caption">Scalable component library with documented responsive behavior, enabling autonomous team contribution</p>
-      </div>
-    </div>
-
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">03</p>
-        <h3 class="case-section__heading">Shipped across every surface &mdash; mobile, tablet, and desktop.</h3>
-        <p class="case-section__text">The mobile-first approach translated into a cohesive experience across all device types. The landing and enrollment flow adapts from a full desktop layout to a touch-optimized mobile experience, while the contestant management interface scales from a compact mobile list to a full data table on tablet.</p>
-      </div>
-    </div>
-
-    <!-- YMA: Landing desktop/mobile + Contestants tablet/mobile -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/yma/landing-desktop.webp" type="image/webp">
-            <img src="assets/yma/landing-desktop.png" alt="YMA landing page on desktop showing the enrollment hero with sign-in button, model photography, and Fashion Elegance Confidence tagline" class="case-image__screenshot" width="1440" height="1024" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Landing &amp; enrollment flow &mdash; desktop</p>
-      </div>
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/yma/landing-mobile.webp" type="image/webp">
-            <img src="assets/yma/landing-mobile.png" alt="YMA landing page on iPhone showing the same enrollment flow adapted for mobile with touch-optimized layout" class="case-image__screenshot" width="440" height="956" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Landing &amp; enrollment flow &mdash; mobile</p>
-      </div>
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/yma/contestants-tablet.webp" type="image/webp">
-            <img src="assets/yma/contestants-tablet.png" alt="YMA Setting Contestants screen on iPad with navigation tabs, banner image, search, and a data table listing contestant names, ages, and email addresses" class="case-image__screenshot" width="1133" height="744" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Contestant management &mdash; tablet data table with full navigation</p>
-      </div>
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/yma/contestants-mobile.webp" type="image/webp">
-            <img src="assets/yma/contestants-mobile.png" alt="YMA Setting Contestants screen on iPhone showing a compact mobile list with contestant names, ages, and action buttons" class="case-image__screenshot" width="440" height="1410" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Contestant management &mdash; mobile list optimized for one-handed use</p>
-      </div>
-    </div>
-
-    <!-- Metrics -->
-    <div class="metrics-row fade-in">
-      <div class="metric-card">
-        <div class="metric-card__value">0 &rarr; 1</div>
-        <div class="metric-card__label">Product experience built from scratch across mobile, tablet, and desktop</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-card__value">3</div>
-        <div class="metric-card__label">Product surfaces shipped with a unified design system (mobile app, tablet dashboard, desktop)</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-card__value">2</div>
-        <div class="metric-card__label">Junior designers enabled to contribute independently through documented component library</div>
-      </div>
-    </div>
-
-    <a href="#case-bucket" class="next-project">
-      <div>
-        <p class="next-project__label">Next project</p>
-        <p class="next-project__title">Bucket.io &mdash; AI Blueprint Generation &rarr;</p>
-      </div>
-    </a>
-    </article>
-
-    <!-- ==================== CASE STUDY: BUCKET.IO ==================== -->
-    <article>
-    <section id="case-bucket" class="case-hero">
-      <div class="case-hero__inner">
-        <a href="#work" class="case-hero__back">&larr; Back to all work</a>
-        <img src="assets/bucket/Brand.png" alt="Bucket.io — Quizzes that convert" class="case-hero__logo case-hero__logo--lg" width="780" height="206" loading="lazy" decoding="async">
-        <p class="case-hero__company">Ideaware &mdash; Client: Bucket.io &mdash; Sep 2023 &ndash; May 2024</p>
-        <h2 class="case-hero__title">AI-Powered Blueprint Generation</h2>
-        <p class="case-hero__subtitle">Redesigning a complex AI configuration process into an accessible guided funnel &mdash; validated through interactive prototyping before engineering investment.</p>
-
-        <div class="case-meta">
-          <div class="case-meta__item">
-            <span class="case-meta__label">Role</span>
-            <span class="case-meta__value">Senior UX/UI Designer</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Duration</span>
-            <span class="case-meta__value">8 months</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Team</span>
-            <span class="case-meta__value">Product &amp; Engineering</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Tools</span>
-            <span class="case-meta__value">Figma, Prototyping</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TL;DR -->
-    <div class="case-tldr fade-in">
-      <div class="case-tldr__inner">
-        <div class="case-tldr__col"><span class="case-tldr__label">Problem</span><p>A confusing multi-step AI configuration drove high drop-off in the middle of the funnel.</p></div>
-        <div class="case-tldr__col"><span class="case-tldr__label">What I did</span><p>Journey-mapped the friction, restructured it into a guided funnel, and validated two options via interactive prototypes.</p></div>
-        <div class="case-tldr__col case-tldr__col--out"><span class="case-tldr__label">Outcome</span><p>80% of drop-off traced to 3 fixable friction points; shipped without a redesign-driven rework cycle.</p></div>
-      </div>
-    </div>
-
-    <!-- Bucket.io: Blueprint Dashboard -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/bucket/product-dashboard.webp?v=2" type="image/webp">
-            <img src="assets/bucket/product-dashboard.png?v=2" alt="Bucket.io blueprint dashboard — AI-powered content generation platform with featured templates and blueprint management" class="case-image__screenshot" width="1280" height="1608" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Bucket.io blueprint dashboard — the AI-powered content generation platform I redesigned</p>
-      </div>
-    </div>
-
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">01</p>
-        <h3 class="case-section__heading">Making AI content creation accessible to non-technical users.</h3>
-        <p class="case-section__text">Bucket.io uses AI to automatically generate marketing documents &mdash; webinar outlines, enrollment scripts, attraction funnels &mdash; based on user inputs. The existing workflow required users to navigate a multi-step configuration process that was confusing, particularly for users without technical backgrounds.</p>
-        <p class="case-section__text">Drop-off rates were high in the middle of the funnel. Users frequently misconfigured parameters, leading to poor AI output quality and frustration.</p>
-      </div>
-    </div>
-
-    <!-- Bucket.io: Journey map -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
-          <img src="assets/bucket/journey-map.svg" alt="User journey map showing 5 phases with sentiment curve and 3 friction points — 25% abandon at selection, 35% at configuration, 20% at generation" class="case-image__diagram" width="1200" height="480" loading="lazy" decoding="async">
-        </div>
-        <p class="case-image__caption">User journey mapping identified three critical friction points driving 80% of total drop-off</p>
-      </div>
-    </div>
-
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">02</p>
-        <h3 class="case-section__heading">Journey mapping to find the friction. Prototypes to prove the fix.</h3>
-        <p class="case-section__text"><strong>Journey mapping</strong> revealed three critical friction points: blueprint selection (too many options, no guidance), question configuration (unclear what each parameter affected), and result interpretation (no way to refine output without starting over).</p>
-        <p class="case-section__text"><strong>Guided funnel redesign.</strong> I restructured the flow with clear progress indication. Each step had a single focus: select blueprint type, answer guided questions, review the AI-generated result, then refine or regenerate.</p>
-        <p class="case-section__text"><strong>Prototype-driven validation.</strong> Before any engineering investment, I delivered high-fidelity interactive prototypes that stakeholders could test with real user scenarios. This accelerated alignment and saved weeks of potential engineering rework.</p>
-      </div>
-    </div>
-
-    <!-- Bucket.io: Wireframe funnel -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
-          <img src="assets/bucket/wireframe-funnel.svg" alt="Guided funnel wireframes — 4-step flow from blueprint selection through configuration, AI generation, and refinement" class="case-image__diagram" width="1200" height="520" loading="lazy" decoding="async">
-        </div>
-        <p class="case-image__caption">Wireframes showing the restructured guided funnel: select, configure, generate, refine</p>
-      </div>
-    </div>
-
-    <!-- Bucket.io: Detailed wireframe states -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/bucket/wireframe-states.webp" type="image/webp">
-            <img src="assets/bucket/wireframe-states.jpg" alt="Detailed wireframe flow showing blueprint selection, guided question sequence (Q1 through Q4A), and AI content generation states" class="case-image__screenshot" loading="lazy" decoding="async" width="1820" height="800">
-          </picture>
-        </div>
-        <p class="case-image__caption">Detailed wireframe flow — blueprint selection, guided questions, and AI generation states mapped across 8+ screens</p>
-      </div>
-    </div>
-
-    <!-- Design Decisions -->
-    <div class="case-section section--alt">
-      <div class="case-section__inner">
-        <p class="case-section__number">03</p>
-        <h3 class="case-section__heading">Two design options. One validated through prototyping before a single line of code.</h3>
-        <p class="case-section__text"><strong>Option A &mdash; Guided Simplicity:</strong> A linear 4-step funnel optimized for first-time users. Each step had a single focus, contextual help, and inline validation. This option prioritized reducing configuration errors and minimizing time-to-first-output.</p>
-        <p class="case-section__text"><strong>Option B &mdash; Power Dashboard:</strong> A configurable workspace for repeat users who needed more control over parameters. This option exposed advanced settings upfront while maintaining the guided flow as an optional onboarding path.</p>
-        <p class="case-section__text">Both options were delivered as high-fidelity interactive Figma prototypes. Stakeholders tested them with real user scenarios before any engineering investment &mdash; a process that prevented weeks of potential rework and accelerated team alignment on the final direction.</p>
-      </div>
-    </div>
-
-    <!-- Bucket.io: Component Library -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/bucket/components-library.webp" type="image/webp">
-            <img src="assets/bucket/components-library.jpg" alt="Component library showing 10+ question type variants, form states, AI content panels, and configuration elements used across the guided funnel" class="case-image__screenshot" loading="lazy" decoding="async" width="1820" height="590">
-          </picture>
-        </div>
-        <p class="case-image__caption">Component library — 10+ reusable question types, form states, and AI content panels built for the guided funnel</p>
-      </div>
-    </div>
-
-    <!-- Bucket.io: Templates Grid + Help Guide -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/bucket/blueprints-grid.webp" type="image/webp">
-            <img src="assets/bucket/blueprints-grid.png" alt="Redesigned blueprint templates page with category sidebar, search, and organized card grid for quick blueprint selection" class="case-image__screenshot" width="1440" height="2300" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Redesigned templates view — category-based navigation with organized blueprint grid for faster selection</p>
-      </div>
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/bucket/help-guide.webp" type="image/webp">
-            <img src="assets/bucket/help-guide.png" alt="Integrated help guide with contextual documentation for blueprint creation workflow" class="case-image__screenshot" width="1440" height="2000" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Integrated help guide — contextual documentation reducing support requests during blueprint creation</p>
-      </div>
-    </div>
-
-    <!-- Bucket.io: Final UI options -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
-          <img src="assets/bucket/final-ui-options.svg" alt="Two design options compared — Option A: Guided Simplicity vs Option B: Power Dashboard — for stakeholder evaluation" class="case-image__diagram" width="1200" height="520" loading="lazy" decoding="async">
-        </div>
-        <p class="case-image__caption">Two design options delivered for stakeholder evaluation, validated through interactive prototyping</p>
-      </div>
-    </div>
-
-    <!-- Bucket.io: Final UI high-fidelity -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/bucket/final-ui-hifi.webp" type="image/webp">
-            <img src="assets/bucket/final-ui-hifi.jpg" alt="High-fidelity final UI showing Option 1 and Option 2 side by side — blueprint editor with AI-generated content, guided questions, and form configuration" class="case-image__screenshot" loading="lazy" decoding="async" width="1820" height="650">
-          </picture>
-        </div>
-        <p class="case-image__caption">High-fidelity UI — Option 1 (guided simplicity) vs Option 2 (power dashboard) with live AI-generated content</p>
-      </div>
-    </div>
-
-    <!-- Metrics -->
-    <div class="metrics-row fade-in">
-      <div class="metric-card">
-        <div class="metric-card__value">80%</div>
-        <div class="metric-card__label">Of total drop-off concentrated at 3 friction points identified through journey mapping</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-card__value">4-step</div>
-        <div class="metric-card__label">Guided funnel replacing complex multi-step configuration process</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-card__value">0</div>
-        <div class="metric-card__label">Engineering rework &mdash; prototypes validated before development began</div>
-      </div>
-    </div>
-
-    <!-- Leadership callout -->
-    <div class="case-section">
-      <div class="case-section__inner">
-        <div class="leadership-callout fade-in">
-          <h4 class="leadership-callout__title">Leadership & Collaboration</h4>
-          <ul class="leadership-callout__list">
-            <li><strong>Stakeholder alignment:</strong> Delivered 2 interactive prototypes that stakeholders could evaluate with real scenarios &mdash; eliminating ambiguity and accelerating buy-in before engineering investment.</li>
-            <li><strong>Cross-functional handoff:</strong> Created detailed design specifications with annotated flows, edge cases, and error states so the engineering team could implement without iterative clarification rounds.</li>
-            <li><strong>User advocacy:</strong> Used journey mapping data to push back on feature requests that would have added complexity to the funnel &mdash; defending simplicity with evidence, not opinion.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Reflection -->
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">04</p>
-        <h3 class="case-section__heading">Reflection.</h3>
-        <p class="case-section__text">This project reinforced that the highest-leverage design work often happens before any screen is designed. The journey mapping phase took two weeks, but it saved months of engineering time by ensuring we solved the right problems. If I did this project again, I would have pushed to run a live A/B test between the two design options with real users rather than relying solely on stakeholder evaluation &mdash; the data would have made the final decision more defensible.</p>
-      </div>
-    </div>
-
-    <a href="#case-epm" class="next-project">
-      <div>
-        <p class="next-project__label">Continue to</p>
-        <p class="next-project__title">EPM Carga Verde &rarr;</p>
-      </div>
-    </a>
-    </article>
-
-    <!-- ==================== CASE: EPM CARGA VERDE ==================== -->
-    <article>
-    <section id="case-epm" class="case-hero">
-      <div class="case-hero__inner">
-        <a href="#work" class="case-hero__back">&larr; Back to all work</a>
-        <img src="assets/epm/epm-logo.png" alt="EPM" class="case-hero__logo" width="188" height="84" loading="lazy" decoding="async">
-        <p class="case-hero__company">Self-initiated concept &middot; 2025</p>
-        <h2 class="case-hero__title">Real-Time EV Charging for Medell&iacute;n</h2>
-        <p class="case-hero__subtitle">A cross-platform app I designed and built to solve a problem I hit every week as an EV owner &mdash; then pitched to the utility that runs the chargers.</p>
-
-        <div class="case-meta">
-          <div class="case-meta__item"><span class="case-meta__label">Role</span><span class="case-meta__value">Product Designer &amp; Developer (solo)</span></div>
-          <div class="case-meta__item"><span class="case-meta__label">Type</span><span class="case-meta__value">Self-initiated &middot; 2025</span></div>
-          <div class="case-meta__item"><span class="case-meta__label">Scope</span><span class="case-meta__value">Design + front-end, end to end</span></div>
-          <div class="case-meta__item"><span class="case-meta__label">Stack</span><span class="case-meta__value">Next.js, React Native, Turborepo, TypeScript, Leaflet</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TL;DR -->
-    <div class="case-tldr fade-in">
-      <div class="case-tldr__inner">
-        <div class="case-tldr__col"><span class="case-tldr__label">Problem</span><p>As an EV owner in Medell&iacute;n, I'd reach EPM chargers only to find them busy or out of service, with no way to check first. Their own app barely shows status.</p></div>
-        <div class="case-tldr__col"><span class="case-tldr__label">What I did</span><p>Designed and built a cross-platform app (web + native) with availability per connector, type and power filters, a status map, and a damage-report flow.</p></div>
-        <div class="case-tldr__col case-tldr__col--out"><span class="case-tldr__label">Outcome</span><p>Pitched it to EPM for free. They loved the design but couldn't adopt external code, so it lives as a working concept, built end to end, solo.</p></div>
-      </div>
-    </div>
-
-    <!-- EPM: core availability view -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/epm/map.webp" type="image/webp">
-            <img src="assets/epm/map.jpg" alt="EPM Carga Verde map view: a sidebar list of charging stations with live availability and an interactive status map of the Medellin metro area" class="case-image__screenshot" width="1600" height="1000" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Availability first: every station shows how many connectors are free, their type and power, and a live, color-coded status map.</p>
-      </div>
-    </div>
-
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">01</p>
-        <h3 class="case-section__heading">The chargers exist. Knowing if they work is the hard part.</h3>
-        <p class="case-section__text">EPM runs the public EV charging network across the Medell&iacute;n metro area. As a driver, the recurring problem was never finding a charger on a map &mdash; it was arriving to find it occupied, in maintenance, or simply broken, with no way to know in advance.</p>
-        <p class="case-section__text">Their existing app lists stations, but not the thing that actually decides your trip: <strong>is a connector free right now, what type and power is it, and is it even working?</strong> So I designed the tool I wanted to use.</p>
-      </div>
-    </div>
-
-    <!-- EPM: damage-report flow -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
-          <picture>
-            <source srcset="assets/epm/report.webp" type="image/webp">
-            <img src="assets/epm/report.jpg" alt="EPM Carga Verde damage-report flow: a guided form with station selector, seven damage-type categories, a description field with photo upload, and contact details" class="case-image__screenshot" width="1500" height="1146" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">A guided damage-report flow, the feedback loop EPM's app is missing, so the network's status stays honest.</p>
-      </div>
-    </div>
-
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">02</p>
-        <h3 class="case-section__heading">Designed around the decision, not the database.</h3>
-        <p class="case-section__text"><strong>Availability-first.</strong> Each station leads with how many connectors are free (3/4), the connector type and power (Type 2, 22&nbsp;kW), and a live status &mdash; available, in use with an ETA, in maintenance, or out of service &mdash; mirrored on a color-coded map.</p>
-        <p class="case-section__text"><strong>Filters that match intent.</strong> Filter by city, by charge speed (r&aacute;pida or normal), and "only available," so the list answers the real question: where can I actually charge right now?</p>
-        <p class="case-section__text"><strong>Closing the loop.</strong> A structured, seven-category damage-report flow lets drivers flag broken connectors, screens, or payment issues &mdash; the missing mechanism that keeps a status map trustworthy.</p>
-      </div>
-    </div>
-
-    <!-- EPM: mobile-first -->
-    <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained" style="max-width: 360px; margin-left: auto; margin-right: auto;">
-          <picture>
-            <source srcset="assets/epm/mobile-map.webp" type="image/webp">
-            <img src="assets/epm/mobile-map.jpg" alt="EPM Carga Verde mobile view: a full-screen status map of charging stations, built mobile-first for drivers on the go" class="case-image__screenshot" width="620" height="1342" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <p class="case-image__caption">Mobile-first, because you check this from the driver's seat. Same product as a native app and responsive web, from one Turborepo.</p>
-      </div>
-    </div>
-
-    <div class="case-section">
-      <div class="case-section__inner">
-        <p class="case-section__number">03</p>
-        <h3 class="case-section__heading">Designed it, built it, pitched it.</h3>
-        <p class="case-section__text">I built the whole thing end to end: a <strong>Turborepo monorepo</strong> sharing logic between a <strong>Next.js</strong> web app and a <strong>React Native</strong> mobile app, in TypeScript, with the map on Leaflet.</p>
-        <p class="case-section__text">Then I took it to EPM and proposed it for free. The design landed &mdash; the brand fit, the handling, the features their app lacked &mdash; but as a matter of policy they couldn't adopt code from an external developer, so they didn't open their data or infrastructure to take it further.</p>
-        <p class="case-section__text"><em>Note: EPM doesn't expose a public availability feed, so the live status in the demo is simulated. The product, the UX, and the cross-platform build are real.</em></p>
-      </div>
-    </div>
-
-    <!-- Metrics -->
-    <div class="metrics-row fade-in">
-      <div class="metric-card">
-        <div class="metric-card__value">2</div>
-        <div class="metric-card__label">Platforms from one codebase &mdash; native app + responsive web (Turborepo)</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-card__value">7</div>
-        <div class="metric-card__label">Damage-report categories, with photo upload and guided steps</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-card__value">0&rarr;1</div>
-        <div class="metric-card__label">Designed, built, and pitched to the utility &mdash; solo</div>
-      </div>
-    </div>
-
-    <a href="#about" class="next-project">
-      <div>
-        <p class="next-project__label">Continue to</p>
-        <p class="next-project__title">About me &rarr;</p>
-      </div>
-    </a>
-    </article>
 
     <!-- ==================== CLIENT LOGOS ==================== -->
     <div class="clients">
@@ -1470,12 +543,12 @@
               <div class="principle-card">
                 <span class="principle-card__number">01</span>
                 <h3 class="principle-card__title">Validate early</h3>
-                <p class="principle-card__text">I built an evidence-based design culture at Solving AI, using Maze A/B testing to lift task comprehension by 80% and steer roadmap decisions with data, not taste.</p>
+                <p class="principle-card__text">I built an evidence-based design culture at Solving AI, using Maze A/B testing to steer roadmap and design decisions with data, not taste.</p>
               </div>
               <div class="principle-card">
                 <span class="principle-card__number">02</span>
                 <h3 class="principle-card__title">Systematize everything</h3>
-                <p class="principle-card__text">At CodeBranch I redesigned Nvidia's supply-chain platform, turning a flat, unstructured interface into a structured SAP Fiori dashboard for a 90% task-completion gain.</p>
+                <p class="principle-card__text">At CodeBranch I redesigned Nvidia's supply-chain platform, turning a flat, unstructured interface into a task-oriented SAP Fiori dashboard that global teams could act on.</p>
               </div>
               <div class="principle-card">
                 <span class="principle-card__number">03</span>
@@ -1578,13 +651,13 @@
                 <span class="timeline__date">Apr 2026 &ndash; Present</span>
                 <span class="timeline__role">Senior Lead UX/UI Designer</span>
                 <span class="timeline__company">Symplast &middot; Full-time &middot; Remote</span>
-                <p class="timeline__desc">Leading design across a mobile-first, HIPAA-compliant EHR and practice-management platform serving 3,500+ aesthetic practices and medical spas. AI-native workflows, design systems, and KPI-tied user research &mdash; aligning product, engineering, and clinical users.</p>
+                <p class="timeline__desc">Leading design across a mobile-first, HIPAA-compliant EHR and practice-management platform serving 3,500+ aesthetic practices and medical spas. AI-native workflows, design systems, and KPI-tied user research, aligning product, engineering, and clinical users.</p>
               </div>
               <div class="timeline__item">
                 <span class="timeline__date">Jun 2025 &ndash; Apr 2026</span>
                 <span class="timeline__role">Senior Product Designer &amp; Lead + Product Owner</span>
                 <span class="timeline__company">CodeBranch &middot; Contract &middot; Remote (USA/LatAm)</span>
-                <p class="timeline__desc">Product Owner on the design side &mdash; user stories, delivery guidance, QA oversight. Led UX for the Nvidia Supply Chain AI and YMA/Smartel ecosystem; collaborated with 5+ engineers including AI/ML specialists.</p>
+                <p class="timeline__desc">Product Owner on the design side: user stories, delivery guidance, QA oversight. Led UX for the Nvidia Supply Chain AI and YMA/Smartel ecosystem; collaborated with 5+ engineers including AI/ML specialists.</p>
               </div>
               <div class="timeline__item">
                 <span class="timeline__date">Jun 2024 &ndash; Jun 2025</span>
@@ -1645,7 +718,7 @@
             <div class="timeline">
               <div class="timeline__item">
                 <span class="timeline__date">2007 &ndash; 2011</span>
-                <span class="timeline__role">Visual Designer &mdash; Emphasis on Interactive Systems</span>
+                <span class="timeline__role">Visual Designer &middot; Emphasis on Interactive Systems</span>
                 <span class="timeline__company">Fundaci&oacute;n Universitaria Bellas Artes</span>
               </div>
             </div>
@@ -1694,7 +767,7 @@
               <div class="cert-item">
                 <span class="cert-item__icon cert-item__icon--ef">E</span>
                 <div class="cert-item__info">
-                  <span class="cert-item__name">EF SET English Certificate &mdash; C1 Advanced</span>
+                  <span class="cert-item__name">EF SET English Certificate &middot; C1 Advanced</span>
                   <span class="cert-item__source">EF Education First &middot; Score 66/100</span>
                 </div>
               </div>
@@ -1740,320 +813,15 @@
       <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener noreferrer" class="footer__link">view source</a>.</p>
       <ul class="footer__links">
         <li><a href="#work" class="footer__link">Work</a></li>
+        <li><a href="#live-sites" class="footer__link">Live Sites</a></li>
         <li><a href="#about" class="footer__link">About</a></li>
         <li><a href="#contact" class="footer__link">Contact</a></li>
       </ul>
     </div>
   </footer>
 
-  <!-- Lightbox modal -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" hidden>
-    <div class="lightbox__overlay"></div>
-    <div class="lightbox__content">
-      <div class="lightbox__image-wrapper"></div>
-      <p class="lightbox__caption" id="lightbox-caption"></p>
-    </div>
-    <button class="lightbox__close" aria-label="Close">&times;</button>
-  </div>
 
-  <!-- Scroll animation & interactions -->
-  <script>
-    (function() {
-      // --- Unhide page immediately so any later error won't leave it blank ---
-      document.body.classList.remove('loading');
-      document.body.classList.add('loaded');
-
-      // --- Reduced motion: pause autoplay videos ---
-      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-      function handleReducedMotion() {
-        document.querySelectorAll('video[autoplay]').forEach(v => {
-          if (prefersReducedMotion.matches) { v.pause(); } else { v.play(); }
-        });
-      }
-      handleReducedMotion();
-      prefersReducedMotion.addEventListener('change', handleReducedMotion);
-
-      // --- Fade-in on scroll ---
-      const fadeObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
-      document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
-
-      // --- Staggered fade-in on scroll ---
-      const staggerObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            staggerObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
-
-      document.querySelectorAll('.fade-in-stagger').forEach(el => staggerObserver.observe(el));
-
-      // --- Animated counter for hero stats ---
-      function animateCounter(el) {
-        const text = el.textContent.trim();
-        const match = text.match(/^(~?)(\d+)(%?)$/);
-        if (!match) return;
-        const prefix = match[1];
-        const target = parseInt(match[2], 10);
-        const suffix = match[3];
-        const duration = 1200;
-        const start = performance.now();
-
-        el.textContent = prefix + '0' + suffix;
-
-        function update(now) {
-          const elapsed = now - start;
-          const progress = Math.min(elapsed / duration, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          const current = Math.round(target * eased);
-          el.textContent = prefix + current + suffix;
-          if (progress < 1) requestAnimationFrame(update);
-        }
-        requestAnimationFrame(update);
-      }
-
-      // --- Nav hide/show on scroll direction ---
-      const nav = document.querySelector('.nav');
-      let lastScrollY = window.scrollY;
-      let ticking = false;
-
-      function updateNav() {
-        const currentScrollY = window.scrollY;
-        if (currentScrollY > lastScrollY && currentScrollY > 100) {
-          nav.style.transform = 'translateY(-100%)';
-        } else {
-          nav.style.transform = 'translateY(0)';
-        }
-        lastScrollY = currentScrollY;
-        ticking = false;
-      }
-
-      window.addEventListener('scroll', () => {
-        if (!ticking) {
-          requestAnimationFrame(updateNav);
-          ticking = true;
-        }
-      }, { passive: true });
-
-      // --- Active nav link based on scroll position ---
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.nav__link');
-      const stepItems = document.querySelectorAll('.section-nav__item');
-
-      // Travelling underline indicator — additive over the scroll-spy below
-      const navIndicator = document.querySelector('.nav__indicator');
-      const navLinksUl = document.querySelector('.nav__links');
-      if (navLinksUl) navLinksUl.classList.add('nav__links--js');
-      const moveIndicator = () => {
-        if (!navIndicator || !navLinksUl) return;
-        const active = navLinksUl.querySelector('.nav__link--active');
-        if (!active || window.matchMedia('(max-width: 768px)').matches) {
-          navIndicator.style.opacity = '0';
-          return;
-        }
-        navIndicator.style.left = active.offsetLeft + 'px';
-        navIndicator.style.width = active.offsetWidth + 'px';
-        navIndicator.style.opacity = '1';
-      };
-
-      const matchesSection = (href, id) =>
-        href === '#' + id || (id && id.startsWith('case-') && href === '#work');
-
-      const sectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const id = entry.target.getAttribute('id');
-            navLinks.forEach(link => {
-              const match = matchesSection(link.getAttribute('href'), id);
-              link.classList.toggle('nav__link--active', match);
-              if (match) link.setAttribute('aria-current', 'true');
-              else link.removeAttribute('aria-current');
-            });
-            stepItems.forEach(item => {
-              const match = matchesSection(item.getAttribute('href'), id);
-              item.classList.toggle('section-nav__item--active', match);
-              if (match) item.setAttribute('aria-current', 'true');
-              else item.removeAttribute('aria-current');
-            });
-            moveIndicator();
-          }
-        });
-      }, { threshold: 0.1, rootMargin: '-20% 0px -60% 0px' });
-
-      sections.forEach(section => sectionObserver.observe(section));
-
-      // Keep the travelling indicator correct on load, after fonts settle, and on resize
-      window.addEventListener('load', moveIndicator);
-      if (document.fonts && document.fonts.ready) document.fonts.ready.then(moveIndicator);
-      let navResizeT;
-      window.addEventListener('resize', () => { clearTimeout(navResizeT); navResizeT = setTimeout(moveIndicator, 120); }, { passive: true });
-      moveIndicator();
-
-      // --- Smooth scroll for anchor links ---
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          const href = this.getAttribute('href');
-          if (href === '#') { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
-          const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-          const mobileNav = document.querySelector('.nav__links');
-          const navToggle = document.querySelector('.nav__toggle');
-          if (mobileNav.classList.contains('nav__links--open')) {
-            mobileNav.classList.remove('nav__links--open');
-            navToggle.setAttribute('aria-expanded', 'false');
-          }
-        });
-      });
-
-      // --- Mobile nav toggle ---
-      const mobileNavToggle = document.querySelector('.nav__toggle');
-      const navLinksEl = document.querySelector('.nav__links');
-      mobileNavToggle.addEventListener('click', function() {
-        const expanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-        navLinksEl.classList.toggle('nav__links--open');
-      });
-
-      // --- Theme toggle (light/dark, persisted) ---
-      const themeToggle = document.querySelector('.theme-toggle');
-      if (themeToggle) {
-        const syncThemeLabel = () => {
-          const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-          themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-        };
-        syncThemeLabel();
-        themeToggle.addEventListener('click', () => {
-          const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) {}
-          syncThemeLabel();
-        });
-      }
-
-      // --- Lightbox ---
-      const lightbox = document.getElementById('lightbox');
-      const lightboxWrapper = lightbox.querySelector('.lightbox__image-wrapper');
-      const lightboxCaption = lightbox.querySelector('.lightbox__caption');
-      const lightboxClose = lightbox.querySelector('.lightbox__close');
-      const lightboxOverlay = lightbox.querySelector('.lightbox__overlay');
-      let lastFocusedElement = null;
-
-      function openLightbox(el) {
-        lastFocusedElement = document.activeElement;
-        const img = el.querySelector('picture') || el.querySelector('img');
-        const video = el.querySelector('video');
-        const caption = el.querySelector('.case-image__caption');
-
-        lightboxWrapper.innerHTML = '';
-        if (video) {
-          const clone = video.cloneNode(true);
-          clone.className = '';
-          clone.controls = true;
-          lightboxWrapper.appendChild(clone);
-        } else if (!img) {
-          return;
-        } else if (img.tagName === 'PICTURE') {
-          const clone = img.cloneNode(true);
-          const cloneImg = clone.querySelector('img');
-          if (cloneImg) {
-            cloneImg.removeAttribute('loading');
-            cloneImg.className = '';
-          }
-          lightboxWrapper.appendChild(clone);
-        } else {
-          const clone = img.cloneNode(true);
-          clone.removeAttribute('loading');
-          clone.className = '';
-          lightboxWrapper.appendChild(clone);
-        }
-
-        lightboxCaption.textContent = caption ? caption.textContent : '';
-        lightbox.hidden = false;
-        document.body.classList.add('lightbox-open');
-        document.getElementById('main').inert = true;
-        document.querySelector('.nav').inert = true;
-        document.querySelector('.footer').inert = true;
-
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            lightbox.classList.add('lightbox--visible');
-          });
-        });
-
-        lightboxClose.focus();
-      }
-
-      function closeLightbox() {
-        lightbox.classList.remove('lightbox--visible');
-        const onEnd = () => {
-          lightbox.hidden = true;
-          document.body.classList.remove('lightbox-open');
-          document.getElementById('main').inert = false;
-          document.querySelector('.nav').inert = false;
-          document.querySelector('.footer').inert = false;
-          lightboxWrapper.innerHTML = '';
-          if (lastFocusedElement) lastFocusedElement.focus();
-          lightbox.removeEventListener('transitionend', onEnd);
-        };
-        lightbox.addEventListener('transitionend', onEnd);
-        // Fallback if transitionend doesn't fire
-        setTimeout(onEnd, 500);
-      }
-
-      document.querySelectorAll('.case-image').forEach(el => {
-        // Give every image control an accessible name from its caption (WCAG 4.1.2)
-        if (!el.getAttribute('aria-label')) {
-          const cap = el.querySelector('.case-image__caption');
-          el.setAttribute('aria-label', cap ? 'View larger: ' + cap.textContent.trim() : 'View larger image');
-        }
-        el.addEventListener('click', () => openLightbox(el));
-        el.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            openLightbox(el);
-          }
-        });
-      });
-
-      lightboxClose.addEventListener('click', closeLightbox);
-      lightboxOverlay.addEventListener('click', closeLightbox);
-      document.addEventListener('keydown', (e) => {
-        if (lightbox.hidden) return;
-        if (e.key === 'Escape') { closeLightbox(); return; }
-        // Focus trap: keep Tab within the lightbox
-        if (e.key === 'Tab') {
-          const focusable = lightbox.querySelectorAll('button, [href], video[controls], [tabindex]:not([tabindex="-1"])');
-          if (focusable.length === 0) return;
-          const first = focusable[0];
-          const last = focusable[focusable.length - 1];
-          if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-          else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-        }
-      });
-
-      // --- Hero entrance animation with counter ---
-      window.addEventListener('load', () => {
-        const hero = document.querySelector('.hero');
-        if (hero) {
-          hero.classList.add('hero--loaded');
-          setTimeout(() => {
-            document.querySelectorAll('.hero__stat-number').forEach(el => animateCounter(el));
-          }, 600);
-        }
-      });
-    })();
-  </script>
+  <script src="js/main.js?v=20260611a"></script>
 
 </body>
 </html>
