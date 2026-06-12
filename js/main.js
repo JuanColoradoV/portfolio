@@ -192,7 +192,9 @@
       lastFocusedElement = document.activeElement;
       const img = el.querySelector('picture') || el.querySelector('img');
       const video = el.querySelector('video');
-      const caption = el.querySelector('.case-image__caption');
+      // The caption lives on the figure; on spec figures the trigger is the
+      // inner container, so climb to the figure to find it.
+      const caption = el.closest('.case-image').querySelector('.case-image__caption');
 
       lightboxWrapper.innerHTML = '';
       if (video) {
@@ -225,6 +227,14 @@
       }
 
       lightboxCaption.textContent = caption ? caption.textContent : '';
+      // A dialog with an empty labelledby target has no accessible name
+      if (lightboxCaption.textContent.trim()) {
+        lightbox.setAttribute('aria-labelledby', 'lightbox-caption');
+        lightbox.removeAttribute('aria-label');
+      } else {
+        lightbox.removeAttribute('aria-labelledby');
+        lightbox.setAttribute('aria-label', 'Media preview');
+      }
       lightbox.hidden = false;
       document.body.classList.add('lightbox-open');
       setInert(true);
@@ -254,10 +264,10 @@
       pendingCloseTimer = setTimeout(onEnd, 500);
     }
 
-    document.querySelectorAll('.case-image').forEach(el => {
+    document.querySelectorAll('.case-image[role="button"], .case-image .case-image__container[role="button"]').forEach(el => {
       // Give every image control an accessible name from its caption (WCAG 4.1.2)
       if (!el.getAttribute('aria-label')) {
-        const cap = el.querySelector('.case-image__caption');
+        const cap = el.closest('.case-image').querySelector('.case-image__caption');
         el.setAttribute('aria-label', cap ? 'View larger: ' + cap.textContent.trim() : 'View larger image');
       }
       el.addEventListener('click', () => openLightbox(el));
@@ -287,18 +297,40 @@
   }
 
   // --- Spec mode: Design ⇄ Spec annotation toggle on flagship case images ---
-  document.querySelectorAll('.spec-toggle').forEach(btn => {
-    // The toggle lives inside a lightbox trigger; keep its events to itself.
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
+  const specToggles = document.querySelectorAll('.spec-toggle');
+  specToggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.remove('spec-toggle--pulse');
       const fig = btn.closest('.spec-figure');
       const on = fig.classList.toggle('spec-figure--on');
       btn.setAttribute('aria-pressed', String(on));
     });
-    btn.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') e.stopPropagation();
-    });
   });
+
+  // One-time discoverability pulse when the toggle first enters the viewport
+  if (specToggles.length && !prefersReducedMotion.matches) {
+    const pulseObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('spec-toggle--pulse');
+          pulseObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    specToggles.forEach(t => pulseObserver.observe(t));
+  }
+
+  // --- Pause control for the looping product demo (WCAG 2.2.2) ---
+  const videoPause = document.querySelector('.video-pause');
+  const demoVideo = document.querySelector('.case-image video[autoplay]');
+  if (videoPause && demoVideo) {
+    videoPause.addEventListener('click', () => {
+      const wasPlaying = !demoVideo.paused;
+      if (wasPlaying) { demoVideo.pause(); } else { demoVideo.play(); }
+      videoPause.setAttribute('aria-pressed', String(wasPlaying));
+      videoPause.textContent = wasPlaying ? 'Play the looping demo' : 'Pause the looping demo';
+    });
+  }
 
   // --- Hero entrance animation ---
   window.addEventListener('load', () => {

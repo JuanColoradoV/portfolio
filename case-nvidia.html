@@ -37,7 +37,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260612c">
+  <link rel="stylesheet" href="css/styles.css?v=20260612d">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -57,7 +57,7 @@
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
       <ul class="nav__links" id="nav-menu">
-        <li><a href="index.html#work" class="nav__link nav__link--active" aria-current="page">Work</a></li>
+        <li><a href="index.html#work" class="nav__link nav__link--active">Work</a></li>
         <li><a href="index.html#live-sites" class="nav__link">Live Sites</a></li>
         <li><a href="index.html#about" class="nav__link">About</a></li>
         <li><a href="index.html#contact" class="nav__link">Contact</a></li>
@@ -117,7 +117,6 @@
 
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">01</p>
         <h2 class="case-section__heading">A global supply chain team needed faster, more confident decisions.</h2>
         <p class="case-section__text">I led design and product strategy for Nvidia's supply-chain intelligence platform, an enterprise AI analytics tool managing <strong>$2B+ in annual transactions</strong>. It served global teams making high-stakes operational decisions on AI-generated insights and real-time data.</p>
         <p class="case-section__text">The existing interface was flat and unstructured; information was presented without hierarchy, forcing users to mentally organize data before they could act on it. This slowed decision-making and increased error rates, particularly for cross-functional teams who needed different views of the same data.</p>
@@ -136,36 +135,38 @@
 
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">02</p>
         <h2 class="case-section__heading">Enterprise structure meets AI-powered intelligence.</h2>
         <p class="case-section__text"><strong>SAP Fiori as the structural foundation.</strong> I selected SAP Fiori as the design framework for two reasons: it is the enterprise standard that supply chain teams already understand, and its structured dashboard patterns (Overview Pages, Object Pages, List Reports) map directly to supply chain decision-making workflows.</p>
         <p class="case-section__text"><strong>Information architecture overhaul.</strong> I restructured the platform's IA from a flat list of features into a task-oriented hierarchy. Users no longer navigated by feature name; they navigated by decision type: "What needs my attention?", "What is the current status?", "What action should I take?"</p>
         <p class="case-section__text"><strong>AI integration patterns.</strong> I designed interaction patterns for AI-generated recommendations that maintained user agency. The AI surfaced insights, but humans made the final decisions, with clear confidence indicators and the ability to drill into the underlying data.</p>
+        <p class="case-section__text">The restructure was validated, not assumed: in the internal usability tests that followed, task completion on key decision workflows improved by roughly 90%.</p>
       </div>
     </div>
 
     <!-- Nvidia: Redacted dashboard (NDA-safe) -->
     <div class="case-image-grid fade-in-stagger">
-      <div class="case-image spec-figure" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--transparent">
+      <div class="case-image spec-figure">
+        <div class="spec-stage">
+          <div class="case-image__container case-image__container--transparent" role="button" tabindex="0">
           <img src="assets/nvidia/redacted-dashboard.svg?v=2" alt="Redacted SAP Fiori dashboard showing KPI cards, trend analysis, and AI recommendation panel, content anonymized under NDA" class="case-image__diagram" width="1200" height="720" loading="lazy" decoding="async">
+          </div>
           <button class="spec-toggle" type="button" aria-pressed="false" aria-label="Toggle design rationale annotations">
-            <span>Design</span><span>Spec</span>
-          </button>
-          <ul class="spec-layer" aria-label="Design rationale annotations">
-            <li class="spec-pin" style="--x:3%; --y:8%; --i:0"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Fiori Overview Page: the screen answers &ldquo;what needs my attention?&rdquo; first</span></li>
-            <li class="spec-pin" style="--x:3%; --y:58%; --i:1"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">KPI hierarchy before drill-down. Users navigate by decision, not feature name</span></li>
-            <li class="spec-pin" style="--x:60%; --y:10%; --i:2"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Every AI recommendation ships with a confidence level and the data behind it</span></li>
-            <li class="spec-pin" style="--x:60%; --y:66%; --i:3"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">The human decides. The AI surfaces, never auto-executes</span></li>
-          </ul>
+              <span>Design</span><span>Spec</span>
+            </button>
+            <ul class="spec-layer" aria-label="Design rationale annotations">
+              <li class="spec-pin" style="--x:3%; --y:8%; --i:0"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Fiori Overview Page: the screen answers &ldquo;what needs my attention?&rdquo; first</span></li>
+              <li class="spec-pin" style="--x:3%; --y:58%; --i:1"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">KPI hierarchy before drill-down. Users navigate by decision, not feature name</span></li>
+              <li class="spec-pin" style="--x:60%; --y:10%; --i:2"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Every AI recommendation ships with a confidence level and the data behind it</span></li>
+              <li class="spec-pin" style="--x:60%; --y:66%; --i:3"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">The human decides. The AI surfaces, never auto-executes</span></li>
+            </ul>
         </div>
         <p class="case-image__caption">Restructured SAP Fiori dashboard with AI recommendation panel (proprietary content redacted under NDA)</p>
+        <p class="spec-hint">Try the Design / Spec toggle</p>
       </div>
     </div>
 
     <div class="case-section section--alt">
       <div class="case-section__inner">
-        <p class="case-section__number">03</p>
         <h2 class="case-section__heading">Designing trust into every AI interaction.</h2>
         <ul class="case-bullets">
           <li><strong>Deep Reasoning UI:</strong> the conversational AI end-to-end: onboarding prompts, step-by-step reasoning, structured data tables, and suggested follow-ups, each with transparent reasoning and confidence indicators.</li>
@@ -184,7 +185,6 @@
 
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">04</p>
         <h2 class="case-section__heading">Beyond design: functional product ownership.</h2>
         <p class="case-section__text">On this project, I operate beyond the traditional designer's scope. Acting as Product Owner on the design side, I write user stories with acceptance criteria so engineering teams understand the <em>intent</em> behind each design decision. I run design QA on the build, facilitate weekly syncs with 5+ engineers including AI/ML specialists, and govern the design system to ensure Atomic Design compliance across the product.</p>
         <p class="case-section__text">I also mentor 2 junior designers who contribute to the component library and product screens, enabling them to work autonomously within the design system I established.</p>
@@ -254,6 +254,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
   </div>
 
-  <script src="js/main.js?v=20260612c"></script>
+  <script src="js/main.js?v=20260612d"></script>
 </body>
 </html>

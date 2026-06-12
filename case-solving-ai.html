@@ -37,7 +37,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260612c">
+  <link rel="stylesheet" href="css/styles.css?v=20260612d">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -57,7 +57,7 @@
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
       <ul class="nav__links" id="nav-menu">
-        <li><a href="index.html#work" class="nav__link nav__link--active" aria-current="page">Work</a></li>
+        <li><a href="index.html#work" class="nav__link nav__link--active">Work</a></li>
         <li><a href="index.html#live-sites" class="nav__link">Live Sites</a></li>
         <li><a href="index.html#about" class="nav__link">About</a></li>
         <li><a href="index.html#contact" class="nav__link">Contact</a></li>
@@ -111,23 +111,26 @@
 
     <!-- Product Interface: Autopilot Dashboard + Workflow Builder -->
     <div class="case-image-grid fade-in-stagger">
-      <div class="case-image spec-figure" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
+      <div class="case-image spec-figure">
+        <div class="spec-stage">
+          <div class="case-image__container case-image__container--contained" role="button" tabindex="0">
           <picture>
             <source srcset="assets/solving-ai/Desktop.webp" type="image/webp">
             <img src="assets/solving-ai/Desktop.jpg" alt="Solving AI Autopilot interface — the product dashboard designed and shipped" class="case-image__screenshot" width="2880" height="1920" loading="lazy" decoding="async">
           </picture>
+          </div>
           <button class="spec-toggle" type="button" aria-pressed="false" aria-label="Toggle design rationale annotations">
-            <span>Design</span><span>Spec</span>
-          </button>
-          <ul class="spec-layer" aria-label="Design rationale annotations">
-            <li class="spec-pin" style="--x:3%; --y:10%; --i:0"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Basics up front; advanced parameters behind progressive disclosure</span></li>
-            <li class="spec-pin" style="--x:3%; --y:60%; --i:1"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">The AI narrates its state: configuring, running, done. No black box</span></li>
-            <li class="spec-pin" style="--x:58%; --y:16%; --i:2"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Confidence sits next to every output, not buried in a tooltip</span></li>
-            <li class="spec-pin" style="--x:58%; --y:70%; --i:3"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">AA contrast throughout: 12 audit violations resolved</span></li>
-          </ul>
+              <span>Design</span><span>Spec</span>
+            </button>
+            <ul class="spec-layer" aria-label="Design rationale annotations">
+              <li class="spec-pin" style="--x:3%; --y:10%; --i:0"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Basics up front; advanced parameters behind progressive disclosure</span></li>
+              <li class="spec-pin" style="--x:3%; --y:60%; --i:1"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">The AI narrates its state: configuring, running, done. No black box</span></li>
+              <li class="spec-pin" style="--x:58%; --y:16%; --i:2"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Confidence sits next to every output, not buried in a tooltip</span></li>
+              <li class="spec-pin" style="--x:58%; --y:70%; --i:3"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">AA contrast throughout: 12 audit violations resolved</span></li>
+            </ul>
         </div>
         <p class="case-image__caption">Solving AI Autopilot dashboard: the production interface I designed for AI-driven task automation</p>
+        <p class="spec-hint">Try the Design / Spec toggle</p>
       </div>
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--contained">
@@ -144,18 +147,18 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--contained">
-          <video autoplay loop muted playsinline preload="none" aria-label="Looping demo of the Solving AI onboarding and hero animation" class="case-image__screenshot" width="960" height="1025" poster="assets/solving-ai/Desktop.jpg">
+          <video autoplay loop muted playsinline aria-label="Looping demo of the Solving AI onboarding and hero animation" class="case-image__screenshot" width="960" height="1025" poster="assets/solving-ai/Desktop.jpg">
             <source src="assets/solving-ai/hero-demo.mp4" type="video/mp4">
           </video>
         </div>
         <p class="case-image__caption">Product demo: hero animation and onboarding flow in action</p>
       </div>
     </div>
+    <p class="video-control"><button class="video-pause" type="button" aria-pressed="false">Pause the looping demo</button></p>
 
     <!-- Challenge -->
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">01</p>
         <h2 class="case-section__heading">Everyone wanted the redesign to start on Monday.</h2>
         <p class="case-section__text">Solving AI was building intelligent automation tools for technical and non-technical users alike. People were abandoning multi-step AI workflows mid-process, the team could feel it, and the cure had been chosen before I arrived: a redesign, as soon as possible.</p>
         <p class="case-section__text">But two problems were tangled together. <strong>Comprehension was failing:</strong> users could not tell what the AI was doing, what it needed, or how to read its results. And <strong>decisions had no evidence:</strong> every fix was argued from opinion, because nothing was measured. A redesign would treat the first problem while leaving the machine that produced it untouched.</p>
@@ -176,7 +179,6 @@
     <!-- Discovery -->
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">02</p>
         <h2 class="case-section__heading">The costly decision: weeks of work with zero screens to show.</h2>
         <p class="case-section__text">My first deliverable was not a redesign; it was research infrastructure. I implemented Maze-based A/B testing with defined cohorts (technical vs. non-technical, new vs. returning) so that every future design argument could be settled with behavior instead of seniority.</p>
         <p class="case-section__text">It cost what these decisions always cost: progress reviews with nothing visual to show, and a roadmap that looked stalled from the outside. I defended it with one argument: without a baseline, we would ship a prettier product and never know whether it was a better one.</p>
@@ -197,7 +199,6 @@
     <!-- Design Decisions -->
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">03</p>
         <h2 class="case-section__heading">The data pointed where opinion hadn’t.</h2>
         <p class="case-section__text">Task analysis and session data located the real failure points: <strong>configuration</strong> and <strong>results interpretation</strong>. Not onboarding, where most internal theories pointed. The redesign finally had a target.</p>
         <p class="case-section__text"><strong>Progressive disclosure for AI configuration.</strong> I restructured the configuration flow so that basic settings were front and center, while advanced parameters were accessible but not overwhelming. This reduced cognitive load for new users while preserving flexibility for power users.</p>
@@ -219,7 +220,6 @@
     <!-- Design System -->
     <div class="case-section section--alt">
       <div class="case-section__inner">
-        <p class="case-section__number">04</p>
         <h2 class="case-section__heading">A system designed to scale, not just to look consistent.</h2>
         <p class="case-section__text">I architected a scalable Figma design system built on three pillars:</p>
         <p class="case-section__text"><strong>Figma Variables:</strong> design tokens for color, spacing, typography, and elevation, enabling theme switching and systematic updates across the entire product.</p>
@@ -254,7 +254,6 @@
     <!-- Team Recommendations -->
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">05</p>
         <h2 class="case-section__heading">What the team says.</h2>
         <div class="case-recommendations">
           <div class="case-recommendation">
@@ -281,7 +280,6 @@
     <!-- Reflection -->
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">06</p>
         <h2 class="case-section__heading">Reflection.</h2>
         <p class="case-section__text">If I could do this project again, I would push for quantitative baseline metrics <em>before</em> starting the redesign. We measured improvement, but our "before" data was partially reconstructed from session recordings rather than controlled baseline tests. Starting every project with a measurable benchmark is now a non-negotiable in my process.</p>
         <p class="case-section__text">This project fundamentally shaped how I approach design: not as an aesthetic exercise, but as a hypothesis to be validated.</p>
@@ -321,6 +319,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
   </div>
 
-  <script src="js/main.js?v=20260612c"></script>
+  <script src="js/main.js?v=20260612d"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260612c">
+  <link rel="stylesheet" href="css/styles.css?v=20260612d">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -57,7 +57,7 @@
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
       <ul class="nav__links" id="nav-menu">
-        <li><a href="index.html#work" class="nav__link nav__link--active" aria-current="page">Work</a></li>
+        <li><a href="index.html#work" class="nav__link nav__link--active">Work</a></li>
         <li><a href="index.html#live-sites" class="nav__link">Live Sites</a></li>
         <li><a href="index.html#about" class="nav__link">About</a></li>
         <li><a href="index.html#contact" class="nav__link">Contact</a></li>
@@ -111,7 +111,6 @@
 
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">01</p>
         <h2 class="case-section__heading">No existing patterns. Multiple product surfaces. Real-time AI data.</h2>
         <p class="case-section__text">YMA is part of the Smartel AI ecosystem, a product suite powered by computer vision and real-time data processing. When I joined, there was no established product experience: no design patterns, no component library, no interaction conventions.</p>
         <p class="case-section__text"><strong>Designing for real-time AI data.</strong> Computer vision generates continuous, high-frequency output: confidence scores, object detection results, threshold alerts. The interface needed to communicate this data clearly without overwhelming users or introducing latency-induced confusion.</p>
@@ -127,23 +126,26 @@
         </div>
         <p class="case-image__caption">Smartel AI ecosystem: unified design system scaling across all product surfaces</p>
       </div>
-      <div class="case-image spec-figure" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
+      <div class="case-image spec-figure">
+        <div class="spec-stage">
+          <div class="case-image__container case-image__container--contained" role="button" tabindex="0">
           <picture>
             <source srcset="assets/yma/contestant-review-live.webp" type="image/webp">
             <img src="assets/yma/contestant-review-live.png" alt="YMA Contestant Review showing live AI analysis with technique (20%), posture (60%), and stride (50%) metrics alongside dual front and side camera views" class="case-image__screenshot" width="1133" height="744" loading="lazy" decoding="async">
           </picture>
+          </div>
           <button class="spec-toggle" type="button" aria-pressed="false" aria-label="Toggle design rationale annotations">
-            <span>Design</span><span>Spec</span>
-          </button>
-          <ul class="spec-layer" aria-label="Design rationale annotations">
-            <li class="spec-pin" style="--x:3%; --y:8%; --i:0"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Scores in display type: legible at arm&rsquo;s length, outdoors</span></li>
-            <li class="spec-pin" style="--x:3%; --y:60%; --i:1"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Technique / posture / stride update live against visible thresholds</span></li>
-            <li class="spec-pin" style="--x:56%; --y:6%; --i:2"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Dual synchronized views, front + side, on one timeline</span></li>
-            <li class="spec-pin" style="--x:56%; --y:70%; --i:3"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Built mobile-first: controls sit in the thumb zone</span></li>
-          </ul>
+              <span>Design</span><span>Spec</span>
+            </button>
+            <ul class="spec-layer" aria-label="Design rationale annotations">
+              <li class="spec-pin" style="--x:3%; --y:8%; --i:0"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Scores in display type: legible at arm&rsquo;s length, outdoors</span></li>
+              <li class="spec-pin" style="--x:3%; --y:60%; --i:1"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Technique / posture / stride update live against visible thresholds</span></li>
+              <li class="spec-pin" style="--x:56%; --y:6%; --i:2"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Dual synchronized views, front + side, on one timeline</span></li>
+              <li class="spec-pin" style="--x:56%; --y:70%; --i:3"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Built mobile-first: controls sit in the thumb zone</span></li>
+            </ul>
         </div>
         <p class="case-image__caption">Contestant Review: live AI scoring (technique, posture, stride) over dual-view video</p>
+        <p class="spec-hint">Try the Design / Spec toggle</p>
       </div>
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--contained">
@@ -176,9 +178,8 @@
 
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">02</p>
         <h2 class="case-section__heading">Built to scale through other designers.</h2>
-        <p class="case-section__text">I created a component library with comprehensive documentation: usage guidelines, interaction states, responsive behavior, and engineering annotations. This enabled 2 junior designers to work autonomously across the product suite while maintaining design consistency.</p>
+        <p class="case-section__text">The component library shipped with its documentation built in, so the system could be extended without me in the room. Two junior designers took it across the product suite while keeping the language consistent.</p>
         <p class="case-section__text">Every component was designed mobile-first and scaled up to tablet and desktop, not the other way around. Touch targets, information density, and navigation patterns were all optimized for one-handed mobile use before being adapted for larger viewports.</p>
       </div>
     </div>
@@ -209,7 +210,6 @@
 
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">03</p>
         <h2 class="case-section__heading">Shipped across every surface: mobile, tablet, and desktop.</h2>
         <p class="case-section__text">The mobile-first approach translated into a cohesive experience across all device types. The landing and enrollment flow adapts from a full desktop layout to a touch-optimized mobile experience, while the contestant management interface scales from a compact mobile list to a full data table on tablet.</p>
       </div>
@@ -304,6 +304,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
   </div>
 
-  <script src="js/main.js?v=20260612c"></script>
+  <script src="js/main.js?v=20260612d"></script>
 </body>
 </html>

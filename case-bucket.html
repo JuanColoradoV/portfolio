@@ -37,7 +37,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260612c">
+  <link rel="stylesheet" href="css/styles.css?v=20260612d">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -57,7 +57,7 @@
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
       <ul class="nav__links" id="nav-menu">
-        <li><a href="index.html#work" class="nav__link nav__link--active" aria-current="page">Work</a></li>
+        <li><a href="index.html#work" class="nav__link nav__link--active">Work</a></li>
         <li><a href="index.html#live-sites" class="nav__link">Live Sites</a></li>
         <li><a href="index.html#about" class="nav__link">About</a></li>
         <li><a href="index.html#contact" class="nav__link">Contact</a></li>
@@ -111,28 +111,30 @@
 
     <!-- Bucket.io: Blueprint Dashboard -->
     <div class="case-image-grid fade-in-stagger">
-      <div class="case-image spec-figure" role="button" tabindex="0">
-        <div class="case-image__container case-image__container--contained">
+      <div class="case-image spec-figure">
+        <div class="spec-stage">
+          <div class="case-image__container case-image__container--contained" role="button" tabindex="0">
           <picture>
             <source srcset="assets/bucket/product-dashboard.webp?v=2" type="image/webp">
             <img src="assets/bucket/product-dashboard.png?v=2" alt="Bucket.io blueprint dashboard — AI-powered content generation platform with featured templates and blueprint management" class="case-image__screenshot" width="1280" height="1608" loading="lazy" decoding="async">
           </picture>
+          </div>
           <button class="spec-toggle" type="button" aria-pressed="false" aria-label="Toggle design rationale annotations">
-            <span>Design</span><span>Spec</span>
-          </button>
-          <ul class="spec-layer" aria-label="Design rationale annotations">
-            <li class="spec-pin" style="--x:3%; --y:4%; --i:0"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Featured templates kill the blank-page problem</span></li>
-            <li class="spec-pin" style="--x:3%; --y:26%; --i:1"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">One primary action per screen; the funnel starts itself</span></li>
-            <li class="spec-pin" style="--x:55%; --y:12%; --i:2"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Categories use the marketer&rsquo;s vocabulary, not AI jargon</span></li>
-          </ul>
+              <span>Design</span><span>Spec</span>
+            </button>
+            <ul class="spec-layer" aria-label="Design rationale annotations">
+              <li class="spec-pin" style="--x:3%; --y:4%; --i:0"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Featured templates kill the blank-page problem</span></li>
+              <li class="spec-pin" style="--x:3%; --y:26%; --i:1"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">One primary action per screen; the funnel starts itself</span></li>
+              <li class="spec-pin" style="--x:55%; --y:12%; --i:2"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Categories use the marketer&rsquo;s vocabulary, not AI jargon</span></li>
+            </ul>
         </div>
         <p class="case-image__caption">Bucket.io blueprint dashboard: the AI-powered content generation platform I redesigned</p>
+        <p class="spec-hint">Try the Design / Spec toggle</p>
       </div>
     </div>
 
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">01</p>
         <h2 class="case-section__heading">Making AI content creation accessible to non-technical users.</h2>
         <p class="case-section__text">Bucket.io uses AI to automatically generate marketing documents (webinar outlines, enrollment scripts, attraction funnels) based on user inputs. The existing workflow required users to navigate a multi-step configuration process that was confusing, particularly for users without technical backgrounds.</p>
         <p class="case-section__text">Drop-off rates were high in the middle of the funnel. Users frequently misconfigured parameters, leading to poor AI output quality and frustration.</p>
@@ -151,7 +153,6 @@
 
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">02</p>
         <h2 class="case-section__heading">Journey mapping to find the friction. Prototypes to prove the fix.</h2>
         <p class="case-section__text"><strong>Journey mapping</strong> revealed three critical friction points: blueprint selection (too many options, no guidance), question configuration (unclear what each parameter affected), and result interpretation (no way to refine output without starting over).</p>
         <p class="case-section__text"><strong>Guided funnel redesign.</strong> I restructured the flow with clear progress indication. Each step had a single focus: select blueprint type, answer guided questions, review the AI-generated result, then refine or regenerate.</p>
@@ -185,7 +186,6 @@
     <!-- Design Decisions -->
     <div class="case-section section--alt">
       <div class="case-section__inner">
-        <p class="case-section__number">03</p>
         <h2 class="case-section__heading">Two design options. One validated through prototyping before a single line of code.</h2>
         <p class="case-section__text"><strong>Option A &middot; Guided Simplicity:</strong> A linear 4-step funnel optimized for first-time users. Each step had a single focus, contextual help, and inline validation. This option prioritized reducing configuration errors and minimizing time-to-first-output.</p>
         <p class="case-section__text"><strong>Option B &middot; Power Dashboard:</strong> A configurable workspace for repeat users who needed more control over parameters. This option exposed advanced settings upfront while maintaining the guided flow as an optional onboarding path.</p>
@@ -284,7 +284,6 @@
     <!-- Reflection -->
     <div class="case-section">
       <div class="case-section__inner">
-        <p class="case-section__number">04</p>
         <h2 class="case-section__heading">Reflection.</h2>
         <p class="case-section__text">This project reinforced that the highest-leverage design work often happens before any screen is designed. The journey mapping phase took two weeks, but it saved months of engineering time by ensuring we solved the right problems. If I did this project again, I would have pushed to run a live A/B test between the two design options with real users rather than relying solely on stakeholder evaluation; the data would have made the final decision more defensible.</p>
       </div>
@@ -292,7 +291,7 @@
 
     <a href="index.html#about" class="next-project">
       <div>
-        <p class="next-project__label">Next case study</p>
+        <p class="next-project__label">Up next</p>
         <p class="next-project__title">About me &rarr;</p>
       </div>
     </a>
@@ -323,6 +322,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
   </div>
 
-  <script src="js/main.js?v=20260612c"></script>
+  <script src="js/main.js?v=20260612d"></script>
 </body>
 </html>
