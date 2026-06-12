@@ -37,7 +37,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260611a">
+  <link rel="stylesheet" href="css/styles.css?v=20260612a">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -127,12 +127,21 @@
         </div>
         <p class="case-image__caption">Smartel AI ecosystem: unified design system scaling across all product surfaces</p>
       </div>
-      <div class="case-image" role="button" tabindex="0">
+      <div class="case-image spec-figure" role="button" tabindex="0">
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/yma/contestant-review-live.webp" type="image/webp">
             <img src="assets/yma/contestant-review-live.png" alt="YMA Contestant Review showing live AI analysis with technique (20%), posture (60%), and stride (50%) metrics alongside dual front and side camera views" class="case-image__screenshot" width="1133" height="744" loading="lazy" decoding="async">
           </picture>
+          <button class="spec-toggle" type="button" aria-pressed="false" aria-label="Toggle design rationale annotations">
+            <span>Design</span><span>Spec</span>
+          </button>
+          <ul class="spec-layer" aria-label="Design rationale annotations">
+            <li class="spec-pin" style="--x:3%; --y:8%; --i:0"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Scores in display type: legible at arm&rsquo;s length, outdoors</span></li>
+            <li class="spec-pin" style="--x:3%; --y:60%; --i:1"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Technique / posture / stride update live against visible thresholds</span></li>
+            <li class="spec-pin" style="--x:56%; --y:6%; --i:2"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Dual synchronized views, front + side, on one timeline</span></li>
+            <li class="spec-pin" style="--x:56%; --y:70%; --i:3"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Built mobile-first: controls sit in the thumb zone</span></li>
+          </ul>
         </div>
         <p class="case-image__caption">Contestant Review: live AI scoring (technique, posture, stride) over dual-view video</p>
       </div>
@@ -295,6 +304,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
   </div>
 
-  <script src="js/main.js?v=20260611a"></script>
+  <script src="js/main.js?v=20260612a"></script>
 </body>
 </html>

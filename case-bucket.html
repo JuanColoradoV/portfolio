@@ -37,7 +37,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260611a">
+  <link rel="stylesheet" href="css/styles.css?v=20260612a">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -111,12 +111,20 @@
 
     <!-- Bucket.io: Blueprint Dashboard -->
     <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
+      <div class="case-image spec-figure" role="button" tabindex="0">
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/bucket/product-dashboard.webp?v=2" type="image/webp">
             <img src="assets/bucket/product-dashboard.png?v=2" alt="Bucket.io blueprint dashboard — AI-powered content generation platform with featured templates and blueprint management" class="case-image__screenshot" width="1280" height="1608" loading="lazy" decoding="async">
           </picture>
+          <button class="spec-toggle" type="button" aria-pressed="false" aria-label="Toggle design rationale annotations">
+            <span>Design</span><span>Spec</span>
+          </button>
+          <ul class="spec-layer" aria-label="Design rationale annotations">
+            <li class="spec-pin" style="--x:3%; --y:4%; --i:0"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Featured templates kill the blank-page problem</span></li>
+            <li class="spec-pin" style="--x:3%; --y:26%; --i:1"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">One primary action per screen; the funnel starts itself</span></li>
+            <li class="spec-pin" style="--x:55%; --y:12%; --i:2"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Categories use the marketer&rsquo;s vocabulary, not AI jargon</span></li>
+          </ul>
         </div>
         <p class="case-image__caption">Bucket.io blueprint dashboard: the AI-powered content generation platform I redesigned</p>
       </div>
@@ -315,6 +323,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
   </div>
 
-  <script src="js/main.js?v=20260611a"></script>
+  <script src="js/main.js?v=20260612a"></script>
 </body>
 </html>

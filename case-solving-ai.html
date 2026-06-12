@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solving AI — Building a Validation Culture for AI Products · Case Study | Juan David Colorado</title>
-  <meta name="description" content="How I established evidence-based design practices, built a scalable design system, and improved task comprehension by ~80% through systematic Maze A/B testing.">
+  <title>Solving AI — First, Prove It: A Validation Culture for AI Products · Case Study | Juan David Colorado</title>
+  <meta name="description" content="Hired to redesign an AI product, I built the measurement system first. How a refused quick redesign became a validation culture, a design system, and a faster team.">
   <meta name="author" content="Juan David Colorado Vargas">
   <link rel="canonical" href="https://juancoloradov.github.io/portfolio/case-solving-ai.html">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Solving AI — Building a Validation Culture for AI Products · Case Study | Juan David Colorado">
-  <meta property="og:description" content="How I established evidence-based design practices, built a scalable design system, and improved task comprehension by ~80% through systematic Maze A/B testing.">
+  <meta property="og:title" content="Solving AI — First, Prove It: A Validation Culture for AI Products · Case Study | Juan David Colorado">
+  <meta property="og:description" content="Hired to redesign an AI product, I built the measurement system first. How a refused quick redesign became a validation culture, a design system, and a faster team.">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Juan David Colorado">
@@ -19,8 +19,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Solving AI — Building a Validation Culture for AI Products · Case Study | Juan David Colorado">
-  <meta name="twitter:description" content="How I established evidence-based design practices, built a scalable design system, and improved task comprehension by ~80% through systematic Maze A/B testing.">
+  <meta name="twitter:title" content="Solving AI — First, Prove It: A Validation Culture for AI Products · Case Study | Juan David Colorado">
+  <meta name="twitter:description" content="Hired to redesign an AI product, I built the measurement system first. How a refused quick redesign became a validation culture, a design system, and a faster team.">
   <meta name="twitter:image" content="https://juancoloradov.github.io/portfolio/assets/solving-ai/Desktop.jpg">
 
   <meta name="theme-color" content="#FAFAF8">
@@ -37,7 +37,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260611a">
+  <link rel="stylesheet" href="css/styles.css?v=20260612a">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -76,8 +76,8 @@
         <a href="index.html#work" class="case-hero__back">&larr; Back to all work</a>
         <img src="assets/solving-ai/Logo.svg" alt="Solving AI" class="case-hero__logo" width="147" height="38" decoding="async">
         <p class="case-hero__company">Solving AI &middot; Jun 2024 &ndash; Jun 2025</p>
-        <h1 class="case-hero__title">Building a Validation Culture for AI Products</h1>
-        <p class="case-hero__subtitle">How I established evidence-based design practices, built a scalable design system, and improved task comprehension by ~80% through systematic Maze A/B testing.</p>
+        <h1 class="case-hero__title">First, Prove It: A Validation Culture for AI Products</h1>
+        <p class="case-hero__subtitle">Solving AI hired me to redesign their AI workflows. I spent the first weeks building the system that could prove whether any redesign worked. That decision shaped everything that shipped after it.</p>
 
         <div class="case-meta">
           <div class="case-meta__item">
@@ -104,19 +104,28 @@
     <div class="case-tldr fade-in">
       <div class="case-tldr__inner">
         <div class="case-tldr__col"><span class="case-tldr__label">Problem</span><p>Users abandoned multi-step AI workflows, and design decisions were driven by opinion, not data.</p></div>
-        <div class="case-tldr__col"><span class="case-tldr__label">What I did</span><p>Built a Maze A/B validation culture, then redesigned with progressive disclosure and a scalable Figma design system.</p></div>
+        <div class="case-tldr__col"><span class="case-tldr__label">What I did</span><p>Refused to redesign blind: built Maze A/B infrastructure and user cohorts first, then redesigned against the evidence and systematized it.</p></div>
         <div class="case-tldr__col case-tldr__col--out"><span class="case-tldr__label">Outcome</span><p>~80% task-comprehension gain (Maze A/B), 30% faster handoff (9 &rarr; 6 days), and WCAG AA compliance.</p></div>
       </div>
     </div>
 
     <!-- Product Interface: Autopilot Dashboard + Workflow Builder -->
     <div class="case-image-grid fade-in-stagger">
-      <div class="case-image" role="button" tabindex="0">
+      <div class="case-image spec-figure" role="button" tabindex="0">
         <div class="case-image__container case-image__container--contained">
           <picture>
             <source srcset="assets/solving-ai/Desktop.webp" type="image/webp">
             <img src="assets/solving-ai/Desktop.jpg" alt="Solving AI Autopilot interface — the product dashboard designed and shipped" class="case-image__screenshot" width="2880" height="1920" loading="lazy" decoding="async">
           </picture>
+          <button class="spec-toggle" type="button" aria-pressed="false" aria-label="Toggle design rationale annotations">
+            <span>Design</span><span>Spec</span>
+          </button>
+          <ul class="spec-layer" aria-label="Design rationale annotations">
+            <li class="spec-pin" style="--x:3%; --y:10%; --i:0"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Basics up front; advanced parameters behind progressive disclosure</span></li>
+            <li class="spec-pin" style="--x:3%; --y:60%; --i:1"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">The AI narrates its state: configuring, running, done. No black box</span></li>
+            <li class="spec-pin" style="--x:58%; --y:16%; --i:2"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">Confidence sits next to every output, not buried in a tooltip</span></li>
+            <li class="spec-pin" style="--x:58%; --y:70%; --i:3"><span class="spec-pin__dot" aria-hidden="true"></span><span class="spec-pin__label">AA contrast throughout: 12 audit violations resolved</span></li>
+          </ul>
         </div>
         <p class="case-image__caption">Solving AI Autopilot dashboard: the production interface I designed for AI-driven task automation</p>
       </div>
@@ -147,10 +156,10 @@
     <div class="case-section">
       <div class="case-section__inner">
         <p class="case-section__number">01</p>
-        <h2 class="case-section__heading">AI products fail when users cannot understand them.</h2>
-        <p class="case-section__text">Solving AI was building intelligent automation tools for both technical and non-technical users. The product featured multi-step AI interactions: complex workflows where users configured, triggered, and interpreted AI-generated outputs.</p>
-        <p class="case-section__text">The problem was twofold. <strong>First, comprehension failure:</strong> users struggled to understand what the AI was doing, what inputs it needed, and how to interpret results. Task comprehension was low, and users abandoned workflows mid-process. <strong>Second, decision-making without evidence:</strong> design decisions were driven by internal opinions rather than user behavior data. There was no systematic way to validate whether a design change actually improved the experience.</p>
-        <p class="case-section__text">I was brought in to solve both: make the AI interactions understandable, and build the infrastructure to prove it.</p>
+        <h2 class="case-section__heading">Everyone wanted the redesign to start on Monday.</h2>
+        <p class="case-section__text">Solving AI was building intelligent automation tools for technical and non-technical users alike. People were abandoning multi-step AI workflows mid-process, the team could feel it, and the cure had been chosen before I arrived: a redesign, as soon as possible.</p>
+        <p class="case-section__text">But two problems were tangled together. <strong>Comprehension was failing:</strong> users could not tell what the AI was doing, what it needed, or how to read its results. And <strong>decisions had no evidence:</strong> every fix was argued from opinion, because nothing was measured. A redesign would treat the first problem while leaving the machine that produced it untouched.</p>
+        <p class="case-section__text">So I made the call I would spend weeks defending: no screens yet.</p>
       </div>
     </div>
 
@@ -168,10 +177,10 @@
     <div class="case-section">
       <div class="case-section__inner">
         <p class="case-section__number">02</p>
-        <h2 class="case-section__heading">Before redesigning anything, I built the system to measure it.</h2>
-        <p class="case-section__text"><strong>Establishing A/B testing workflows.</strong> My first initiative was not a redesign; it was a research infrastructure. I implemented Maze-based A/B testing with defined user cohorts. Each cohort represented a distinct user segment (technical vs. non-technical, new vs. returning), giving us statistically meaningful data on how different user types experienced the same flows.</p>
-        <p class="case-section__text"><strong>Mapping the failure points.</strong> Through task analysis and session data, I identified the specific steps in the AI workflow where users dropped off, hesitated, or made errors. The highest friction was in the "configuration" and "results interpretation" phases.</p>
-        <p class="case-section__text"><strong>Accessibility audit.</strong> I conducted a WCAG compliance assessment across the product. AI products disproportionately exclude users with disabilities, especially in data visualization and error communication. I mapped every violation and prioritized fixes by user impact.</p>
+        <h2 class="case-section__heading">The costly decision: weeks of work with zero screens to show.</h2>
+        <p class="case-section__text">My first deliverable was not a redesign; it was research infrastructure. I implemented Maze-based A/B testing with defined cohorts (technical vs. non-technical, new vs. returning) so that every future design argument could be settled with behavior instead of seniority.</p>
+        <p class="case-section__text">It cost what these decisions always cost: progress reviews with nothing visual to show, and a roadmap that looked stalled from the outside. I defended it with one argument: without a baseline, we would ship a prettier product and never know whether it was a better one.</p>
+        <p class="case-section__text">In parallel I ran a WCAG audit across the product. AI products disproportionately exclude users with disabilities, especially in data visualization and error communication. I mapped every violation and prioritized fixes by user impact.</p>
       </div>
     </div>
 
@@ -189,7 +198,8 @@
     <div class="case-section">
       <div class="case-section__inner">
         <p class="case-section__number">03</p>
-        <h2 class="case-section__heading">Simplifying AI without dumbing it down.</h2>
+        <h2 class="case-section__heading">The data pointed where opinion hadn’t.</h2>
+        <p class="case-section__text">Task analysis and session data located the real failure points: <strong>configuration</strong> and <strong>results interpretation</strong>. Not onboarding, where most internal theories pointed. The redesign finally had a target.</p>
         <p class="case-section__text"><strong>Progressive disclosure for AI configuration.</strong> I restructured the configuration flow so that basic settings were front and center, while advanced parameters were accessible but not overwhelming. This reduced cognitive load for new users while preserving flexibility for power users.</p>
         <p class="case-section__text"><strong>Transparent AI feedback.</strong> Instead of treating AI processing as a black box, I designed inline progress indicators, confidence scores, and natural-language explanations of what the AI was doing at each step. Users could see <em>why</em> the AI made a recommendation, not just <em>what</em> it recommended.</p>
         <p class="case-section__text"><strong>Accessible data visualization.</strong> I redesigned charts and outputs to meet WCAG AA standards: adding text alternatives, keyboard navigation for interactive elements, sufficient color contrast, and screen-reader-compatible data tables alongside visual representations.</p>
@@ -215,7 +225,7 @@
         <p class="case-section__text"><strong>Figma Variables:</strong> design tokens for color, spacing, typography, and elevation, enabling theme switching and systematic updates across the entire product.</p>
         <p class="case-section__text"><strong>Auto Layout architecture:</strong> every component built with responsive Auto Layout, ensuring consistent behavior across breakpoints without manual adjustment.</p>
         <p class="case-section__text"><strong>Atomic Design methodology:</strong> atoms, molecules, organisms, templates, and pages, each level documented with usage guidelines, interaction states, and engineering specifications.</p>
-        <p class="case-section__text">The result: design-to-dev handoff time decreased by 30% (from 9 days to 6 days per cycle). Engineers could inspect components and extract specifications without requiring designer clarification on every screen.</p>
+        <p class="case-section__text">The result: handoff went from 9 days to 6 per cycle. Engineers could pull specifications from components without a designer decoding every screen.</p>
       </div>
     </div>
 
@@ -232,16 +242,12 @@
     <!-- Metrics -->
     <div class="metrics-row fade-in">
       <div class="metric-card">
-        <div class="metric-card__value">~80%</div>
-        <div class="metric-card__label">Task comprehension improvement across both user cohorts (Maze A/B test)</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-card__value">30%</div>
-        <div class="metric-card__label">Faster design-to-dev handoff: 9-day cycle reduced to 6 days</div>
+        <div class="metric-card__value">9 &rarr; 6</div>
+        <div class="metric-card__label">Days per design-to-dev handoff cycle after the design system</div>
       </div>
       <div class="metric-card">
         <div class="metric-card__value">AA</div>
-        <div class="metric-card__label">WCAG compliance achieved across all critical user flows</div>
+        <div class="metric-card__label">WCAG compliance reached: 12 violations resolved on critical flows</div>
       </div>
     </div>
 
@@ -315,6 +321,6 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
   </div>
 
-  <script src="js/main.js?v=20260611a"></script>
+  <script src="js/main.js?v=20260612a"></script>
 </body>
 </html>

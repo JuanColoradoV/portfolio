@@ -276,6 +276,20 @@
     });
   }
 
+  // --- Spec mode: Design ⇄ Spec annotation toggle on flagship case images ---
+  document.querySelectorAll('.spec-toggle').forEach(btn => {
+    // The toggle lives inside a lightbox trigger; keep its events to itself.
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const fig = btn.closest('.spec-figure');
+      const on = fig.classList.toggle('spec-figure--on');
+      btn.setAttribute('aria-pressed', String(on));
+    });
+    btn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') e.stopPropagation();
+    });
+  });
+
   // --- Hero entrance animation ---
   window.addEventListener('load', () => {
     const hero = document.querySelector('.hero');
