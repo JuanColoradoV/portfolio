@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First, Prove It — a note on refusing to redesign blind | Juan David Colorado</title>
+  <meta name="description" content="Why I refuse to start a redesign before I can measure it: the weeks of zero screens at Solving AI that became a validation culture, and the principle I kept.">
+  <meta name="author" content="Juan David Colorado Vargas">
+  <link rel="canonical" href="https://juancoloradov.github.io/portfolio/note-first-prove-it.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="First, Prove It — a note on refusing to redesign blind">
+  <meta property="og:description" content="Why I refuse to start a redesign before I can measure it: the weeks of zero screens at Solving AI that became a validation culture.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Juan David Colorado">
+  <meta property="og:url" content="https://juancoloradov.github.io/portfolio/note-first-prove-it.html">
+  <meta property="og:image" content="https://juancoloradov.github.io/portfolio/assets/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="First, Prove It — a note on refusing to redesign blind">
+  <meta name="twitter:description" content="Why I refuse to start a redesign before I can measure it.">
+  <meta name="twitter:image" content="https://juancoloradov.github.io/portfolio/assets/og-image.png">
+
+  <meta name="theme-color" content="#FAFAF8">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Theme: set data-theme before CSS to avoid a flash -->
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css?v=20260612e">
+</head>
+<body class="loading">
+  <noscript><style>body.loading{opacity:1!important}</style></noscript>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__name" aria-label="Juan David Colorado - Home">JDC</a>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme">
+        <svg class="theme-toggle__moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="theme-toggle__sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="index.html#work" class="nav__link">Work</a></li>
+        <li><a href="index.html#live-sites" class="nav__link">Live Sites</a></li>
+        <li><a href="index.html#about" class="nav__link">About</a></li>
+        <li><a href="index.html#notes" class="nav__link nav__link--active">Notes</a></li>
+        <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        <li><a href="assets/Juan_David_Colorado_CV.pdf?v=4" class="nav__link" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li class="nav__indicator" aria-hidden="true"></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <article>
+    <section class="case-hero">
+      <div class="case-hero__inner">
+        <a href="index.html#notes" class="case-hero__back">&larr; Back to notes</a>
+        <p class="case-hero__company">Note &middot; June 2026 &middot; 4 min read</p>
+        <h1 class="case-hero__title">First, Prove It</h1>
+        <p class="case-hero__subtitle">Why I refuse to start a redesign before I can measure it. A note on the most uncomfortable weeks of my favorite project.</p>
+      </div>
+    </section>
+
+    <div class="case-section">
+      <div class="case-section__inner">
+        <p class="case-section__text">In 2024 I joined Solving AI to redesign their automation workflows. Users were abandoning multi-step AI flows, everyone on the team could feel it, and the cure had been chosen before I walked in: a redesign, as soon as possible. The only thing missing was the screens.</p>
+        <p class="case-section__text">I spent my first weeks refusing to draw them.</p>
+        <p class="case-section__text">Not out of stubbornness. Two problems were tangled together, and only one of them was visible. Comprehension was failing: people could not tell what the AI was doing, what it needed from them, or how to read its output. That problem you can see. The second one was quieter and worse: every design decision in the product's history had been argued from opinion, because nothing was measured. A redesign would have treated the visible problem while leaving the machine that produced it untouched. Six months later we would have been arguing about the next redesign, with the same empty hands.</p>
+      </div>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section__inner">
+        <h2 class="case-section__heading">What it actually costs</h2>
+        <p class="case-section__text">So my first deliverable was research infrastructure: Maze A/B testing with defined cohorts, technical versus non-technical, new versus returning. It sounds reasonable written down. Living it was a different thing. Progress reviews where I had nothing visual to show. A roadmap that looked stalled from the outside. The growing suspicion in the room that the new designer was all process and no product.</p>
+        <p class="case-section__text">I defended it with the only argument I had: without a baseline, we would ship a prettier product and never know whether it was a better one.</p>
+        <p class="case-section__text">When the data came in, it paid for those weeks all at once. The real failure points were configuration and results interpretation. Not onboarding, where most of the internal theories pointed. Every opinion-driven redesign would have polished the wrong rooms of the house.</p>
+      </div>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section__inner">
+        <h2 class="case-section__heading">Design against evidence, then make it stick</h2>
+        <p class="case-section__text">The redesign that followed was almost the easy part: progressive disclosure for configuration, AI states that narrate what the system is doing instead of hiding it, outputs accessible to screen readers and skeptics alike. Comprehension improved roughly 80% across both cohorts in Maze testing. And because honesty is the whole point of this note: our "before" numbers were partially reconstructed from session recordings, which is exactly why a measured baseline is now non-negotiable in my process. I got the lesson by failing it.</p>
+        <p class="case-section__text">The principle I kept is the one I now apply to everything, including this portfolio: I would rather ship a smaller design I can defend with a result than a bigger one I can only defend with taste. It is why the case studies here lead with what can be verified, why the claims carry their measurement context, and why every flagship screen has a Spec toggle that exposes the reasoning behind it. If I ask stakeholders to trust evidence over opinion, the least my own portfolio can do is show its work.</p>
+        <p class="case-section__text">AI products raise the stakes on all of this. When the interface is a model's behavior, taste cannot tell you if it works. Only users can, and only if you built the instruments to hear them.</p>
+      </div>
+    </div>
+
+    <a href="case-solving-ai.html" class="next-project">
+      <div>
+        <p class="next-project__label">The case study behind this note</p>
+        <p class="next-project__title">First, Prove It: A Validation Culture for AI Products &rarr;</p>
+      </div>
+    </a>
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener noreferrer" class="footer__link">view source</a>.</p>
+      <ul class="footer__links">
+        <li><a href="index.html#work" class="footer__link">Work</a></li>
+        <li><a href="index.html#live-sites" class="footer__link">Live Sites</a></li>
+        <li><a href="index.html#about" class="footer__link">About</a></li>
+        <li><a href="index.html#notes" class="footer__link">Notes</a></li>
+        <li><a href="index.html#contact" class="footer__link">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260612e"></script>
+</body>
+</html>

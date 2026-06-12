@@ -74,7 +74,7 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260612d">
+  <link rel="stylesheet" href="css/styles.css?v=20260612e">
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
@@ -97,6 +97,7 @@
         <li><a href="#work" class="nav__link nav__link--active">Work</a></li>
         <li><a href="#live-sites" class="nav__link">Live Sites</a></li>
         <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#notes" class="nav__link">Notes</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
         <li><a href="assets/Juan_David_Colorado_CV.pdf?v=4" class="nav__link" target="_blank" rel="noopener noreferrer">Resume</a></li>
         <li class="nav__indicator" aria-hidden="true"></li>
@@ -110,6 +111,7 @@
       <li><a href="#work" class="section-nav__item"><span class="section-nav__label">Work</span><span class="section-nav__dot" aria-hidden="true"></span></a></li>
       <li><a href="#live-sites" class="section-nav__item"><span class="section-nav__label">Live Sites</span><span class="section-nav__dot" aria-hidden="true"></span></a></li>
       <li><a href="#about" class="section-nav__item"><span class="section-nav__label">About</span><span class="section-nav__dot" aria-hidden="true"></span></a></li>
+      <li><a href="#notes" class="section-nav__item"><span class="section-nav__label">Notes</span><span class="section-nav__dot" aria-hidden="true"></span></a></li>
       <li><a href="#contact" class="section-nav__item"><span class="section-nav__label">Contact</span><span class="section-nav__dot" aria-hidden="true"></span></a></li>
     </ul>
   </nav>
@@ -292,79 +294,26 @@
             </div>
           </a>
 
-          <!-- Case Study 4: YMA / Smartel -->
-          <a href="case-yma.html" class="case-card fade-in">
-            <div class="case-card__image">
-              <picture>
-                <source srcset="assets/yma/card-cover-real.webp?v=2" type="image/webp">
-                <img src="assets/yma/card-cover-real.jpg?v=2" alt="YMA contestant-review interface — real-time AI scoring (technique, posture, stride) over dual-view video" width="1000" height="625" loading="lazy" decoding="async">
-              </picture>
-            </div>
-            <div class="case-card__content">
-              <span class="case-card__company">CodeBranch &middot; Product: YMA / Smartel</span>
-              <h3 class="case-card__title">Designing an AI Ecosystem from Zero to One</h3>
-              <p class="case-card__description">Established the foundational product experience for a computer vision AI ecosystem, creating mobile-first design patterns and a component library extended by 2 junior designers across the full product suite.</p>
-              <div class="case-card__metrics">
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">0 &rarr; 1</span>
-                  <span class="case-card__metric-label">Full product experience from scratch</span>
-                </div>
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">3</span>
-                  <span class="case-card__metric-label">Surfaces shipped (mobile, tablet, desktop)</span>
-                </div>
-              </div>
-              <div class="case-card__tags">
-                <span class="tag">Computer Vision</span>
-                <span class="tag">Mobile-First</span>
-                <span class="tag">Design System</span>
-              </div>
-              <span class="case-card__arrow">Read case study &rarr;</span>
-            </div>
-          </a>
-
-          <!-- Case Study 5: Bucket.io -->
-          <a href="case-bucket.html" class="case-card fade-in">
-            <div class="case-card__image">
-              <picture>
-                <source srcset="assets/bucket/card-cover-real.webp?v=2" type="image/webp">
-                <img src="assets/bucket/card-cover-real.jpg?v=2" alt="Bucket.io blueprints product page — the AI-powered content-generation interface I redesigned" width="1000" height="625" loading="lazy" decoding="async">
-              </picture>
-            </div>
-            <div class="case-card__content">
-              <span class="case-card__company">Ideaware &middot; Client: Bucket.io</span>
-              <h3 class="case-card__title">AI-Powered Blueprint Generation</h3>
-              <p class="case-card__description">Redesigned the end-to-end blueprint generation flow, transforming a complex AI configuration process into an accessible guided funnel validated through interactive prototyping before engineering investment.</p>
-              <div class="case-card__metrics">
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">80%</span>
-                  <span class="case-card__metric-label">Drop-off traced to 3 friction points</span>
-                </div>
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">0</span>
-                  <span class="case-card__metric-label">Engineering rework (prototype-first)</span>
-                </div>
-              </div>
-              <div class="case-card__tags">
-                <span class="tag">Journey Mapping</span>
-                <span class="tag">Prototyping</span>
-                <span class="tag">AI Products</span>
-              </div>
-              <span class="case-card__arrow">Read case study &rarr;</span>
-            </div>
-          </a>
-
-          <!-- Behance CTA -->
-          <div class="work-cta fade-in">
-            <p class="work-cta__text">Additional projects available</p>
-            <a href="https://behance.net/juancolorado" target="_blank" rel="noopener noreferrer" class="work-cta__link">
-              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
-              View more work on Behance
-              <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
-            </a>
-          </div>
-
         </div><!-- /work-grid -->
+
+        <p class="more-work__label">More work</p>
+        <div class="more-work">
+          <a href="case-yma.html" class="more-work__item fade-in">
+            <span class="more-work__kicker">CodeBranch &middot; YMA / Smartel</span>
+            <span class="more-work__title">Designing an AI Ecosystem from Zero to One</span>
+            <span class="more-work__arrow">Read case study &rarr;</span>
+          </a>
+          <a href="case-bucket.html" class="more-work__item fade-in">
+            <span class="more-work__kicker">Ideaware &middot; Bucket.io</span>
+            <span class="more-work__title">AI-Powered Blueprint Generation</span>
+            <span class="more-work__arrow">Read case study &rarr;</span>
+          </a>
+          <a href="https://behance.net/juancolorado" target="_blank" rel="noopener noreferrer" class="more-work__item fade-in">
+            <span class="more-work__kicker">Behance</span>
+            <span class="more-work__title">Additional projects and visual work</span>
+            <span class="more-work__arrow">View on Behance &nearr;</span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -602,6 +551,20 @@
       </div>
     </section>
 
+    <!-- ==================== NOTES ==================== -->
+    <section id="notes" class="section section--alt">
+      <div class="section__inner">
+        <p class="section__label">Notes</p>
+        <h2 class="section__title">Thinking in public</h2>
+        <a href="note-first-prove-it.html" class="note-card fade-in">
+          <span class="note-card__date">June 2026 &middot; 4 min read</span>
+          <h3 class="note-card__title">First, Prove It</h3>
+          <p class="note-card__excerpt">Why I refuse to start a redesign before I can measure it: the weeks of zero screens at Solving AI that became a validation culture, and the principle this portfolio now has to live by.</p>
+          <span class="note-card__arrow">Read the note &rarr;</span>
+        </a>
+      </div>
+    </section>
+
     <!-- ==================== CONTACT ==================== -->
     <section id="contact" class="section section--dark section--contact">
       <div class="section__inner contact">
@@ -640,13 +603,14 @@
         <li><a href="#work" class="footer__link">Work</a></li>
         <li><a href="#live-sites" class="footer__link">Live Sites</a></li>
         <li><a href="#about" class="footer__link">About</a></li>
+        <li><a href="#notes" class="footer__link">Notes</a></li>
         <li><a href="#contact" class="footer__link">Contact</a></li>
       </ul>
     </div>
   </footer>
 
 
-  <script src="js/main.js?v=20260612d"></script>
+  <script src="js/main.js?v=20260612e"></script>
 
 </body>
 </html>
