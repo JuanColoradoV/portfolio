@@ -65,19 +65,22 @@
   }
   </script>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Fonts: self-hosted variable subsets (no third-party, no render-blocking CSS) -->
+  <link rel="preload" href="assets/fonts/bricolage-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jetbrains-mono-var.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Theme: set data-theme before CSS to avoid a flash -->
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260612e">
+  <link rel="stylesheet" href="css/styles.css?v=20260613a">
+  <script src="js/main.js?v=20260613a" defer></script>
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
+  <!-- Unhide immediately: first paint must not wait for main.js -->
+  <script>document.body.classList.remove('loading');document.body.classList.add('loaded');</script>
 
   <!-- Skip Link -->
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -124,7 +127,7 @@
       <div class="hero__inner">
         <div class="hero__content">
           <p class="hero__label">Senior Product Designer & Lead</p>
-          <h1 class="hero__title">Juan David<br>Colorado Vargas</h1>
+          <h1 class="hero__title" data-spec="display: Bricolage wdth 82 / wght 800 / opsz 96">Juan David<br>Colorado Vargas</h1>
           <p class="hero__hook">I design AI-powered enterprise products that ship. Now leading design at Symplast; previously UX lead for Nvidia&rsquo;s $2B+ supply-chain AI platform.</p>
           <p class="hero__subtitle">I turn complex B2B and AI workflows into clear, validated interfaces, and I ship the front-end code too. 10+ years bridging design and engineering.</p>
           <div class="hero__meta">
@@ -152,7 +155,7 @@
             </a>
           </div>
         </div>
-        <div class="hero__metrics-bar fade-in">
+        <div class="hero__metrics-bar fade-in" data-spec="facts only: the vanity stat row was cut on purpose">
           <div class="hero__clients-row">
             <span class="hero__clients-label">Trusted by teams at</span>
             <div class="hero__clients-list">
@@ -170,7 +173,7 @@
     <section class="social-proof fade-in" aria-label="Recommendation">
       <div class="social-proof__inner">
         <span class="social-proof__mark" aria-hidden="true">&ldquo;</span>
-        <blockquote class="social-proof__quote">
+        <blockquote class="social-proof__quote" data-spec="verbatim quote: never paraphrase a testimonial">
           Juan took full ownership of the design architecture. He wasn&rsquo;t just sending over designs &mdash; he was actively involved in shaping the product. If you&rsquo;re looking for a UI/UX designer who can think strategically, design beautifully, and work seamlessly with developers, Juan&rsquo;s your guy.
         </blockquote>
         <div class="social-proof__author">
@@ -200,7 +203,7 @@
         <p class="section__label">Selected Work</p>
         <h2 class="section__title">Case Studies</h2>
 
-        <div class="work-grid">
+        <div class="work-grid" data-spec="3 flagship cases: a deliberate cut, the rest one level down">
 
           <!-- Case Study 1: EPM Carga Verde (featured) -->
           <a href="case-epm.html" class="case-card case-card--feature fade-in">
@@ -297,7 +300,7 @@
         </div><!-- /work-grid -->
 
         <p class="more-work__label">More work</p>
-        <div class="more-work">
+        <div class="more-work" data-spec="quieter on purpose: text-only, no competing with the flagships">
           <a href="case-yma.html" class="more-work__item fade-in">
             <span class="more-work__kicker">CodeBranch &middot; YMA / Smartel</span>
             <span class="more-work__title">Designing an AI Ecosystem from Zero to One</span>
@@ -556,7 +559,7 @@
       <div class="section__inner">
         <p class="section__label">Notes</p>
         <h2 class="section__title">Thinking in public</h2>
-        <a href="note-first-prove-it.html" class="note-card fade-in">
+        <a href="note-first-prove-it.html" class="note-card fade-in" data-spec="thinking in public">
           <span class="note-card__date">June 2026 &middot; 4 min read</span>
           <h3 class="note-card__title">First, Prove It</h3>
           <p class="note-card__excerpt">Why I refuse to start a redesign before I can measure it: the weeks of zero screens at Solving AI that became a validation culture, and the principle this portfolio now has to live by.</p>
@@ -572,7 +575,7 @@
         <h2 class="contact__title">Let's work together.</h2>
         <p class="contact__subtitle">Available for Senior Product Designer & Lead roles and select freelance engagements.</p>
 
-        <div class="contact__links">
+        <div class="contact__links" data-spec="no form: direct channels, zero friction">
           <a href="mailto:juancolorado87@gmail.com" class="contact__link contact__link--dark">
             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             juancolorado87@gmail.com
@@ -598,7 +601,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener noreferrer" class="footer__link">view source</a>.</p>
+      <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener noreferrer" class="footer__link">view source</a> &middot; <button class="spec-mode-btn" type="button" aria-pressed="false" title="Toggle spec mode (S)">spec mode</button></p>
       <ul class="footer__links">
         <li><a href="#work" class="footer__link">Work</a></li>
         <li><a href="#live-sites" class="footer__link">Live Sites</a></li>
@@ -610,7 +613,6 @@
   </footer>
 
 
-  <script src="js/main.js?v=20260612e"></script>
 
 </body>
 </html>

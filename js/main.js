@@ -332,9 +332,60 @@
     });
   }
 
-  // --- Hero entrance animation ---
-  window.addEventListener('load', () => {
-    const hero = document.querySelector('.hero');
-    if (hero) hero.classList.add('hero--loaded');
+  // --- Site-wide Spec mode: press S, the whole portfolio shows its work ---
+  const specModeBtns = document.querySelectorAll('.spec-mode-btn');
+  const specChips = [];
+  let siteSpecOn = false;
+
+  function setSiteSpec(on) {
+    siteSpecOn = on;
+    document.body.classList.toggle('site-spec', on);
+    specModeBtns.forEach(b => b.setAttribute('aria-pressed', String(on)));
+    // The flagship figure layers flip with the site
+    document.querySelectorAll('.spec-figure').forEach(fig => {
+      fig.classList.toggle('spec-figure--on', on);
+      const t = fig.querySelector('.spec-toggle');
+      if (t) {
+        t.setAttribute('aria-pressed', String(on));
+        t.classList.remove('spec-toggle--pulse');
+      }
+    });
+    if (on) {
+      document.querySelectorAll('[data-spec]').forEach(el => {
+        const chip = document.createElement('span');
+        chip.className = 'spec-chip';
+        chip.setAttribute('aria-hidden', 'true');
+        chip.textContent = el.getAttribute('data-spec');
+        el.appendChild(chip);
+        specChips.push(chip);
+      });
+    } else {
+      specChips.forEach(c => c.remove());
+      specChips.length = 0;
+    }
+  }
+
+  specModeBtns.forEach(b => b.addEventListener('click', () => setSiteSpec(!siteSpecOn)));
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 's' && e.key !== 'S') return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    const lb = document.getElementById('lightbox');
+    if (lb && !lb.hidden) return;
+    if (window.matchMedia('(max-width: 899px)').matches) return;
+    setSiteSpec(!siteSpecOn);
   });
+
+  // --- Hero entrance animation ---
+  // Fire as soon as we run, not on window load: on slow connections the
+  // name was invisible for seconds while images finished. Double-rAF gives
+  // the transition a painted first frame; the timeout covers unfocused tabs.
+  const heroEl = document.querySelector('.hero');
+  if (heroEl) {
+    const reveal = () => heroEl.classList.add('hero--loaded');
+    requestAnimationFrame(() => requestAnimationFrame(reveal));
+    setTimeout(reveal, 400);
+  }
 })();

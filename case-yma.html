@@ -15,32 +15,35 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Juan David Colorado">
   <meta property="og:url" content="https://juancoloradov.github.io/portfolio/case-yma.html">
-  <meta property="og:image" content="https://juancoloradov.github.io/portfolio/assets/yma/contestant-review-live.png">
+  <meta property="og:image" content="https://juancoloradov.github.io/portfolio/assets/og/og-case-yma.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="YMA / Smartel — Designing an AI Ecosystem from Zero to One · Case Study | Juan David Colorado">
   <meta name="twitter:description" content="Establishing the foundational product experience for a computer-vision AI platform: mobile-first design, real-time feedback patterns, and a design system scaled by a growing team.">
-  <meta name="twitter:image" content="https://juancoloradov.github.io/portfolio/assets/yma/contestant-review-live.png">
+  <meta name="twitter:image" content="https://juancoloradov.github.io/portfolio/assets/og/og-case-yma.png">
 
   <meta name="theme-color" content="#FAFAF8">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Fonts: self-hosted variable subsets (no third-party, no render-blocking CSS) -->
+  <link rel="preload" href="assets/fonts/bricolage-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jetbrains-mono-var.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Theme: set data-theme before CSS to avoid a flash -->
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260612e">
+  <link rel="stylesheet" href="css/styles.css?v=20260613a">
+  <script src="js/main.js?v=20260613a" defer></script>
 </head>
 <body class="loading">
   <noscript><style>body.loading{opacity:1!important}</style></noscript>
+  <!-- Unhide immediately: first paint must not wait for main.js -->
+  <script>document.body.classList.remove('loading');document.body.classList.add('loaded');</script>
 
   <!-- Skip Link -->
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -73,7 +76,7 @@
 
     <article>
     <section id="case-yma" class="case-hero">
-      <div class="case-hero__inner">
+      <div class="case-hero__inner" data-spec="0→1: patterns had to exist before screens could">
         <a href="index.html#work" class="case-hero__back">&larr; Back to all work</a>
         <img src="assets/yma/Logomark@2x.png" alt="YMA" class="case-hero__logo" width="96" height="46" decoding="async">
         <p class="case-hero__company">CodeBranch &middot; Product: YMA / Smartel &middot; Jun 2025 &ndash; Apr 2026 (contract)</p>
@@ -103,7 +106,7 @@
 
     <!-- TL;DR -->
     <div class="case-tldr fade-in">
-      <div class="case-tldr__inner">
+      <div class="case-tldr__inner" data-spec="Problem / Did / Outcome inside the first viewport">
         <div class="case-tldr__col"><span class="case-tldr__label">Problem</span><p>A 0&rarr;1 computer-vision product with no design patterns, component library, or interaction conventions.</p></div>
         <div class="case-tldr__col"><span class="case-tldr__label">What I did</span><p>Established mobile-first, real-time-AI feedback patterns and a documented design system scaled by 2 designers.</p></div>
         <div class="case-tldr__col case-tldr__col--out"><span class="case-tldr__label">Outcome</span><p>A full product experience shipped across mobile, tablet, and desktop from a single design system.</p></div>
@@ -257,7 +260,7 @@
     </div>
 
     <!-- Metrics -->
-    <div class="metrics-row fade-in">
+    <div class="metrics-row fade-in" data-spec="hard facts only: soft percentages live in prose, with context">
       <div class="metric-card">
         <div class="metric-card__value">0 &rarr; 1</div>
         <div class="metric-card__label">Product experience built from scratch across mobile, tablet, and desktop</div>
@@ -285,7 +288,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener noreferrer" class="footer__link">view source</a>.</p>
+      <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener noreferrer" class="footer__link">view source</a> &middot; <button class="spec-mode-btn" type="button" aria-pressed="false" title="Toggle spec mode (S)">spec mode</button></p>
       <ul class="footer__links">
         <li><a href="index.html#work" class="footer__link">Work</a></li>
         <li><a href="index.html#live-sites" class="footer__link">Live Sites</a></li>
@@ -306,6 +309,5 @@
     <button class="lightbox__close" aria-label="Close">&times;</button>
   </div>
 
-  <script src="js/main.js?v=20260612e"></script>
 </body>
 </html>
