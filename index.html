@@ -74,11 +74,11 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260613a">
-  <script src="js/main.js?v=20260613a" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=20260613b">
+  <script src="js/main.js?v=20260613b" defer></script>
 </head>
 <body class="loading">
-  <noscript><style>body.loading{opacity:1!important}</style></noscript>
+  <noscript><style>body.loading{opacity:1!important}.fade-in,.fade-in-stagger>*{opacity:1!important;transform:none!important}</style></noscript>
   <!-- Unhide immediately: first paint must not wait for main.js -->
   <script>document.body.classList.remove('loading');document.body.classList.add('loaded');</script>
 
@@ -129,7 +129,7 @@
           <p class="hero__label">Senior Product Designer & Lead</p>
           <h1 class="hero__title" data-spec="display: Bricolage wdth 82 / wght 800 / opsz 96">Juan David<br>Colorado Vargas</h1>
           <p class="hero__hook">I design AI-powered enterprise products that ship. Now leading design at Symplast; previously UX lead for Nvidia&rsquo;s $2B+ supply-chain AI platform.</p>
-          <p class="hero__subtitle">I turn complex B2B and AI workflows into clear, validated interfaces, and I ship the front-end code too. 10+ years bridging design and engineering.</p>
+          <p class="hero__subtitle">10+ years bridging design and engineering: validated interfaces, shipped front-end code.</p>
           <div class="hero__meta">
             <span class="hero__meta-item">
               <svg class="hero__meta-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -211,7 +211,7 @@
             <div class="case-card__image">
               <picture>
                 <source srcset="assets/epm/map.webp" type="image/webp">
-                <img src="assets/epm/map.jpg" alt="EPM Carga Verde, the EV charger availability app I designed and built, showing a live station map of Medellin" width="1600" height="1000" loading="lazy" decoding="async">
+                <img src="assets/epm/map.jpg" alt="EPM Carga Verde, the EV charger availability app I designed and built, showing a live station map of Medellin" width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
               </picture>
             </div>
             <div class="case-card__content">
@@ -486,7 +486,7 @@
     <section id="about" class="section">
       <div class="section__inner">
         <p class="section__label">About</p>
-        <h2 class="section__title">Juan David Colorado Vargas</h2>
+        <h2 class="section__title">Who you&rsquo;d be hiring</h2>
 
         <div class="about__content">
             <p class="about__lead">I specialize in making complex systems usable. Over the past decade, I have led design for enterprise platforms built on SAP Fiori, AI products processing real-time computer vision data, and marketing technology serving Fortune 500 brands.</p>
@@ -601,7 +601,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener noreferrer" class="footer__link">view source</a> &middot; <button class="spec-mode-btn" type="button" aria-pressed="false" title="Toggle spec mode (S)">spec mode</button></p>
+      <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener noreferrer" class="footer__link">view source</a> &middot; <button class="spec-mode-btn" type="button" aria-pressed="false" title="Toggle spec mode (Shift+S)">spec mode</button></p>
       <ul class="footer__links">
         <li><a href="#work" class="footer__link">Work</a></li>
         <li><a href="#live-sites" class="footer__link">Live Sites</a></li>

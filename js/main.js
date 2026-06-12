@@ -160,6 +160,9 @@
     const syncThemeLabel = () => {
       const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
       themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      // Keep the browser chrome in the same world as the page
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', isDark ? '#0E1413' : '#FAFAF8');
     };
     syncThemeLabel();
     themeToggle.addEventListener('click', () => {
@@ -354,7 +357,6 @@
       document.querySelectorAll('[data-spec]').forEach(el => {
         const chip = document.createElement('span');
         chip.className = 'spec-chip';
-        chip.setAttribute('aria-hidden', 'true');
         chip.textContent = el.getAttribute('data-spec');
         el.appendChild(chip);
         specChips.push(chip);
@@ -367,8 +369,10 @@
 
   specModeBtns.forEach(b => b.addEventListener('click', () => setSiteSpec(!siteSpecOn)));
 
+  // Shift+S, not bare S: single-character shortcuts trip speech-input
+  // users (WCAG 2.1.4); the modifier exempts it without an off switch.
   document.addEventListener('keydown', (e) => {
-    if (e.key !== 's' && e.key !== 'S') return;
+    if (e.key !== 'S' || !e.shiftKey) return;
     if (e.metaKey || e.ctrlKey || e.altKey) return;
     const t = e.target;
     if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;

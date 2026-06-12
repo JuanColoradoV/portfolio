@@ -3364,7 +3364,7 @@ body.site-spec::before {
 
 /* Exit hint */
 body.site-spec::after {
-  content: 'SPEC · press S to exit';
+  content: 'SPEC · shift+S to exit';
   position: fixed;
   left: 16px;
   bottom: 16px;
