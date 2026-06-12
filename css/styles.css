@@ -3277,3 +3277,14 @@ button:focus-visible,
   .spec-figure--on .case-image__screenshot,
   .spec-figure--on .case-image__diagram { filter: none; }
 }
+
+/* CTAs reused outside the home hero (404 page) skip the entrance animation
+   that only .hero--loaded ever releases */
+.case-hero .hero__cta {
+  opacity: 1;
+  transform: none;
+}
+
+.case-hero .hero__ctas {
+  justify-content: flex-start;
+}

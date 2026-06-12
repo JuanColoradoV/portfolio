@@ -178,6 +178,8 @@
     const lightboxClose = lightbox.querySelector('.lightbox__close');
     const lightboxOverlay = lightbox.querySelector('.lightbox__overlay');
     let lastFocusedElement = null;
+    let pendingCloseEnd = null;
+    let pendingCloseTimer = null;
 
     const setInert = (value) => {
       ['#main', '.nav', '.footer'].forEach(sel => {
@@ -215,16 +217,22 @@
         lightboxWrapper.appendChild(clone);
       }
 
+      // A close might still be settling; cancel it so it can't kill this open.
+      if (pendingCloseEnd) {
+        lightbox.removeEventListener('transitionend', pendingCloseEnd);
+        clearTimeout(pendingCloseTimer);
+        pendingCloseEnd = null;
+      }
+
       lightboxCaption.textContent = caption ? caption.textContent : '';
       lightbox.hidden = false;
       document.body.classList.add('lightbox-open');
       setInert(true);
 
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          lightbox.classList.add('lightbox--visible');
-        });
-      });
+      // Synchronous style flush instead of double-rAF: rAF callbacks never fire
+      // in unfocused tabs, which left an invisible lightbox blocking the page.
+      void lightbox.offsetHeight;
+      lightbox.classList.add('lightbox--visible');
 
       lightboxClose.focus();
     }
@@ -238,10 +246,12 @@
         lightboxWrapper.innerHTML = '';
         if (lastFocusedElement) lastFocusedElement.focus();
         lightbox.removeEventListener('transitionend', onEnd);
+        if (pendingCloseEnd === onEnd) pendingCloseEnd = null;
       };
+      pendingCloseEnd = onEnd;
       lightbox.addEventListener('transitionend', onEnd);
       // Fallback if transitionend doesn't fire
-      setTimeout(onEnd, 500);
+      pendingCloseTimer = setTimeout(onEnd, 500);
     }
 
     document.querySelectorAll('.case-image').forEach(el => {
