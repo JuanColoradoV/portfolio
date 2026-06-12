@@ -3222,6 +3222,7 @@ button:focus-visible,
 
 /* Small screens: the overlay would collide — render pins as a list under the image */
 @media (max-width: 700px) {
+  .spec-figure--on .case-image__container { aspect-ratio: auto; }
   .spec-figure--on .spec-layer {
     display: block;
     padding: var(--space-sm) 0 0;
@@ -3245,4 +3246,34 @@ button:focus-visible,
 
 @media (prefers-reduced-motion: reduce) {
   .spec-pin { animation: none; opacity: 1; transform: none; }
+}
+
+/* Compact spec figures (narrow grid cells): same list fallback as mobile.
+   Overlay pins need ~560px of image to breathe; below that they smother it. */
+.spec-figure { container-type: inline-size; }
+
+@container (max-width: 460px) {
+  /* The container is aspect-locked (grid uniformity rule wins on specificity);
+     match it so the list can grow the box */
+  .case-image-grid > .spec-figure--on:not(:only-child) .case-image__container,
+  .spec-figure--on .case-image__container { aspect-ratio: auto; }
+  .spec-figure--on .spec-layer {
+    display: block;
+    padding: var(--space-sm) 0 0;
+  }
+  .spec-pin {
+    position: static;
+    max-width: none;
+    margin-bottom: 8px;
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .spec-pin__label {
+    color: var(--color-text);
+    background: var(--color-bg-alt);
+    border-color: var(--color-border);
+  }
+  .spec-figure--on .case-image__screenshot,
+  .spec-figure--on .case-image__diagram { filter: none; }
 }
