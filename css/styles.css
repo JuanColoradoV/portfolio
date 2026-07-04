@@ -1166,6 +1166,36 @@ a:focus-visible {
   margin-right: auto;
 }
 
+/* Browser-window chrome on contained UI screenshots — matches the flagship
+   case covers so on-page screenshots read as one framed system. Excludes
+   phone screenshots (they get device treatment, not browser chrome). */
+.case-image__container--contained:not(.case-image__container--phone) {
+  padding-top: 30px;
+  background: #14181A;
+}
+
+.case-image__container--contained:not(.case-image__container--phone)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background:
+    radial-gradient(circle 5px at 20px 15px, #FF5F56 94%, rgba(0, 0, 0, 0) 100%),
+    radial-gradient(circle 5px at 38px 15px, #FFBD2E 94%, rgba(0, 0, 0, 0) 100%),
+    radial-gradient(circle 5px at 56px 15px, #27C93F 94%, rgba(0, 0, 0, 0) 100%),
+    #14181A;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Nudge the expand icon clear of the new title bar */
+.case-image__container--contained:not(.case-image__container--phone)::before {
+  top: 40px;
+}
+
 /* Screenshot images inside containers */
 .case-image__screenshot {
   width: 100%;
