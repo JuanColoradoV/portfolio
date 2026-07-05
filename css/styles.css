@@ -3446,3 +3446,18 @@ body.site-spec [data-spec] {
 @media (max-width: 899px) {
   .spec-mode-btn { display: none; }
 }
+
+/* Case-study hero cover — staged spatial scene (real UI in an AI-generated backdrop) */
+.case-hero__cover {
+  margin-top: var(--space-2xl);
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
+}
+.case-hero__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
