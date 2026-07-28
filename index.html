@@ -205,13 +205,76 @@
 
         <div class="work-grid" data-spec="3 flagship cases: a deliberate cut, the rest one level down">
 
-          <!-- Case Study 1: EPM Carga Verde (featured) -->
-          <a href="case-epm.html" class="case-card case-card--feature fade-in">
+          <!-- Case Study 1: Nvidia (featured) -->
+          <a href="case-nvidia.html" class="case-card case-card--feature fade-in">
             <span class="case-card__featured">Featured case</span>
             <div class="case-card__image">
               <picture>
+                <source srcset="assets/nvidia/card-cover.webp" type="image/webp">
+                <img src="assets/nvidia/card-cover.jpg" alt="Redacted enterprise supply-chain AI dashboard — Nvidia platform under NDA, shown as an abstract glassmorphic concept" width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
+              </picture>
+            </div>
+            <div class="case-card__content">
+              <span class="case-card__company">CodeBranch &middot; Client: Nvidia</span>
+              <h3 class="case-card__title">Redesigning Decision-Making for a Global Supply Chain</h3>
+              <p class="case-card__description">Led the UX transformation of an enterprise supply chain intelligence platform managing $2B+ in annual transactions &mdash; restructuring a flat interface into a task-oriented SAP Fiori dashboard, and replacing a hand-built filter query with a conversational AI prompt.</p>
+              <div class="case-card__metrics">
+                <div class="case-card__metric">
+                  <span class="case-card__metric-value">9/10</span>
+                  <span class="case-card__metric-label">Participants found the AI flow easier in usability testing</span>
+                </div>
+                <div class="case-card__metric">
+                  <span class="case-card__metric-value">10 &rarr; 1</span>
+                  <span class="case-card__metric-label">Filters replaced by a single conversational prompt</span>
+                </div>
+              </div>
+              <div class="case-card__tags">
+                <span class="tag tag--nda">NDA &middot; Redacted visuals</span>
+                <span class="tag">SAP Fiori</span>
+                <span class="tag">Atomic Design</span>
+              </div>
+              <span class="case-card__arrow">Read case study &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Case Study 2: Solving AI -->
+          <a href="case-solving-ai.html" class="case-card fade-in">
+            <div class="case-card__image">
+              <picture>
+                <source srcset="assets/solving-ai/card-cover-real.webp?v=5" type="image/webp">
+                <img src="assets/solving-ai/card-cover-real.jpg?v=5" alt="Solving AI Autopilot dashboard — the production AI-automation interface I designed and shipped" width="1600" height="1000" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="case-card__content">
+              <span class="case-card__company">Solving AI</span>
+              <h3 class="case-card__title">First, Prove It: A Validation Culture for AI Products</h3>
+              <p class="case-card__description">Hired to redesign an AI product, I spent the first weeks building the measurement system instead. The evidence reshaped the redesign, and a token-driven design system made it stick.</p>
+              <div class="case-card__metrics">
+                <div class="case-card__metric">
+                  <span class="case-card__metric-value">2 &rarr; 8</span>
+                  <span class="case-card__metric-label">of 10 users understood the canvas on first arrival</span>
+                </div>
+                <div class="case-card__metric">
+                  <span class="case-card__metric-value">9 &rarr; 6</span>
+                  <span class="case-card__metric-label">Days per design-to-dev handoff cycle</span>
+                </div>
+              </div>
+              <div class="case-card__tags">
+                <span class="tag">Figma Variables</span>
+                <span class="tag">Maze Testing</span>
+                <span class="tag">WCAG</span>
+                <span class="tag">Design System</span>
+              </div>
+              <span class="case-card__arrow">Read case study &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Case Study 3: EPM Carga Verde -->
+          <a href="case-epm.html" class="case-card fade-in">
+            <div class="case-card__image">
+              <picture>
                 <source srcset="assets/epm/card-cover.webp?v=5" type="image/webp">
-                <img src="assets/epm/card-cover.jpg?v=5" alt="EPM Carga Verde, the EV charger availability app I designed and built, showing a live station map of Medellin" width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
+                <img src="assets/epm/card-cover.jpg?v=5" alt="EPM Carga Verde, the EV charger availability app I designed and built, showing a live station map of Medellin" width="1600" height="1000" loading="lazy" decoding="async">
               </picture>
             </div>
             <div class="case-card__content">
@@ -232,69 +295,6 @@
                 <span class="tag">Product Design</span>
                 <span class="tag">Front-end Dev</span>
                 <span class="tag">0&rarr;1</span>
-              </div>
-              <span class="case-card__arrow">Read case study &rarr;</span>
-            </div>
-          </a>
-
-          <!-- Case Study 2: Nvidia -->
-          <a href="case-nvidia.html" class="case-card fade-in">
-            <div class="case-card__image">
-              <picture>
-                <source srcset="assets/nvidia/card-cover.webp" type="image/webp">
-                <img src="assets/nvidia/card-cover.jpg" alt="Redacted enterprise supply-chain AI dashboard — Nvidia platform under NDA, shown as an abstract glassmorphic concept" width="1600" height="1000" loading="lazy" decoding="async">
-              </picture>
-            </div>
-            <div class="case-card__content">
-              <span class="case-card__company">CodeBranch &middot; Client: Nvidia</span>
-              <h3 class="case-card__title">Redesigning Decision-Making for a Global Supply Chain</h3>
-              <p class="case-card__description">Led the UX transformation of an enterprise supply chain intelligence platform, restructuring a flat interface into a task-oriented SAP Fiori dashboard for AI-powered decision-making.</p>
-              <div class="case-card__metrics">
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">$2B+</span>
-                  <span class="case-card__metric-label">Annual transactions on the platform</span>
-                </div>
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">5+</span>
-                  <span class="case-card__metric-label">Cross-functional engineers</span>
-                </div>
-              </div>
-              <div class="case-card__tags">
-                <span class="tag tag--nda">NDA &middot; Redacted visuals</span>
-                <span class="tag">SAP Fiori</span>
-                <span class="tag">Atomic Design</span>
-              </div>
-              <span class="case-card__arrow">Read case study &rarr;</span>
-            </div>
-          </a>
-
-          <!-- Case Study 3: Solving AI -->
-          <a href="case-solving-ai.html" class="case-card fade-in">
-            <div class="case-card__image">
-              <picture>
-                <source srcset="assets/solving-ai/card-cover-real.webp?v=5" type="image/webp">
-                <img src="assets/solving-ai/card-cover-real.jpg?v=5" alt="Solving AI Autopilot dashboard — the production AI-automation interface I designed and shipped" width="1600" height="1000" loading="lazy" decoding="async">
-              </picture>
-            </div>
-            <div class="case-card__content">
-              <span class="case-card__company">Solving AI</span>
-              <h3 class="case-card__title">First, Prove It: A Validation Culture for AI Products</h3>
-              <p class="case-card__description">Hired to redesign an AI product, I spent the first weeks building the measurement system instead. The evidence reshaped the redesign, and a token-driven design system made it stick.</p>
-              <div class="case-card__metrics">
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">9 &rarr; 6</span>
-                  <span class="case-card__metric-label">Days per design-to-dev handoff cycle</span>
-                </div>
-                <div class="case-card__metric">
-                  <span class="case-card__metric-value">AA</span>
-                  <span class="case-card__metric-label">WCAG compliance, 12 violations resolved</span>
-                </div>
-              </div>
-              <div class="case-card__tags">
-                <span class="tag">Figma Variables</span>
-                <span class="tag">Maze A/B Testing</span>
-                <span class="tag">WCAG</span>
-                <span class="tag">Design System</span>
               </div>
               <span class="case-card__arrow">Read case study &rarr;</span>
             </div>
