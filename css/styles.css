@@ -3462,129 +3462,328 @@ body.site-spec [data-spec] {
   display: block;
 }
 
+
 /* ============================================================
-   HERO v2 — asymmetric, evidence-forward, work above the fold
-   Replaces the centered 100vh stack. Rationale: a centered text
-   column on empty space reads as template, and the first screen
-   showed no proof and no work. Left-aligned two-column instead,
-   with the flagship case visible before any scroll.
+   EVIDENCE SYSTEM
+   The site's premise: every quantitative claim opens and shows
+   its method, its sample and the caveat that weakens it. Amber
+   is reserved for that and nothing else. See DESIGN.md.
    ============================================================ */
+
+:root {
+  --paper:        oklch(0.982 0.005 175);
+  --paper-sunk:   oklch(0.955 0.008 175);
+  --ink:          oklch(0.205 0.028 192);
+  --ink-raised:   oklch(0.265 0.032 192);
+  --teal-bright:  oklch(0.72 0.11 180);
+  --signal:       oklch(0.79 0.148 74);
+  --on-ink:       oklch(0.94 0.006 175);
+  --on-ink-soft:  oklch(0.72 0.012 192);
+
+  --ease-out-quart: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* --- Hero: compressed display, evidence as the focal point --- */
 
 .hero {
   min-height: 0;
-  padding-block: clamp(4rem, 5vw, 4.5rem) clamp(2.25rem, 4.5vw, 3.5rem);
+  padding-block: clamp(4.5rem, 7vw, 6.5rem) clamp(2.5rem, 4vw, 3.5rem);
   align-items: stretch;
+  background: var(--paper);
 }
 
 .hero__inner {
-  max-width: 1180px;
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  align-items: center;
-  text-align: left;
-  column-gap: clamp(2rem, 5vw, 4.5rem);
-  row-gap: clamp(2rem, 4vw, 3rem);
-}
-
-.hero__content {
-  align-items: flex-start;
+  max-width: 1240px;
+  display: block;
   text-align: left;
 }
 
-.hero__title { margin-bottom: var(--space-md); }
+.hero__content { display: block; align-items: stretch; text-align: left; }
 
-.hero__hook,
-.hero__subtitle {
-  margin-left: 0;
-  margin-right: 0;
-  max-width: 34ch;
-}
-
-.hero__evidence {
-  font-size: clamp(0.95rem, 1.25vw, 1.02rem);
-  line-height: 1.65;
+.hero__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   color: var(--color-text-secondary);
-  max-width: 46ch;
-  margin: 0 0 var(--space-md);
-  padding-left: clamp(0.9rem, 1.6vw, 1.25rem);
-  border-left: 1px solid var(--color-border);
+  margin-bottom: var(--space-md);
 }
 
-.hero__evidence b {
-  color: var(--color-accent);
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
+/* The width axis carries the drama: compressed force, not just size. */
+.hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 10vw, 8.25rem);
+  font-weight: 800;
+  font-stretch: 78%;
+  line-height: 0.9;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin: 0 0 clamp(1.5rem, 3vw, 2.5rem);
 }
 
-.hero__subtitle { margin-bottom: var(--space-lg); }
+.hero__rule {
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  margin: 0 0 clamp(1.75rem, 3vw, 2.75rem);
+}
 
-/* --- Showcase: the flagship case, in the first screen --- */
-.hero__showcase { margin: 0; min-width: 0; }
+.hero__split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
 
-.hero__showcase-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  border-radius: 14px;
-  overflow: hidden;
-  background: var(--color-surface);
+/* Creed: the thesis of the whole site, set large and light. */
+.hero__creed {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+  font-weight: 500;
+  font-stretch: 100%;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin: 0 0 var(--space-lg);
+  max-width: 22ch;
+}
+
+.hero__hook {
+  font-family: var(--font-primary);
+  font-size: var(--step-body, 1.02rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  max-width: 40ch;
+  margin: 0 0 var(--space-lg);
+}
+
+.hero__meta { justify-content: flex-start; }
+.hero__ctas { justify-content: flex-start; }
+
+/* --- The receipt --- */
+
+.receipt {
+  background: var(--paper-sunk);
   border: 1px solid var(--color-border);
-  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-.hero__showcase-link:hover,
-.hero__showcase-link:focus-visible {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 44px -22px rgba(15, 118, 110, 0.45);
+.receipt__summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: clamp(1rem, 2vw, 1.4rem) clamp(1.1rem, 2.2vw, 1.6rem);
+  transition: background 0.3s var(--ease-out-quart);
 }
+.receipt__summary::-webkit-details-marker { display: none; }
+.receipt__summary:hover { background: oklch(0.93 0.012 175); }
+.receipt__summary:focus-visible { outline: 2px solid var(--color-accent); outline-offset: -2px; }
 
-.hero__showcase img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-}
-
-.hero__showcase figcaption {
-  padding: clamp(0.85rem, 1.6vw, 1.15rem) clamp(1rem, 1.8vw, 1.35rem)
-           clamp(1rem, 1.9vw, 1.35rem);
-  font-size: clamp(0.95rem, 1.3vw, 1.08rem);
-  font-weight: 600;
-  line-height: 1.35;
+.receipt__claim {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 1.9vw, 1.5rem);
+  font-weight: 700;
+  font-stretch: 88%;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
   color: var(--color-text);
 }
 
-.hero__showcase-kicker {
-  display: block;
+/* Amber means: this opens. Reserved, never decorative. */
+.receipt__marker {
+  flex: none;
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.63rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: oklch(0.52 0.11 74);
+  background: oklch(0.94 0.055 74);
+  border: 1px solid oklch(0.86 0.09 74);
+  border-radius: 2px;
+  padding: 3px 7px;
+  white-space: nowrap;
+}
+.receipt__marker::after { content: ' +'; }
+.receipt[open] .receipt__marker::after { content: ' \2212'; }
+
+.receipt__body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s var(--ease-out-quart);
+}
+.receipt[open] .receipt__body { grid-template-rows: 1fr; }
+.receipt__body > div { overflow: hidden; }
+
+.receipt__rows {
+  margin: 0;
+  padding: 0 clamp(1.1rem, 2.2vw, 1.6rem);
+  border-top: 1px solid var(--color-border);
+}
+
+.receipt__row {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: var(--space-md);
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+.receipt__row:last-of-type { border-bottom: 0; padding-bottom: 0; }
+
+.receipt__rows dt {
+  font-family: var(--font-mono);
+  font-size: 0.63rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  padding-top: 0.22rem;
+}
+
+.receipt__rows dd {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.55;
+  color: var(--color-text);
+}
+.receipt__rows dd b { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* The caveat is mandatory and is marked as the honest part. */
+.receipt__row--caveat dt { color: oklch(0.52 0.11 74); }
+.receipt__row--caveat dd { color: var(--color-text-secondary); }
+
+.receipt__out {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: var(--space-md) clamp(1.1rem, 2.2vw, 1.6rem) clamp(1.15rem, 2.2vw, 1.55rem);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-weight: 500;
   color: var(--color-accent);
-  margin-bottom: 0.45rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.25s var(--ease-out-quart);
 }
+.receipt__out:hover { border-bottom-color: var(--color-accent); }
 
-.hero__metrics-bar { grid-column: 1 / -1; }
+/* --- Full-bleed ink band: the committed colour --- */
 
-.hero__meta,
-.hero__ctas {
-  justify-content: flex-start;
+.band-ink {
+  background: var(--ink);
+  color: var(--on-ink);
+  padding-block: clamp(3rem, 6vw, 5.5rem);
+  border: 0;
 }
+.band-ink__inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-inline: var(--space-lg);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+.band-ink__label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  margin-bottom: var(--space-md);
+}
+.band-ink__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.4vw, 2.9rem);
+  font-weight: 800;
+  font-stretch: 84%;
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  color: var(--on-ink);
+  margin: 0 0 var(--space-md);
+}
+.band-ink__text {
+  font-size: 1rem;
+  line-height: 1.66;
+  color: var(--on-ink-soft);
+  max-width: 46ch;
+  margin: 0 0 var(--space-lg);
+}
+.band-ink__figure { margin: 0; }
+.band-ink__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  /* The artwork is dark; without this it dissolves into the ink. */
+  border: 1px solid oklch(0.34 0.026 192);
+  box-shadow: 0 24px 60px -30px oklch(0.08 0.02 192 / 0.9);
+}
+.band-ink__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--teal-bright);
+  padding: 0.7rem 1.1rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: transform 0.35s var(--ease-out-quart), background 0.35s var(--ease-out-quart);
+}
+.band-ink__cta:hover { transform: translateY(-2px); background: var(--on-ink); }
 
-@media (max-width: 900px) {
-  .hero__inner { grid-template-columns: minmax(0, 1fr); }
-  .hero__showcase { order: 3; }
-  .hero__metrics-bar { order: 4; }
-  /* The nav grows on narrow viewports; the kicker needs its own clearance. */
-  .hero { padding-block-start: clamp(4.5rem, 13vw, 5.75rem); }
-  .hero__hook,
-  .hero__subtitle { max-width: 42ch; }
+@media (max-width: 940px) {
+  .hero__split,
+  .band-ink__inner { grid-template-columns: minmax(0, 1fr); }
+  .hero__title { font-stretch: 82%; }
+  .receipt__row { grid-template-columns: 5.5rem minmax(0, 1fr); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero__showcase-link { transition: none; }
-  .hero__showcase-link:hover { transform: none; }
+  .receipt__body { transition: none; }
+  .band-ink__cta { transition: none; }
+  .band-ink__cta:hover { transform: none; }
 }
+
+/* --- Evidence system in dark mode ---
+   The paper/ink relationship inverts: the page goes deep, and the ink
+   band lifts instead of sinking so it still reads as a distinct movement. */
+[data-theme="dark"] {
+  --paper:       oklch(0.19 0.013 175);
+  --paper-sunk:  oklch(0.235 0.016 175);
+  --ink:         oklch(0.275 0.030 192);
+  --ink-raised:  oklch(0.325 0.032 192);
+  --signal:      oklch(0.84 0.135 74);
+  --on-ink:      oklch(0.95 0.006 175);
+  --on-ink-soft: oklch(0.78 0.012 192);
+}
+
+[data-theme="dark"] .receipt__summary:hover { background: oklch(0.28 0.018 175); }
+
+[data-theme="dark"] .receipt__marker {
+  color: oklch(0.86 0.13 74);
+  background: oklch(0.30 0.055 74);
+  border-color: oklch(0.42 0.08 74);
+}
+
+[data-theme="dark"] .receipt__row--caveat dt { color: oklch(0.82 0.12 74); }
+
+[data-theme="dark"] .band-ink__figure img {
+  border-color: oklch(0.40 0.028 192);
+  box-shadow: 0 24px 60px -30px oklch(0.05 0.02 192 / 0.95);
+}
+
+[data-theme="dark"] .band-ink__cta { color: oklch(0.16 0.02 192); }
