@@ -3787,3 +3787,62 @@ body.site-spec [data-spec] {
 }
 
 [data-theme="dark"] .band-ink__cta { color: oklch(0.16 0.02 192); }
+
+/* --- Ink band as the featured slot inside Selected Work ---
+   It is no longer a full-bleed section, so it becomes an inset panel that
+   still owns its colour and still reads as a different movement. */
+.band-ink--inset {
+  border-radius: 6px;
+  padding-block: clamp(2.25rem, 4vw, 3.25rem);
+  margin-bottom: clamp(1.75rem, 3vw, 2.5rem);
+}
+.band-ink--inset .band-ink__inner {
+  padding-inline: clamp(1.5rem, 3.5vw, 3rem);
+  /* More room for the headline: at the inset width it was breaking to three lines. */
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+}
+.band-ink--inset .band-ink__title { font-size: clamp(1.75rem, 2.9vw, 2.5rem); }
+
+/* --- One display voice across the page ---
+   The hero set the register: compressed, uppercase, heavy. Section titles
+   were still title-case at normal width, which read as two different sites. */
+.section__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: 82%;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+}
+
+/* Every number on a card carries where it came from. The cards are anchors,
+   so they cannot nest a <details>; the sourcing goes inline instead and the
+   full receipt lives on the case page. */
+.case-card__source {
+  display: block;
+  margin-top: 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+.case-card__source::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--signal);
+  margin-right: 0.5rem;
+  vertical-align: 0.12em;
+}
+
+/* Same display voice as the hero and the section titles. */
+.current-role__title {
+  font-stretch: 84%;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
