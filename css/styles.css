@@ -3846,3 +3846,52 @@ body.site-spec [data-spec] {
   letter-spacing: -0.025em;
   font-weight: 800;
 }
+
+/* ============================================================
+   WCAG 2.2 SC 2.5.8 — target size (minimum 24x24)
+   Measured 2026-07-29: nav links were ~41x16, the section-stepper
+   dots 9x21. The hit areas grow; nothing moves visually.
+   ============================================================ */
+
+.nav__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding-block: 4px;
+}
+
+.section-nav__item {
+  padding: 6px;
+  min-width: 24px;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* The marquee clips names mid-word at both edges, which reads as a
+   rendering fault rather than as motion. Mask the edges so the cut
+   is legible as deliberate. */
+.clients {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+          mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+
+/* Same criterion, the rest of the inline links and small controls. */
+.receipt__out,
+.spec-mode-btn,
+.footer__link,
+.footer a,
+.more-work__item {
+  min-height: 24px;
+  padding-block: 3px;
+}
+.receipt__out,
+.spec-mode-btn,
+.footer__link,
+.footer a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.certs-note a { min-height: 24px; padding-block: 3px; display: inline-flex; align-items: center; }
