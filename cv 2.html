@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan David Colorado Vargas — Senior Product Designer & Lead (CV)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#FAFAF8; --text:#1A1A1A; --muted:#595959; --soft:#6B6B6B;
+      --accent:#0F766E; --line:#E5E5E3; --line2:#F0F0EE;
+      --display:'Bricolage Grotesque','Inter',sans-serif;
+      --body:'Inter',-apple-system,sans-serif;
+      --mono:'JetBrains Mono',monospace;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.5;font-size:10pt;}
+    body::before{content:'';display:block;height:6px;background:var(--accent);}
+    .page{max-width:8.5in;margin:0 auto;padding:0.5in 0.7in 0.55in;}
+
+    /* Header (full width, bold separator, contact moved to sidebar) */
+    .head{border-bottom:3px solid var(--text);padding-bottom:13px;margin-bottom:0;}
+    .name{font-family:var(--display);font-size:29pt;font-weight:700;letter-spacing:-0.025em;line-height:1;margin:0;}
+    .role{font-family:var(--mono);font-size:8.8pt;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-top:8px;font-weight:600;}
+
+    /* The editorial grid */
+    .editorial-grid{display:grid;grid-template-columns:2.15fr 1fr;gap:32px;margin-top:22px;align-items:start;}
+    .col-main,.col-sidebar{min-width:0;}
+
+    /* Section heads */
+    h2{font-family:var(--mono);font-size:8pt;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);
+       font-weight:600;margin:0 0 10px;padding-bottom:5px;border-bottom:1px solid var(--line);}
+
+    /* Experience (left column) */
+    .job{margin-bottom:13px;break-inside:avoid;}
+    .job__title{font-family:var(--display);font-size:12pt;font-weight:700;letter-spacing:-0.01em;line-height:1.15;}
+    .job__meta{font-size:8.6pt;color:var(--soft);margin-top:2px;}
+    .job__meta b{color:var(--accent);font-weight:600;}
+    .job__meta .date{font-family:var(--mono);font-size:7.6pt;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);}
+    ul.b{list-style:none;margin-top:6px;}
+    ul.b li{position:relative;padding-left:15px;margin-bottom:4px;color:var(--soft);font-size:9.3pt;line-height:1.45;}
+    ul.b li::before{content:'\2014';position:absolute;left:0;top:-0.5px;color:var(--accent);font-weight:600;}
+    ul.b li b{color:var(--text);font-weight:600;}
+
+    /* Sidebar (right column) */
+    .sidebar-block{margin-bottom:16px;break-inside:avoid;}
+    .summary{font-size:8.9pt;color:#2a2a2a;line-height:1.5;}
+    .summary strong{color:var(--text);font-weight:600;}
+
+    .metrics-stack{display:flex;flex-direction:column;}
+    .metric{padding:8px 0;}
+    .metric:first-child{padding-top:0;}
+    .metric + .metric{border-top:1px solid var(--line2);}
+    .metric__num{display:block;font-family:var(--display);font-size:20pt;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.02em;}
+    .metric__lbl{display:block;font-size:7.5pt;color:var(--muted);line-height:1.3;margin-top:4px;}
+
+    .core-stack{display:flex;flex-direction:column;gap:4px;}
+    .core-stack span{font-size:8.8pt;color:var(--text);font-weight:500;}
+
+    .skillgrp{margin-bottom:8px;}
+    .skillgrp:last-child{margin-bottom:0;}
+    .skillgrp h3{font-size:7.8pt;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--text);margin-bottom:2px;}
+    .skillgrp p{font-size:8.3pt;color:var(--muted);line-height:1.4;}
+
+    .meta-line{font-size:8.6pt;color:var(--muted);line-height:1.5;}
+    .meta-line b{color:var(--text);font-weight:600;}
+    .clients{font-size:8.4pt;color:var(--muted);line-height:1.6;}
+    .clients b{color:var(--text);}
+
+    .contact-stack{display:flex;flex-direction:column;gap:3px;font-size:8.3pt;color:var(--muted);overflow-wrap:anywhere;}
+    .contact-stack b{color:var(--text);font-weight:600;}
+    .contact-stack a{color:var(--muted);text-decoration:none;}
+
+    @page{size:Letter;margin:0;}
+    @media print{ .page{padding:0.42in 0.55in 0.5in;} }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="head">
+      <h1 class="name">Juan David Colorado Vargas</h1>
+      <div class="role">Senior Product Designer &amp; Lead &middot; AI &amp; Enterprise UX</div>
+    </header>
+
+    <div class="editorial-grid">
+
+      <!-- LEFT: The Work -->
+      <div class="col-main">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+          <div class="job__title">Senior Lead UX/UI Designer</div>
+          <div class="job__meta"><b>Symplast</b> &middot; <span class="date">Apr 2026 &ndash; Present</span> &middot; Full-time, Remote</div>
+          <ul class="b">
+            <li>Lead design across a <b>mobile-first, HIPAA-compliant EHR and practice-management platform serving 3,500+ aesthetic practices and medical spas</b>.</li>
+            <li>Design <b>AI-native workflows</b> that streamline complex clinical processes, with research and design decisions tied directly to business KPIs.</li>
+            <li>Own the design system and cross-functional alignment across product managers, engineers, and clinical users.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__title">Senior Product Designer &amp; Lead + Product Owner</div>
+          <div class="job__meta"><b>CodeBranch</b> &middot; <span class="date">Jun 2025 &ndash; Apr 2026</span> &middot; Contract, Remote (USA/LatAm)</div>
+          <ul class="b">
+            <li>Led design &amp; product strategy for <b>Nvidia&rsquo;s supply-chain intelligence platform</b> &mdash; an enterprise AI analytics tool on a platform managing <b>$2B+ in annual transactions</b> &mdash; restructuring a flat interface into a task-oriented SAP Fiori dashboard and <b>replacing a 10-filter query flow with a conversational AI prompt</b>: <b>9 of 10 participants</b> in internal usability testing found the new flow easier and less error-prone.</li>
+            <li>Designed <b>YMA (Smartel computer-vision ecosystem) 0&rarr;1</b>: mobile-first patterns and a component library scaled by 2 junior designers across the product suite.</li>
+            <li>Functional Product Owner: authored user stories, ran design QA, and governed the Atomic Design system with 5+ engineers including AI/ML specialists.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__title">Senior Lead UX/UI Designer</div>
+          <div class="job__meta"><b>Solving AI</b> &middot; <span class="date">Jun 2024 &ndash; Jun 2025</span> &middot; Remote</div>
+          <ul class="b">
+            <li>Built an evidence-based validation culture with <b>Maze prototype testing</b>: comprehension on first arrival at the node-based model-interconnection canvas went from <b>2 of 10 users to 8 of 10</b> after shipping onboarding, tool-selection improvements and tooltips &mdash; plus a UX-writing pass once testing showed the tooltip copy was the remaining blocker.</li>
+            <li>Architected a scalable <b>Figma design system</b> (Variables + Auto Layout), cutting design-to-dev handoff <b>~30% (9&rarr;6 days)</b>.</li>
+            <li>Simplified multi-step AI interactions into accessible journeys meeting <b>WCAG AA</b> for technical and non-technical users.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__title">UX/UI Senior Designer</div>
+          <div class="job__meta"><b>Ideaware</b> &middot; <span class="date">Sep 2023 &ndash; May 2024</span> &middot; Client: Bucket.io, Remote</div>
+          <ul class="b">
+            <li>Led journey mapping and redesigned a complex AI configuration into an accessible <b>guided funnel</b>; validated two directions with interactive prototypes <b>before engineering investment</b>.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__title">UI/UX Senior Designer &amp; Team Leader</div>
+          <div class="job__meta"><b>Adaptive Tech Solutions</b> &middot; <span class="date">Dec 2022 &ndash; Jun 2023</span> &middot; Remote</div>
+          <ul class="b">
+            <li>Led a <b>design team of 3 across 3 simultaneous B2B accounts</b> (ToughBuilt, InvolveHub); mentored on mobile-first and responsive best practices.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__title">SproutLoud Media Networks</div>
+          <div class="job__meta"><b>Production Designer &rarr; Team Lead &rarr; Web Developer</b> &middot; <span class="date">Dec 2015 &ndash; Nov 2022 &middot; 7 yrs</span></div>
+          <ul class="b">
+            <li><b>Production Designer (2 yrs):</b> built <b>customizable asset templates</b> for a distributed-marketing platform &mdash; I produced each piece and <b>defined which parts the end user could change</b>, so brand teams could adapt them without a designer. <b>20+ templates</b> for <b>DISH, Nvidia, Milwaukee Tools, Andersen Windows</b>, plus digital prepress and inventory items.</li>
+            <li><b>Team Lead (2 yrs):</b> led the design team and built the <b>email template system and its base code</b>.</li>
+            <li><b>Web Developer (3 yrs):</b> owned web pages <b>end-to-end</b>, design through production &mdash; <b>HTML/CSS/JS, PHP and Jinja</b>, including the templating logic behind data visualisations. Worked in <b>Git/GitLab</b>.</li>
+            <li>Ran <b>A/B tests</b> with my team to validate design decisions before rollout &middot; <b>promoted 3&times; in 7 years</b>.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__title">Graphic Designer</div>
+          <div class="job__meta"><b>Creactiva</b> &middot; <span class="date">Aug 2014 &ndash; Dec 2015</span> &middot; Medell&iacute;n</div>
+          <ul class="b">
+            <li>Advertising campaigns across print and digital for IMUSA, Corbeta, Levi&rsquo;s, and Cryogas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- RIGHT: The Details -->
+      <div class="col-sidebar">
+        <div class="sidebar-block">
+          <h2>Profile</h2>
+          <p class="summary">
+            Senior Product Designer &amp; Lead with <strong>10+ years designing digital product experiences</strong> &mdash; self-serve platforms and dense B2B systems &mdash; the last <strong>4 leading product design end-to-end</strong>, <strong>3 of them on AI-native and enterprise workflows</strong>, shipping the front-end code too. Now <strong>leading design at Symplast</strong>, a <strong>HIPAA-compliant EHR for 3,500+ practices</strong>; previously UX lead for <strong>Nvidia&rsquo;s $2B+ supply-chain AI platform</strong>. I validate decisions with research and A/B testing.
+          </p>
+        </div>
+
+        <div class="sidebar-block">
+          <h2>Impact</h2>
+          <div class="metrics-stack">
+            <div class="metric"><span class="metric__num">9/10</span><span class="metric__lbl">Participants who found the AI flow easier &middot; Nvidia usability testing</span></div>
+            <div class="metric"><span class="metric__num">2 &rarr; 8</span><span class="metric__lbl">of 10 users understood the canvas on first arrival &middot; Maze testing</span></div>
+            <div class="metric"><span class="metric__num">~30%</span><span class="metric__lbl">Faster design-to-dev handoff (9&rarr;6 days)</span></div>
+          </div>
+        </div>
+
+        <div class="sidebar-block">
+          <h2>Core Expertise</h2>
+          <div class="core-stack">
+            <span>Product Design &amp; UX Strategy</span>
+            <span>AI / Agentic Product Design</span>
+            <span>Design Systems &amp; Design Ops</span>
+            <span>Healthcare UX &amp; HIPAA</span>
+            <span>User Research &amp; A/B Testing</span>
+            <span>SAP Fiori &middot; WCAG Accessibility</span>
+            <span>HTML / CSS / JS</span>
+          </div>
+        </div>
+
+        <div class="sidebar-block">
+          <h2>Skills &amp; Tools</h2>
+          <div class="skillgrp"><h3>Design</h3><p>Figma (Variables, Auto Layout) &middot; Design Systems &middot; Prototyping &middot; Photoshop / Illustrator</p></div>
+          <div class="skillgrp"><h3>Technical &amp; AI</h3><p>HTML5 / CSS3 / JS &middot; SAP Fiori &middot; AI/ML &amp; Agentic Design &middot; LLM UX &middot; Computer-Vision UIs &middot; Git</p></div>
+          <div class="skillgrp"><h3>Methods</h3><p>Atomic Design &middot; Prototype &amp; A/B Testing (Maze) &middot; Baseline Measurement &middot; UX Research &middot; Journey Mapping &middot; WCAG &middot; HIPAA &middot; QA</p></div>
+          <div class="skillgrp"><h3>Leadership</h3><p>Design Ops &middot; Mentoring &middot; Product Ownership &amp; User Stories &middot; System Governance</p></div>
+        </div>
+
+        <div class="sidebar-block">
+          <h2>Selected Clients</h2>
+          <p class="clients"><b>Nvidia &middot; DISH &middot; Milwaukee Tools &middot; Andersen Windows</b> &middot; Benjamin Moore &middot; Generac &middot; ToughBuilt &middot; IMUSA &middot; Levi&rsquo;s</p>
+        </div>
+
+        <div class="sidebar-block">
+          <h2>Languages</h2>
+          <p class="meta-line"><b>Spanish</b> &mdash; Native<br><b>English</b> &mdash; C1 Advanced (EF SET 66/100)<br><b>French &amp; Italian</b> &mdash; Elementary</p>
+        </div>
+
+        <div class="sidebar-block">
+          <h2>Education</h2>
+          <p class="meta-line"><b>Visual Designer &mdash; Interactive Systems</b><br>Fundaci&oacute;n Universitaria Bellas Artes &middot; 2007&ndash;2011</p>
+        </div>
+
+        <div class="sidebar-block">
+          <h2>Certifications</h2>
+          <p class="meta-line">Nvidia Corporate Training (2025) &middot; Product Design School, Platzi (2025) &middot; Design Systems Fundamentals, Platzi (2025) &middot; EF SET English C1</p>
+        </div>
+
+        <div class="sidebar-block">
+          <h2>Contact</h2>
+          <div class="contact-stack">
+            <span><b>juancolorado87@gmail.com</b></span>
+            <span>+57 310 843 0417</span>
+            <span>Medell&iacute;n, Colombia &middot; Remote (US, UTC&minus;5)</span>
+            <span>linkedin.com/in/juan-david-colorado-vargas</span>
+            <span>juancoloradov.github.io/portfolio</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
