@@ -37,10 +37,11 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260705b">
+  <link rel="stylesheet" href="css/styles.css?v=20260730b">
+  <link rel="stylesheet" href="css/case-v2.css?v=3">
   <script src="js/main.js?v=20260705b" defer></script>
 </head>
-<body class="loading">
+<body class="loading case-v2">
   <noscript><style>body.loading{opacity:1!important}.fade-in,.fade-in-stagger>*{opacity:1!important;transform:none!important}</style></noscript>
   <!-- Unhide immediately: first paint must not wait for main.js -->
   <script>document.body.classList.remove('loading');document.body.classList.add('loaded');</script>
@@ -51,7 +52,7 @@
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__name" aria-label="Juan David Colorado - Home">JDC</a>
+      <a href="index.html" class="nav__name" aria-label="Juan Colorado - Home"><img src="assets/brand/juan-colorado-mark.svg" alt="" width="64" height="64"><span class="nav__brand-copy"><span><b>Juan</b> Colorado</span><small>Product Design Lead</small></span></a>
       <button class="theme-toggle" type="button" aria-label="Switch color theme">
         <svg class="theme-toggle__moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         <svg class="theme-toggle__sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -61,11 +62,10 @@
       </button>
       <ul class="nav__links" id="nav-menu">
         <li><a href="index.html#work" class="nav__link nav__link--active">Work</a></li>
-        <li><a href="index.html#live-sites" class="nav__link">Live Sites</a></li>
-        <li><a href="index.html#about" class="nav__link">About</a></li>
-        <li><a href="index.html#notes" class="nav__link">Notes</a></li>
+        <li><a href="index.html#live" class="nav__link">Live Sites</a></li>
+        <li><a href="index.html#experience" class="nav__link">Experience</a></li>
         <li><a href="index.html#contact" class="nav__link">Contact</a></li>
-        <li><a href="assets/Juan_David_Colorado_CV.pdf?v=6" class="nav__link" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="assets/Juan_David_Colorado_CV.pdf?v=10" class="nav__link" target="_blank" rel="noopener noreferrer">Resume</a></li>
         <li class="nav__indicator" aria-hidden="true"></li>
       </ul>
     </div>
@@ -115,7 +115,7 @@
       <div class="case-tldr__inner" data-spec="Problem / Did / Outcome inside the first viewport">
         <div class="case-tldr__col"><span class="case-tldr__label">Problem</span><p>A confusing multi-step AI configuration drove high drop-off in the middle of the funnel.</p></div>
         <div class="case-tldr__col"><span class="case-tldr__label">What I did</span><p>Journey-mapped the friction, restructured it into a guided funnel, and validated two options via interactive prototypes.</p></div>
-        <div class="case-tldr__col case-tldr__col--out"><span class="case-tldr__label">Outcome</span><p>80% of drop-off traced to 3 fixable friction points; shipped without a redesign-driven rework cycle.</p></div>
+        <div class="case-tldr__col case-tldr__col--out"><span class="case-tldr__label">Outcome</span><p>Three fixable friction points became a guided four-step funnel, tested through two interactive directions before engineering.</p></div>
       </div>
     </div>
 
@@ -155,9 +155,9 @@
     <div class="case-image-grid fade-in-stagger">
       <div class="case-image" role="button" tabindex="0">
         <div class="case-image__container case-image__container--transparent">
-          <img src="assets/bucket/journey-map.svg" alt="User journey map showing 5 phases with sentiment curve and 3 friction points — 25% abandon at selection, 35% at configuration, 20% at generation" class="case-image__diagram" width="1200" height="480" loading="lazy" decoding="async">
+          <img src="assets/bucket/journey-map.svg" alt="User journey map showing five phases, a sentiment curve, and three friction points across selection, configuration, and generation" class="case-image__diagram" width="1200" height="480" loading="lazy" decoding="async">
         </div>
-        <p class="case-image__caption">User journey mapping identified three critical friction points driving 80% of total drop-off</p>
+        <p class="case-image__caption">User journey mapping made three critical friction points explicit across selection, configuration, and result refinement</p>
       </div>
     </div>
 
@@ -166,7 +166,7 @@
         <h2 class="case-section__heading">Journey mapping to find the friction. Prototypes to prove the fix.</h2>
         <p class="case-section__text"><strong>Journey mapping</strong> revealed three critical friction points: blueprint selection (too many options, no guidance), question configuration (unclear what each parameter affected), and result interpretation (no way to refine output without starting over).</p>
         <p class="case-section__text"><strong>Guided funnel redesign.</strong> I restructured the flow with clear progress indication. Each step had a single focus: select blueprint type, answer guided questions, review the AI-generated result, then refine or regenerate.</p>
-        <p class="case-section__text"><strong>Prototype-driven validation.</strong> Before any engineering investment, I delivered high-fidelity interactive prototypes that stakeholders could test with real user scenarios. This accelerated alignment and saved weeks of potential engineering rework.</p>
+        <p class="case-section__text"><strong>Prototype-driven validation.</strong> Before engineering investment, I delivered high-fidelity interactive prototypes that stakeholders could test with real scenarios. This made the trade-offs visible and gave the team a concrete direction to evaluate.</p>
       </div>
     </div>
 
@@ -199,7 +199,7 @@
         <h2 class="case-section__heading">Two design options. One validated through prototyping before a single line of code.</h2>
         <p class="case-section__text"><strong>Option A &middot; Guided Simplicity:</strong> A linear 4-step funnel optimized for first-time users. Each step had a single focus, contextual help, and inline validation. This option prioritized reducing configuration errors and minimizing time-to-first-output.</p>
         <p class="case-section__text"><strong>Option B &middot; Power Dashboard:</strong> A configurable workspace for repeat users who needed more control over parameters. This option exposed advanced settings upfront while maintaining the guided flow as an optional onboarding path.</p>
-        <p class="case-section__text">Both options were delivered as high-fidelity interactive Figma prototypes. Stakeholders tested them with real user scenarios before any engineering investment, a process that prevented weeks of potential rework and accelerated team alignment on the final direction.</p>
+        <p class="case-section__text">Both options were delivered as high-fidelity interactive Figma prototypes. Stakeholders evaluated them with real scenarios before engineering investment, reducing ambiguity and accelerating alignment on the final direction.</p>
       </div>
     </div>
 
@@ -264,16 +264,16 @@
     <!-- Metrics -->
     <div class="metrics-row fade-in" data-spec="hard facts only: soft percentages live in prose, with context">
       <div class="metric-card">
-        <div class="metric-card__value">80%</div>
-        <div class="metric-card__label">Of total drop-off concentrated at 3 friction points identified through journey mapping</div>
+        <div class="metric-card__value">3</div>
+        <div class="metric-card__label">Critical friction points identified across selection, configuration, and refinement</div>
       </div>
       <div class="metric-card">
         <div class="metric-card__value">4-step</div>
         <div class="metric-card__label">Guided funnel replacing complex multi-step configuration process</div>
       </div>
       <div class="metric-card">
-        <div class="metric-card__value">0</div>
-        <div class="metric-card__label">Engineering rework: prototypes validated before development began</div>
+        <div class="metric-card__value">2</div>
+        <div class="metric-card__label">Interactive directions evaluated with stakeholders before engineering investment</div>
       </div>
     </div>
 
@@ -299,7 +299,7 @@
       </div>
     </div>
 
-    <a href="index.html#about" class="next-project">
+    <a href="index.html#experience" class="next-project">
       <div>
         <p class="next-project__label">Up next</p>
         <p class="next-project__title">About me &rarr;</p>
@@ -315,11 +315,15 @@
       <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener noreferrer" class="footer__link">view source</a> &middot; <button class="spec-mode-btn" type="button" aria-pressed="false" title="Toggle spec mode (Shift+S)">spec mode</button></p>
       <ul class="footer__links">
         <li><a href="index.html#work" class="footer__link">Work</a></li>
-        <li><a href="index.html#live-sites" class="footer__link">Live Sites</a></li>
-        <li><a href="index.html#about" class="footer__link">About</a></li>
-        <li><a href="index.html#notes" class="footer__link">Notes</a></li>
+        <li><a href="index.html#live" class="footer__link">Live Sites</a></li>
+        <li><a href="index.html#experience" class="footer__link">Experience</a></li>
         <li><a href="index.html#contact" class="footer__link">Contact</a></li>
       </ul>
+      <div class="footer__connect">
+        <a class="footer__email" href="mailto:juancolorado87@gmail.com">juancolorado87@gmail.com</a>
+        <a class="footer__social" href="https://linkedin.com/in/juan-david-colorado-vargas-470b20122" target="_blank" rel="noopener noreferrer" aria-label="Juan Colorado on LinkedIn"><img src="assets/brand/linkedin-mark.svg" alt="" width="24" height="24"></a>
+        <a class="footer__social" href="https://behance.net/juancolorado" target="_blank" rel="noopener noreferrer" aria-label="Juan Colorado on Behance"><img src="assets/brand/behance-mark.svg" alt="" width="28" height="24"></a>
+      </div>
     </div>
   </footer>
 

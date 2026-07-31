@@ -37,10 +37,11 @@
   <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20260705b">
+  <link rel="stylesheet" href="css/styles.css?v=20260730b">
+  <link rel="stylesheet" href="css/case-v2.css?v=3">
   <script src="js/main.js?v=20260705b" defer></script>
 </head>
-<body class="loading">
+<body class="loading case-v2">
   <noscript><style>body.loading{opacity:1!important}.fade-in,.fade-in-stagger>*{opacity:1!important;transform:none!important}</style></noscript>
   <!-- Unhide immediately: first paint must not wait for main.js -->
   <script>document.body.classList.remove('loading');document.body.classList.add('loaded');</script>
@@ -51,7 +52,7 @@
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__name" aria-label="Juan David Colorado - Home">JDC</a>
+      <a href="index.html" class="nav__name" aria-label="Juan Colorado - Home"><img src="assets/brand/juan-colorado-mark.svg" alt="" width="64" height="64"><span class="nav__brand-copy"><span><b>Juan</b> Colorado</span><small>Product Design Lead</small></span></a>
       <button class="theme-toggle" type="button" aria-label="Switch color theme">
         <svg class="theme-toggle__moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         <svg class="theme-toggle__sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -61,11 +62,10 @@
       </button>
       <ul class="nav__links" id="nav-menu">
         <li><a href="index.html#work" class="nav__link nav__link--active">Work</a></li>
-        <li><a href="index.html#live-sites" class="nav__link">Live Sites</a></li>
-        <li><a href="index.html#about" class="nav__link">About</a></li>
-        <li><a href="index.html#notes" class="nav__link">Notes</a></li>
+        <li><a href="index.html#live" class="nav__link">Live Sites</a></li>
+        <li><a href="index.html#experience" class="nav__link">Experience</a></li>
         <li><a href="index.html#contact" class="nav__link">Contact</a></li>
-        <li><a href="assets/Juan_David_Colorado_CV.pdf?v=6" class="nav__link" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="assets/Juan_David_Colorado_CV.pdf?v=10" class="nav__link" target="_blank" rel="noopener noreferrer">Resume</a></li>
         <li class="nav__indicator" aria-hidden="true"></li>
       </ul>
     </div>
@@ -248,11 +248,15 @@
       <p class="footer__text">&copy; 2026 Juan David Colorado Vargas. Hand-coded in HTML, CSS &amp; JS &mdash; <a href="https://github.com/JuanColoradoV" target="_blank" rel="noopener noreferrer" class="footer__link">view source</a> &middot; <button class="spec-mode-btn" type="button" aria-pressed="false" title="Toggle spec mode (Shift+S)">spec mode</button></p>
       <ul class="footer__links">
         <li><a href="index.html#work" class="footer__link">Work</a></li>
-        <li><a href="index.html#live-sites" class="footer__link">Live Sites</a></li>
-        <li><a href="index.html#about" class="footer__link">About</a></li>
-        <li><a href="index.html#notes" class="footer__link">Notes</a></li>
+        <li><a href="index.html#live" class="footer__link">Live Sites</a></li>
+        <li><a href="index.html#experience" class="footer__link">Experience</a></li>
         <li><a href="index.html#contact" class="footer__link">Contact</a></li>
       </ul>
+      <div class="footer__connect">
+        <a class="footer__email" href="mailto:juancolorado87@gmail.com">juancolorado87@gmail.com</a>
+        <a class="footer__social" href="https://linkedin.com/in/juan-david-colorado-vargas-470b20122" target="_blank" rel="noopener noreferrer" aria-label="Juan Colorado on LinkedIn"><img src="assets/brand/linkedin-mark.svg" alt="" width="24" height="24"></a>
+        <a class="footer__social" href="https://behance.net/juancolorado" target="_blank" rel="noopener noreferrer" aria-label="Juan Colorado on Behance"><img src="assets/brand/behance-mark.svg" alt="" width="28" height="24"></a>
+      </div>
     </div>
   </footer>
 

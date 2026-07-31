@@ -76,17 +76,17 @@
   <text x="300" y="404" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FRICTION #1</text>
   <text x="300" y="420" style="font-size: 11px; fill: #991B1B;">Too many blueprint options</text>
   <text x="300" y="436" style="font-size: 11px; fill: #991B1B;">No guidance on which to pick</text>
-  <text x="300" y="452" style="font-size: 10px; fill: #DC2626; font-weight: 600;">~25% abandon here</text>
+  <text x="300" y="452" style="font-size: 10px; fill: #DC2626; font-weight: 600;">SELECTION DECISION STALLS</text>
 
   <rect x="520" y="384" width="220" height="72" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
   <text x="536" y="404" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FRICTION #2 (worst)</text>
   <text x="536" y="420" style="font-size: 11px; fill: #991B1B;">Unclear what parameters do</text>
   <text x="536" y="436" style="font-size: 11px; fill: #991B1B;">Misconfiguration = bad output</text>
-  <text x="536" y="452" style="font-size: 10px; fill: #DC2626; font-weight: 600;">~35% abandon here</text>
+  <text x="536" y="452" style="font-size: 10px; fill: #DC2626; font-weight: 600;">CONFIGURATION AMBIGUITY</text>
 
   <rect x="756" y="384" width="220" height="72" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
   <text x="772" y="404" style="font-size: 10px; font-weight: 700; fill: #DC2626;">FRICTION #3</text>
   <text x="772" y="420" style="font-size: 11px; fill: #991B1B;">No way to refine output</text>
   <text x="772" y="436" style="font-size: 11px; fill: #991B1B;">Must restart from scratch</text>
-  <text x="772" y="452" style="font-size: 10px; fill: #DC2626; font-weight: 600;">~20% abandon here</text>
+  <text x="772" y="452" style="font-size: 10px; fill: #DC2626; font-weight: 600;">RESTART COST AFTER OUTPUT</text>
 </svg>
