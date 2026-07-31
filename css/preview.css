@@ -191,3 +191,24 @@ footer{padding:1.5rem max(24px,calc((100vw - var(--max))/2));display:flex;justif
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.stage-card,.project__visual img{transition:none}.hero__copy,.hero__stage{animation:none}}
+
+/* ── Polish pass ─────────────────────────────────────────────
+   The copy column was the narrower of the two (.82fr) while the
+   h1 was also capped at 11ch, so the headline broke into five
+   arbitrary lines and orphaned the connector. Rebalanced.
+   ──────────────────────────────────────────────────────────── */
+@media (min-width: 1024px) {
+  .hero { grid-template-columns: minmax(430px, 1fr) minmax(520px, 1.04fr); }
+  .hero h1 { max-width: 15ch; font-size: clamp(3.4rem, 4.9vw, 5.3rem); }
+}
+
+/* The label justified its two halves to the card edges, so the right half
+   sat under the overlapping card and read as clipped. Group them left. */
+.stage-card__label {
+  justify-content: flex-start;
+  gap: 0.55rem;
+  right: auto;
+  max-width: calc(100% - 2rem);
+  align-items: baseline;
+}
+.stage-card__label b { flex: none; }
