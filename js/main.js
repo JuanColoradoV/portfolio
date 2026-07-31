@@ -327,6 +327,11 @@
   const videoPause = document.querySelector('.video-pause');
   const demoVideo = document.querySelector('.case-image video[autoplay]');
   if (videoPause && demoVideo) {
+    if (prefersReducedMotion.matches) {
+      demoVideo.pause();
+      videoPause.setAttribute('aria-pressed', 'true');
+      videoPause.textContent = 'Play the looping demo';
+    }
     videoPause.addEventListener('click', () => {
       const wasPlaying = !demoVideo.paused;
       if (wasPlaying) { demoVideo.pause(); } else { demoVideo.play(); }
