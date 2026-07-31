@@ -212,3 +212,63 @@ footer{padding:1.5rem max(24px,calc((100vw - var(--max))/2));display:flex;justif
   align-items: baseline;
 }
 .stage-card__label b { flex: none; }
+
+/* ── Mobile fixes ────────────────────────────────────────────
+   Measured at 430px: the hero copy sat at opacity 0 because its
+   entrance animation was frozen on its first keyframe, the header
+   nav overflowed its fixed-height bar, and the client strip had
+   no wrap so three of the five names were cut off.
+   ──────────────────────────────────────────────────────────── */
+
+/* Critical copy must never depend on an animation finishing to be legible. */
+@media (max-width: 1040px) {
+  .hero__copy,
+  .hero__stage {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* The bar is a fixed 58px on narrow screens; four links plus the identity
+   do not fit, so they were spilling out and being clipped. */
+@media (max-width: 860px) {
+  .site-head { padding-inline: 12px; gap: 10px; }
+  .site-head nav { gap: 0.85rem; font-size: 0.58rem; flex: none; }
+  .site-head nav a { padding: 0.55rem 0; }
+  .site-head nav a:last-child { padding: 0.6rem 0.75rem; }
+  .identity__role { display: none; }
+}
+@media (max-width: 560px) {
+  .site-head nav a:nth-child(2),
+  .site-head nav a:nth-child(3) { display: none; }
+}
+
+/* Five client names on one non-wrapping row: only two survived. */
+@media (max-width: 860px) {
+  .trust-strip {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.55rem 1.25rem;
+    padding: 1rem 1.25rem;
+    min-height: 0;
+  }
+  .trust-strip span { width: 100%; }
+  .trust-strip strong { font-size: 0.7rem; }
+}
+
+/* Three of the five client names were hidden from the third onward, because
+   without wrapping they did not fit. They wrap now, so they can all show:
+   Milwaukee Tool, Andersen Windows and Generac are credibility, not filler. */
+@media (max-width: 860px) {
+  .trust-strip strong:nth-of-type(n+3) { display: inline; }
+}
+
+/* Root cause of the disappearing hero copy.
+   'both' keeps the 0% keyframe applied before the animation runs, so any
+   condition where it does not start leaves opacity:0 on the headline, the
+   lede and the CTAs. Dropping the fill mode means the element's resting
+   state is visible; the entrance still plays, it just cannot strand the
+   content when it doesn't. */
+.hero__copy { animation: rise .75s cubic-bezier(.22,1,.36,1); }
+.hero__stage { animation: settle .9s .12s cubic-bezier(.22,1,.36,1); }
