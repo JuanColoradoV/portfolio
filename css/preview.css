@@ -239,9 +239,12 @@ footer{padding:1.5rem max(24px,calc((100vw - var(--max))/2));display:flex;justif
   .site-head nav a:last-child { padding: 0.6rem 0.75rem; }
   .identity__role { display: none; }
 }
+/* Measured with the reduced gap and type above: identity 131px + nav 229px
+   = 360px inside a 480px bar at a 500px viewport. All four links fit, so
+   hiding two of them was over-caution on my part. */
 @media (max-width: 560px) {
-  .site-head nav a:nth-child(2),
-  .site-head nav a:nth-child(3) { display: none; }
+  .site-head nav { gap: 0.7rem; font-size: 0.55rem; }
+  .site-head nav a:last-child { padding: 0.6rem 0.65rem; }
 }
 
 /* Five client names on one non-wrapping row: only two survived. */
@@ -272,3 +275,11 @@ footer{padding:1.5rem max(24px,calc((100vw - var(--max))/2));display:flex;justif
    content when it doesn't. */
 .hero__copy { animation: rise .75s cubic-bezier(.22,1,.36,1); }
 .hero__stage { animation: settle .9s .12s cubic-bezier(.22,1,.36,1); }
+
+/* Codex hid the two middle nav links below 680px, which made sense at the
+   original 1.7rem gap and .66rem type. With the tighter values above they
+   measure 360px inside a 480px bar at 500px wide, so navigation survives. */
+@media (max-width: 680px) {
+  .site-head nav a:nth-child(2),
+  .site-head nav a:nth-child(3) { display: inline-flex; }
+}
