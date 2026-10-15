@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#FAFAF8" rx="8"/>
+
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="#0F766E"/>
+
+  <!-- ==================== HEADER ==================== -->
+  <text x="48" y="48" font-size="10" font-weight="600" fill="#0F766E" letter-spacing="1.5">MAZE PROTOTYPE TESTING</text>
+  <text x="48" y="76" font-size="22" font-weight="700" fill="#1A1A1A">Could users tell what to do on first arrival?</text>
+  <line x1="48" y1="92" x2="1152" y2="92" stroke="#E5E5E3" stroke-width="1"/>
+
+  <!-- ==================== LEFT PANEL: dot matrix ==================== -->
+  <text x="48" y="124" font-size="10" font-weight="600" fill="#6B6B6B" letter-spacing="1">BEFORE vs AFTER REDESIGN &#183; EACH DOT IS ONE PARTICIPANT</text>
+
+  <!-- === Row 1: Before === -->
+  <text x="48" y="164" font-size="13" font-weight="600" fill="#1A1A1A">Before redesign</text>
+  <circle cx="60"  cy="196" r="12" fill="#0F766E"/>
+  <circle cx="96"  cy="196" r="12" fill="#0F766E"/>
+  <circle cx="132" cy="196" r="12" fill="#FFFFFF" stroke="#D8D8D5" stroke-width="1.5"/>
+  <circle cx="168" cy="196" r="12" fill="#FFFFFF" stroke="#D8D8D5" stroke-width="1.5"/>
+  <circle cx="204" cy="196" r="12" fill="#FFFFFF" stroke="#D8D8D5" stroke-width="1.5"/>
+  <circle cx="240" cy="196" r="12" fill="#FFFFFF" stroke="#D8D8D5" stroke-width="1.5"/>
+  <circle cx="276" cy="196" r="12" fill="#FFFFFF" stroke="#D8D8D5" stroke-width="1.5"/>
+  <circle cx="312" cy="196" r="12" fill="#FFFFFF" stroke="#D8D8D5" stroke-width="1.5"/>
+  <circle cx="348" cy="196" r="12" fill="#FFFFFF" stroke="#D8D8D5" stroke-width="1.5"/>
+  <circle cx="384" cy="196" r="12" fill="#FFFFFF" stroke="#D8D8D5" stroke-width="1.5"/>
+  <text x="428" y="203" font-size="16" font-weight="700" fill="#6B6B6B">2 of 10</text>
+
+  <!-- === Row 2: After === -->
+  <text x="48" y="266" font-size="13" font-weight="600" fill="#1A1A1A">After onboarding, tool-selection changes &amp; tooltips</text>
+  <circle cx="60"  cy="298" r="12" fill="#0F766E"/>
+  <circle cx="96"  cy="298" r="12" fill="#0F766E"/>
+  <circle cx="132" cy="298" r="12" fill="#0F766E"/>
+  <circle cx="168" cy="298" r="12" fill="#0F766E"/>
+  <circle cx="204" cy="298" r="12" fill="#0F766E"/>
+  <circle cx="240" cy="298" r="12" fill="#0F766E"/>
+  <circle cx="276" cy="298" r="12" fill="#0F766E"/>
+  <circle cx="312" cy="298" r="12" fill="#0F766E"/>
+  <circle cx="348" cy="298" r="12" fill="#FFFFFF" stroke="#D8D8D5" stroke-width="1.5"/>
+  <circle cx="384" cy="298" r="12" fill="#FFFFFF" stroke="#D8D8D5" stroke-width="1.5"/>
+  <text x="428" y="305" font-size="16" font-weight="700" fill="#0F766E">8 of 10</text>
+
+  <!-- === What the remaining failures showed === -->
+  <line x1="48" y1="360" x2="700" y2="360" stroke="#E5E5E3" stroke-width="1"/>
+  <text x="48" y="392" font-size="10" font-weight="600" fill="#6B6B6B" letter-spacing="1">WHAT THE TWO REMAINING FAILURES SHOWED</text>
+  <text x="48" y="420" font-size="13" fill="#1A1A1A">Both skipped the onboarding, then found the tooltip copy unclear</text>
+  <text x="48" y="444" font-size="13" fill="#1A1A1A">on hover &#8212; which drove a follow-up UX-writing pass on the</text>
+  <text x="48" y="468" font-size="13" fill="#1A1A1A">tool descriptions.</text>
+
+  <!-- ==================== RIGHT PANEL: test configuration ==================== -->
+  <rect x="760" y="124" width="392" height="344" fill="#FFFFFF" stroke="#E5E5E3" stroke-width="1" rx="6" filter="url(#cardShadow)"/>
+
+  <text x="788" y="160" font-size="10" font-weight="600" fill="#0F766E" letter-spacing="1.5">TEST CONFIGURATION</text>
+  <line x1="788" y1="176" x2="1124" y2="176" stroke="#E5E5E3" stroke-width="1"/>
+
+  <text x="788" y="206" font-size="10" font-weight="500" fill="#6B6B6B">Platform</text>
+  <text x="788" y="226" font-size="13" font-weight="600" fill="#1A1A1A">Maze</text>
+
+  <text x="788" y="258" font-size="10" font-weight="500" fill="#6B6B6B">Method</text>
+  <text x="788" y="278" font-size="13" font-weight="600" fill="#1A1A1A">Unmoderated prototype test</text>
+
+  <text x="788" y="310" font-size="10" font-weight="500" fill="#6B6B6B">Participants</text>
+  <text x="788" y="330" font-size="13" font-weight="600" fill="#1A1A1A">10</text>
+
+  <text x="788" y="362" font-size="10" font-weight="500" fill="#6B6B6B">What was measured</text>
+  <text x="788" y="382" font-size="13" font-weight="600" fill="#1A1A1A">Whether the user could identify</text>
+  <text x="788" y="402" font-size="13" font-weight="600" fill="#1A1A1A">a next action on the node-based</text>
+  <text x="788" y="422" font-size="13" font-weight="600" fill="#1A1A1A">model-interconnection canvas</text>
+
+  <text x="788" y="452" font-size="10" font-style="italic" fill="#9A9A96">Small-sample directional test, not a statistical study.</text>
+</svg>
