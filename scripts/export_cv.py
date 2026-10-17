@@ -142,10 +142,10 @@ def page_one():
     right_x, right_w = 414, 162
     y = canvas.section(left_x, 193, "Selected Experience", left_w)
     y = canvas.job(left_x, y, "Senior Lead UX/UI Designer", "Symplast", "Apr 2026 - Present", [
-        "Lead design for a mobile-first EHR and practice-management platform serving 3,500+ aesthetic practices and medical spas.",
+        "Lead design for a HIPAA-compliant, mobile-first EHR and practice-management platform serving 3,500+ aesthetic practices and medical spas.",
         "Own AI-native clinical workflows, the design system, and alignment across product, engineering, and clinical users.",
     ], left_w)
-    y = canvas.job(left_x, y, "Senior Product Designer & Lead + Product Owner", "CodeBranch", "Jun 2025 - Apr 2026", [
+    y = canvas.job(left_x, y, "Senior Product Designer & Lead + Product Owner", "CodeBranch", "Apr 2025 - Apr 2026", [
         "Led product strategy and UX for Nvidia's supply-chain intelligence platform on an enterprise ecosystem managing $2B+ in annual transactions.",
         "Replaced a ten-filter query with conversational AI; 9 of 10 internal test participants found the new flow easier and less error-prone.",
         "Designed YMA's computer-vision ecosystem from zero to one and governed delivery with 5+ engineers and two junior designers.",
@@ -176,7 +176,7 @@ def page_one():
         "Product design & UX strategy",
         "AI / agentic product design",
         "Design systems & design ops",
-        "Healthcare UX",
+        "Healthcare UX & HIPAA compliance",
         "Research & prototype testing",
         "Product ownership & design QA",
         "HTML / CSS / JavaScript",
@@ -210,7 +210,7 @@ def page_two():
     canvas.rect(43, 39, 8, 8, BLUE, 3)
     canvas.text(59, 47, "JUAN COLORADO", 7.0, WHITE, 700, MONO, 0.95)
     canvas.text(203, 47, "CAREER & CAPABILITIES", 6.2, MUTED_DARK, 700, MONO, 0.65)
-    canvas.text(569, 47, "linkedin.com/in/juan-david-colorado-vargas", 5.8, MUTED_DARK, 400, MONO, 0.05, "end", "https://linkedin.com/in/juan-david-colorado-vargas-470b20122")
+    canvas.text(569, 47, "linkedin.com/in/juan-david-colorado-vargas-470b20122", 5.8, MUTED_DARK, 400, MONO, 0.05, "end", "https://linkedin.com/in/juan-david-colorado-vargas-470b20122")
 
     canvas.rect(36, 103, 540, 116, BLUE_SOFT, 18)
     canvas.text(55, 128, "SPROUTLOUD / DISTRIBUTED MARKETING PLATFORM", 6.2, BLUE, 700, MONO, 0.65)
